@@ -6,11 +6,11 @@ This index flags whether a library can give an attacker a shell (guest/root) and
 
 | Library | Total hooks | Total versions | Safe versions | Shells | Privileged | Missing up to max |
 |---|---:|---:|---:|---:|---:|---:|
-| <a href="#libssh-so">libssh.so</a> | 5131 | 251 | 21 | 734 | 212 | 83 |
+| <a href="#libssh-so">libssh.so</a> | 5231 | 256 | 21 | 752 | 219 | 78 |
 | <a href="#libhttp-so">libhttp.so</a> | 2788 | 101 | 7 | 425 | 136 | 0 |
-| <a href="#kernel_router-so">kernel_router.so</a> | 2319 | 429 | 129 | 611 | 93 | 163 |
+| <a href="#kernel_router-so">kernel_router.so</a> | 2451 | 444 | 134 | 639 | 97 | 148 |
 | <a href="#libftp-so">libftp.so</a> | 776 | 33 | 3 | 116 | 47 | 0 |
-| <a href="#libsql-so">libsql.so</a> | 918 | 34 | 3 | 97 | 36 | 48 |
+| <a href="#libsql-so">libsql.so</a> | 1084 | 43 | 3 | 117 | 39 | 39 |
 | <a href="#libsmtp-so">libsmtp.so</a> | 536 | 19 | 3 | 74 | 27 | 0 |
 | <a href="#librepository-so">librepository.so</a> | 392 | 21 | 4 | 63 | 9 | 0 |
 
@@ -18,11 +18,11 @@ This index flags whether a library can give an attacker a shell (guest/root) and
 ## `libssh.so`
 <a id="libssh-so"></a>
 
-- Total Hooked lines: 5131
-- Can provide shell: 734
-- Has privileged object: 212
+- Total Hooked lines: 5231
+- Can provide shell: 752
+- Has privileged object: 219
 - Safe versions: 21
-Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#1.0.1"><span style="color:red">v 1.0.1</span></a> <a href="#1.0.2"><span style="color:red">v 1.0.2</span></a> <a href="#1.0.3"><span style="color:red">v 1.0.3</span></a> <a href="#1.0.4"><span style="color:red">v 1.0.4</span></a> <a href="#1.0.6"><span style="color:red">v 1.0.6</span></a> <a href="#1.0.8"><span style="color:red">v 1.0.8</span></a> <a href="#1.1.0"><span style="color:red">v 1.1.0</span></a> <a href="#1.1.1"><span style="color:green">v 1.1.1</span></a> <a href="#1.1.2"><span style="color:red">v 1.1.2</span></a> <a href="#1.1.3"><span style="color:red">v 1.1.3</span></a> <a href="#1.1.4"><span style="color:red">v 1.1.4</span></a> <a href="#1.1.5"><span style="color:green">v 1.1.5</span></a> <a href="#1.1.7"><span style="color:red">v 1.1.7</span></a> <a href="#1.1.8"><span style="color:red">v 1.1.8</span></a> <a href="#1.1.9"><span style="color:red">v 1.1.9</span></a> <a href="#1.2.0"><span style="color:red">v 1.2.0</span></a> <a href="#1.2.1"><span style="color:red">v 1.2.1</span></a> <a href="#1.2.2"><span style="color:red">v 1.2.2</span></a> <a href="#1.2.3"><span style="color:red">v 1.2.3</span></a> <a href="#1.2.7"><span style="color:red">v 1.2.7</span></a> <a href="#1.2.8"><span style="color:red">v 1.2.8</span></a> <a href="#1.3.0"><span style="color:red">v 1.3.0</span></a> <a href="#1.3.1"><span style="color:red">v 1.3.1</span></a> <a href="#1.3.3"><span style="color:red">v 1.3.3</span></a> <a href="#1.3.5"><span style="color:red">v 1.3.5</span></a> <a href="#1.3.7"><span style="color:red">v 1.3.7</span></a> <a href="#1.3.8"><span style="color:red">v 1.3.8</span></a> <a href="#1.3.9"><span style="color:red">v 1.3.9</span></a> <a href="#1.4.0"><span style="color:red">v 1.4.0</span></a> <a href="#1.4.2"><span style="color:red">v 1.4.2</span></a> <a href="#1.4.5"><span style="color:red">v 1.4.5</span></a> <a href="#1.4.6"><span style="color:red">v 1.4.6</span></a> <a href="#1.4.7"><span style="color:green">v 1.4.7</span></a> <a href="#1.5.0"><span style="color:red">v 1.5.0</span></a> <a href="#1.5.1"><span style="color:red">v 1.5.1</span></a> <a href="#1.5.3"><span style="color:red">v 1.5.3</span></a> <a href="#1.5.4"><span style="color:red">v 1.5.4</span></a> <a href="#1.5.5"><span style="color:red">v 1.5.5</span></a> <a href="#1.5.6"><span style="color:red">v 1.5.6</span></a> <a href="#1.5.7"><span style="color:red">v 1.5.7</span></a> <a href="#1.5.8"><span style="color:red">v 1.5.8</span></a> <a href="#1.5.9"><span style="color:red">v 1.5.9</span></a> <a href="#1.6.0"><span style="color:red">v 1.6.0</span></a> <a href="#1.6.1"><span style="color:red">v 1.6.1</span></a> <a href="#1.6.2"><span style="color:red">v 1.6.2</span></a> <a href="#1.6.4"><span style="color:red">v 1.6.4</span></a> <a href="#1.6.5"><span style="color:red">v 1.6.5</span></a> <a href="#1.6.6"><span style="color:red">v 1.6.6</span></a> <a href="#1.6.7"><span style="color:red">v 1.6.7</span></a> <a href="#1.6.8"><span style="color:red">v 1.6.8</span></a> <a href="#1.6.9"><span style="color:red">v 1.6.9</span></a> <a href="#1.7.0"><span style="color:red">v 1.7.0</span></a> <a href="#1.7.1"><span style="color:red">v 1.7.1</span></a> <a href="#1.7.2"><span style="color:red">v 1.7.2</span></a> <a href="#1.7.3"><span style="color:green">v 1.7.3</span></a> <a href="#1.7.4"><span style="color:red">v 1.7.4</span></a> <a href="#1.7.5"><span style="color:red">v 1.7.5</span></a> <a href="#1.7.6"><span style="color:red">v 1.7.6</span></a> <a href="#1.7.7"><span style="color:red">v 1.7.7</span></a> <a href="#1.7.9"><span style="color:red">v 1.7.9</span></a> <a href="#1.8.0"><span style="color:red">v 1.8.0</span></a> <a href="#1.8.3"><span style="color:red">v 1.8.3</span></a> <a href="#1.8.4"><span style="color:red">v 1.8.4</span></a> <a href="#1.8.5"><span style="color:red">v 1.8.5</span></a> <a href="#1.8.6"><span style="color:red">v 1.8.6</span></a> <a href="#1.8.8"><span style="color:red">v 1.8.8</span></a> <a href="#1.8.9"><span style="color:red">v 1.8.9</span></a> <a href="#1.9.0"><span style="color:red">v 1.9.0</span></a> <a href="#1.9.1"><span style="color:red">v 1.9.1</span></a> <a href="#1.9.2"><span style="color:green">v 1.9.2</span></a> <a href="#1.9.3"><span style="color:red">v 1.9.3</span></a> <a href="#1.9.4"><span style="color:red">v 1.9.4</span></a> <a href="#1.9.5"><span style="color:red">v 1.9.5</span></a> <a href="#1.9.6"><span style="color:red">v 1.9.6</span></a> <a href="#1.9.7"><span style="color:red">v 1.9.7</span></a> <a href="#2.0.0"><span style="color:red">v 2.0.0</span></a> <a href="#2.0.2"><span style="color:red">v 2.0.2</span></a> <a href="#2.0.3"><span style="color:red">v 2.0.3</span></a> <a href="#2.0.4"><span style="color:red">v 2.0.4</span></a> <a href="#2.0.5"><span style="color:red">v 2.0.5</span></a> <a href="#2.0.6"><span style="color:green">v 2.0.6</span></a> <a href="#2.0.7"><span style="color:red">v 2.0.7</span></a> <a href="#2.0.8"><span style="color:red">v 2.0.8</span></a> <a href="#2.0.9"><span style="color:red">v 2.0.9</span></a> <a href="#2.1.0"><span style="color:red">v 2.1.0</span></a> <a href="#2.1.1"><span style="color:green">v 2.1.1</span></a> <a href="#2.1.3"><span style="color:green">v 2.1.3</span></a> <a href="#2.1.4"><span style="color:red">v 2.1.4</span></a> <a href="#2.1.5"><span style="color:red">v 2.1.5</span></a> <a href="#2.1.6"><span style="color:red">v 2.1.6</span></a> <a href="#2.1.8"><span style="color:red">v 2.1.8</span></a> <a href="#2.1.9"><span style="color:red">v 2.1.9</span></a> <a href="#2.2.0"><span style="color:green">v 2.2.0</span></a> <a href="#2.2.1"><span style="color:red">v 2.2.1</span></a> <a href="#2.2.2"><span style="color:red">v 2.2.2</span></a> <a href="#2.2.3"><span style="color:red">v 2.2.3</span></a> <a href="#2.2.5"><span style="color:red">v 2.2.5</span></a> <a href="#2.2.6"><span style="color:red">v 2.2.6</span></a> <a href="#2.2.7"><span style="color:red">v 2.2.7</span></a> <a href="#2.2.8"><span style="color:red">v 2.2.8</span></a> <a href="#2.2.9"><span style="color:red">v 2.2.9</span></a> <a href="#2.3.0"><span style="color:red">v 2.3.0</span></a> <a href="#2.3.1"><span style="color:red">v 2.3.1</span></a> <a href="#2.3.2"><span style="color:red">v 2.3.2</span></a> <a href="#2.3.4"><span style="color:red">v 2.3.4</span></a> <a href="#2.3.5"><span style="color:red">v 2.3.5</span></a> <a href="#2.3.6"><span style="color:red">v 2.3.6</span></a> <a href="#2.3.8"><span style="color:red">v 2.3.8</span></a> <a href="#2.4.0"><span style="color:red">v 2.4.0</span></a> <a href="#2.4.1"><span style="color:red">v 2.4.1</span></a> <a href="#2.4.2"><span style="color:red">v 2.4.2</span></a> <a href="#2.4.4"><span style="color:green">v 2.4.4</span></a> <a href="#2.4.5"><span style="color:red">v 2.4.5</span></a> <a href="#2.4.6"><span style="color:red">v 2.4.6</span></a> <a href="#2.4.7"><span style="color:red">v 2.4.7</span></a> <a href="#2.4.8"><span style="color:red">v 2.4.8</span></a> <a href="#2.4.9"><span style="color:red">v 2.4.9</span></a> <a href="#2.5.1"><span style="color:red">v 2.5.1</span></a> <a href="#2.5.2"><span style="color:red">v 2.5.2</span></a> <a href="#2.5.3"><span style="color:red">v 2.5.3</span></a> <a href="#2.5.4"><span style="color:red">v 2.5.4</span></a> <a href="#2.5.5"><span style="color:red">v 2.5.5</span></a> <a href="#2.5.6"><span style="color:red">v 2.5.6</span></a> <a href="#2.5.7"><span style="color:red">v 2.5.7</span></a> <a href="#2.6.0"><span style="color:red">v 2.6.0</span></a> <a href="#2.6.2"><span style="color:red">v 2.6.2</span></a> <a href="#2.6.3"><span style="color:red">v 2.6.3</span></a> <a href="#2.6.4"><span style="color:green">v 2.6.4</span></a> <a href="#2.6.5"><span style="color:red">v 2.6.5</span></a> <a href="#2.6.6"><span style="color:red">v 2.6.6</span></a> <a href="#2.6.7"><span style="color:red">v 2.6.7</span></a> <a href="#2.6.9"><span style="color:red">v 2.6.9</span></a> <a href="#2.7.1"><span style="color:red">v 2.7.1</span></a> <a href="#2.7.2"><span style="color:red">v 2.7.2</span></a> <a href="#2.7.4"><span style="color:red">v 2.7.4</span></a> <a href="#2.7.5"><span style="color:green">v 2.7.5</span></a> <a href="#2.7.6"><span style="color:red">v 2.7.6</span></a> <a href="#2.7.9"><span style="color:green">v 2.7.9</span></a> <a href="#2.8.0"><span style="color:green">v 2.8.0</span></a> <a href="#2.8.1"><span style="color:red">v 2.8.1</span></a> <a href="#2.8.2"><span style="color:red">v 2.8.2</span></a> <a href="#2.8.3"><span style="color:red">v 2.8.3</span></a> <a href="#2.8.4"><span style="color:red">v 2.8.4</span></a> <a href="#2.8.5"><span style="color:red">v 2.8.5</span></a> <a href="#2.8.6"><span style="color:red">v 2.8.6</span></a> <a href="#2.8.8"><span style="color:green">v 2.8.8</span></a> <a href="#2.9.0"><span style="color:red">v 2.9.0</span></a> <a href="#2.9.1"><span style="color:red">v 2.9.1</span></a> <a href="#2.9.3"><span style="color:red">v 2.9.3</span></a> <a href="#2.9.5"><span style="color:red">v 2.9.5</span></a> <a href="#2.9.6"><span style="color:red">v 2.9.6</span></a> <a href="#2.9.7"><span style="color:red">v 2.9.7</span></a> <a href="#2.9.8"><span style="color:red">v 2.9.8</span></a> <a href="#2.9.9"><span style="color:red">v 2.9.9</span></a> <a href="#3.0.0"><span style="color:red">v 3.0.0</span></a> <a href="#3.0.2"><span style="color:red">v 3.0.2</span></a> <a href="#3.0.5"><span style="color:red">v 3.0.5</span></a> <a href="#3.0.6"><span style="color:red">v 3.0.6</span></a> <a href="#3.0.7"><span style="color:red">v 3.0.7</span></a> <a href="#3.0.8"><span style="color:red">v 3.0.8</span></a> <a href="#3.0.9"><span style="color:red">v 3.0.9</span></a> <a href="#3.1.1"><span style="color:green">v 3.1.1</span></a> <a href="#3.1.2"><span style="color:red">v 3.1.2</span></a> <a href="#3.1.3"><span style="color:red">v 3.1.3</span></a> <a href="#3.1.4"><span style="color:red">v 3.1.4</span></a> <a href="#3.1.7"><span style="color:red">v 3.1.7</span></a> <a href="#3.1.9"><span style="color:green">v 3.1.9</span></a> <a href="#3.2.0"><span style="color:red">v 3.2.0</span></a> <a href="#3.2.4"><span style="color:red">v 3.2.4</span></a> <a href="#3.2.5"><span style="color:green">v 3.2.5</span></a> <a href="#3.2.6"><span style="color:green">v 3.2.6</span></a> <a href="#3.2.7"><span style="color:red">v 3.2.7</span></a> <a href="#3.2.8"><span style="color:red">v 3.2.8</span></a> <a href="#3.2.9"><span style="color:red">v 3.2.9</span></a> <a href="#3.3.1"><span style="color:red">v 3.3.1</span></a> <a href="#3.3.2"><span style="color:red">v 3.3.2</span></a> <a href="#3.3.4"><span style="color:green">v 3.3.4</span></a> <a href="#3.3.5"><span style="color:red">v 3.3.5</span></a> <a href="#3.3.8"><span style="color:red">v 3.3.8</span></a> <a href="#3.3.9"><span style="color:red">v 3.3.9</span></a> <a href="#3.4.0"><span style="color:red">v 3.4.0</span></a> <a href="#3.4.1"><span style="color:red">v 3.4.1</span></a> <a href="#3.4.2"><span style="color:red">v 3.4.2</span></a> <a href="#3.4.3"><span style="color:red">v 3.4.3</span></a> <a href="#3.4.4"><span style="color:red">v 3.4.4</span></a> <a href="#3.4.5"><span style="color:red">v 3.4.5</span></a> <a href="#3.4.6"><span style="color:red">v 3.4.6</span></a> <a href="#3.4.8"><span style="color:red">v 3.4.8</span></a> <a href="#3.4.9"><span style="color:red">v 3.4.9</span></a> <a href="#3.5.0"><span style="color:red">v 3.5.0</span></a> <a href="#3.5.1"><span style="color:red">v 3.5.1</span></a> <a href="#3.5.2"><span style="color:red">v 3.5.2</span></a> <a href="#3.5.3"><span style="color:red">v 3.5.3</span></a> <a href="#3.5.4"><span style="color:red">v 3.5.4</span></a> <a href="#3.5.5"><span style="color:red">v 3.5.5</span></a> <a href="#3.5.6"><span style="color:red">v 3.5.6</span></a> <a href="#3.5.7"><span style="color:red">v 3.5.7</span></a> <a href="#3.5.8"><span style="color:red">v 3.5.8</span></a> <a href="#3.6.1"><span style="color:red">v 3.6.1</span></a> <a href="#3.6.2"><span style="color:red">v 3.6.2</span></a> <a href="#3.6.3"><span style="color:red">v 3.6.3</span></a> <a href="#3.6.4"><span style="color:red">v 3.6.4</span></a> <a href="#3.6.7"><span style="color:green">v 3.6.7</span></a> <a href="#3.6.8"><span style="color:red">v 3.6.8</span></a> <a href="#3.7.0"><span style="color:red">v 3.7.0</span></a> <a href="#3.7.1"><span style="color:red">v 3.7.1</span></a> <a href="#3.7.3"><span style="color:red">v 3.7.3</span></a> <a href="#3.7.4"><span style="color:red">v 3.7.4</span></a> <a href="#3.7.8"><span style="color:red">v 3.7.8</span></a> <a href="#3.7.9"><span style="color:red">v 3.7.9</span></a> <a href="#3.8.1"><span style="color:red">v 3.8.1</span></a> <a href="#3.8.2"><span style="color:red">v 3.8.2</span></a> <a href="#3.8.3"><span style="color:red">v 3.8.3</span></a> <a href="#3.8.4"><span style="color:red">v 3.8.4</span></a> <a href="#3.8.5"><span style="color:red">v 3.8.5</span></a> <a href="#3.8.7"><span style="color:red">v 3.8.7</span></a> <a href="#3.8.8"><span style="color:red">v 3.8.8</span></a> <a href="#3.8.9"><span style="color:red">v 3.8.9</span></a> <a href="#3.9.0"><span style="color:red">v 3.9.0</span></a> <a href="#3.9.1"><span style="color:red">v 3.9.1</span></a> <a href="#3.9.2"><span style="color:red">v 3.9.2</span></a> <a href="#3.9.3"><span style="color:red">v 3.9.3</span></a> <a href="#3.9.4"><span style="color:red">v 3.9.4</span></a> <a href="#3.9.5"><span style="color:red">v 3.9.5</span></a> <a href="#3.9.6"><span style="color:red">v 3.9.6</span></a> <a href="#3.9.7"><span style="color:red">v 3.9.7</span></a> <a href="#3.9.8"><span style="color:red">v 3.9.8</span></a> <a href="#4.0.1"><span style="color:red">v 4.0.1</span></a> <a href="#4.0.2"><span style="color:red">v 4.0.2</span></a> <a href="#4.0.3"><span style="color:red">v 4.0.3</span></a> <a href="#4.0.4"><span style="color:red">v 4.0.4</span></a> <a href="#4.0.5"><span style="color:red">v 4.0.5</span></a> <a href="#4.0.6"><span style="color:red">v 4.0.6</span></a> <a href="#4.0.8"><span style="color:red">v 4.0.8</span></a> <a href="#4.1.1"><span style="color:red">v 4.1.1</span></a> <a href="#4.1.2"><span style="color:red">v 4.1.2</span></a> <a href="#4.1.4"><span style="color:red">v 4.1.4</span></a> <a href="#4.1.5"><span style="color:red">v 4.1.5</span></a> <a href="#4.1.6"><span style="color:red">v 4.1.6</span></a> <a href="#4.1.7"><span style="color:red">v 4.1.7</span></a> <a href="#4.1.9"><span style="color:red">v 4.1.9</span></a> <a href="#4.2.0"><span style="color:red">v 4.2.0</span></a> <a href="#4.2.2"><span style="color:red">v 4.2.2</span></a> <a href="#4.2.3"><span style="color:red">v 4.2.3</span></a> <a href="#4.2.4"><span style="color:red">v 4.2.4</span></a> <a href="#4.2.7"><span style="color:red">v 4.2.7</span></a> <a href="#4.2.9"><span style="color:red">v 4.2.9</span></a> <a href="#4.3.0"><span style="color:red">v 4.3.0</span></a> <a href="#4.3.1"><span style="color:red">v 4.3.1</span></a> <a href="#4.3.3"><span style="color:red">v 4.3.3</span></a>
+Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#1.0.1"><span style="color:red">v 1.0.1</span></a> <a href="#1.0.2"><span style="color:red">v 1.0.2</span></a> <a href="#1.0.3"><span style="color:red">v 1.0.3</span></a> <a href="#1.0.4"><span style="color:red">v 1.0.4</span></a> <a href="#1.0.6"><span style="color:red">v 1.0.6</span></a> <a href="#1.0.8"><span style="color:red">v 1.0.8</span></a> <a href="#1.1.0"><span style="color:red">v 1.1.0</span></a> <a href="#1.1.1"><span style="color:green">v 1.1.1</span></a> <a href="#1.1.2"><span style="color:red">v 1.1.2</span></a> <a href="#1.1.3"><span style="color:red">v 1.1.3</span></a> <a href="#1.1.4"><span style="color:red">v 1.1.4</span></a> <a href="#1.1.5"><span style="color:green">v 1.1.5</span></a> <a href="#1.1.7"><span style="color:red">v 1.1.7</span></a> <a href="#1.1.8"><span style="color:red">v 1.1.8</span></a> <a href="#1.1.9"><span style="color:red">v 1.1.9</span></a> <a href="#1.2.0"><span style="color:red">v 1.2.0</span></a> <a href="#1.2.1"><span style="color:red">v 1.2.1</span></a> <a href="#1.2.2"><span style="color:red">v 1.2.2</span></a> <a href="#1.2.3"><span style="color:red">v 1.2.3</span></a> <a href="#1.2.7"><span style="color:red">v 1.2.7</span></a> <a href="#1.2.8"><span style="color:red">v 1.2.8</span></a> <a href="#1.3.0"><span style="color:red">v 1.3.0</span></a> <a href="#1.3.1"><span style="color:red">v 1.3.1</span></a> <a href="#1.3.3"><span style="color:red">v 1.3.3</span></a> <a href="#1.3.5"><span style="color:red">v 1.3.5</span></a> <a href="#1.3.7"><span style="color:red">v 1.3.7</span></a> <a href="#1.3.8"><span style="color:red">v 1.3.8</span></a> <a href="#1.3.9"><span style="color:red">v 1.3.9</span></a> <a href="#1.4.0"><span style="color:red">v 1.4.0</span></a> <a href="#1.4.2"><span style="color:red">v 1.4.2</span></a> <a href="#1.4.5"><span style="color:red">v 1.4.5</span></a> <a href="#1.4.6"><span style="color:red">v 1.4.6</span></a> <a href="#1.4.7"><span style="color:green">v 1.4.7</span></a> <a href="#1.5.0"><span style="color:red">v 1.5.0</span></a> <a href="#1.5.1"><span style="color:red">v 1.5.1</span></a> <a href="#1.5.3"><span style="color:red">v 1.5.3</span></a> <a href="#1.5.4"><span style="color:red">v 1.5.4</span></a> <a href="#1.5.5"><span style="color:red">v 1.5.5</span></a> <a href="#1.5.6"><span style="color:red">v 1.5.6</span></a> <a href="#1.5.7"><span style="color:red">v 1.5.7</span></a> <a href="#1.5.8"><span style="color:red">v 1.5.8</span></a> <a href="#1.5.9"><span style="color:red">v 1.5.9</span></a> <a href="#1.6.0"><span style="color:red">v 1.6.0</span></a> <a href="#1.6.1"><span style="color:red">v 1.6.1</span></a> <a href="#1.6.2"><span style="color:red">v 1.6.2</span></a> <a href="#1.6.4"><span style="color:red">v 1.6.4</span></a> <a href="#1.6.5"><span style="color:red">v 1.6.5</span></a> <a href="#1.6.6"><span style="color:red">v 1.6.6</span></a> <a href="#1.6.7"><span style="color:red">v 1.6.7</span></a> <a href="#1.6.8"><span style="color:red">v 1.6.8</span></a> <a href="#1.6.9"><span style="color:red">v 1.6.9</span></a> <a href="#1.7.0"><span style="color:red">v 1.7.0</span></a> <a href="#1.7.1"><span style="color:red">v 1.7.1</span></a> <a href="#1.7.2"><span style="color:red">v 1.7.2</span></a> <a href="#1.7.3"><span style="color:green">v 1.7.3</span></a> <a href="#1.7.4"><span style="color:red">v 1.7.4</span></a> <a href="#1.7.5"><span style="color:red">v 1.7.5</span></a> <a href="#1.7.6"><span style="color:red">v 1.7.6</span></a> <a href="#1.7.7"><span style="color:red">v 1.7.7</span></a> <a href="#1.7.9"><span style="color:red">v 1.7.9</span></a> <a href="#1.8.0"><span style="color:red">v 1.8.0</span></a> <a href="#1.8.3"><span style="color:red">v 1.8.3</span></a> <a href="#1.8.4"><span style="color:red">v 1.8.4</span></a> <a href="#1.8.5"><span style="color:red">v 1.8.5</span></a> <a href="#1.8.6"><span style="color:red">v 1.8.6</span></a> <a href="#1.8.8"><span style="color:red">v 1.8.8</span></a> <a href="#1.8.9"><span style="color:red">v 1.8.9</span></a> <a href="#1.9.0"><span style="color:red">v 1.9.0</span></a> <a href="#1.9.1"><span style="color:red">v 1.9.1</span></a> <a href="#1.9.2"><span style="color:green">v 1.9.2</span></a> <a href="#1.9.3"><span style="color:red">v 1.9.3</span></a> <a href="#1.9.4"><span style="color:red">v 1.9.4</span></a> <a href="#1.9.5"><span style="color:red">v 1.9.5</span></a> <a href="#1.9.6"><span style="color:red">v 1.9.6</span></a> <a href="#1.9.7"><span style="color:red">v 1.9.7</span></a> <a href="#1.9.9"><span style="color:red">v 1.9.9</span></a> <a href="#2.0.0"><span style="color:red">v 2.0.0</span></a> <a href="#2.0.1"><span style="color:red">v 2.0.1</span></a> <a href="#2.0.2"><span style="color:red">v 2.0.2</span></a> <a href="#2.0.3"><span style="color:red">v 2.0.3</span></a> <a href="#2.0.4"><span style="color:red">v 2.0.4</span></a> <a href="#2.0.5"><span style="color:red">v 2.0.5</span></a> <a href="#2.0.6"><span style="color:green">v 2.0.6</span></a> <a href="#2.0.7"><span style="color:red">v 2.0.7</span></a> <a href="#2.0.8"><span style="color:red">v 2.0.8</span></a> <a href="#2.0.9"><span style="color:red">v 2.0.9</span></a> <a href="#2.1.0"><span style="color:red">v 2.1.0</span></a> <a href="#2.1.1"><span style="color:green">v 2.1.1</span></a> <a href="#2.1.3"><span style="color:green">v 2.1.3</span></a> <a href="#2.1.4"><span style="color:red">v 2.1.4</span></a> <a href="#2.1.5"><span style="color:red">v 2.1.5</span></a> <a href="#2.1.6"><span style="color:red">v 2.1.6</span></a> <a href="#2.1.8"><span style="color:red">v 2.1.8</span></a> <a href="#2.1.9"><span style="color:red">v 2.1.9</span></a> <a href="#2.2.0"><span style="color:green">v 2.2.0</span></a> <a href="#2.2.1"><span style="color:red">v 2.2.1</span></a> <a href="#2.2.2"><span style="color:red">v 2.2.2</span></a> <a href="#2.2.3"><span style="color:red">v 2.2.3</span></a> <a href="#2.2.5"><span style="color:red">v 2.2.5</span></a> <a href="#2.2.6"><span style="color:red">v 2.2.6</span></a> <a href="#2.2.7"><span style="color:red">v 2.2.7</span></a> <a href="#2.2.8"><span style="color:red">v 2.2.8</span></a> <a href="#2.2.9"><span style="color:red">v 2.2.9</span></a> <a href="#2.3.0"><span style="color:red">v 2.3.0</span></a> <a href="#2.3.1"><span style="color:red">v 2.3.1</span></a> <a href="#2.3.2"><span style="color:red">v 2.3.2</span></a> <a href="#2.3.4"><span style="color:red">v 2.3.4</span></a> <a href="#2.3.5"><span style="color:red">v 2.3.5</span></a> <a href="#2.3.6"><span style="color:red">v 2.3.6</span></a> <a href="#2.3.8"><span style="color:red">v 2.3.8</span></a> <a href="#2.4.0"><span style="color:red">v 2.4.0</span></a> <a href="#2.4.1"><span style="color:red">v 2.4.1</span></a> <a href="#2.4.2"><span style="color:red">v 2.4.2</span></a> <a href="#2.4.3"><span style="color:red">v 2.4.3</span></a> <a href="#2.4.4"><span style="color:green">v 2.4.4</span></a> <a href="#2.4.5"><span style="color:red">v 2.4.5</span></a> <a href="#2.4.6"><span style="color:red">v 2.4.6</span></a> <a href="#2.4.7"><span style="color:red">v 2.4.7</span></a> <a href="#2.4.8"><span style="color:red">v 2.4.8</span></a> <a href="#2.4.9"><span style="color:red">v 2.4.9</span></a> <a href="#2.5.1"><span style="color:red">v 2.5.1</span></a> <a href="#2.5.2"><span style="color:red">v 2.5.2</span></a> <a href="#2.5.3"><span style="color:red">v 2.5.3</span></a> <a href="#2.5.4"><span style="color:red">v 2.5.4</span></a> <a href="#2.5.5"><span style="color:red">v 2.5.5</span></a> <a href="#2.5.6"><span style="color:red">v 2.5.6</span></a> <a href="#2.5.7"><span style="color:red">v 2.5.7</span></a> <a href="#2.6.0"><span style="color:red">v 2.6.0</span></a> <a href="#2.6.2"><span style="color:red">v 2.6.2</span></a> <a href="#2.6.3"><span style="color:red">v 2.6.3</span></a> <a href="#2.6.4"><span style="color:green">v 2.6.4</span></a> <a href="#2.6.5"><span style="color:red">v 2.6.5</span></a> <a href="#2.6.6"><span style="color:red">v 2.6.6</span></a> <a href="#2.6.7"><span style="color:red">v 2.6.7</span></a> <a href="#2.6.9"><span style="color:red">v 2.6.9</span></a> <a href="#2.7.1"><span style="color:red">v 2.7.1</span></a> <a href="#2.7.2"><span style="color:red">v 2.7.2</span></a> <a href="#2.7.4"><span style="color:red">v 2.7.4</span></a> <a href="#2.7.5"><span style="color:green">v 2.7.5</span></a> <a href="#2.7.6"><span style="color:red">v 2.7.6</span></a> <a href="#2.7.7"><span style="color:red">v 2.7.7</span></a> <a href="#2.7.9"><span style="color:green">v 2.7.9</span></a> <a href="#2.8.0"><span style="color:green">v 2.8.0</span></a> <a href="#2.8.1"><span style="color:red">v 2.8.1</span></a> <a href="#2.8.2"><span style="color:red">v 2.8.2</span></a> <a href="#2.8.3"><span style="color:red">v 2.8.3</span></a> <a href="#2.8.4"><span style="color:red">v 2.8.4</span></a> <a href="#2.8.5"><span style="color:red">v 2.8.5</span></a> <a href="#2.8.6"><span style="color:red">v 2.8.6</span></a> <a href="#2.8.7"><span style="color:red">v 2.8.7</span></a> <a href="#2.8.8"><span style="color:green">v 2.8.8</span></a> <a href="#2.9.0"><span style="color:red">v 2.9.0</span></a> <a href="#2.9.1"><span style="color:red">v 2.9.1</span></a> <a href="#2.9.3"><span style="color:red">v 2.9.3</span></a> <a href="#2.9.5"><span style="color:red">v 2.9.5</span></a> <a href="#2.9.6"><span style="color:red">v 2.9.6</span></a> <a href="#2.9.7"><span style="color:red">v 2.9.7</span></a> <a href="#2.9.8"><span style="color:red">v 2.9.8</span></a> <a href="#2.9.9"><span style="color:red">v 2.9.9</span></a> <a href="#3.0.0"><span style="color:red">v 3.0.0</span></a> <a href="#3.0.2"><span style="color:red">v 3.0.2</span></a> <a href="#3.0.5"><span style="color:red">v 3.0.5</span></a> <a href="#3.0.6"><span style="color:red">v 3.0.6</span></a> <a href="#3.0.7"><span style="color:red">v 3.0.7</span></a> <a href="#3.0.8"><span style="color:red">v 3.0.8</span></a> <a href="#3.0.9"><span style="color:red">v 3.0.9</span></a> <a href="#3.1.1"><span style="color:green">v 3.1.1</span></a> <a href="#3.1.2"><span style="color:red">v 3.1.2</span></a> <a href="#3.1.3"><span style="color:red">v 3.1.3</span></a> <a href="#3.1.4"><span style="color:red">v 3.1.4</span></a> <a href="#3.1.7"><span style="color:red">v 3.1.7</span></a> <a href="#3.1.9"><span style="color:green">v 3.1.9</span></a> <a href="#3.2.0"><span style="color:red">v 3.2.0</span></a> <a href="#3.2.4"><span style="color:red">v 3.2.4</span></a> <a href="#3.2.5"><span style="color:green">v 3.2.5</span></a> <a href="#3.2.6"><span style="color:green">v 3.2.6</span></a> <a href="#3.2.7"><span style="color:red">v 3.2.7</span></a> <a href="#3.2.8"><span style="color:red">v 3.2.8</span></a> <a href="#3.2.9"><span style="color:red">v 3.2.9</span></a> <a href="#3.3.1"><span style="color:red">v 3.3.1</span></a> <a href="#3.3.2"><span style="color:red">v 3.3.2</span></a> <a href="#3.3.4"><span style="color:green">v 3.3.4</span></a> <a href="#3.3.5"><span style="color:red">v 3.3.5</span></a> <a href="#3.3.8"><span style="color:red">v 3.3.8</span></a> <a href="#3.3.9"><span style="color:red">v 3.3.9</span></a> <a href="#3.4.0"><span style="color:red">v 3.4.0</span></a> <a href="#3.4.1"><span style="color:red">v 3.4.1</span></a> <a href="#3.4.2"><span style="color:red">v 3.4.2</span></a> <a href="#3.4.3"><span style="color:red">v 3.4.3</span></a> <a href="#3.4.4"><span style="color:red">v 3.4.4</span></a> <a href="#3.4.5"><span style="color:red">v 3.4.5</span></a> <a href="#3.4.6"><span style="color:red">v 3.4.6</span></a> <a href="#3.4.8"><span style="color:red">v 3.4.8</span></a> <a href="#3.4.9"><span style="color:red">v 3.4.9</span></a> <a href="#3.5.0"><span style="color:red">v 3.5.0</span></a> <a href="#3.5.1"><span style="color:red">v 3.5.1</span></a> <a href="#3.5.2"><span style="color:red">v 3.5.2</span></a> <a href="#3.5.3"><span style="color:red">v 3.5.3</span></a> <a href="#3.5.4"><span style="color:red">v 3.5.4</span></a> <a href="#3.5.5"><span style="color:red">v 3.5.5</span></a> <a href="#3.5.6"><span style="color:red">v 3.5.6</span></a> <a href="#3.5.7"><span style="color:red">v 3.5.7</span></a> <a href="#3.5.8"><span style="color:red">v 3.5.8</span></a> <a href="#3.6.1"><span style="color:red">v 3.6.1</span></a> <a href="#3.6.2"><span style="color:red">v 3.6.2</span></a> <a href="#3.6.3"><span style="color:red">v 3.6.3</span></a> <a href="#3.6.4"><span style="color:red">v 3.6.4</span></a> <a href="#3.6.7"><span style="color:green">v 3.6.7</span></a> <a href="#3.6.8"><span style="color:red">v 3.6.8</span></a> <a href="#3.7.0"><span style="color:red">v 3.7.0</span></a> <a href="#3.7.1"><span style="color:red">v 3.7.1</span></a> <a href="#3.7.3"><span style="color:red">v 3.7.3</span></a> <a href="#3.7.4"><span style="color:red">v 3.7.4</span></a> <a href="#3.7.8"><span style="color:red">v 3.7.8</span></a> <a href="#3.7.9"><span style="color:red">v 3.7.9</span></a> <a href="#3.8.1"><span style="color:red">v 3.8.1</span></a> <a href="#3.8.2"><span style="color:red">v 3.8.2</span></a> <a href="#3.8.3"><span style="color:red">v 3.8.3</span></a> <a href="#3.8.4"><span style="color:red">v 3.8.4</span></a> <a href="#3.8.5"><span style="color:red">v 3.8.5</span></a> <a href="#3.8.7"><span style="color:red">v 3.8.7</span></a> <a href="#3.8.8"><span style="color:red">v 3.8.8</span></a> <a href="#3.8.9"><span style="color:red">v 3.8.9</span></a> <a href="#3.9.0"><span style="color:red">v 3.9.0</span></a> <a href="#3.9.1"><span style="color:red">v 3.9.1</span></a> <a href="#3.9.2"><span style="color:red">v 3.9.2</span></a> <a href="#3.9.3"><span style="color:red">v 3.9.3</span></a> <a href="#3.9.4"><span style="color:red">v 3.9.4</span></a> <a href="#3.9.5"><span style="color:red">v 3.9.5</span></a> <a href="#3.9.6"><span style="color:red">v 3.9.6</span></a> <a href="#3.9.7"><span style="color:red">v 3.9.7</span></a> <a href="#3.9.8"><span style="color:red">v 3.9.8</span></a> <a href="#4.0.1"><span style="color:red">v 4.0.1</span></a> <a href="#4.0.2"><span style="color:red">v 4.0.2</span></a> <a href="#4.0.3"><span style="color:red">v 4.0.3</span></a> <a href="#4.0.4"><span style="color:red">v 4.0.4</span></a> <a href="#4.0.5"><span style="color:red">v 4.0.5</span></a> <a href="#4.0.6"><span style="color:red">v 4.0.6</span></a> <a href="#4.0.8"><span style="color:red">v 4.0.8</span></a> <a href="#4.1.1"><span style="color:red">v 4.1.1</span></a> <a href="#4.1.2"><span style="color:red">v 4.1.2</span></a> <a href="#4.1.4"><span style="color:red">v 4.1.4</span></a> <a href="#4.1.5"><span style="color:red">v 4.1.5</span></a> <a href="#4.1.6"><span style="color:red">v 4.1.6</span></a> <a href="#4.1.7"><span style="color:red">v 4.1.7</span></a> <a href="#4.1.9"><span style="color:red">v 4.1.9</span></a> <a href="#4.2.0"><span style="color:red">v 4.2.0</span></a> <a href="#4.2.2"><span style="color:red">v 4.2.2</span></a> <a href="#4.2.3"><span style="color:red">v 4.2.3</span></a> <a href="#4.2.4"><span style="color:red">v 4.2.4</span></a> <a href="#4.2.7"><span style="color:red">v 4.2.7</span></a> <a href="#4.2.9"><span style="color:red">v 4.2.9</span></a> <a href="#4.3.0"><span style="color:red">v 4.3.0</span></a> <a href="#4.3.1"><span style="color:red">v 4.3.1</span></a> <a href="#4.3.3"><span style="color:red">v 4.3.3</span></a>
 
 ### Safe versions
 #### v 1.1.1 — no shell/priv hooks
@@ -2300,6 +2300,25 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:grey">null null with 0x56F02C06 result++</span>
 - <span style="color:grey">null null with 0x3073421F n_ltreest</span>
 
+#### v 1.9.9 — shell 4/16, priv 3/16
+<a id="1.9.9"></a>
+- <span style="color:green">guest computer with 0xA1DE434 dostrings</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x1B4CF0C1 keycodec_a
+- <span style="color:green">guest computer with 0x1B4CF0C1 tdatetextstoredp</span>
+- <span style="color:green">??? password_change with 0x1B4CF0C1 stanainese</span>
+- Nikowska shell with 0x50D51FBB putbuffectt
+- <span style="color:green">??? password_change with 0x50D51FBB colorschecktypeleftund</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x50D51FBB ecttransformpon
+- <span style="color:green">Icollicke computer with 0x50D51FBB buttonobjectoreattingetex</span>
+- <span style="color:green">Umarcannard computer with 0x4E11DBF8 clicked</span>
+- <span style="color:green">??? password_change with 0x3A1D71A8 indow</span>
+- Rinisslig shell with 0x2B774870 lengthsbuild_f
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x2B774870 dowmatoragu
+- <span style="color:green">??? password_change with 0x2B774870 eaterest_len</span>
+- Lyes shell with 0x141B2F77 itextslconshorttemplaybackc
+- <span style="color:green">Lyes file with 0x72C00933 buttoncolon</span>
+- Lyes shell with 0x2DBF5B43 positiontera
+
 #### v 2.0.0 — shell 2/26
 <a id="2.0.0"></a>
 - <span style="color:green">guest computer with 0x4D3B60E0 objectset++</span>
@@ -2328,6 +2347,24 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:grey">null null with 0x379579EE curren</span>
 - <span style="color:grey">null null with 0x441D8219 end_bi</span>
 - <span style="color:grey">null null with 0x441D8219 sthangenqu</span>
+
+#### v 2.0.1 — shell 3/15, priv 1/15
+<a id="2.0.1"></a>
+- <span style="color:grey">null null with 0x6E34DC6E ollx</span>
+- <span style="color:grey">null null with 0x6E34DC6E eapk</span>
+- <span style="color:green">??? password_change with 0x6E34DC6E ackaddresultstorrenablet</span>
+- <span style="color:green">guest file with 0x26455761 emoverlaysou</span>
+- <span style="color:red">root</span> shell with 0x26455761 linenumobjecttransformsiz
+- <span style="color:grey">null null with 0xA1DE434 olor_viewpor</span>
+- <span style="color:grey">null null with 0x2B4C319D aluesaddun</span>
+- <span style="color:green">guest computer with 0x2B4C319D tposition++</span>
+- Mlingermi shell with 0x2B4C319D putsinsertlinesli
+- <span style="color:grey">null null with 0x2B4C319D s_h</span>
+- <span style="color:grey">null null with 0xF6008FC calessagepatic</span>
+- <span style="color:grey">null null with 0xF6008FC backaddundthisrepeatorea</span>
+- <span style="color:green">Chul computer with 0xC44843B rategy</span>
+- <span style="color:green">Khuettiel file with 0x7F1998FF displa</span>
+- Khuettiel shell with 0x78F83C2F ortmsbint_only
 
 #### v 2.0.2 — shell 3/23
 <a id="2.0.2"></a>
@@ -3027,6 +3064,26 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest computer with 0x38070D02 blockblock_onstac</span>
 - <span style="color:green">??? password_change with 0x38070D02 yedcolor_buttonsta</span>
 
+#### v 2.4.3 — shell 3/17, priv 1/17
+<a id="2.4.3"></a>
+- <span style="color:grey">null null with 0x723DC6FA powbutt</span>
+- <span style="color:grey">null null with 0x723DC6FA removeatebitsl</span>
+- <span style="color:grey">null null with 0x723DC6FA ializefinittemo</span>
+- <span style="color:grey">null null with 0x723DC6FA itlengthsdyn_lt</span>
+- <span style="color:green">Boden computer with 0x17F2B593 groupintextbufficitrecttran</span>
+- <span style="color:green">guest file with 0x17F2B593 treend_bitslcodein</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x17F2B593 ailabledthisrep
+- <span style="color:grey">null null with 0x17F2B593 match_lengt</span>
+- Boden shell with 0x172BDD94 reval
+- <span style="color:yellow">guest</span> shell with 0xAD3319F ebackgrount++
+- <span style="color:grey">null null with 0xAD3319F ecurred_bitscod</span>
+- <span style="color:grey">null null with 0xAD3319F bitsbl</span>
+- <span style="color:green">guest computer with 0xAD3319F settimaticonst</span>
+- <span style="color:grey">null null with 0xAD3319F nalconternalcontenerbuttonclici</span>
+- Anste shell with 0x57A5878F ontextenertlin
+- <span style="color:grey">null null with 0x7384DC56 functivetact</span>
+- <span style="color:grey">null null with 0x75E16450 char</span>
+
 #### v 2.4.5 — shell 2/10
 <a id="2.4.5"></a>
 - <span style="color:green">guest computer with 0xC08E5B5 #endpositi</span>
@@ -3677,6 +3734,34 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:grey">null null with 0x134C2485 orifnull</span>
 - <span style="color:grey">null null with 0x134C2485 sizebl</span>
 
+#### v 2.7.7 — shell 4/25, priv 1/25
+<a id="2.7.7"></a>
+- <span style="color:green">guest computer with 0x7EDD3688 asgroutpritextsiinte</span>
+- <span style="color:grey">null null with 0x7EDD3688 resultpare</span>
+- <span style="color:grey">null null with 0x7EDD3688 functivetru</span>
+- <span style="color:green">guest computer with 0x142ABF55 endingbuttonba</span>
+- <span style="color:yellow">guest</span> shell with 0x142ABF55 urcemechai
+- <span style="color:grey">null null with 0x142ABF55 tationaryeresultcontexts</span>
+- <span style="color:green">??? password_change with 0x142ABF55 osition</span>
+- <span style="color:grey">null null with 0x142ABF55 lock_stors</span>
+- <span style="color:grey">null null with 0x5F9B1209 tctorevstroybutton</span>
+- <span style="color:grey">null null with 0x5F9B1209 lineyp</span>
+- <span style="color:green">Oreh file with 0x5F9B1209 artedoundow++</span>
+- <span style="color:yellow">guest</span> shell with 0x5F12C260 ata_typerigsi
+- <span style="color:yellow">guest</span> shell with 0x5F12C260 chorequalessa
+- <span style="color:grey">null null with 0x5F12C260 fsetackgroundthi</span>
+- <span style="color:grey">null null with 0x5F12C260 or_station</span>
+- <span style="color:grey">null null with 0x5F12C260 selh</span>
+- <span style="color:grey">null null with 0x134C2485 oadcodeadp</span>
+- <span style="color:green">Lovarei computer with 0x39CAE8D9 dateffectsetic_l</span>
+- <span style="color:green">Aboudjev computer with 0x39CAE8D9 st_liter</span>
+- <span style="color:green">Aboudjev file with 0x6ABD051C chortlinetreestacterdow++scaller32</span>
+- <span style="color:green">Lovarei computer with 0x6ABD051C tanchorequalbytebuttoncolorscript</span>
+- <span style="color:red">root</span> shell with 0x7CC9C303 edvalizede
+- <span style="color:green">Lovarei computer with 0x7CC9C303 event_onlevent_oncli</span>
+- <span style="color:green">guest file with 0x1FA9039B esrepeatorschemecharamemap</span>
+- <span style="color:green">guest computer with 0x1FA9039B sizelit++</span>
+
 #### v 2.8.1 — shell 4/40, priv 2/40
 <a id="2.8.1"></a>
 - <span style="color:green">guest computer with 0x3225356A forwardoubletextstorc</span>
@@ -3842,6 +3927,36 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest computer with 0x6D4393EB buttonobjectsetacti</span>
 - <span style="color:grey">null null with 0x6D4393EB dingsupda</span>
 - <span style="color:grey">null null with 0x6D4393EB sbintrinsertyp</span>
+
+#### v 2.8.7 — shell 4/27, priv 1/27
+<a id="2.8.7"></a>
+- <span style="color:grey">null null with 0x143321BF last_lit</span>
+- <span style="color:yellow">guest</span> shell with 0x143321BF _stopwatch_
+- <span style="color:green">??? password_change with 0x143321BF color_globalco</span>
+- <span style="color:grey">null null with 0x143321BF sizeb</span>
+- <span style="color:green">guest file with 0x74928A32 aderrentdatapowbu</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x74928A32 endpositionx
+- <span style="color:green">??? password_change with 0x74928A32 unctionstantsrepz</span>
+- <span style="color:grey">null null with 0x74928A32 lanchortb</span>
+- <span style="color:green">??? password_change with 0x74928A32 isibledthi</span>
+- <span style="color:grey">null null with 0x28E71818 guide</span>
+- <span style="color:green">Minab computer with 0x28E71818 toncomponenumeransform</span>
+- <span style="color:grey">null null with 0x28E71818 formlockdyn_ltreedelay</span>
+- <span style="color:green">??? password_change with 0x28E71818 codec</span>
+- <span style="color:green">guest computer with 0x14B943E0 _end_bit</span>
+- <span style="color:green">Vaher file with 0x14B943E0 setackgrount++</span>
+- <span style="color:green">Minab file with 0x1E33A847 bi_buf</span>
+- <span style="color:grey">null null with 0x2B8136BE pritext</span>
+- <span style="color:yellow">guest</span> shell with 0x2B8136BE inenumerdoubledta
+- <span style="color:grey">null null with 0x2B8136BE isrepea</span>
+- <span style="color:green">??? password_change with 0x2B8136BE esoundoposinsertedorrent_</span>
+- <span style="color:grey">null null with 0x2B8136BE more</span>
+- <span style="color:green">??? firewall_disable with 0x1706CA72 elinenumera</span>
+- <span style="color:green">??? firewall_disable with 0x1706CA72 pendpos</span>
+- <span style="color:green">??? firewall_disable with 0x27735BFC typeopb</span>
+- <span style="color:yellow">guest</span> shell with 0x33BB8EB1 okethisop
+- <span style="color:green">guest file with 0x33A420E5 qualbyt</span>
+- Ieldsong shell with 0x7DC23A6B rializedeltext
 
 #### v 2.9.0 — shell 1/10
 <a id="2.9.0"></a>
@@ -9019,11 +9134,11 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 ## `kernel_router.so`
 <a id="kernel_router-so"></a>
 
-- Total Hooked lines: 2319
-- Can provide shell: 611
-- Has privileged object: 93
-- Safe versions: 129
-Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#1.0.1"><span style="color:green">v 1.0.1</span></a> <a href="#1.0.3"><span style="color:red">v 1.0.3</span></a> <a href="#1.0.4"><span style="color:red">v 1.0.4</span></a> <a href="#1.0.5"><span style="color:green">v 1.0.5</span></a> <a href="#1.0.8"><span style="color:red">v 1.0.8</span></a> <a href="#1.0.9"><span style="color:red">v 1.0.9</span></a> <a href="#1.1.2"><span style="color:red">v 1.1.2</span></a> <a href="#1.1.4"><span style="color:red">v 1.1.4</span></a> <a href="#1.1.6"><span style="color:red">v 1.1.6</span></a> <a href="#1.1.7"><span style="color:red">v 1.1.7</span></a> <a href="#1.1.8"><span style="color:red">v 1.1.8</span></a> <a href="#1.1.9"><span style="color:red">v 1.1.9</span></a> <a href="#1.2.0"><span style="color:red">v 1.2.0</span></a> <a href="#1.2.1"><span style="color:green">v 1.2.1</span></a> <a href="#1.2.4"><span style="color:green">v 1.2.4</span></a> <a href="#1.2.5"><span style="color:green">v 1.2.5</span></a> <a href="#1.2.6"><span style="color:green">v 1.2.6</span></a> <a href="#1.2.7"><span style="color:red">v 1.2.7</span></a> <a href="#1.2.8"><span style="color:red">v 1.2.8</span></a> <a href="#1.3.0"><span style="color:red">v 1.3.0</span></a> <a href="#1.3.2"><span style="color:red">v 1.3.2</span></a> <a href="#1.3.3"><span style="color:red">v 1.3.3</span></a> <a href="#1.3.5"><span style="color:red">v 1.3.5</span></a> <a href="#1.3.6"><span style="color:red">v 1.3.6</span></a> <a href="#1.3.7"><span style="color:green">v 1.3.7</span></a> <a href="#1.3.9"><span style="color:green">v 1.3.9</span></a> <a href="#1.4.0"><span style="color:red">v 1.4.0</span></a> <a href="#1.4.1"><span style="color:red">v 1.4.1</span></a> <a href="#1.4.3"><span style="color:red">v 1.4.3</span></a> <a href="#1.4.5"><span style="color:green">v 1.4.5</span></a> <a href="#1.4.6"><span style="color:green">v 1.4.6</span></a> <a href="#1.4.7"><span style="color:red">v 1.4.7</span></a> <a href="#1.4.8"><span style="color:red">v 1.4.8</span></a> <a href="#1.4.9"><span style="color:red">v 1.4.9</span></a> <a href="#1.5.0"><span style="color:red">v 1.5.0</span></a> <a href="#1.5.1"><span style="color:red">v 1.5.1</span></a> <a href="#1.5.2"><span style="color:green">v 1.5.2</span></a> <a href="#1.5.4"><span style="color:red">v 1.5.4</span></a> <a href="#1.5.5"><span style="color:red">v 1.5.5</span></a> <a href="#1.5.6"><span style="color:green">v 1.5.6</span></a> <a href="#1.5.7"><span style="color:red">v 1.5.7</span></a> <a href="#1.5.8"><span style="color:green">v 1.5.8</span></a> <a href="#1.5.9"><span style="color:red">v 1.5.9</span></a> <a href="#1.6.0"><span style="color:red">v 1.6.0</span></a> <a href="#1.6.1"><span style="color:green">v 1.6.1</span></a> <a href="#1.6.2"><span style="color:red">v 1.6.2</span></a> <a href="#1.6.4"><span style="color:green">v 1.6.4</span></a> <a href="#1.6.5"><span style="color:green">v 1.6.5</span></a> <a href="#1.6.6"><span style="color:red">v 1.6.6</span></a> <a href="#1.6.7"><span style="color:red">v 1.6.7</span></a> <a href="#1.6.9"><span style="color:red">v 1.6.9</span></a> <a href="#1.7.0"><span style="color:red">v 1.7.0</span></a> <a href="#1.7.1"><span style="color:red">v 1.7.1</span></a> <a href="#1.7.2"><span style="color:red">v 1.7.2</span></a> <a href="#1.7.3"><span style="color:red">v 1.7.3</span></a> <a href="#1.7.4"><span style="color:green">v 1.7.4</span></a> <a href="#1.7.5"><span style="color:red">v 1.7.5</span></a> <a href="#1.7.6"><span style="color:red">v 1.7.6</span></a> <a href="#1.7.7"><span style="color:red">v 1.7.7</span></a> <a href="#1.7.8"><span style="color:red">v 1.7.8</span></a> <a href="#1.7.9"><span style="color:red">v 1.7.9</span></a> <a href="#1.8.0"><span style="color:red">v 1.8.0</span></a> <a href="#1.8.1"><span style="color:green">v 1.8.1</span></a> <a href="#1.8.4"><span style="color:red">v 1.8.4</span></a> <a href="#1.8.5"><span style="color:red">v 1.8.5</span></a> <a href="#1.8.6"><span style="color:green">v 1.8.6</span></a> <a href="#1.8.7"><span style="color:green">v 1.8.7</span></a> <a href="#1.8.9"><span style="color:green">v 1.8.9</span></a> <a href="#1.9.1"><span style="color:red">v 1.9.1</span></a> <a href="#1.9.2"><span style="color:red">v 1.9.2</span></a> <a href="#1.9.3"><span style="color:green">v 1.9.3</span></a> <a href="#1.9.5"><span style="color:red">v 1.9.5</span></a> <a href="#1.9.7"><span style="color:red">v 1.9.7</span></a> <a href="#2.0.0"><span style="color:red">v 2.0.0</span></a> <a href="#2.0.1"><span style="color:red">v 2.0.1</span></a> <a href="#2.0.3"><span style="color:red">v 2.0.3</span></a> <a href="#2.0.4"><span style="color:red">v 2.0.4</span></a> <a href="#2.0.5"><span style="color:red">v 2.0.5</span></a> <a href="#2.0.6"><span style="color:red">v 2.0.6</span></a> <a href="#2.0.8"><span style="color:green">v 2.0.8</span></a> <a href="#2.0.9"><span style="color:red">v 2.0.9</span></a> <a href="#2.1.1"><span style="color:green">v 2.1.1</span></a> <a href="#2.1.2"><span style="color:red">v 2.1.2</span></a> <a href="#2.1.3"><span style="color:red">v 2.1.3</span></a> <a href="#2.1.5"><span style="color:red">v 2.1.5</span></a> <a href="#2.1.7"><span style="color:red">v 2.1.7</span></a> <a href="#2.2.1"><span style="color:red">v 2.2.1</span></a> <a href="#2.2.2"><span style="color:red">v 2.2.2</span></a> <a href="#2.2.3"><span style="color:red">v 2.2.3</span></a> <a href="#2.2.4"><span style="color:red">v 2.2.4</span></a> <a href="#2.2.5"><span style="color:red">v 2.2.5</span></a> <a href="#2.2.7"><span style="color:green">v 2.2.7</span></a> <a href="#2.2.8"><span style="color:green">v 2.2.8</span></a> <a href="#2.2.9"><span style="color:red">v 2.2.9</span></a> <a href="#2.3.1"><span style="color:green">v 2.3.1</span></a> <a href="#2.3.2"><span style="color:green">v 2.3.2</span></a> <a href="#2.3.4"><span style="color:green">v 2.3.4</span></a> <a href="#2.3.6"><span style="color:red">v 2.3.6</span></a> <a href="#2.3.7"><span style="color:red">v 2.3.7</span></a> <a href="#2.3.8"><span style="color:red">v 2.3.8</span></a> <a href="#2.3.9"><span style="color:red">v 2.3.9</span></a> <a href="#2.4.0"><span style="color:red">v 2.4.0</span></a> <a href="#2.4.3"><span style="color:red">v 2.4.3</span></a> <a href="#2.4.4"><span style="color:red">v 2.4.4</span></a> <a href="#2.4.5"><span style="color:red">v 2.4.5</span></a> <a href="#2.4.6"><span style="color:green">v 2.4.6</span></a> <a href="#2.4.8"><span style="color:red">v 2.4.8</span></a> <a href="#2.4.9"><span style="color:red">v 2.4.9</span></a> <a href="#2.5.0"><span style="color:green">v 2.5.0</span></a> <a href="#2.5.1"><span style="color:red">v 2.5.1</span></a> <a href="#2.5.3"><span style="color:red">v 2.5.3</span></a> <a href="#2.5.6"><span style="color:green">v 2.5.6</span></a> <a href="#2.5.7"><span style="color:red">v 2.5.7</span></a> <a href="#2.5.8"><span style="color:green">v 2.5.8</span></a> <a href="#2.5.9"><span style="color:red">v 2.5.9</span></a> <a href="#2.6.0"><span style="color:red">v 2.6.0</span></a> <a href="#2.6.1"><span style="color:red">v 2.6.1</span></a> <a href="#2.6.2"><span style="color:green">v 2.6.2</span></a> <a href="#2.6.3"><span style="color:red">v 2.6.3</span></a> <a href="#2.6.4"><span style="color:red">v 2.6.4</span></a> <a href="#2.6.5"><span style="color:red">v 2.6.5</span></a> <a href="#2.6.6"><span style="color:red">v 2.6.6</span></a> <a href="#2.6.8"><span style="color:red">v 2.6.8</span></a> <a href="#2.6.9"><span style="color:green">v 2.6.9</span></a> <a href="#2.7.0"><span style="color:red">v 2.7.0</span></a> <a href="#2.7.1"><span style="color:red">v 2.7.1</span></a> <a href="#2.7.2"><span style="color:red">v 2.7.2</span></a> <a href="#2.7.4"><span style="color:red">v 2.7.4</span></a> <a href="#2.7.5"><span style="color:red">v 2.7.5</span></a> <a href="#2.7.8"><span style="color:red">v 2.7.8</span></a> <a href="#2.7.9"><span style="color:red">v 2.7.9</span></a> <a href="#2.8.0"><span style="color:red">v 2.8.0</span></a> <a href="#2.8.1"><span style="color:red">v 2.8.1</span></a> <a href="#2.8.2"><span style="color:green">v 2.8.2</span></a> <a href="#2.8.4"><span style="color:green">v 2.8.4</span></a> <a href="#2.8.5"><span style="color:green">v 2.8.5</span></a> <a href="#2.8.7"><span style="color:red">v 2.8.7</span></a> <a href="#2.8.8"><span style="color:red">v 2.8.8</span></a> <a href="#2.8.9"><span style="color:red">v 2.8.9</span></a> <a href="#2.9.0"><span style="color:green">v 2.9.0</span></a> <a href="#2.9.1"><span style="color:red">v 2.9.1</span></a> <a href="#2.9.2"><span style="color:red">v 2.9.2</span></a> <a href="#2.9.3"><span style="color:red">v 2.9.3</span></a> <a href="#2.9.4"><span style="color:green">v 2.9.4</span></a> <a href="#2.9.5"><span style="color:red">v 2.9.5</span></a> <a href="#2.9.6"><span style="color:red">v 2.9.6</span></a> <a href="#2.9.7"><span style="color:red">v 2.9.7</span></a> <a href="#2.9.8"><span style="color:red">v 2.9.8</span></a> <a href="#3.0.0"><span style="color:red">v 3.0.0</span></a> <a href="#3.0.1"><span style="color:red">v 3.0.1</span></a> <a href="#3.0.2"><span style="color:red">v 3.0.2</span></a> <a href="#3.0.3"><span style="color:green">v 3.0.3</span></a> <a href="#3.0.4"><span style="color:red">v 3.0.4</span></a> <a href="#3.0.5"><span style="color:red">v 3.0.5</span></a> <a href="#3.0.6"><span style="color:green">v 3.0.6</span></a> <a href="#3.0.7"><span style="color:red">v 3.0.7</span></a> <a href="#3.0.8"><span style="color:green">v 3.0.8</span></a> <a href="#3.0.9"><span style="color:green">v 3.0.9</span></a> <a href="#3.1.0"><span style="color:green">v 3.1.0</span></a> <a href="#3.1.1"><span style="color:red">v 3.1.1</span></a> <a href="#3.1.2"><span style="color:red">v 3.1.2</span></a> <a href="#3.1.3"><span style="color:green">v 3.1.3</span></a> <a href="#3.1.4"><span style="color:red">v 3.1.4</span></a> <a href="#3.1.5"><span style="color:red">v 3.1.5</span></a> <a href="#3.1.6"><span style="color:red">v 3.1.6</span></a> <a href="#3.1.8"><span style="color:red">v 3.1.8</span></a> <a href="#3.1.9"><span style="color:green">v 3.1.9</span></a> <a href="#3.2.0"><span style="color:green">v 3.2.0</span></a> <a href="#3.2.1"><span style="color:red">v 3.2.1</span></a> <a href="#3.2.3"><span style="color:red">v 3.2.3</span></a> <a href="#3.2.6"><span style="color:red">v 3.2.6</span></a> <a href="#3.2.8"><span style="color:red">v 3.2.8</span></a> <a href="#3.3.0"><span style="color:green">v 3.3.0</span></a> <a href="#3.3.1"><span style="color:green">v 3.3.1</span></a> <a href="#3.3.2"><span style="color:red">v 3.3.2</span></a> <a href="#3.3.3"><span style="color:red">v 3.3.3</span></a> <a href="#3.3.4"><span style="color:red">v 3.3.4</span></a> <a href="#3.3.6"><span style="color:red">v 3.3.6</span></a> <a href="#3.3.8"><span style="color:red">v 3.3.8</span></a> <a href="#3.3.9"><span style="color:red">v 3.3.9</span></a> <a href="#3.4.0"><span style="color:green">v 3.4.0</span></a> <a href="#3.4.1"><span style="color:green">v 3.4.1</span></a> <a href="#3.4.2"><span style="color:green">v 3.4.2</span></a> <a href="#3.4.3"><span style="color:green">v 3.4.3</span></a> <a href="#3.4.6"><span style="color:red">v 3.4.6</span></a> <a href="#3.4.7"><span style="color:green">v 3.4.7</span></a> <a href="#3.4.8"><span style="color:red">v 3.4.8</span></a> <a href="#3.4.9"><span style="color:red">v 3.4.9</span></a> <a href="#3.5.0"><span style="color:red">v 3.5.0</span></a> <a href="#3.5.1"><span style="color:green">v 3.5.1</span></a> <a href="#3.5.2"><span style="color:red">v 3.5.2</span></a> <a href="#3.5.3"><span style="color:red">v 3.5.3</span></a> <a href="#3.5.6"><span style="color:red">v 3.5.6</span></a> <a href="#3.5.8"><span style="color:red">v 3.5.8</span></a> <a href="#3.6.0"><span style="color:green">v 3.6.0</span></a> <a href="#3.6.2"><span style="color:green">v 3.6.2</span></a> <a href="#3.6.3"><span style="color:red">v 3.6.3</span></a> <a href="#3.6.5"><span style="color:green">v 3.6.5</span></a> <a href="#3.6.6"><span style="color:green">v 3.6.6</span></a> <a href="#3.6.7"><span style="color:green">v 3.6.7</span></a> <a href="#3.6.9"><span style="color:red">v 3.6.9</span></a> <a href="#3.7.0"><span style="color:green">v 3.7.0</span></a> <a href="#3.7.1"><span style="color:red">v 3.7.1</span></a> <a href="#3.7.2"><span style="color:red">v 3.7.2</span></a> <a href="#3.7.3"><span style="color:red">v 3.7.3</span></a> <a href="#3.7.5"><span style="color:green">v 3.7.5</span></a> <a href="#3.7.6"><span style="color:red">v 3.7.6</span></a> <a href="#3.7.8"><span style="color:green">v 3.7.8</span></a> <a href="#3.7.9"><span style="color:red">v 3.7.9</span></a> <a href="#3.8.0"><span style="color:red">v 3.8.0</span></a> <a href="#3.8.1"><span style="color:red">v 3.8.1</span></a> <a href="#3.8.3"><span style="color:red">v 3.8.3</span></a> <a href="#3.8.4"><span style="color:red">v 3.8.4</span></a> <a href="#3.8.6"><span style="color:red">v 3.8.6</span></a> <a href="#3.9.0"><span style="color:green">v 3.9.0</span></a> <a href="#3.9.1"><span style="color:red">v 3.9.1</span></a> <a href="#3.9.2"><span style="color:red">v 3.9.2</span></a> <a href="#3.9.3"><span style="color:green">v 3.9.3</span></a> <a href="#3.9.5"><span style="color:red">v 3.9.5</span></a> <a href="#3.9.7"><span style="color:red">v 3.9.7</span></a> <a href="#3.9.8"><span style="color:red">v 3.9.8</span></a> <a href="#3.9.9"><span style="color:green">v 3.9.9</span></a> <a href="#4.0.0"><span style="color:green">v 4.0.0</span></a> <a href="#4.0.2"><span style="color:red">v 4.0.2</span></a> <a href="#4.0.3"><span style="color:red">v 4.0.3</span></a> <a href="#4.0.4"><span style="color:green">v 4.0.4</span></a> <a href="#4.0.5"><span style="color:green">v 4.0.5</span></a> <a href="#4.0.6"><span style="color:red">v 4.0.6</span></a> <a href="#4.0.8"><span style="color:red">v 4.0.8</span></a> <a href="#4.1.0"><span style="color:red">v 4.1.0</span></a> <a href="#4.1.1"><span style="color:green">v 4.1.1</span></a> <a href="#4.1.2"><span style="color:green">v 4.1.2</span></a> <a href="#4.1.3"><span style="color:red">v 4.1.3</span></a> <a href="#4.1.4"><span style="color:red">v 4.1.4</span></a> <a href="#4.1.6"><span style="color:red">v 4.1.6</span></a> <a href="#4.1.8"><span style="color:green">v 4.1.8</span></a> <a href="#4.1.9"><span style="color:red">v 4.1.9</span></a> <a href="#4.2.0"><span style="color:red">v 4.2.0</span></a> <a href="#4.2.1"><span style="color:green">v 4.2.1</span></a> <a href="#4.2.3"><span style="color:red">v 4.2.3</span></a> <a href="#4.2.4"><span style="color:green">v 4.2.4</span></a> <a href="#4.2.5"><span style="color:red">v 4.2.5</span></a> <a href="#4.2.7"><span style="color:red">v 4.2.7</span></a> <a href="#4.3.0"><span style="color:green">v 4.3.0</span></a> <a href="#4.3.1"><span style="color:red">v 4.3.1</span></a> <a href="#4.3.2"><span style="color:red">v 4.3.2</span></a> <a href="#4.3.3"><span style="color:red">v 4.3.3</span></a> <a href="#4.3.4"><span style="color:red">v 4.3.4</span></a> <a href="#4.3.5"><span style="color:red">v 4.3.5</span></a> <a href="#4.3.7"><span style="color:red">v 4.3.7</span></a> <a href="#4.3.8"><span style="color:green">v 4.3.8</span></a> <a href="#4.3.9"><span style="color:red">v 4.3.9</span></a> <a href="#4.4.0"><span style="color:green">v 4.4.0</span></a> <a href="#4.4.1"><span style="color:red">v 4.4.1</span></a> <a href="#4.4.2"><span style="color:red">v 4.4.2</span></a> <a href="#4.4.3"><span style="color:red">v 4.4.3</span></a> <a href="#4.4.4"><span style="color:green">v 4.4.4</span></a> <a href="#4.4.5"><span style="color:red">v 4.4.5</span></a> <a href="#4.4.6"><span style="color:green">v 4.4.6</span></a> <a href="#4.4.7"><span style="color:red">v 4.4.7</span></a> <a href="#4.4.8"><span style="color:red">v 4.4.8</span></a> <a href="#4.4.9"><span style="color:green">v 4.4.9</span></a> <a href="#4.5.0"><span style="color:red">v 4.5.0</span></a> <a href="#4.5.1"><span style="color:red">v 4.5.1</span></a> <a href="#4.5.3"><span style="color:red">v 4.5.3</span></a> <a href="#4.5.5"><span style="color:red">v 4.5.5</span></a> <a href="#4.5.8"><span style="color:red">v 4.5.8</span></a> <a href="#4.6.0"><span style="color:red">v 4.6.0</span></a> <a href="#4.6.1"><span style="color:red">v 4.6.1</span></a> <a href="#4.6.2"><span style="color:red">v 4.6.2</span></a> <a href="#4.6.3"><span style="color:red">v 4.6.3</span></a> <a href="#4.6.4"><span style="color:red">v 4.6.4</span></a> <a href="#4.6.6"><span style="color:red">v 4.6.6</span></a> <a href="#4.6.7"><span style="color:red">v 4.6.7</span></a> <a href="#4.6.8"><span style="color:red">v 4.6.8</span></a> <a href="#4.6.9"><span style="color:red">v 4.6.9</span></a> <a href="#4.7.0"><span style="color:green">v 4.7.0</span></a> <a href="#4.7.2"><span style="color:red">v 4.7.2</span></a> <a href="#4.7.3"><span style="color:red">v 4.7.3</span></a> <a href="#4.7.4"><span style="color:red">v 4.7.4</span></a> <a href="#4.7.6"><span style="color:red">v 4.7.6</span></a> <a href="#4.7.7"><span style="color:red">v 4.7.7</span></a> <a href="#4.7.9"><span style="color:green">v 4.7.9</span></a> <a href="#4.8.3"><span style="color:red">v 4.8.3</span></a> <a href="#4.8.4"><span style="color:red">v 4.8.4</span></a> <a href="#4.8.6"><span style="color:green">v 4.8.6</span></a> <a href="#4.8.7"><span style="color:green">v 4.8.7</span></a> <a href="#4.8.9"><span style="color:red">v 4.8.9</span></a> <a href="#4.9.3"><span style="color:red">v 4.9.3</span></a> <a href="#4.9.7"><span style="color:green">v 4.9.7</span></a> <a href="#4.9.8"><span style="color:red">v 4.9.8</span></a> <a href="#4.9.9"><span style="color:red">v 4.9.9</span></a> <a href="#5.0.2"><span style="color:red">v 5.0.2</span></a> <a href="#5.0.3"><span style="color:red">v 5.0.3</span></a> <a href="#5.0.5"><span style="color:green">v 5.0.5</span></a> <a href="#5.0.6"><span style="color:red">v 5.0.6</span></a> <a href="#5.0.7"><span style="color:red">v 5.0.7</span></a> <a href="#5.0.8"><span style="color:red">v 5.0.8</span></a> <a href="#5.1.0"><span style="color:green">v 5.1.0</span></a> <a href="#5.1.2"><span style="color:red">v 5.1.2</span></a> <a href="#5.1.5"><span style="color:red">v 5.1.5</span></a> <a href="#5.1.6"><span style="color:green">v 5.1.6</span></a> <a href="#5.1.7"><span style="color:green">v 5.1.7</span></a> <a href="#5.1.9"><span style="color:green">v 5.1.9</span></a> <a href="#5.2.0"><span style="color:red">v 5.2.0</span></a> <a href="#5.2.2"><span style="color:red">v 5.2.2</span></a> <a href="#5.2.3"><span style="color:red">v 5.2.3</span></a> <a href="#5.2.4"><span style="color:red">v 5.2.4</span></a> <a href="#5.2.5"><span style="color:red">v 5.2.5</span></a> <a href="#5.2.7"><span style="color:red">v 5.2.7</span></a> <a href="#5.2.8"><span style="color:green">v 5.2.8</span></a> <a href="#5.2.9"><span style="color:red">v 5.2.9</span></a> <a href="#5.3.0"><span style="color:red">v 5.3.0</span></a> <a href="#5.3.2"><span style="color:red">v 5.3.2</span></a> <a href="#5.3.3"><span style="color:red">v 5.3.3</span></a> <a href="#5.3.5"><span style="color:red">v 5.3.5</span></a> <a href="#5.3.6"><span style="color:red">v 5.3.6</span></a> <a href="#5.3.7"><span style="color:red">v 5.3.7</span></a> <a href="#5.3.9"><span style="color:red">v 5.3.9</span></a> <a href="#5.4.1"><span style="color:red">v 5.4.1</span></a> <a href="#5.4.2"><span style="color:red">v 5.4.2</span></a> <a href="#5.4.4"><span style="color:red">v 5.4.4</span></a> <a href="#5.4.7"><span style="color:green">v 5.4.7</span></a> <a href="#5.5.0"><span style="color:green">v 5.5.0</span></a> <a href="#5.5.2"><span style="color:green">v 5.5.2</span></a> <a href="#5.5.4"><span style="color:red">v 5.5.4</span></a> <a href="#5.5.5"><span style="color:green">v 5.5.5</span></a> <a href="#5.5.6"><span style="color:green">v 5.5.6</span></a> <a href="#5.5.7"><span style="color:red">v 5.5.7</span></a> <a href="#5.5.8"><span style="color:red">v 5.5.8</span></a> <a href="#5.5.9"><span style="color:red">v 5.5.9</span></a> <a href="#5.6.0"><span style="color:red">v 5.6.0</span></a> <a href="#5.6.2"><span style="color:red">v 5.6.2</span></a> <a href="#5.6.3"><span style="color:red">v 5.6.3</span></a> <a href="#5.6.4"><span style="color:green">v 5.6.4</span></a> <a href="#5.6.5"><span style="color:red">v 5.6.5</span></a> <a href="#5.6.6"><span style="color:green">v 5.6.6</span></a> <a href="#5.6.7"><span style="color:green">v 5.6.7</span></a> <a href="#5.6.9"><span style="color:red">v 5.6.9</span></a> <a href="#5.7.0"><span style="color:red">v 5.7.0</span></a> <a href="#5.7.1"><span style="color:green">v 5.7.1</span></a> <a href="#5.7.2"><span style="color:red">v 5.7.2</span></a> <a href="#5.7.4"><span style="color:green">v 5.7.4</span></a> <a href="#5.7.5"><span style="color:green">v 5.7.5</span></a> <a href="#5.7.6"><span style="color:red">v 5.7.6</span></a> <a href="#5.7.7"><span style="color:green">v 5.7.7</span></a> <a href="#5.7.8"><span style="color:green">v 5.7.8</span></a> <a href="#5.7.9"><span style="color:red">v 5.7.9</span></a> <a href="#5.8.0"><span style="color:red">v 5.8.0</span></a> <a href="#5.8.2"><span style="color:green">v 5.8.2</span></a> <a href="#5.8.3"><span style="color:green">v 5.8.3</span></a> <a href="#5.8.4"><span style="color:red">v 5.8.4</span></a> <a href="#5.8.7"><span style="color:red">v 5.8.7</span></a> <a href="#5.8.9"><span style="color:red">v 5.8.9</span></a> <a href="#5.9.0"><span style="color:red">v 5.9.0</span></a> <a href="#5.9.5"><span style="color:red">v 5.9.5</span></a> <a href="#5.9.6"><span style="color:red">v 5.9.6</span></a> <a href="#5.9.9"><span style="color:red">v 5.9.9</span></a> <a href="#6.0.2"><span style="color:red">v 6.0.2</span></a> <a href="#6.0.3"><span style="color:red">v 6.0.3</span></a> <a href="#6.0.4"><span style="color:red">v 6.0.4</span></a> <a href="#6.0.5"><span style="color:green">v 6.0.5</span></a> <a href="#6.0.6"><span style="color:red">v 6.0.6</span></a> <a href="#6.0.7"><span style="color:green">v 6.0.7</span></a> <a href="#6.1.1"><span style="color:red">v 6.1.1</span></a> <a href="#6.1.3"><span style="color:red">v 6.1.3</span></a> <a href="#6.1.6"><span style="color:red">v 6.1.6</span></a> <a href="#6.1.8"><span style="color:red">v 6.1.8</span></a> <a href="#6.1.9"><span style="color:red">v 6.1.9</span></a> <a href="#6.2.0"><span style="color:red">v 6.2.0</span></a> <a href="#6.2.2"><span style="color:red">v 6.2.2</span></a> <a href="#6.2.3"><span style="color:red">v 6.2.3</span></a> <a href="#6.2.4"><span style="color:red">v 6.2.4</span></a> <a href="#6.2.5"><span style="color:red">v 6.2.5</span></a> <a href="#6.2.6"><span style="color:green">v 6.2.6</span></a> <a href="#6.2.8"><span style="color:red">v 6.2.8</span></a> <a href="#6.2.9"><span style="color:green">v 6.2.9</span></a> <a href="#6.3.0"><span style="color:green">v 6.3.0</span></a> <a href="#6.3.1"><span style="color:red">v 6.3.1</span></a> <a href="#6.3.2"><span style="color:red">v 6.3.2</span></a> <a href="#6.3.4"><span style="color:red">v 6.3.4</span></a> <a href="#6.3.5"><span style="color:green">v 6.3.5</span></a> <a href="#6.3.6"><span style="color:green">v 6.3.6</span></a> <a href="#6.3.7"><span style="color:green">v 6.3.7</span></a> <a href="#6.3.8"><span style="color:green">v 6.3.8</span></a> <a href="#6.3.9"><span style="color:red">v 6.3.9</span></a> <a href="#6.4.1"><span style="color:red">v 6.4.1</span></a> <a href="#6.4.3"><span style="color:red">v 6.4.3</span></a> <a href="#6.4.4"><span style="color:green">v 6.4.4</span></a> <a href="#6.4.5"><span style="color:red">v 6.4.5</span></a> <a href="#6.4.6"><span style="color:red">v 6.4.6</span></a> <a href="#6.4.7"><span style="color:green">v 6.4.7</span></a> <a href="#6.4.8"><span style="color:red">v 6.4.8</span></a> <a href="#6.4.9"><span style="color:green">v 6.4.9</span></a> <a href="#6.5.0"><span style="color:red">v 6.5.0</span></a> <a href="#6.5.1"><span style="color:red">v 6.5.1</span></a> <a href="#6.5.2"><span style="color:red">v 6.5.2</span></a> <a href="#6.5.3"><span style="color:red">v 6.5.3</span></a> <a href="#6.5.4"><span style="color:red">v 6.5.4</span></a> <a href="#6.5.5"><span style="color:red">v 6.5.5</span></a> <a href="#6.5.6"><span style="color:red">v 6.5.6</span></a> <a href="#6.5.7"><span style="color:green">v 6.5.7</span></a> <a href="#6.5.9"><span style="color:red">v 6.5.9</span></a> <a href="#6.6.0"><span style="color:green">v 6.6.0</span></a> <a href="#6.6.1"><span style="color:red">v 6.6.1</span></a> <a href="#6.6.2"><span style="color:red">v 6.6.2</span></a> <a href="#6.6.3"><span style="color:red">v 6.6.3</span></a> <a href="#6.6.5"><span style="color:red">v 6.6.5</span></a> <a href="#6.6.6"><span style="color:green">v 6.6.6</span></a> <a href="#6.6.7"><span style="color:green">v 6.6.7</span></a> <a href="#6.7.0"><span style="color:red">v 6.7.0</span></a> <a href="#6.7.1"><span style="color:red">v 6.7.1</span></a> <a href="#6.7.2"><span style="color:green">v 6.7.2</span></a> <a href="#6.7.3"><span style="color:green">v 6.7.3</span></a> <a href="#6.7.4"><span style="color:red">v 6.7.4</span></a> <a href="#6.7.5"><span style="color:red">v 6.7.5</span></a> <a href="#6.7.7"><span style="color:red">v 6.7.7</span></a> <a href="#6.7.8"><span style="color:red">v 6.7.8</span></a> <a href="#6.7.9"><span style="color:red">v 6.7.9</span></a> <a href="#6.8.0"><span style="color:red">v 6.8.0</span></a> <a href="#6.8.1"><span style="color:red">v 6.8.1</span></a> <a href="#6.8.4"><span style="color:red">v 6.8.4</span></a> <a href="#6.8.5"><span style="color:red">v 6.8.5</span></a> <a href="#6.8.6"><span style="color:red">v 6.8.6</span></a> <a href="#6.8.7"><span style="color:green">v 6.8.7</span></a> <a href="#6.8.9"><span style="color:green">v 6.8.9</span></a> <a href="#6.9.0"><span style="color:green">v 6.9.0</span></a> <a href="#6.9.1"><span style="color:green">v 6.9.1</span></a>
+- Total Hooked lines: 2451
+- Can provide shell: 639
+- Has privileged object: 97
+- Safe versions: 134
+Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#1.0.1"><span style="color:green">v 1.0.1</span></a> <a href="#1.0.3"><span style="color:red">v 1.0.3</span></a> <a href="#1.0.4"><span style="color:red">v 1.0.4</span></a> <a href="#1.0.5"><span style="color:green">v 1.0.5</span></a> <a href="#1.0.8"><span style="color:red">v 1.0.8</span></a> <a href="#1.0.9"><span style="color:red">v 1.0.9</span></a> <a href="#1.1.2"><span style="color:red">v 1.1.2</span></a> <a href="#1.1.4"><span style="color:red">v 1.1.4</span></a> <a href="#1.1.6"><span style="color:red">v 1.1.6</span></a> <a href="#1.1.7"><span style="color:red">v 1.1.7</span></a> <a href="#1.1.8"><span style="color:red">v 1.1.8</span></a> <a href="#1.1.9"><span style="color:red">v 1.1.9</span></a> <a href="#1.2.0"><span style="color:red">v 1.2.0</span></a> <a href="#1.2.1"><span style="color:green">v 1.2.1</span></a> <a href="#1.2.4"><span style="color:green">v 1.2.4</span></a> <a href="#1.2.5"><span style="color:green">v 1.2.5</span></a> <a href="#1.2.6"><span style="color:green">v 1.2.6</span></a> <a href="#1.2.7"><span style="color:red">v 1.2.7</span></a> <a href="#1.2.8"><span style="color:red">v 1.2.8</span></a> <a href="#1.2.9"><span style="color:green">v 1.2.9</span></a> <a href="#1.3.0"><span style="color:red">v 1.3.0</span></a> <a href="#1.3.2"><span style="color:red">v 1.3.2</span></a> <a href="#1.3.3"><span style="color:red">v 1.3.3</span></a> <a href="#1.3.5"><span style="color:red">v 1.3.5</span></a> <a href="#1.3.6"><span style="color:red">v 1.3.6</span></a> <a href="#1.3.7"><span style="color:green">v 1.3.7</span></a> <a href="#1.3.8"><span style="color:red">v 1.3.8</span></a> <a href="#1.3.9"><span style="color:green">v 1.3.9</span></a> <a href="#1.4.0"><span style="color:red">v 1.4.0</span></a> <a href="#1.4.1"><span style="color:red">v 1.4.1</span></a> <a href="#1.4.3"><span style="color:red">v 1.4.3</span></a> <a href="#1.4.5"><span style="color:green">v 1.4.5</span></a> <a href="#1.4.6"><span style="color:green">v 1.4.6</span></a> <a href="#1.4.7"><span style="color:red">v 1.4.7</span></a> <a href="#1.4.8"><span style="color:red">v 1.4.8</span></a> <a href="#1.4.9"><span style="color:red">v 1.4.9</span></a> <a href="#1.5.0"><span style="color:red">v 1.5.0</span></a> <a href="#1.5.1"><span style="color:red">v 1.5.1</span></a> <a href="#1.5.2"><span style="color:green">v 1.5.2</span></a> <a href="#1.5.4"><span style="color:red">v 1.5.4</span></a> <a href="#1.5.5"><span style="color:red">v 1.5.5</span></a> <a href="#1.5.6"><span style="color:green">v 1.5.6</span></a> <a href="#1.5.7"><span style="color:red">v 1.5.7</span></a> <a href="#1.5.8"><span style="color:green">v 1.5.8</span></a> <a href="#1.5.9"><span style="color:red">v 1.5.9</span></a> <a href="#1.6.0"><span style="color:red">v 1.6.0</span></a> <a href="#1.6.1"><span style="color:green">v 1.6.1</span></a> <a href="#1.6.2"><span style="color:red">v 1.6.2</span></a> <a href="#1.6.4"><span style="color:green">v 1.6.4</span></a> <a href="#1.6.5"><span style="color:green">v 1.6.5</span></a> <a href="#1.6.6"><span style="color:red">v 1.6.6</span></a> <a href="#1.6.7"><span style="color:red">v 1.6.7</span></a> <a href="#1.6.9"><span style="color:red">v 1.6.9</span></a> <a href="#1.7.0"><span style="color:red">v 1.7.0</span></a> <a href="#1.7.1"><span style="color:red">v 1.7.1</span></a> <a href="#1.7.2"><span style="color:red">v 1.7.2</span></a> <a href="#1.7.3"><span style="color:red">v 1.7.3</span></a> <a href="#1.7.4"><span style="color:green">v 1.7.4</span></a> <a href="#1.7.5"><span style="color:red">v 1.7.5</span></a> <a href="#1.7.6"><span style="color:red">v 1.7.6</span></a> <a href="#1.7.7"><span style="color:red">v 1.7.7</span></a> <a href="#1.7.8"><span style="color:red">v 1.7.8</span></a> <a href="#1.7.9"><span style="color:red">v 1.7.9</span></a> <a href="#1.8.0"><span style="color:red">v 1.8.0</span></a> <a href="#1.8.1"><span style="color:green">v 1.8.1</span></a> <a href="#1.8.3"><span style="color:red">v 1.8.3</span></a> <a href="#1.8.4"><span style="color:red">v 1.8.4</span></a> <a href="#1.8.5"><span style="color:red">v 1.8.5</span></a> <a href="#1.8.6"><span style="color:green">v 1.8.6</span></a> <a href="#1.8.7"><span style="color:green">v 1.8.7</span></a> <a href="#1.8.9"><span style="color:green">v 1.8.9</span></a> <a href="#1.9.1"><span style="color:red">v 1.9.1</span></a> <a href="#1.9.2"><span style="color:red">v 1.9.2</span></a> <a href="#1.9.3"><span style="color:green">v 1.9.3</span></a> <a href="#1.9.5"><span style="color:red">v 1.9.5</span></a> <a href="#1.9.7"><span style="color:red">v 1.9.7</span></a> <a href="#2.0.0"><span style="color:red">v 2.0.0</span></a> <a href="#2.0.1"><span style="color:red">v 2.0.1</span></a> <a href="#2.0.3"><span style="color:red">v 2.0.3</span></a> <a href="#2.0.4"><span style="color:red">v 2.0.4</span></a> <a href="#2.0.5"><span style="color:red">v 2.0.5</span></a> <a href="#2.0.6"><span style="color:red">v 2.0.6</span></a> <a href="#2.0.8"><span style="color:green">v 2.0.8</span></a> <a href="#2.0.9"><span style="color:red">v 2.0.9</span></a> <a href="#2.1.1"><span style="color:green">v 2.1.1</span></a> <a href="#2.1.2"><span style="color:red">v 2.1.2</span></a> <a href="#2.1.3"><span style="color:red">v 2.1.3</span></a> <a href="#2.1.5"><span style="color:red">v 2.1.5</span></a> <a href="#2.1.7"><span style="color:red">v 2.1.7</span></a> <a href="#2.1.8"><span style="color:red">v 2.1.8</span></a> <a href="#2.2.1"><span style="color:red">v 2.2.1</span></a> <a href="#2.2.2"><span style="color:red">v 2.2.2</span></a> <a href="#2.2.3"><span style="color:red">v 2.2.3</span></a> <a href="#2.2.4"><span style="color:red">v 2.2.4</span></a> <a href="#2.2.5"><span style="color:red">v 2.2.5</span></a> <a href="#2.2.7"><span style="color:green">v 2.2.7</span></a> <a href="#2.2.8"><span style="color:green">v 2.2.8</span></a> <a href="#2.2.9"><span style="color:red">v 2.2.9</span></a> <a href="#2.3.1"><span style="color:green">v 2.3.1</span></a> <a href="#2.3.2"><span style="color:green">v 2.3.2</span></a> <a href="#2.3.4"><span style="color:green">v 2.3.4</span></a> <a href="#2.3.6"><span style="color:red">v 2.3.6</span></a> <a href="#2.3.7"><span style="color:red">v 2.3.7</span></a> <a href="#2.3.8"><span style="color:red">v 2.3.8</span></a> <a href="#2.3.9"><span style="color:red">v 2.3.9</span></a> <a href="#2.4.0"><span style="color:red">v 2.4.0</span></a> <a href="#2.4.1"><span style="color:red">v 2.4.1</span></a> <a href="#2.4.3"><span style="color:red">v 2.4.3</span></a> <a href="#2.4.4"><span style="color:red">v 2.4.4</span></a> <a href="#2.4.5"><span style="color:red">v 2.4.5</span></a> <a href="#2.4.6"><span style="color:green">v 2.4.6</span></a> <a href="#2.4.8"><span style="color:red">v 2.4.8</span></a> <a href="#2.4.9"><span style="color:red">v 2.4.9</span></a> <a href="#2.5.0"><span style="color:green">v 2.5.0</span></a> <a href="#2.5.1"><span style="color:red">v 2.5.1</span></a> <a href="#2.5.3"><span style="color:red">v 2.5.3</span></a> <a href="#2.5.6"><span style="color:green">v 2.5.6</span></a> <a href="#2.5.7"><span style="color:red">v 2.5.7</span></a> <a href="#2.5.8"><span style="color:green">v 2.5.8</span></a> <a href="#2.5.9"><span style="color:red">v 2.5.9</span></a> <a href="#2.6.0"><span style="color:red">v 2.6.0</span></a> <a href="#2.6.1"><span style="color:red">v 2.6.1</span></a> <a href="#2.6.2"><span style="color:green">v 2.6.2</span></a> <a href="#2.6.3"><span style="color:red">v 2.6.3</span></a> <a href="#2.6.4"><span style="color:red">v 2.6.4</span></a> <a href="#2.6.5"><span style="color:red">v 2.6.5</span></a> <a href="#2.6.6"><span style="color:red">v 2.6.6</span></a> <a href="#2.6.8"><span style="color:red">v 2.6.8</span></a> <a href="#2.6.9"><span style="color:green">v 2.6.9</span></a> <a href="#2.7.0"><span style="color:red">v 2.7.0</span></a> <a href="#2.7.1"><span style="color:red">v 2.7.1</span></a> <a href="#2.7.2"><span style="color:red">v 2.7.2</span></a> <a href="#2.7.4"><span style="color:red">v 2.7.4</span></a> <a href="#2.7.5"><span style="color:red">v 2.7.5</span></a> <a href="#2.7.8"><span style="color:red">v 2.7.8</span></a> <a href="#2.7.9"><span style="color:red">v 2.7.9</span></a> <a href="#2.8.0"><span style="color:red">v 2.8.0</span></a> <a href="#2.8.1"><span style="color:red">v 2.8.1</span></a> <a href="#2.8.2"><span style="color:green">v 2.8.2</span></a> <a href="#2.8.4"><span style="color:green">v 2.8.4</span></a> <a href="#2.8.5"><span style="color:green">v 2.8.5</span></a> <a href="#2.8.7"><span style="color:red">v 2.8.7</span></a> <a href="#2.8.8"><span style="color:red">v 2.8.8</span></a> <a href="#2.8.9"><span style="color:red">v 2.8.9</span></a> <a href="#2.9.0"><span style="color:green">v 2.9.0</span></a> <a href="#2.9.1"><span style="color:red">v 2.9.1</span></a> <a href="#2.9.2"><span style="color:red">v 2.9.2</span></a> <a href="#2.9.3"><span style="color:red">v 2.9.3</span></a> <a href="#2.9.4"><span style="color:green">v 2.9.4</span></a> <a href="#2.9.5"><span style="color:red">v 2.9.5</span></a> <a href="#2.9.6"><span style="color:red">v 2.9.6</span></a> <a href="#2.9.7"><span style="color:red">v 2.9.7</span></a> <a href="#2.9.8"><span style="color:red">v 2.9.8</span></a> <a href="#3.0.0"><span style="color:red">v 3.0.0</span></a> <a href="#3.0.1"><span style="color:red">v 3.0.1</span></a> <a href="#3.0.2"><span style="color:red">v 3.0.2</span></a> <a href="#3.0.3"><span style="color:green">v 3.0.3</span></a> <a href="#3.0.4"><span style="color:red">v 3.0.4</span></a> <a href="#3.0.5"><span style="color:red">v 3.0.5</span></a> <a href="#3.0.6"><span style="color:green">v 3.0.6</span></a> <a href="#3.0.7"><span style="color:red">v 3.0.7</span></a> <a href="#3.0.8"><span style="color:green">v 3.0.8</span></a> <a href="#3.0.9"><span style="color:green">v 3.0.9</span></a> <a href="#3.1.0"><span style="color:green">v 3.1.0</span></a> <a href="#3.1.1"><span style="color:red">v 3.1.1</span></a> <a href="#3.1.2"><span style="color:red">v 3.1.2</span></a> <a href="#3.1.3"><span style="color:green">v 3.1.3</span></a> <a href="#3.1.4"><span style="color:red">v 3.1.4</span></a> <a href="#3.1.5"><span style="color:red">v 3.1.5</span></a> <a href="#3.1.6"><span style="color:red">v 3.1.6</span></a> <a href="#3.1.8"><span style="color:red">v 3.1.8</span></a> <a href="#3.1.9"><span style="color:green">v 3.1.9</span></a> <a href="#3.2.0"><span style="color:green">v 3.2.0</span></a> <a href="#3.2.1"><span style="color:red">v 3.2.1</span></a> <a href="#3.2.3"><span style="color:red">v 3.2.3</span></a> <a href="#3.2.6"><span style="color:red">v 3.2.6</span></a> <a href="#3.2.8"><span style="color:red">v 3.2.8</span></a> <a href="#3.3.0"><span style="color:green">v 3.3.0</span></a> <a href="#3.3.1"><span style="color:green">v 3.3.1</span></a> <a href="#3.3.2"><span style="color:red">v 3.3.2</span></a> <a href="#3.3.3"><span style="color:red">v 3.3.3</span></a> <a href="#3.3.4"><span style="color:red">v 3.3.4</span></a> <a href="#3.3.6"><span style="color:red">v 3.3.6</span></a> <a href="#3.3.7"><span style="color:red">v 3.3.7</span></a> <a href="#3.3.8"><span style="color:red">v 3.3.8</span></a> <a href="#3.3.9"><span style="color:red">v 3.3.9</span></a> <a href="#3.4.0"><span style="color:green">v 3.4.0</span></a> <a href="#3.4.1"><span style="color:green">v 3.4.1</span></a> <a href="#3.4.2"><span style="color:green">v 3.4.2</span></a> <a href="#3.4.3"><span style="color:green">v 3.4.3</span></a> <a href="#3.4.6"><span style="color:red">v 3.4.6</span></a> <a href="#3.4.7"><span style="color:green">v 3.4.7</span></a> <a href="#3.4.8"><span style="color:red">v 3.4.8</span></a> <a href="#3.4.9"><span style="color:red">v 3.4.9</span></a> <a href="#3.5.0"><span style="color:red">v 3.5.0</span></a> <a href="#3.5.1"><span style="color:green">v 3.5.1</span></a> <a href="#3.5.2"><span style="color:red">v 3.5.2</span></a> <a href="#3.5.3"><span style="color:red">v 3.5.3</span></a> <a href="#3.5.6"><span style="color:red">v 3.5.6</span></a> <a href="#3.5.7"><span style="color:red">v 3.5.7</span></a> <a href="#3.5.8"><span style="color:red">v 3.5.8</span></a> <a href="#3.6.0"><span style="color:green">v 3.6.0</span></a> <a href="#3.6.2"><span style="color:green">v 3.6.2</span></a> <a href="#3.6.3"><span style="color:red">v 3.6.3</span></a> <a href="#3.6.5"><span style="color:green">v 3.6.5</span></a> <a href="#3.6.6"><span style="color:green">v 3.6.6</span></a> <a href="#3.6.7"><span style="color:green">v 3.6.7</span></a> <a href="#3.6.9"><span style="color:red">v 3.6.9</span></a> <a href="#3.7.0"><span style="color:green">v 3.7.0</span></a> <a href="#3.7.1"><span style="color:red">v 3.7.1</span></a> <a href="#3.7.2"><span style="color:red">v 3.7.2</span></a> <a href="#3.7.3"><span style="color:red">v 3.7.3</span></a> <a href="#3.7.4"><span style="color:green">v 3.7.4</span></a> <a href="#3.7.5"><span style="color:green">v 3.7.5</span></a> <a href="#3.7.6"><span style="color:red">v 3.7.6</span></a> <a href="#3.7.8"><span style="color:green">v 3.7.8</span></a> <a href="#3.7.9"><span style="color:red">v 3.7.9</span></a> <a href="#3.8.0"><span style="color:red">v 3.8.0</span></a> <a href="#3.8.1"><span style="color:red">v 3.8.1</span></a> <a href="#3.8.3"><span style="color:red">v 3.8.3</span></a> <a href="#3.8.4"><span style="color:red">v 3.8.4</span></a> <a href="#3.8.6"><span style="color:red">v 3.8.6</span></a> <a href="#3.9.0"><span style="color:green">v 3.9.0</span></a> <a href="#3.9.1"><span style="color:red">v 3.9.1</span></a> <a href="#3.9.2"><span style="color:red">v 3.9.2</span></a> <a href="#3.9.3"><span style="color:green">v 3.9.3</span></a> <a href="#3.9.5"><span style="color:red">v 3.9.5</span></a> <a href="#3.9.7"><span style="color:red">v 3.9.7</span></a> <a href="#3.9.8"><span style="color:red">v 3.9.8</span></a> <a href="#3.9.9"><span style="color:green">v 3.9.9</span></a> <a href="#4.0.0"><span style="color:green">v 4.0.0</span></a> <a href="#4.0.2"><span style="color:red">v 4.0.2</span></a> <a href="#4.0.3"><span style="color:red">v 4.0.3</span></a> <a href="#4.0.4"><span style="color:green">v 4.0.4</span></a> <a href="#4.0.5"><span style="color:green">v 4.0.5</span></a> <a href="#4.0.6"><span style="color:red">v 4.0.6</span></a> <a href="#4.0.8"><span style="color:red">v 4.0.8</span></a> <a href="#4.1.0"><span style="color:red">v 4.1.0</span></a> <a href="#4.1.1"><span style="color:green">v 4.1.1</span></a> <a href="#4.1.2"><span style="color:green">v 4.1.2</span></a> <a href="#4.1.3"><span style="color:red">v 4.1.3</span></a> <a href="#4.1.4"><span style="color:red">v 4.1.4</span></a> <a href="#4.1.6"><span style="color:red">v 4.1.6</span></a> <a href="#4.1.8"><span style="color:green">v 4.1.8</span></a> <a href="#4.1.9"><span style="color:red">v 4.1.9</span></a> <a href="#4.2.0"><span style="color:red">v 4.2.0</span></a> <a href="#4.2.1"><span style="color:green">v 4.2.1</span></a> <a href="#4.2.3"><span style="color:red">v 4.2.3</span></a> <a href="#4.2.4"><span style="color:green">v 4.2.4</span></a> <a href="#4.2.5"><span style="color:red">v 4.2.5</span></a> <a href="#4.2.7"><span style="color:red">v 4.2.7</span></a> <a href="#4.3.0"><span style="color:green">v 4.3.0</span></a> <a href="#4.3.1"><span style="color:red">v 4.3.1</span></a> <a href="#4.3.2"><span style="color:red">v 4.3.2</span></a> <a href="#4.3.3"><span style="color:red">v 4.3.3</span></a> <a href="#4.3.4"><span style="color:red">v 4.3.4</span></a> <a href="#4.3.5"><span style="color:red">v 4.3.5</span></a> <a href="#4.3.7"><span style="color:red">v 4.3.7</span></a> <a href="#4.3.8"><span style="color:green">v 4.3.8</span></a> <a href="#4.3.9"><span style="color:red">v 4.3.9</span></a> <a href="#4.4.0"><span style="color:green">v 4.4.0</span></a> <a href="#4.4.1"><span style="color:red">v 4.4.1</span></a> <a href="#4.4.2"><span style="color:red">v 4.4.2</span></a> <a href="#4.4.3"><span style="color:red">v 4.4.3</span></a> <a href="#4.4.4"><span style="color:green">v 4.4.4</span></a> <a href="#4.4.5"><span style="color:red">v 4.4.5</span></a> <a href="#4.4.6"><span style="color:green">v 4.4.6</span></a> <a href="#4.4.7"><span style="color:red">v 4.4.7</span></a> <a href="#4.4.8"><span style="color:red">v 4.4.8</span></a> <a href="#4.4.9"><span style="color:green">v 4.4.9</span></a> <a href="#4.5.0"><span style="color:red">v 4.5.0</span></a> <a href="#4.5.1"><span style="color:red">v 4.5.1</span></a> <a href="#4.5.3"><span style="color:red">v 4.5.3</span></a> <a href="#4.5.5"><span style="color:red">v 4.5.5</span></a> <a href="#4.5.8"><span style="color:red">v 4.5.8</span></a> <a href="#4.6.0"><span style="color:red">v 4.6.0</span></a> <a href="#4.6.1"><span style="color:red">v 4.6.1</span></a> <a href="#4.6.2"><span style="color:red">v 4.6.2</span></a> <a href="#4.6.3"><span style="color:red">v 4.6.3</span></a> <a href="#4.6.4"><span style="color:red">v 4.6.4</span></a> <a href="#4.6.6"><span style="color:red">v 4.6.6</span></a> <a href="#4.6.7"><span style="color:red">v 4.6.7</span></a> <a href="#4.6.8"><span style="color:red">v 4.6.8</span></a> <a href="#4.6.9"><span style="color:red">v 4.6.9</span></a> <a href="#4.7.0"><span style="color:green">v 4.7.0</span></a> <a href="#4.7.2"><span style="color:red">v 4.7.2</span></a> <a href="#4.7.3"><span style="color:red">v 4.7.3</span></a> <a href="#4.7.4"><span style="color:red">v 4.7.4</span></a> <a href="#4.7.6"><span style="color:red">v 4.7.6</span></a> <a href="#4.7.7"><span style="color:red">v 4.7.7</span></a> <a href="#4.7.8"><span style="color:red">v 4.7.8</span></a> <a href="#4.7.9"><span style="color:green">v 4.7.9</span></a> <a href="#4.8.3"><span style="color:red">v 4.8.3</span></a> <a href="#4.8.4"><span style="color:red">v 4.8.4</span></a> <a href="#4.8.6"><span style="color:green">v 4.8.6</span></a> <a href="#4.8.7"><span style="color:green">v 4.8.7</span></a> <a href="#4.8.9"><span style="color:red">v 4.8.9</span></a> <a href="#4.9.3"><span style="color:red">v 4.9.3</span></a> <a href="#4.9.7"><span style="color:green">v 4.9.7</span></a> <a href="#4.9.8"><span style="color:red">v 4.9.8</span></a> <a href="#4.9.9"><span style="color:red">v 4.9.9</span></a> <a href="#5.0.2"><span style="color:red">v 5.0.2</span></a> <a href="#5.0.3"><span style="color:red">v 5.0.3</span></a> <a href="#5.0.5"><span style="color:green">v 5.0.5</span></a> <a href="#5.0.6"><span style="color:red">v 5.0.6</span></a> <a href="#5.0.7"><span style="color:red">v 5.0.7</span></a> <a href="#5.0.8"><span style="color:red">v 5.0.8</span></a> <a href="#5.1.0"><span style="color:green">v 5.1.0</span></a> <a href="#5.1.1"><span style="color:green">v 5.1.1</span></a> <a href="#5.1.2"><span style="color:red">v 5.1.2</span></a> <a href="#5.1.5"><span style="color:red">v 5.1.5</span></a> <a href="#5.1.6"><span style="color:green">v 5.1.6</span></a> <a href="#5.1.7"><span style="color:green">v 5.1.7</span></a> <a href="#5.1.9"><span style="color:green">v 5.1.9</span></a> <a href="#5.2.0"><span style="color:red">v 5.2.0</span></a> <a href="#5.2.2"><span style="color:red">v 5.2.2</span></a> <a href="#5.2.3"><span style="color:red">v 5.2.3</span></a> <a href="#5.2.4"><span style="color:red">v 5.2.4</span></a> <a href="#5.2.5"><span style="color:red">v 5.2.5</span></a> <a href="#5.2.7"><span style="color:red">v 5.2.7</span></a> <a href="#5.2.8"><span style="color:green">v 5.2.8</span></a> <a href="#5.2.9"><span style="color:red">v 5.2.9</span></a> <a href="#5.3.0"><span style="color:red">v 5.3.0</span></a> <a href="#5.3.2"><span style="color:red">v 5.3.2</span></a> <a href="#5.3.3"><span style="color:red">v 5.3.3</span></a> <a href="#5.3.5"><span style="color:red">v 5.3.5</span></a> <a href="#5.3.6"><span style="color:red">v 5.3.6</span></a> <a href="#5.3.7"><span style="color:red">v 5.3.7</span></a> <a href="#5.3.9"><span style="color:red">v 5.3.9</span></a> <a href="#5.4.1"><span style="color:red">v 5.4.1</span></a> <a href="#5.4.2"><span style="color:red">v 5.4.2</span></a> <a href="#5.4.4"><span style="color:red">v 5.4.4</span></a> <a href="#5.4.7"><span style="color:green">v 5.4.7</span></a> <a href="#5.4.8"><span style="color:red">v 5.4.8</span></a> <a href="#5.5.0"><span style="color:green">v 5.5.0</span></a> <a href="#5.5.2"><span style="color:green">v 5.5.2</span></a> <a href="#5.5.4"><span style="color:red">v 5.5.4</span></a> <a href="#5.5.5"><span style="color:green">v 5.5.5</span></a> <a href="#5.5.6"><span style="color:green">v 5.5.6</span></a> <a href="#5.5.7"><span style="color:red">v 5.5.7</span></a> <a href="#5.5.8"><span style="color:red">v 5.5.8</span></a> <a href="#5.5.9"><span style="color:red">v 5.5.9</span></a> <a href="#5.6.0"><span style="color:red">v 5.6.0</span></a> <a href="#5.6.2"><span style="color:red">v 5.6.2</span></a> <a href="#5.6.3"><span style="color:red">v 5.6.3</span></a> <a href="#5.6.4"><span style="color:green">v 5.6.4</span></a> <a href="#5.6.5"><span style="color:red">v 5.6.5</span></a> <a href="#5.6.6"><span style="color:green">v 5.6.6</span></a> <a href="#5.6.7"><span style="color:green">v 5.6.7</span></a> <a href="#5.6.9"><span style="color:red">v 5.6.9</span></a> <a href="#5.7.0"><span style="color:red">v 5.7.0</span></a> <a href="#5.7.1"><span style="color:green">v 5.7.1</span></a> <a href="#5.7.2"><span style="color:red">v 5.7.2</span></a> <a href="#5.7.4"><span style="color:green">v 5.7.4</span></a> <a href="#5.7.5"><span style="color:green">v 5.7.5</span></a> <a href="#5.7.6"><span style="color:red">v 5.7.6</span></a> <a href="#5.7.7"><span style="color:green">v 5.7.7</span></a> <a href="#5.7.8"><span style="color:green">v 5.7.8</span></a> <a href="#5.7.9"><span style="color:red">v 5.7.9</span></a> <a href="#5.8.0"><span style="color:red">v 5.8.0</span></a> <a href="#5.8.2"><span style="color:green">v 5.8.2</span></a> <a href="#5.8.3"><span style="color:green">v 5.8.3</span></a> <a href="#5.8.4"><span style="color:red">v 5.8.4</span></a> <a href="#5.8.7"><span style="color:red">v 5.8.7</span></a> <a href="#5.8.9"><span style="color:red">v 5.8.9</span></a> <a href="#5.9.0"><span style="color:red">v 5.9.0</span></a> <a href="#5.9.5"><span style="color:red">v 5.9.5</span></a> <a href="#5.9.6"><span style="color:red">v 5.9.6</span></a> <a href="#5.9.8"><span style="color:green">v 5.9.8</span></a> <a href="#5.9.9"><span style="color:red">v 5.9.9</span></a> <a href="#6.0.2"><span style="color:red">v 6.0.2</span></a> <a href="#6.0.3"><span style="color:red">v 6.0.3</span></a> <a href="#6.0.4"><span style="color:red">v 6.0.4</span></a> <a href="#6.0.5"><span style="color:green">v 6.0.5</span></a> <a href="#6.0.6"><span style="color:red">v 6.0.6</span></a> <a href="#6.0.7"><span style="color:green">v 6.0.7</span></a> <a href="#6.1.1"><span style="color:red">v 6.1.1</span></a> <a href="#6.1.3"><span style="color:red">v 6.1.3</span></a> <a href="#6.1.6"><span style="color:red">v 6.1.6</span></a> <a href="#6.1.8"><span style="color:red">v 6.1.8</span></a> <a href="#6.1.9"><span style="color:red">v 6.1.9</span></a> <a href="#6.2.0"><span style="color:red">v 6.2.0</span></a> <a href="#6.2.2"><span style="color:red">v 6.2.2</span></a> <a href="#6.2.3"><span style="color:red">v 6.2.3</span></a> <a href="#6.2.4"><span style="color:red">v 6.2.4</span></a> <a href="#6.2.5"><span style="color:red">v 6.2.5</span></a> <a href="#6.2.6"><span style="color:green">v 6.2.6</span></a> <a href="#6.2.8"><span style="color:red">v 6.2.8</span></a> <a href="#6.2.9"><span style="color:green">v 6.2.9</span></a> <a href="#6.3.0"><span style="color:green">v 6.3.0</span></a> <a href="#6.3.1"><span style="color:red">v 6.3.1</span></a> <a href="#6.3.2"><span style="color:red">v 6.3.2</span></a> <a href="#6.3.3"><span style="color:red">v 6.3.3</span></a> <a href="#6.3.4"><span style="color:red">v 6.3.4</span></a> <a href="#6.3.5"><span style="color:green">v 6.3.5</span></a> <a href="#6.3.6"><span style="color:green">v 6.3.6</span></a> <a href="#6.3.7"><span style="color:green">v 6.3.7</span></a> <a href="#6.3.8"><span style="color:green">v 6.3.8</span></a> <a href="#6.3.9"><span style="color:red">v 6.3.9</span></a> <a href="#6.4.1"><span style="color:red">v 6.4.1</span></a> <a href="#6.4.2"><span style="color:red">v 6.4.2</span></a> <a href="#6.4.3"><span style="color:red">v 6.4.3</span></a> <a href="#6.4.4"><span style="color:green">v 6.4.4</span></a> <a href="#6.4.5"><span style="color:red">v 6.4.5</span></a> <a href="#6.4.6"><span style="color:red">v 6.4.6</span></a> <a href="#6.4.7"><span style="color:green">v 6.4.7</span></a> <a href="#6.4.8"><span style="color:red">v 6.4.8</span></a> <a href="#6.4.9"><span style="color:green">v 6.4.9</span></a> <a href="#6.5.0"><span style="color:red">v 6.5.0</span></a> <a href="#6.5.1"><span style="color:red">v 6.5.1</span></a> <a href="#6.5.2"><span style="color:red">v 6.5.2</span></a> <a href="#6.5.3"><span style="color:red">v 6.5.3</span></a> <a href="#6.5.4"><span style="color:red">v 6.5.4</span></a> <a href="#6.5.5"><span style="color:red">v 6.5.5</span></a> <a href="#6.5.6"><span style="color:red">v 6.5.6</span></a> <a href="#6.5.7"><span style="color:green">v 6.5.7</span></a> <a href="#6.5.9"><span style="color:red">v 6.5.9</span></a> <a href="#6.6.0"><span style="color:green">v 6.6.0</span></a> <a href="#6.6.1"><span style="color:red">v 6.6.1</span></a> <a href="#6.6.2"><span style="color:red">v 6.6.2</span></a> <a href="#6.6.3"><span style="color:red">v 6.6.3</span></a> <a href="#6.6.5"><span style="color:red">v 6.6.5</span></a> <a href="#6.6.6"><span style="color:green">v 6.6.6</span></a> <a href="#6.6.7"><span style="color:green">v 6.6.7</span></a> <a href="#6.7.0"><span style="color:red">v 6.7.0</span></a> <a href="#6.7.1"><span style="color:red">v 6.7.1</span></a> <a href="#6.7.2"><span style="color:green">v 6.7.2</span></a> <a href="#6.7.3"><span style="color:green">v 6.7.3</span></a> <a href="#6.7.4"><span style="color:red">v 6.7.4</span></a> <a href="#6.7.5"><span style="color:red">v 6.7.5</span></a> <a href="#6.7.7"><span style="color:red">v 6.7.7</span></a> <a href="#6.7.8"><span style="color:red">v 6.7.8</span></a> <a href="#6.7.9"><span style="color:red">v 6.7.9</span></a> <a href="#6.8.0"><span style="color:red">v 6.8.0</span></a> <a href="#6.8.1"><span style="color:red">v 6.8.1</span></a> <a href="#6.8.2"><span style="color:green">v 6.8.2</span></a> <a href="#6.8.4"><span style="color:red">v 6.8.4</span></a> <a href="#6.8.5"><span style="color:red">v 6.8.5</span></a> <a href="#6.8.6"><span style="color:red">v 6.8.6</span></a> <a href="#6.8.7"><span style="color:green">v 6.8.7</span></a> <a href="#6.8.9"><span style="color:green">v 6.8.9</span></a> <a href="#6.9.0"><span style="color:green">v 6.9.0</span></a> <a href="#6.9.1"><span style="color:green">v 6.9.1</span></a>
 
 ### Safe versions
 #### v 1.0.1 — no shell/priv hooks
@@ -9079,6 +9194,13 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:grey">null null with 0x3FBDDFB4 using</span>
 - <span style="color:grey">null null with 0x3FBDDFB4 atch_</span>
 - <span style="color:green">Senni computer with 0x2614BFF2 valuesr</span>
+
+#### v 1.2.9 — no shell/priv hooks
+<a id="1.2.9"></a>
+- <span style="color:green">??? firewall_disable with 0x1015806 orequeuet</span>
+- <span style="color:green">guest file with 0x1015806 sgoodler32</span>
+- <span style="color:green">Annman file with 0x44964192 edateransformpivotge</span>
+- <span style="color:green">guest computer with 0x335E72DF chainetremovebutto</span>
 
 #### v 1.3.7 — no shell/priv hooks
 <a id="1.3.7"></a>
@@ -9396,6 +9518,14 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest computer:bounce with 0x7D4F0CEE terdel</span>
 - <span style="color:green">??? firewall_disable with 0x7D4F0CEE fast</span>
 
+#### v 3.7.4 — no shell/priv hooks
+<a id="3.7.4"></a>
+- <span style="color:green">guest computer:bounce with 0x2D1FA642 color_buttonbu</span>
+- <span style="color:green">Berts file with 0x67175553 pres</span>
+- <span style="color:grey">null null with 0x79D2247E tonstackgrountericid</span>
+- <span style="color:grey">null null with 0x4354EF blocksourcel</span>
+- <span style="color:grey">null null with 0x2F67D318 dateiconsb</span>
+
 #### v 3.7.5 — no shell/priv hooks
 <a id="3.7.5"></a>
 - <span style="color:green">guest file with 0x2D1FA642 brean</span>
@@ -9551,6 +9681,20 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest computer:bounce with 0x3148EE57 etactabledcallinestextuiteral</span>
 - <span style="color:green">??? firewall_disable with 0x3148EE57 elhight2tranget</span>
 
+#### v 5.1.1 — no shell/priv hooks
+<a id="5.1.1"></a>
+- <span style="color:grey">null null with 0x1126D644 s_h</span>
+- <span style="color:green">Aohuiza file with 0x2FA759C5 nalconsolewriteresultparsetactionst</span>
+- <span style="color:green">Zerenu computer with 0x48D6C2F3 signa</span>
+- <span style="color:green">Zerenu file with 0x71D8FA88 chormsizedelc</span>
+- <span style="color:grey">null null with 0x492985A2 ition++</span>
+- <span style="color:grey">null null with 0x492985A2 data</span>
+- <span style="color:grey">null null with 0xC212B00 onfontoffsetactionlyfals</span>
+- <span style="color:grey">null null with 0xC212B00 finitionparam</span>
+- <span style="color:green">Schunamu file with 0x77ED7A31 close</span>
+- <span style="color:grey">null null with 0x2915B5A0 sultnametext</span>
+- <span style="color:green">Bakertmuti computer with 0x41D6F9E6 eapk</span>
+
 #### v 5.1.6 — no shell/priv hooks
 <a id="5.1.6"></a>
 - <span style="color:green">??? firewall_disable with 0x3148EE57 agesaddundostrato</span>
@@ -9672,6 +9816,20 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? firewall_disable with 0x7BE5B4A8 sourceplaydeltaddgetexto</span>
 - <span style="color:grey">null null with 0x7BE5B4A8 frequeu</span>
 
+#### v 5.9.8 — no shell/priv hooks
+<a id="5.9.8"></a>
+- <span style="color:green">Achervel computer with 0x11F422E9 tionx</span>
+- <span style="color:green">Saib computer with 0x797F5D2D oken</span>
+- <span style="color:green">Ickernh file with 0x19E411B2 tionaryeresultna</span>
+- <span style="color:green">Bonalde computer with 0x5C296B45 addparametextefu</span>
+- <span style="color:grey">null null with 0x4FFE30B6 etvarv</span>
+- <span style="color:grey">null null with 0x4FFE30B6 uttoncloseso</span>
+- <span style="color:grey">null null with 0xF172D04 fectt</span>
+- <span style="color:green">??? password_change with 0x2986A5B5 reethisr</span>
+- <span style="color:grey">null null with 0x2986A5B5 eltaddparam</span>
+- <span style="color:green">Prille computer with 0x3AC26756 ending_leng</span>
+- <span style="color:grey">null null with 0x3AC26756 flushparet</span>
+
 #### v 6.0.5 — no shell/priv hooks
 <a id="6.0.5"></a>
 - <span style="color:green">??? firewall_disable with 0x1D795F65 usedtaskbarupdatet</span>
@@ -9771,6 +9929,10 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? firewall_disable with 0x77EBA594 canvasgroundosourc</span>
 - <span style="color:green">??? firewall_disable with 0x77EBA594 ralsmaximizelistictree</span>
 - <span style="color:green">Lacqu computer with 0x797F5D2D oken</span>
+
+#### v 6.8.2 — no shell/priv hooks
+<a id="6.8.2"></a>
+- <span style="color:green">Kirbach computer with 0x7DA23128 modeadeinte</span>
 
 #### v 6.8.7 — no shell/priv hooks
 <a id="6.8.7"></a>
@@ -10037,6 +10199,40 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:grey">null null with 0x49EA315E buttonclicksraycast_lengthc</span>
 - <span style="color:green">Ercovanlon file with 0x782C11D1 plicked</span>
 - <span style="color:grey">null null with 0x365ADA7F scloseino</span>
+
+#### v 1.3.8 — shell 7/31, priv 3/31
+<a id="1.3.8"></a>
+- <span style="color:grey">null null with 0x38EE7A8B iewporti</span>
+- <span style="color:grey">null null with 0x393A49B5 pointoffsetsetmid</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x393A49B5 diosourceplayanimatchecked
+- <span style="color:yellow">guest</span> shell with 0x393A49B5 button
+- <span style="color:grey">null null with 0x48D32219 onaryvalighligh</span>
+- <span style="color:green">Oktar computer with 0x40341465 stroyb</span>
+- <span style="color:grey">null null with 0x5204D5CC tecolor_v</span>
+- <span style="color:grey">null null with 0x2F5A16F8 ortbackpushparenabledista</span>
+- <span style="color:green">Trunyan file with 0x2F5A16F8 tstopwatch_</span>
+- <span style="color:grey">null null with 0x587CAA59 using</span>
+- <span style="color:green">Lisakisse file with 0x130C803B wardowmation</span>
+- Einelkhan shell with 0x6C09F0B3 rifnull
+- <span style="color:green">guest file with 0x5527EF6 shorline++</span>
+- <span style="color:green">Lisakisse computer with 0x5527EF6 lorschecktypericienumeri</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x6F194481 rinset
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x6F194481 push_block_stopwatchemec
+- <span style="color:green">??? password_change with 0x22F40C0A telinenumber</span>
+- <span style="color:green">guest file with 0x22F40C0A removerlaytransforwardow++scanva</span>
+- <span style="color:green">Einelkhan file with 0x22F40C0A thisobjectsetfocuson</span>
+- Lisakisse shell with 0x22F40C0A distemovetreeli
+- Einelkhan shell with 0x341226F4 infonter
+- <span style="color:green">Lisakisse computer with 0x341226F4 mdategy</span>
+- <span style="color:green">Ziqings file with 0x32A04379 lockbufsize</span>
+- Dlettem shell with 0x666F8F1E title
+- <span style="color:green">Dlettem computer with 0x1FCF4AB4 settextsiin</span>
+- Sansh shell with 0x13E7F1D6 positionshore
+- <span style="color:green">Achardster file with 0x24F795D6 eslinenumsion++</span>
+- <span style="color:grey">null null with 0x24F795D6 resultaddparentai</span>
+- Walton shell with 0x24F795D6 scan
+- <span style="color:green">Ugani computer with 0x5135AB69 codelanchoredpoi</span>
+- <span style="color:green">Grees computer with 0x5135AB69 regrountifneedyn_dtreelinel</span>
 
 #### v 1.4.0 — shell 1/7
 <a id="1.4.0"></a>
@@ -10313,6 +10509,13 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest computer with 0x2F06089E elend_bitsbl_t</span>
 - <span style="color:yellow">guest</span> shell with 0x4DBD65C9 loselengt
 
+#### v 1.8.3 — shell 1/4
+<a id="1.8.3"></a>
+- <span style="color:green">??? firewall_disable with 0x24C457D6 kgrountifier</span>
+- Mcrat shell with 0x6BCBE901 enumsizedeltaddli
+- <span style="color:green">Tobal computer with 0x6BCBE901 ditorplayona</span>
+- <span style="color:green">Dorf file with 0x1EF5678E iosoundthismaxim</span>
+
 #### v 1.8.4 — shell 2/10
 <a id="1.8.4"></a>
 - <span style="color:green">Edianit file with 0x7541CB63 aphic</span>
@@ -10457,6 +10660,10 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x32D5CB6B max_color_buttonforighlight2transf</span>
 - <span style="color:green">??? firewall_disable with 0x32D5CB6B undow++sc</span>
 
+#### v 2.1.8 — shell 1/1
+<a id="2.1.8"></a>
+- Nertrat shell with 0x43E47E5E magesaddgetextobjectsettextt
+
 #### v 2.2.1 — shell 1/6
 <a id="2.2.1"></a>
 - <span style="color:green">guest file with 0x5F84DF2D color_titlend_codelte</span>
@@ -10582,6 +10789,11 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x777340A alse
 - <span style="color:green">??? firewall_disable with 0x777340A ript</span>
 - <span style="color:green">guest file with 0x130C803B conterightedcallbackgroundthisinser</span>
+
+#### v 2.4.1 — shell 1/2
+<a id="2.4.1"></a>
+- <span style="color:yellow">guest</span> shell with 0x765CA28C tringb
+- <span style="color:green">??? firewall_disable with 0x765CA28C toredx</span>
 
 #### v 2.4.3 — shell 2/9, priv 1/9
 <a id="2.4.3"></a>
@@ -11066,6 +11278,34 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x2737FF3 ivarven
 - <span style="color:yellow">guest</span> shell with 0x2737FF3 hrow
 
+#### v 3.3.7 — shell 9/25
+<a id="3.3.7"></a>
+- <span style="color:yellow">guest</span> shell with 0x19BACE3D ock0
+- <span style="color:yellow">guest</span> shell with 0x19BACE3D uttonternalconnametextsrc
+- <span style="color:green">??? firewall_disable with 0x666792BC th</span>
+- <span style="color:green">Anuela computer with 0x7E18A7EC bi_buffer</span>
+- Kempo shell with 0x7E18A7EC saddlinesizetreebitsb
+- <span style="color:green">Anuela file with 0x4EDE9238 rhsa</span>
+- <span style="color:green">Aquee file with 0x5F687B21 teline++</span>
+- <span style="color:green">Leany file with 0x5F687B21 andb</span>
+- <span style="color:green">Aquee computer with 0x5135AB69 codelanchoredpoi</span>
+- <span style="color:grey">null null with 0x23BF68F0 layanimator3</span>
+- <span style="color:grey">null null with 0x23BF68F0 ecttratorschemessof</span>
+- <span style="color:green">Aquee file with 0x3FEE22AB tonobjectset</span>
+- <span style="color:yellow">guest</span> shell with 0x7DD8F3DE ansformanchortializebl_treedyn_tr_allfu
+- <span style="color:yellow">guest</span> shell with 0x2BFBEE22 i_valfun
+- <span style="color:yellow">guest</span> shell with 0x4D0D7F5D lor_viewporttesing
+- Yoongch shell with 0x99EBC11 slcontrinsertyp
+- <span style="color:green">Yoongch file with 0x183F3B27 ectselh</span>
+- Yoongch shell with 0x41C8DBBB erdaternalcontinfo
+- <span style="color:green">guest computer with 0x380FCD5E blocalpositionx</span>
+- <span style="color:green">??? password_change with 0x3F80448F ta_typele</span>
+- <span style="color:green">guest file with 0x3F80448F temdiat</span>
+- <span style="color:green">guest file with 0x278C5EAE ternal</span>
+- <span style="color:green">Mersong computer with 0x278C5EAE sultsetvaluesrepz_3_</span>
+- <span style="color:green">guest computer with 0x5BF2A077 showsoundopos</span>
+- <span style="color:yellow">guest</span> shell with 0x5BF2A077 on++
+
 #### v 3.3.8 — shell 1/5
 <a id="3.3.8"></a>
 - <span style="color:grey">null null with 0x19BACE3D tactivetrue</span>
@@ -11165,6 +11405,14 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? firewall_disable with 0x30A7FB03 text</span>
 - <span style="color:yellow">guest</span> shell with 0x29741C44 onformoffsettinusb
 - <span style="color:grey">null null with 0x29741C44 ourcevolumerialighlight</span>
+
+#### v 3.5.7 — shell 1/5
+<a id="3.5.7"></a>
+- <span style="color:green">??? firewall_disable with 0x7C1D4B51 fadeinoveateq</span>
+- <span style="color:green">??? firewall_disable with 0x7C1D4B51 _stanchort</span>
+- <span style="color:green">Suchuai file with 0x1100799C odec_a</span>
+- Esseyer shell with 0x766DE669 indostransf
+- <span style="color:green">Esseyer file with 0x41988121 essagetundostate</span>
 
 #### v 3.5.8 — shell 1/5
 <a id="3.5.8"></a>
@@ -11738,6 +11986,12 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x67757E71 treeintoviewportmsbintflu</span>
 - <span style="color:yellow">guest</span> shell with 0x67757E71 horof
 
+#### v 4.7.8 — priv 1/3
+<a id="4.7.8"></a>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0xE78DFEC copyd
+- <span style="color:green">Schieheu computer with 0x25EC13ED inesin</span>
+- <span style="color:green">Nerguerb file with 0x179F8330 startpo</span>
+
 #### v 4.8.3 — shell 2/6
 <a id="4.8.3"></a>
 - <span style="color:green">guest computer with 0x76384B3C itletextsiz</span>
@@ -12026,6 +12280,17 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest computer:bounce with 0xB8DE195 donenume</span>
 - <span style="color:green">guest computer:bounce with 0xB8DE195 datefonternalcontex</span>
 - <span style="color:green">guest computer:bounce with 0xB8DE195 nemoveatelinenums</span>
+
+#### v 5.4.8 — shell 1/8
+<a id="5.4.8"></a>
+- <span style="color:grey">null null with 0x53DF60A8 rollrectse</span>
+- <span style="color:grey">null null with 0x13D0FD3E nent_onlevelin</span>
+- <span style="color:green">Rowey file with 0x13D0FD3E tonged</span>
+- Higgioric shell with 0x16BE0C7 alizelaya
+- <span style="color:green">Enjalam file with 0x328C7C84 valuesadd</span>
+- <span style="color:grey">null null with 0x5159919A buttom</span>
+- <span style="color:grey">null null with 0x2F4EAD3D sdiststringsupdata_</span>
+- <span style="color:grey">null null with 0x67AB9881 vokethisibledthiscan_t</span>
 
 #### v 5.5.4 — shell 1/4
 <a id="5.5.4"></a>
@@ -12353,6 +12618,11 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:grey">null null with 0x3E0D196E lancessertypeop</span>
 - <span style="color:grey">null null with 0x6A4BC67F showindexergroundthisins</span>
 
+#### v 6.3.3 — shell 2/2
+<a id="6.3.3"></a>
+- <span style="color:yellow">guest</span> shell with 0x4C86810E dlistendingc
+- Ackaye shell with 0x5E5AEC31 oublinesizedel
+
 #### v 6.3.4 — shell 1/2
 <a id="6.3.4"></a>
 - <span style="color:green">??? firewall_disable with 0x4C86810E treetreetreendins</span>
@@ -12369,6 +12639,28 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:red">root</span> <span style="color:red">file</span> with 0x13D7E4D mode
 - <span style="color:green">Nhynes computer with 0x2F06089E elend_bitsbl_t</span>
 - Nhynes shell with 0x4DBD65C9 loselengt
+
+#### v 6.4.2 — shell 5/19
+<a id="6.4.2"></a>
+- <span style="color:green">Ontsbura file with 0x134D790B revst</span>
+- Buio shell with 0x4410FB93 greatlin
+- Buio shell with 0x1672C9 positializeline
+- Alleboi shell with 0x62A1AE55 eckremovea
+- <span style="color:green">Alleboi file with 0x34CF6BD1 sh_maskth</span>
+- Arlsoh shell with 0x36C0C72 wordele
+- <span style="color:green">Ronkes computer with 0x6BA677C0 tedist</span>
+- <span style="color:grey">null null with 0x42DD3901 ransformanchortspritextsi</span>
+- <span style="color:green">guest computer:bounce with 0x3148EE57 agesaddundostrato</span>
+- <span style="color:green">Gino file with 0x4239B239 urcelinesets</span>
+- Pacey shell with 0x737AB45C antsetextinesline
+- <span style="color:green">??? firewall_disable with 0x60B86817 changed</span>
+- <span style="color:green">??? firewall_disable with 0x60B86817 atictr</span>
+- <span style="color:grey">null null with 0x21445D8A contypebottono</span>
+- <span style="color:grey">null null with 0x6167E41D color_buttoncolor_</span>
+- <span style="color:grey">null null with 0x6167E41D nota</span>
+- <span style="color:grey">null null with 0x7DD54E5A lor_bufficid</span>
+- <span style="color:grey">null null with 0x7DD54E5A erlayanimatorr</span>
+- <span style="color:grey">null null with 0x7DD54E5A raphic</span>
 
 #### v 6.4.3 — shell 3/7
 <a id="6.4.3"></a>
@@ -13526,11 +13818,11 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 ## `libsql.so`
 <a id="libsql-so"></a>
 
-- Total Hooked lines: 918
-- Can provide shell: 97
-- Has privileged object: 36
+- Total Hooked lines: 1084
+- Can provide shell: 117
+- Has privileged object: 39
 - Safe versions: 3
-Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#1.0.1"><span style="color:red">v 1.0.1</span></a> <a href="#1.0.3"><span style="color:red">v 1.0.3</span></a> <a href="#1.0.4"><span style="color:red">v 1.0.4</span></a> <a href="#1.1.0"><span style="color:red">v 1.1.0</span></a> <a href="#1.1.5"><span style="color:red">v 1.1.5</span></a> <a href="#1.1.8"><span style="color:red">v 1.1.8</span></a> <a href="#1.2.4"><span style="color:red">v 1.2.4</span></a> <a href="#1.2.7"><span style="color:red">v 1.2.7</span></a> <a href="#1.2.8"><span style="color:red">v 1.2.8</span></a> <a href="#1.2.9"><span style="color:red">v 1.2.9</span></a> <a href="#1.3.1"><span style="color:red">v 1.3.1</span></a> <a href="#1.3.4"><span style="color:red">v 1.3.4</span></a> <a href="#1.3.6"><span style="color:red">v 1.3.6</span></a> <a href="#1.4.0"><span style="color:red">v 1.4.0</span></a> <a href="#1.4.1"><span style="color:red">v 1.4.1</span></a> <a href="#1.4.2"><span style="color:green">v 1.4.2</span></a> <a href="#1.5.1"><span style="color:red">v 1.5.1</span></a> <a href="#1.5.4"><span style="color:red">v 1.5.4</span></a> <a href="#1.5.5"><span style="color:green">v 1.5.5</span></a> <a href="#1.5.6"><span style="color:green">v 1.5.6</span></a> <a href="#1.5.7"><span style="color:red">v 1.5.7</span></a> <a href="#1.5.8"><span style="color:red">v 1.5.8</span></a> <a href="#1.6.0"><span style="color:red">v 1.6.0</span></a> <a href="#1.6.1"><span style="color:red">v 1.6.1</span></a> <a href="#1.6.2"><span style="color:red">v 1.6.2</span></a> <a href="#1.6.6"><span style="color:red">v 1.6.6</span></a> <a href="#1.6.7"><span style="color:red">v 1.6.7</span></a> <a href="#1.6.9"><span style="color:red">v 1.6.9</span></a> <a href="#1.7.2"><span style="color:red">v 1.7.2</span></a> <a href="#1.7.7"><span style="color:red">v 1.7.7</span></a> <a href="#1.7.9"><span style="color:red">v 1.7.9</span></a> <a href="#1.8.0"><span style="color:red">v 1.8.0</span></a> <a href="#1.8.1"><span style="color:red">v 1.8.1</span></a>
+Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#1.0.1"><span style="color:red">v 1.0.1</span></a> <a href="#1.0.3"><span style="color:red">v 1.0.3</span></a> <a href="#1.0.4"><span style="color:red">v 1.0.4</span></a> <a href="#1.0.5"><span style="color:red">v 1.0.5</span></a> <a href="#1.0.7"><span style="color:red">v 1.0.7</span></a> <a href="#1.0.9"><span style="color:red">v 1.0.9</span></a> <a href="#1.1.0"><span style="color:red">v 1.1.0</span></a> <a href="#1.1.5"><span style="color:red">v 1.1.5</span></a> <a href="#1.1.8"><span style="color:red">v 1.1.8</span></a> <a href="#1.2.2"><span style="color:red">v 1.2.2</span></a> <a href="#1.2.4"><span style="color:red">v 1.2.4</span></a> <a href="#1.2.7"><span style="color:red">v 1.2.7</span></a> <a href="#1.2.8"><span style="color:red">v 1.2.8</span></a> <a href="#1.2.9"><span style="color:red">v 1.2.9</span></a> <a href="#1.3.1"><span style="color:red">v 1.3.1</span></a> <a href="#1.3.4"><span style="color:red">v 1.3.4</span></a> <a href="#1.3.6"><span style="color:red">v 1.3.6</span></a> <a href="#1.3.7"><span style="color:red">v 1.3.7</span></a> <a href="#1.3.8"><span style="color:red">v 1.3.8</span></a> <a href="#1.4.0"><span style="color:red">v 1.4.0</span></a> <a href="#1.4.1"><span style="color:red">v 1.4.1</span></a> <a href="#1.4.2"><span style="color:green">v 1.4.2</span></a> <a href="#1.4.5"><span style="color:red">v 1.4.5</span></a> <a href="#1.4.6"><span style="color:red">v 1.4.6</span></a> <a href="#1.5.1"><span style="color:red">v 1.5.1</span></a> <a href="#1.5.2"><span style="color:red">v 1.5.2</span></a> <a href="#1.5.4"><span style="color:red">v 1.5.4</span></a> <a href="#1.5.5"><span style="color:green">v 1.5.5</span></a> <a href="#1.5.6"><span style="color:green">v 1.5.6</span></a> <a href="#1.5.7"><span style="color:red">v 1.5.7</span></a> <a href="#1.5.8"><span style="color:red">v 1.5.8</span></a> <a href="#1.6.0"><span style="color:red">v 1.6.0</span></a> <a href="#1.6.1"><span style="color:red">v 1.6.1</span></a> <a href="#1.6.2"><span style="color:red">v 1.6.2</span></a> <a href="#1.6.6"><span style="color:red">v 1.6.6</span></a> <a href="#1.6.7"><span style="color:red">v 1.6.7</span></a> <a href="#1.6.9"><span style="color:red">v 1.6.9</span></a> <a href="#1.7.2"><span style="color:red">v 1.7.2</span></a> <a href="#1.7.7"><span style="color:red">v 1.7.7</span></a> <a href="#1.7.9"><span style="color:red">v 1.7.9</span></a> <a href="#1.8.0"><span style="color:red">v 1.8.0</span></a> <a href="#1.8.1"><span style="color:red">v 1.8.1</span></a>
 
 ### Safe versions
 #### v 1.4.2 — no shell/priv hooks
@@ -13727,6 +14019,67 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:grey">null null with 0x56ABCB7B izede</span>
 - <span style="color:grey">null null with 0x56ABCB7B timelengthsstoppower</span>
 
+#### v 1.0.5 — shell 1/19
+<a id="1.0.5"></a>
+- <span style="color:grey">null null with 0x25AD6ADE thisfla</span>
+- <span style="color:grey">null null with 0x25AD6ADE allfun</span>
+- <span style="color:grey">null null with 0x25AD6ADE thisaudiosourceclicitre</span>
+- <span style="color:green">guest computer with 0x3E3C17CB atored_bloc</span>
+- <span style="color:grey">null null with 0x3E3C17CB oveatelit_buttonge</span>
+- <span style="color:grey">null null with 0x3E3C17CB sor1</span>
+- <span style="color:green">guest computer with 0x3E3C17CB sionfonternalcodec</span>
+- <span style="color:grey">null null with 0x20FB36F8 esultpareatlin</span>
+- Ounjun shell with 0x20FB36F8 tostan
+- <span style="color:grey">null null with 0x6E2A1CB2 eenoveexistenable</span>
+- <span style="color:grey">null null with 0x6E2A1CB2 atorruntextsire</span>
+- <span style="color:grey">null null with 0x6E2A1CB2 indop</span>
+- <span style="color:green">guest file with 0x6E2A1CB2 opmod</span>
+- <span style="color:green">??? password_change with 0x6E2A1CB2 otecalpha</span>
+- <span style="color:grey">null null with 0x4C6895D8 headd</span>
+- <span style="color:grey">null null with 0x13D25C8E etokethisc</span>
+- <span style="color:grey">null null with 0x13D25C8E textnewuitextuitextv</span>
+- <span style="color:grey">null null with 0x22F34F1D ibletextss</span>
+- <span style="color:grey">null null with 0x22F34F1D ionx</span>
+
+#### v 1.0.7 — shell 2/16
+<a id="1.0.7"></a>
+- Bahey shell with 0x364FD568 ead
+- <span style="color:green">guest computer with 0x364FD568 newicontain_f</span>
+- <span style="color:grey">null null with 0x364FD568 indexe</span>
+- <span style="color:grey">null null with 0x5E36F83B sh_blocall</span>
+- <span style="color:green">guest computer with 0x5E36F83B tline</span>
+- <span style="color:grey">null null with 0x5E36F83B dundostart++</span>
+- <span style="color:grey">null null with 0x1738C603 templ</span>
+- <span style="color:grey">null null with 0x1738C603 redpointeransformin</span>
+- <span style="color:grey">null null with 0x1738C603 ow_sizelanc</span>
+- <span style="color:grey">null null with 0x6E95DAA tingcou</span>
+- <span style="color:grey">null null with 0x6E95DAA aseondentantsetaction</span>
+- <span style="color:grey">null null with 0x74B3E09A extefferrorigh</span>
+- <span style="color:green">Gott file with 0x74B3E09A line</span>
+- <span style="color:grey">null null with 0x74B3E09A length</span>
+- Gott shell with 0x30C945C6 atchs
+- <span style="color:grey">null null with 0x30C945C6 deset</span>
+
+#### v 1.0.9 — shell 1/17, priv 1/17
+<a id="1.0.9"></a>
+- <span style="color:grey">null null with 0x578694C applush_</span>
+- <span style="color:green">guest computer with 0x578694C utilclosefalse</span>
+- <span style="color:green">Nermong computer with 0x73356E2B eaddpar</span>
+- <span style="color:grey">null null with 0x73356E2B thanb</span>
+- <span style="color:grey">null null with 0x73356E2B sourcethistenerbuttonco</span>
+- <span style="color:grey">null null with 0x73356E2B rhsa</span>
+- <span style="color:grey">null null with 0x73356E2B viewport</span>
+- <span style="color:grey">null null with 0x7322BE9A dthisniceletextsirectsel</span>
+- <span style="color:grey">null null with 0x7322BE9A pend_co</span>
+- <span style="color:grey">null null with 0x7322BE9A passionp</span>
+- <span style="color:green">??? password_change with 0x7322BE9A parentsing_lengthoffseta</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x14926D37 onclicked
+- <span style="color:grey">null null with 0x14926D37 osoundow_sizelistundoub</span>
+- <span style="color:grey">null null with 0x14926D37 textartialight</span>
+- <span style="color:grey">null null with 0x14926D37 stemovetreelc</span>
+- Essba shell with 0x38DBF90C ositiontexting
+- <span style="color:green">Essba file with 0x1867035B ovelistgraphic</span>
+
 #### v 1.1.0 — shell 6/52
 <a id="1.1.0"></a>
 - <span style="color:yellow">guest</span> shell with 0x58978E71 ecompo
@@ -13834,6 +14187,34 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:grey">null null with 0x577634AF _viewportmsbheadd</span>
 - <span style="color:yellow">guest</span> shell with 0x7DF71D2C or-1
 - <span style="color:green">??? password_change with 0x7DF71D2C paramesstance</span>
+
+#### v 1.2.2 — shell 3/25
+<a id="1.2.2"></a>
+- <span style="color:grey">null null with 0x47E04411 otenertyp</span>
+- <span style="color:grey">null null with 0x1018107F sh_pending</span>
+- <span style="color:green">??? password_change with 0x1018107F riteractive</span>
+- <span style="color:grey">null null with 0x1018107F mizelinenu</span>
+- <span style="color:grey">null null with 0x1018107F selazymatch_lengtho</span>
+- <span style="color:green">Urpeyman file with 0x470AE9DE orttedistvalu</span>
+- <span style="color:grey">null null with 0x470AE9DE ewportmsbin_ltreelc</span>
+- Urpeyman shell with 0x470AE9DE emps
+- <span style="color:yellow">guest</span> shell with 0x470AE9DE codeinte
+- <span style="color:grey">null null with 0xC91C35D selh</span>
+- <span style="color:grey">null null with 0xC91C35D #endin</span>
+- <span style="color:green">guest computer with 0xC91C35D need</span>
+- <span style="color:grey">null null with 0xC91C35D sizewindowm</span>
+- <span style="color:green">Sezla file with 0xC91C35D kpeek</span>
+- <span style="color:yellow">guest</span> shell with 0x7DF71D2C listictiony
+- <span style="color:grey">null null with 0xB4ACE30 ovel_flush_bitstring_</span>
+- <span style="color:grey">null null with 0xB4ACE30 ourceplaydeltaddg</span>
+- <span style="color:green">??? password_change with 0xB4ACE30 wardoutprite</span>
+- <span style="color:green">guest computer with 0xB4ACE30 indostancession</span>
+- <span style="color:grey">null null with 0xB4ACE30 shoroupintosting</span>
+- <span style="color:grey">null null with 0x5E9378E2 itionstreethisa</span>
+- <span style="color:green">Urpeyman computer with 0x7033EDF4 bitssedtaskthisrhsa</span>
+- <span style="color:grey">null null with 0x7033EDF4 dateoutpriteractivefalse</span>
+- <span style="color:grey">null null with 0x7033EDF4 tatibl</span>
+- <span style="color:green">Urpeyman computer with 0x7033EDF4 enercolor_titleob_lendpointxs</span>
 
 #### v 1.2.4 — shell 2/38, priv 1/38
 <a id="1.2.4"></a>
@@ -14115,6 +14496,52 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:grey">null null with 0x682E64D2 gthcodeci</span>
 - <span style="color:green">??? password_change with 0x682E64D2 ockdonentpositialighlighlight2</span>
 
+#### v 1.3.7 — shell 1/16
+<a id="1.3.7"></a>
+- <span style="color:grey">null null with 0x7DC0208D codeenovetreed</span>
+- <span style="color:green">guest file with 0x7DC0208D note</span>
+- <span style="color:grey">null null with 0x7DC0208D antsrep_3_6</span>
+- <span style="color:grey">null null with 0x7DC0208D hore</span>
+- <span style="color:grey">null null with 0x7DC0208D tackgroup</span>
+- <span style="color:grey">null null with 0x6E641AB0 neheightmi</span>
+- <span style="color:yellow">guest</span> shell with 0x4FF0226F unctivetacteven
+- <span style="color:green">guest file with 0x4FF0226F colorsches++</span>
+- <span style="color:grey">null null with 0x646F9B2F tackcontextpositionarykeyr</span>
+- <span style="color:green">Azzolaridge computer with 0x646F9B2F scan</span>
+- <span style="color:grey">null null with 0x646F9B2F sinsicr</span>
+- <span style="color:grey">null null with 0x646F9B2F ending_distart</span>
+- <span style="color:grey">null null with 0x5606E69F valuesrep</span>
+- <span style="color:grey">null null with 0x5606E69F ineslinesou</span>
+- <span style="color:grey">null null with 0x5606E69F textbuttonbuttonte</span>
+- <span style="color:grey">null null with 0x5606E69F blocall0f</span>
+
+#### v 1.3.8 — shell 5/24, priv 1/24
+<a id="1.3.8"></a>
+- <span style="color:grey">null null with 0x2C19995F stypebot</span>
+- <span style="color:yellow">guest</span> shell with 0x5094E8F7 lushpa
+- <span style="color:grey">null null with 0x6A394701 movebuttoncomposition++</span>
+- <span style="color:grey">null null with 0x6A394701 rinsicontilcloseond</span>
+- <span style="color:green">guest computer with 0x7CB381CB windexesadd</span>
+- Lespunte shell with 0x7CB381CB horttextpush_bitsb
+- <span style="color:grey">null null with 0x7CB381CB shadowmationy</span>
+- <span style="color:green">guest file with 0x7CB381CB yrep_3_10</span>
+- <span style="color:yellow">guest</span> shell with 0x27BF849E hisrepz_11_
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x27BF849E sulttextsl
+- Lespunte shell with 0x55644E19 sicontain
+- <span style="color:green">Lespunte computer with 0x3FE8178E letextsizel</span>
+- <span style="color:green">Lespunte file with 0x5F408616 moveratebitsdcolor_viewportmsbheadp</span>
+- <span style="color:grey">null null with 0x7ADE5F7B _treed</span>
+- <span style="color:grey">null null with 0x1D85AFAE end_bitslcontringc</span>
+- <span style="color:grey">null null with 0x4045C7E7 ameteli</span>
+- <span style="color:green">??? password_change with 0x4045C7E7 zeline</span>
+- <span style="color:grey">null null with 0x4045C7E7 timessagecom</span>
+- <span style="color:grey">null null with 0x4045C7E7 tonstatimagesaddlinestrst</span>
+- <span style="color:grey">null null with 0x4045C7E7 fontextobjectselock_stopwatcheck</span>
+- <span style="color:grey">null null with 0x17CB11CF bl_tr_st</span>
+- <span style="color:green">guest computer with 0x44F62360 buffecttran</span>
+- <span style="color:green">Demine computer with 0x25EC13ED inesin</span>
+- Aynteg shell with 0x22891F39 esaddlistv
+
 #### v 1.4.0 — shell 7/38, priv 2/38
 <a id="1.4.0"></a>
 - <span style="color:grey">null null with 0x1809B61F chan</span>
@@ -14183,6 +14610,40 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:grey">null null with 0xA6B55CD watcheckr</span>
 - <span style="color:grey">null null with 0x552332AC nenum++</span>
 
+#### v 1.4.5 — shell 1/10, priv 1/10
+<a id="1.4.5"></a>
+- <span style="color:grey">null null with 0x2C160AAD _blockso</span>
+- <span style="color:grey">null null with 0x2C160AAD distantsetpivotgetundostran</span>
+- <span style="color:grey">null null with 0x2A7A27C1 sharetoken</span>
+- <span style="color:yellow">guest</span> shell with 0x2A7A27C1 inserthanb
+- <span style="color:grey">null null with 0x86B745D etitleobjectse</span>
+- <span style="color:grey">null null with 0x86B745D messign</span>
+- <span style="color:grey">null null with 0x466C46A1 windexer</span>
+- <span style="color:green">Tirey computer with 0x466C46A1 ethemesselazymator2</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x466C46A1 _10
+- <span style="color:grey">null null with 0x466C46A1 tring_distvalu</span>
+
+#### v 1.4.6 — shell 3/18
+<a id="1.4.6"></a>
+- <span style="color:grey">null null with 0x5C874377 stanchorm</span>
+- <span style="color:green">??? password_change with 0x5C874377 true</span>
+- <span style="color:green">guest file with 0x9F6D7B2 sourceclicksra</span>
+- <span style="color:green">??? password_change with 0x4A7B464C treetr</span>
+- <span style="color:grey">null null with 0x4A7B464C elend_code</span>
+- <span style="color:green">guest computer with 0x4A7B464C learheapk</span>
+- <span style="color:grey">null null with 0x4A7B464C istvaluesa</span>
+- <span style="color:grey">null null with 0x4A7B464C igsingpend_color</span>
+- Forszab shell with 0x4DBD65C9 loselengt
+- <span style="color:grey">null null with 0x7A8588D1 closefalssthanb</span>
+- <span style="color:grey">null null with 0x7A8588D1 close</span>
+- <span style="color:grey">null null with 0x78629EE6 magetextslconterr</span>
+- <span style="color:grey">null null with 0x78629EE6 ch_lenb</span>
+- Jimayr shell with 0x5E03D75E blocalladdundost
+- Ewalla shell with 0x144CF9A conobjecte
+- <span style="color:grey">null null with 0x660D6CC6 ormlockbuff</span>
+- <span style="color:grey">null null with 0x5FAE4637 blockblocalpositio</span>
+- <span style="color:green">Ewerba file with 0x24336F84 denti</span>
+
 #### v 1.5.1 — shell 3/24
 <a id="1.5.1"></a>
 - <span style="color:yellow">guest</span> shell with 0x954042A storegroundow++s
@@ -14209,6 +14670,30 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest computer with 0xFE0294C s_h</span>
 - <span style="color:grey">null null with 0xFE0294C ebitscomponentingcoun</span>
 - <span style="color:grey">null null with 0xFE0294C owanimatoredpointlineanimagetpivot</span>
+
+#### v 1.5.2 — shell 3/21
+<a id="1.5.2"></a>
+- <span style="color:grey">null null with 0x2FBE262A onsertlinesizey</span>
+- <span style="color:green">guest file with 0x2FBE262A tartpositio</span>
+- <span style="color:grey">null null with 0x36EC1DF1 trecttransfored_block_sizewinvoke</span>
+- <span style="color:grey">null null with 0x36EC1DF1 nametextte</span>
+- <span style="color:yellow">guest</span> shell with 0x59150A89 schemechanb
+- <span style="color:green">guest computer with 0x59150A89 dowmatic_le</span>
+- <span style="color:grey">null null with 0x59150A89 erins_h</span>
+- <span style="color:grey">null null with 0x59150A89 valfun</span>
+- <span style="color:grey">null null with 0xFE0294C elhightmidthi</span>
+- <span style="color:green">??? password_change with 0xFE0294C owanimatoredpointlineanimagetpivot</span>
+- <span style="color:green">Ancil file with 0x3AF7EEA1 case</span>
+- <span style="color:grey">null null with 0x36A9B5E8 _sharamete</span>
+- Zotteman shell with 0x62C8B9D9 coundosta
+- <span style="color:green">Zotteman computer with 0x48E71B2C retrue</span>
+- <span style="color:grey">null null with 0x54B3252 reebitscolor_viewp</span>
+- <span style="color:grey">null null with 0x7D61EBBA i_flusb</span>
+- <span style="color:grey">null null with 0x75BCCFCD parea</span>
+- <span style="color:green">Naniza file with 0x4317BD20 varventintoveexi</span>
+- <span style="color:green">Chweijia computer with 0x3B59EA94 watch_st</span>
+- <span style="color:green">??? password_change with 0x69436E6D nishdonenumbe</span>
+- <span style="color:yellow">guest</span> shell with 0x69436E6D consta
 
 #### v 1.5.4 — shell 3/24, priv 1/24
 <a id="1.5.4"></a>
