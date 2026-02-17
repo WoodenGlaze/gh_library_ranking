@@ -1,8 +1,10 @@
 # Library safety — indexed
 
-This index flags whether a library can give an attacker a shell (guest/root) and whether it can provide privileged objects (root shell/computer/file).
+This document contains an index of libraries in the game greyhack.
 
-## Library index
+ Please open an issue if you find any library classed as safe, and provide details about why you believe it isn't safe, so we can rectify it more easily. 
+
+ Use this knowledge with great(or not so great) responsibility, but above all: enjoy!## Library index
 
 | Library | Total hooks | Total versions | Safe versions | Shells | Privileged | Missing up to max |
 |---|---:|---:|---:|---:|---:|---:|
