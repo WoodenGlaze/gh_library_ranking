@@ -6,23 +6,23 @@ This index flags whether a library can give an attacker a shell (guest/root) and
 
 | Library | Total hooks | Total versions | Safe versions | Shells | Privileged | Missing up to max |
 |---|---:|---:|---:|---:|---:|---:|
-| <a href="#libssh-so">libssh.so</a> | 4119 | 222 | 19 | 573 | 158 | 112 |
-| <a href="#libhttp-so">libhttp.so</a> | 1867 | 99 | 10 | 276 | 91 | 2 |
-| <a href="#kernel_router-so">kernel_router.so</a> | 1831 | 356 | 102 | 488 | 75 | 235 |
-| <a href="#libftp-so">libftp.so</a> | 615 | 33 | 3 | 91 | 37 | 0 |
-| <a href="#libsmtp-so">libsmtp.so</a> | 389 | 18 | 3 | 49 | 20 | 1 |
-| <a href="#libsql-so">libsql.so</a> | 462 | 18 | 1 | 45 | 19 | 63 |
-| <a href="#librepository-so">librepository.so</a> | 90 | 5 | 2 | 16 | 2 | 16 |
+| <a href="#libssh-so">libssh.so</a> | 5131 | 251 | 21 | 737 | 212 | 83 |
+| <a href="#libhttp-so">libhttp.so</a> | 2788 | 101 | 7 | 425 | 136 | 0 |
+| <a href="#kernel_router-so">kernel_router.so</a> | 2295 | 428 | 129 | 604 | 93 | 164 |
+| <a href="#libftp-so">libftp.so</a> | 776 | 33 | 3 | 116 | 47 | 0 |
+| <a href="#libsql-so">libsql.so</a> | 918 | 34 | 3 | 97 | 36 | 48 |
+| <a href="#libsmtp-so">libsmtp.so</a> | 536 | 19 | 3 | 74 | 27 | 0 |
+| <a href="#librepository-so">librepository.so</a> | 336 | 17 | 3 | 57 | 8 | 4 |
 
 
 ## `libssh.so`
 <a id="libssh-so"></a>
 
-- Total Hooked lines: 4119
-- Can provide shell: 573
-- Has privileged object: 158
-- Safe versions: 19
-Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#1.0.1"><span style="color:red">v 1.0.1</span></a> <a href="#1.0.2"><span style="color:red">v 1.0.2</span></a> <a href="#1.0.3"><span style="color:red">v 1.0.3</span></a> <a href="#1.0.6"><span style="color:red">v 1.0.6</span></a> <a href="#1.0.8"><span style="color:red">v 1.0.8</span></a> <a href="#1.1.0"><span style="color:red">v 1.1.0</span></a> <a href="#1.1.1"><span style="color:green">v 1.1.1</span></a> <a href="#1.1.2"><span style="color:red">v 1.1.2</span></a> <a href="#1.1.3"><span style="color:red">v 1.1.3</span></a> <a href="#1.1.4"><span style="color:red">v 1.1.4</span></a> <a href="#1.1.7"><span style="color:red">v 1.1.7</span></a> <a href="#1.1.8"><span style="color:red">v 1.1.8</span></a> <a href="#1.1.9"><span style="color:red">v 1.1.9</span></a> <a href="#1.2.0"><span style="color:red">v 1.2.0</span></a> <a href="#1.2.1"><span style="color:red">v 1.2.1</span></a> <a href="#1.2.2"><span style="color:red">v 1.2.2</span></a> <a href="#1.2.3"><span style="color:red">v 1.2.3</span></a> <a href="#1.2.7"><span style="color:red">v 1.2.7</span></a> <a href="#1.2.8"><span style="color:red">v 1.2.8</span></a> <a href="#1.3.0"><span style="color:red">v 1.3.0</span></a> <a href="#1.3.1"><span style="color:red">v 1.3.1</span></a> <a href="#1.3.3"><span style="color:red">v 1.3.3</span></a> <a href="#1.3.8"><span style="color:red">v 1.3.8</span></a> <a href="#1.3.9"><span style="color:red">v 1.3.9</span></a> <a href="#1.4.0"><span style="color:red">v 1.4.0</span></a> <a href="#1.4.2"><span style="color:red">v 1.4.2</span></a> <a href="#1.4.5"><span style="color:red">v 1.4.5</span></a> <a href="#1.4.6"><span style="color:red">v 1.4.6</span></a> <a href="#1.4.7"><span style="color:green">v 1.4.7</span></a> <a href="#1.5.0"><span style="color:red">v 1.5.0</span></a> <a href="#1.5.1"><span style="color:red">v 1.5.1</span></a> <a href="#1.5.3"><span style="color:red">v 1.5.3</span></a> <a href="#1.5.4"><span style="color:red">v 1.5.4</span></a> <a href="#1.5.5"><span style="color:red">v 1.5.5</span></a> <a href="#1.5.6"><span style="color:red">v 1.5.6</span></a> <a href="#1.5.7"><span style="color:red">v 1.5.7</span></a> <a href="#1.5.8"><span style="color:red">v 1.5.8</span></a> <a href="#1.5.9"><span style="color:red">v 1.5.9</span></a> <a href="#1.6.0"><span style="color:red">v 1.6.0</span></a> <a href="#1.6.1"><span style="color:red">v 1.6.1</span></a> <a href="#1.6.2"><span style="color:red">v 1.6.2</span></a> <a href="#1.6.4"><span style="color:red">v 1.6.4</span></a> <a href="#1.6.5"><span style="color:red">v 1.6.5</span></a> <a href="#1.6.7"><span style="color:red">v 1.6.7</span></a> <a href="#1.6.8"><span style="color:red">v 1.6.8</span></a> <a href="#1.6.9"><span style="color:red">v 1.6.9</span></a> <a href="#1.7.1"><span style="color:red">v 1.7.1</span></a> <a href="#1.7.2"><span style="color:red">v 1.7.2</span></a> <a href="#1.7.3"><span style="color:green">v 1.7.3</span></a> <a href="#1.7.4"><span style="color:red">v 1.7.4</span></a> <a href="#1.7.5"><span style="color:red">v 1.7.5</span></a> <a href="#1.7.6"><span style="color:red">v 1.7.6</span></a> <a href="#1.7.7"><span style="color:red">v 1.7.7</span></a> <a href="#1.7.9"><span style="color:red">v 1.7.9</span></a> <a href="#1.8.0"><span style="color:red">v 1.8.0</span></a> <a href="#1.8.3"><span style="color:red">v 1.8.3</span></a> <a href="#1.8.4"><span style="color:red">v 1.8.4</span></a> <a href="#1.8.6"><span style="color:red">v 1.8.6</span></a> <a href="#1.8.9"><span style="color:red">v 1.8.9</span></a> <a href="#1.9.0"><span style="color:red">v 1.9.0</span></a> <a href="#1.9.1"><span style="color:red">v 1.9.1</span></a> <a href="#1.9.2"><span style="color:green">v 1.9.2</span></a> <a href="#1.9.3"><span style="color:red">v 1.9.3</span></a> <a href="#1.9.5"><span style="color:red">v 1.9.5</span></a> <a href="#1.9.6"><span style="color:red">v 1.9.6</span></a> <a href="#1.9.7"><span style="color:red">v 1.9.7</span></a> <a href="#2.0.0"><span style="color:red">v 2.0.0</span></a> <a href="#2.0.2"><span style="color:red">v 2.0.2</span></a> <a href="#2.0.4"><span style="color:red">v 2.0.4</span></a> <a href="#2.0.6"><span style="color:green">v 2.0.6</span></a> <a href="#2.0.7"><span style="color:red">v 2.0.7</span></a> <a href="#2.0.8"><span style="color:red">v 2.0.8</span></a> <a href="#2.0.9"><span style="color:red">v 2.0.9</span></a> <a href="#2.1.0"><span style="color:red">v 2.1.0</span></a> <a href="#2.1.1"><span style="color:green">v 2.1.1</span></a> <a href="#2.1.3"><span style="color:green">v 2.1.3</span></a> <a href="#2.1.4"><span style="color:red">v 2.1.4</span></a> <a href="#2.1.5"><span style="color:red">v 2.1.5</span></a> <a href="#2.1.6"><span style="color:red">v 2.1.6</span></a> <a href="#2.1.8"><span style="color:red">v 2.1.8</span></a> <a href="#2.2.0"><span style="color:green">v 2.2.0</span></a> <a href="#2.2.2"><span style="color:red">v 2.2.2</span></a> <a href="#2.2.3"><span style="color:red">v 2.2.3</span></a> <a href="#2.2.5"><span style="color:red">v 2.2.5</span></a> <a href="#2.2.6"><span style="color:red">v 2.2.6</span></a> <a href="#2.2.7"><span style="color:red">v 2.2.7</span></a> <a href="#2.2.8"><span style="color:red">v 2.2.8</span></a> <a href="#2.2.9"><span style="color:red">v 2.2.9</span></a> <a href="#2.3.0"><span style="color:red">v 2.3.0</span></a> <a href="#2.3.1"><span style="color:red">v 2.3.1</span></a> <a href="#2.3.2"><span style="color:red">v 2.3.2</span></a> <a href="#2.3.4"><span style="color:red">v 2.3.4</span></a> <a href="#2.3.5"><span style="color:red">v 2.3.5</span></a> <a href="#2.3.6"><span style="color:red">v 2.3.6</span></a> <a href="#2.3.8"><span style="color:red">v 2.3.8</span></a> <a href="#2.4.0"><span style="color:red">v 2.4.0</span></a> <a href="#2.4.1"><span style="color:red">v 2.4.1</span></a> <a href="#2.4.2"><span style="color:red">v 2.4.2</span></a> <a href="#2.4.5"><span style="color:red">v 2.4.5</span></a> <a href="#2.4.6"><span style="color:red">v 2.4.6</span></a> <a href="#2.4.7"><span style="color:red">v 2.4.7</span></a> <a href="#2.4.8"><span style="color:red">v 2.4.8</span></a> <a href="#2.4.9"><span style="color:red">v 2.4.9</span></a> <a href="#2.5.2"><span style="color:red">v 2.5.2</span></a> <a href="#2.5.3"><span style="color:red">v 2.5.3</span></a> <a href="#2.5.4"><span style="color:red">v 2.5.4</span></a> <a href="#2.5.5"><span style="color:red">v 2.5.5</span></a> <a href="#2.5.6"><span style="color:red">v 2.5.6</span></a> <a href="#2.5.7"><span style="color:red">v 2.5.7</span></a> <a href="#2.6.0"><span style="color:red">v 2.6.0</span></a> <a href="#2.6.2"><span style="color:red">v 2.6.2</span></a> <a href="#2.6.3"><span style="color:red">v 2.6.3</span></a> <a href="#2.6.4"><span style="color:green">v 2.6.4</span></a> <a href="#2.6.5"><span style="color:red">v 2.6.5</span></a> <a href="#2.6.6"><span style="color:red">v 2.6.6</span></a> <a href="#2.6.7"><span style="color:red">v 2.6.7</span></a> <a href="#2.6.9"><span style="color:red">v 2.6.9</span></a> <a href="#2.7.1"><span style="color:red">v 2.7.1</span></a> <a href="#2.7.4"><span style="color:red">v 2.7.4</span></a> <a href="#2.7.5"><span style="color:green">v 2.7.5</span></a> <a href="#2.7.6"><span style="color:red">v 2.7.6</span></a> <a href="#2.7.9"><span style="color:green">v 2.7.9</span></a> <a href="#2.8.0"><span style="color:green">v 2.8.0</span></a> <a href="#2.8.1"><span style="color:red">v 2.8.1</span></a> <a href="#2.8.2"><span style="color:red">v 2.8.2</span></a> <a href="#2.8.3"><span style="color:red">v 2.8.3</span></a> <a href="#2.8.4"><span style="color:red">v 2.8.4</span></a> <a href="#2.8.5"><span style="color:red">v 2.8.5</span></a> <a href="#2.8.8"><span style="color:green">v 2.8.8</span></a> <a href="#2.9.0"><span style="color:red">v 2.9.0</span></a> <a href="#2.9.1"><span style="color:red">v 2.9.1</span></a> <a href="#2.9.3"><span style="color:red">v 2.9.3</span></a> <a href="#2.9.5"><span style="color:red">v 2.9.5</span></a> <a href="#2.9.6"><span style="color:red">v 2.9.6</span></a> <a href="#2.9.7"><span style="color:red">v 2.9.7</span></a> <a href="#2.9.8"><span style="color:red">v 2.9.8</span></a> <a href="#3.0.0"><span style="color:red">v 3.0.0</span></a> <a href="#3.0.2"><span style="color:red">v 3.0.2</span></a> <a href="#3.0.5"><span style="color:red">v 3.0.5</span></a> <a href="#3.0.7"><span style="color:red">v 3.0.7</span></a> <a href="#3.0.8"><span style="color:red">v 3.0.8</span></a> <a href="#3.0.9"><span style="color:red">v 3.0.9</span></a> <a href="#3.1.1"><span style="color:green">v 3.1.1</span></a> <a href="#3.1.2"><span style="color:red">v 3.1.2</span></a> <a href="#3.1.3"><span style="color:red">v 3.1.3</span></a> <a href="#3.1.4"><span style="color:red">v 3.1.4</span></a> <a href="#3.1.7"><span style="color:red">v 3.1.7</span></a> <a href="#3.1.9"><span style="color:green">v 3.1.9</span></a> <a href="#3.2.0"><span style="color:red">v 3.2.0</span></a> <a href="#3.2.4"><span style="color:red">v 3.2.4</span></a> <a href="#3.2.5"><span style="color:green">v 3.2.5</span></a> <a href="#3.2.6"><span style="color:green">v 3.2.6</span></a> <a href="#3.2.7"><span style="color:red">v 3.2.7</span></a> <a href="#3.2.8"><span style="color:red">v 3.2.8</span></a> <a href="#3.2.9"><span style="color:red">v 3.2.9</span></a> <a href="#3.3.1"><span style="color:red">v 3.3.1</span></a> <a href="#3.3.4"><span style="color:green">v 3.3.4</span></a> <a href="#3.3.5"><span style="color:red">v 3.3.5</span></a> <a href="#3.3.9"><span style="color:red">v 3.3.9</span></a> <a href="#3.4.0"><span style="color:red">v 3.4.0</span></a> <a href="#3.4.1"><span style="color:red">v 3.4.1</span></a> <a href="#3.4.2"><span style="color:red">v 3.4.2</span></a> <a href="#3.4.3"><span style="color:red">v 3.4.3</span></a> <a href="#3.4.4"><span style="color:red">v 3.4.4</span></a> <a href="#3.4.5"><span style="color:red">v 3.4.5</span></a> <a href="#3.4.6"><span style="color:red">v 3.4.6</span></a> <a href="#3.4.8"><span style="color:red">v 3.4.8</span></a> <a href="#3.4.9"><span style="color:red">v 3.4.9</span></a> <a href="#3.5.0"><span style="color:red">v 3.5.0</span></a> <a href="#3.5.1"><span style="color:red">v 3.5.1</span></a> <a href="#3.5.2"><span style="color:red">v 3.5.2</span></a> <a href="#3.5.3"><span style="color:red">v 3.5.3</span></a> <a href="#3.5.4"><span style="color:red">v 3.5.4</span></a> <a href="#3.5.6"><span style="color:red">v 3.5.6</span></a> <a href="#3.5.7"><span style="color:red">v 3.5.7</span></a> <a href="#3.5.8"><span style="color:red">v 3.5.8</span></a> <a href="#3.6.1"><span style="color:red">v 3.6.1</span></a> <a href="#3.6.2"><span style="color:red">v 3.6.2</span></a> <a href="#3.6.3"><span style="color:red">v 3.6.3</span></a> <a href="#3.6.4"><span style="color:red">v 3.6.4</span></a> <a href="#3.6.7"><span style="color:green">v 3.6.7</span></a> <a href="#3.6.8"><span style="color:red">v 3.6.8</span></a> <a href="#3.7.0"><span style="color:red">v 3.7.0</span></a> <a href="#3.7.1"><span style="color:red">v 3.7.1</span></a> <a href="#3.7.3"><span style="color:red">v 3.7.3</span></a> <a href="#3.7.4"><span style="color:red">v 3.7.4</span></a> <a href="#3.7.8"><span style="color:red">v 3.7.8</span></a> <a href="#3.7.9"><span style="color:red">v 3.7.9</span></a> <a href="#3.8.1"><span style="color:red">v 3.8.1</span></a> <a href="#3.8.3"><span style="color:red">v 3.8.3</span></a> <a href="#3.8.5"><span style="color:red">v 3.8.5</span></a> <a href="#3.8.7"><span style="color:red">v 3.8.7</span></a> <a href="#3.8.8"><span style="color:red">v 3.8.8</span></a> <a href="#3.8.9"><span style="color:red">v 3.8.9</span></a> <a href="#3.9.0"><span style="color:red">v 3.9.0</span></a> <a href="#3.9.1"><span style="color:red">v 3.9.1</span></a> <a href="#3.9.2"><span style="color:red">v 3.9.2</span></a> <a href="#3.9.3"><span style="color:red">v 3.9.3</span></a> <a href="#3.9.5"><span style="color:red">v 3.9.5</span></a> <a href="#3.9.6"><span style="color:red">v 3.9.6</span></a> <a href="#3.9.7"><span style="color:red">v 3.9.7</span></a> <a href="#3.9.8"><span style="color:red">v 3.9.8</span></a> <a href="#4.0.1"><span style="color:red">v 4.0.1</span></a> <a href="#4.0.3"><span style="color:red">v 4.0.3</span></a> <a href="#4.0.4"><span style="color:red">v 4.0.4</span></a> <a href="#4.0.6"><span style="color:red">v 4.0.6</span></a> <a href="#4.0.8"><span style="color:red">v 4.0.8</span></a> <a href="#4.1.1"><span style="color:red">v 4.1.1</span></a> <a href="#4.1.2"><span style="color:red">v 4.1.2</span></a> <a href="#4.1.4"><span style="color:red">v 4.1.4</span></a> <a href="#4.1.5"><span style="color:red">v 4.1.5</span></a> <a href="#4.1.6"><span style="color:red">v 4.1.6</span></a> <a href="#4.1.7"><span style="color:red">v 4.1.7</span></a> <a href="#4.1.9"><span style="color:red">v 4.1.9</span></a> <a href="#4.2.0"><span style="color:red">v 4.2.0</span></a> <a href="#4.2.2"><span style="color:red">v 4.2.2</span></a> <a href="#4.2.4"><span style="color:red">v 4.2.4</span></a> <a href="#4.2.7"><span style="color:red">v 4.2.7</span></a> <a href="#4.2.9"><span style="color:red">v 4.2.9</span></a> <a href="#4.3.1"><span style="color:red">v 4.3.1</span></a> <a href="#4.3.3"><span style="color:red">v 4.3.3</span></a>
+- Total Hooked lines: 5131
+- Can provide shell: 737
+- Has privileged object: 212
+- Safe versions: 21
+Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#1.0.1"><span style="color:red">v 1.0.1</span></a> <a href="#1.0.2"><span style="color:red">v 1.0.2</span></a> <a href="#1.0.3"><span style="color:red">v 1.0.3</span></a> <a href="#1.0.4"><span style="color:red">v 1.0.4</span></a> <a href="#1.0.6"><span style="color:red">v 1.0.6</span></a> <a href="#1.0.8"><span style="color:red">v 1.0.8</span></a> <a href="#1.1.0"><span style="color:red">v 1.1.0</span></a> <a href="#1.1.1"><span style="color:green">v 1.1.1</span></a> <a href="#1.1.2"><span style="color:red">v 1.1.2</span></a> <a href="#1.1.3"><span style="color:red">v 1.1.3</span></a> <a href="#1.1.4"><span style="color:red">v 1.1.4</span></a> <a href="#1.1.5"><span style="color:green">v 1.1.5</span></a> <a href="#1.1.7"><span style="color:red">v 1.1.7</span></a> <a href="#1.1.8"><span style="color:red">v 1.1.8</span></a> <a href="#1.1.9"><span style="color:red">v 1.1.9</span></a> <a href="#1.2.0"><span style="color:red">v 1.2.0</span></a> <a href="#1.2.1"><span style="color:red">v 1.2.1</span></a> <a href="#1.2.2"><span style="color:red">v 1.2.2</span></a> <a href="#1.2.3"><span style="color:red">v 1.2.3</span></a> <a href="#1.2.7"><span style="color:red">v 1.2.7</span></a> <a href="#1.2.8"><span style="color:red">v 1.2.8</span></a> <a href="#1.3.0"><span style="color:red">v 1.3.0</span></a> <a href="#1.3.1"><span style="color:red">v 1.3.1</span></a> <a href="#1.3.3"><span style="color:red">v 1.3.3</span></a> <a href="#1.3.5"><span style="color:red">v 1.3.5</span></a> <a href="#1.3.7"><span style="color:red">v 1.3.7</span></a> <a href="#1.3.8"><span style="color:red">v 1.3.8</span></a> <a href="#1.3.9"><span style="color:red">v 1.3.9</span></a> <a href="#1.4.0"><span style="color:red">v 1.4.0</span></a> <a href="#1.4.2"><span style="color:red">v 1.4.2</span></a> <a href="#1.4.5"><span style="color:red">v 1.4.5</span></a> <a href="#1.4.6"><span style="color:red">v 1.4.6</span></a> <a href="#1.4.7"><span style="color:green">v 1.4.7</span></a> <a href="#1.5.0"><span style="color:red">v 1.5.0</span></a> <a href="#1.5.1"><span style="color:red">v 1.5.1</span></a> <a href="#1.5.3"><span style="color:red">v 1.5.3</span></a> <a href="#1.5.4"><span style="color:red">v 1.5.4</span></a> <a href="#1.5.5"><span style="color:red">v 1.5.5</span></a> <a href="#1.5.6"><span style="color:red">v 1.5.6</span></a> <a href="#1.5.7"><span style="color:red">v 1.5.7</span></a> <a href="#1.5.8"><span style="color:red">v 1.5.8</span></a> <a href="#1.5.9"><span style="color:red">v 1.5.9</span></a> <a href="#1.6.0"><span style="color:red">v 1.6.0</span></a> <a href="#1.6.1"><span style="color:red">v 1.6.1</span></a> <a href="#1.6.2"><span style="color:red">v 1.6.2</span></a> <a href="#1.6.4"><span style="color:red">v 1.6.4</span></a> <a href="#1.6.5"><span style="color:red">v 1.6.5</span></a> <a href="#1.6.6"><span style="color:red">v 1.6.6</span></a> <a href="#1.6.7"><span style="color:red">v 1.6.7</span></a> <a href="#1.6.8"><span style="color:red">v 1.6.8</span></a> <a href="#1.6.9"><span style="color:red">v 1.6.9</span></a> <a href="#1.7.0"><span style="color:red">v 1.7.0</span></a> <a href="#1.7.1"><span style="color:red">v 1.7.1</span></a> <a href="#1.7.2"><span style="color:red">v 1.7.2</span></a> <a href="#1.7.3"><span style="color:green">v 1.7.3</span></a> <a href="#1.7.4"><span style="color:red">v 1.7.4</span></a> <a href="#1.7.5"><span style="color:red">v 1.7.5</span></a> <a href="#1.7.6"><span style="color:red">v 1.7.6</span></a> <a href="#1.7.7"><span style="color:red">v 1.7.7</span></a> <a href="#1.7.9"><span style="color:red">v 1.7.9</span></a> <a href="#1.8.0"><span style="color:red">v 1.8.0</span></a> <a href="#1.8.3"><span style="color:red">v 1.8.3</span></a> <a href="#1.8.4"><span style="color:red">v 1.8.4</span></a> <a href="#1.8.5"><span style="color:red">v 1.8.5</span></a> <a href="#1.8.6"><span style="color:red">v 1.8.6</span></a> <a href="#1.8.8"><span style="color:red">v 1.8.8</span></a> <a href="#1.8.9"><span style="color:red">v 1.8.9</span></a> <a href="#1.9.0"><span style="color:red">v 1.9.0</span></a> <a href="#1.9.1"><span style="color:red">v 1.9.1</span></a> <a href="#1.9.2"><span style="color:green">v 1.9.2</span></a> <a href="#1.9.3"><span style="color:red">v 1.9.3</span></a> <a href="#1.9.4"><span style="color:red">v 1.9.4</span></a> <a href="#1.9.5"><span style="color:red">v 1.9.5</span></a> <a href="#1.9.6"><span style="color:red">v 1.9.6</span></a> <a href="#1.9.7"><span style="color:red">v 1.9.7</span></a> <a href="#2.0.0"><span style="color:red">v 2.0.0</span></a> <a href="#2.0.2"><span style="color:red">v 2.0.2</span></a> <a href="#2.0.3"><span style="color:red">v 2.0.3</span></a> <a href="#2.0.4"><span style="color:red">v 2.0.4</span></a> <a href="#2.0.5"><span style="color:red">v 2.0.5</span></a> <a href="#2.0.6"><span style="color:green">v 2.0.6</span></a> <a href="#2.0.7"><span style="color:red">v 2.0.7</span></a> <a href="#2.0.8"><span style="color:red">v 2.0.8</span></a> <a href="#2.0.9"><span style="color:red">v 2.0.9</span></a> <a href="#2.1.0"><span style="color:red">v 2.1.0</span></a> <a href="#2.1.1"><span style="color:green">v 2.1.1</span></a> <a href="#2.1.3"><span style="color:green">v 2.1.3</span></a> <a href="#2.1.4"><span style="color:red">v 2.1.4</span></a> <a href="#2.1.5"><span style="color:red">v 2.1.5</span></a> <a href="#2.1.6"><span style="color:red">v 2.1.6</span></a> <a href="#2.1.8"><span style="color:red">v 2.1.8</span></a> <a href="#2.1.9"><span style="color:red">v 2.1.9</span></a> <a href="#2.2.0"><span style="color:green">v 2.2.0</span></a> <a href="#2.2.1"><span style="color:red">v 2.2.1</span></a> <a href="#2.2.2"><span style="color:red">v 2.2.2</span></a> <a href="#2.2.3"><span style="color:red">v 2.2.3</span></a> <a href="#2.2.5"><span style="color:red">v 2.2.5</span></a> <a href="#2.2.6"><span style="color:red">v 2.2.6</span></a> <a href="#2.2.7"><span style="color:red">v 2.2.7</span></a> <a href="#2.2.8"><span style="color:red">v 2.2.8</span></a> <a href="#2.2.9"><span style="color:red">v 2.2.9</span></a> <a href="#2.3.0"><span style="color:red">v 2.3.0</span></a> <a href="#2.3.1"><span style="color:red">v 2.3.1</span></a> <a href="#2.3.2"><span style="color:red">v 2.3.2</span></a> <a href="#2.3.4"><span style="color:red">v 2.3.4</span></a> <a href="#2.3.5"><span style="color:red">v 2.3.5</span></a> <a href="#2.3.6"><span style="color:red">v 2.3.6</span></a> <a href="#2.3.8"><span style="color:red">v 2.3.8</span></a> <a href="#2.4.0"><span style="color:red">v 2.4.0</span></a> <a href="#2.4.1"><span style="color:red">v 2.4.1</span></a> <a href="#2.4.2"><span style="color:red">v 2.4.2</span></a> <a href="#2.4.4"><span style="color:green">v 2.4.4</span></a> <a href="#2.4.5"><span style="color:red">v 2.4.5</span></a> <a href="#2.4.6"><span style="color:red">v 2.4.6</span></a> <a href="#2.4.7"><span style="color:red">v 2.4.7</span></a> <a href="#2.4.8"><span style="color:red">v 2.4.8</span></a> <a href="#2.4.9"><span style="color:red">v 2.4.9</span></a> <a href="#2.5.1"><span style="color:red">v 2.5.1</span></a> <a href="#2.5.2"><span style="color:red">v 2.5.2</span></a> <a href="#2.5.3"><span style="color:red">v 2.5.3</span></a> <a href="#2.5.4"><span style="color:red">v 2.5.4</span></a> <a href="#2.5.5"><span style="color:red">v 2.5.5</span></a> <a href="#2.5.6"><span style="color:red">v 2.5.6</span></a> <a href="#2.5.7"><span style="color:red">v 2.5.7</span></a> <a href="#2.6.0"><span style="color:red">v 2.6.0</span></a> <a href="#2.6.2"><span style="color:red">v 2.6.2</span></a> <a href="#2.6.3"><span style="color:red">v 2.6.3</span></a> <a href="#2.6.4"><span style="color:green">v 2.6.4</span></a> <a href="#2.6.5"><span style="color:red">v 2.6.5</span></a> <a href="#2.6.6"><span style="color:red">v 2.6.6</span></a> <a href="#2.6.7"><span style="color:red">v 2.6.7</span></a> <a href="#2.6.9"><span style="color:red">v 2.6.9</span></a> <a href="#2.7.1"><span style="color:red">v 2.7.1</span></a> <a href="#2.7.2"><span style="color:red">v 2.7.2</span></a> <a href="#2.7.4"><span style="color:red">v 2.7.4</span></a> <a href="#2.7.5"><span style="color:green">v 2.7.5</span></a> <a href="#2.7.6"><span style="color:red">v 2.7.6</span></a> <a href="#2.7.9"><span style="color:green">v 2.7.9</span></a> <a href="#2.8.0"><span style="color:green">v 2.8.0</span></a> <a href="#2.8.1"><span style="color:red">v 2.8.1</span></a> <a href="#2.8.2"><span style="color:red">v 2.8.2</span></a> <a href="#2.8.3"><span style="color:red">v 2.8.3</span></a> <a href="#2.8.4"><span style="color:red">v 2.8.4</span></a> <a href="#2.8.5"><span style="color:red">v 2.8.5</span></a> <a href="#2.8.6"><span style="color:red">v 2.8.6</span></a> <a href="#2.8.8"><span style="color:green">v 2.8.8</span></a> <a href="#2.9.0"><span style="color:red">v 2.9.0</span></a> <a href="#2.9.1"><span style="color:red">v 2.9.1</span></a> <a href="#2.9.3"><span style="color:red">v 2.9.3</span></a> <a href="#2.9.5"><span style="color:red">v 2.9.5</span></a> <a href="#2.9.6"><span style="color:red">v 2.9.6</span></a> <a href="#2.9.7"><span style="color:red">v 2.9.7</span></a> <a href="#2.9.8"><span style="color:red">v 2.9.8</span></a> <a href="#2.9.9"><span style="color:red">v 2.9.9</span></a> <a href="#3.0.0"><span style="color:red">v 3.0.0</span></a> <a href="#3.0.2"><span style="color:red">v 3.0.2</span></a> <a href="#3.0.5"><span style="color:red">v 3.0.5</span></a> <a href="#3.0.6"><span style="color:red">v 3.0.6</span></a> <a href="#3.0.7"><span style="color:red">v 3.0.7</span></a> <a href="#3.0.8"><span style="color:red">v 3.0.8</span></a> <a href="#3.0.9"><span style="color:red">v 3.0.9</span></a> <a href="#3.1.1"><span style="color:green">v 3.1.1</span></a> <a href="#3.1.2"><span style="color:red">v 3.1.2</span></a> <a href="#3.1.3"><span style="color:red">v 3.1.3</span></a> <a href="#3.1.4"><span style="color:red">v 3.1.4</span></a> <a href="#3.1.7"><span style="color:red">v 3.1.7</span></a> <a href="#3.1.9"><span style="color:green">v 3.1.9</span></a> <a href="#3.2.0"><span style="color:red">v 3.2.0</span></a> <a href="#3.2.4"><span style="color:red">v 3.2.4</span></a> <a href="#3.2.5"><span style="color:green">v 3.2.5</span></a> <a href="#3.2.6"><span style="color:green">v 3.2.6</span></a> <a href="#3.2.7"><span style="color:red">v 3.2.7</span></a> <a href="#3.2.8"><span style="color:red">v 3.2.8</span></a> <a href="#3.2.9"><span style="color:red">v 3.2.9</span></a> <a href="#3.3.1"><span style="color:red">v 3.3.1</span></a> <a href="#3.3.2"><span style="color:red">v 3.3.2</span></a> <a href="#3.3.4"><span style="color:green">v 3.3.4</span></a> <a href="#3.3.5"><span style="color:red">v 3.3.5</span></a> <a href="#3.3.8"><span style="color:red">v 3.3.8</span></a> <a href="#3.3.9"><span style="color:red">v 3.3.9</span></a> <a href="#3.4.0"><span style="color:red">v 3.4.0</span></a> <a href="#3.4.1"><span style="color:red">v 3.4.1</span></a> <a href="#3.4.2"><span style="color:red">v 3.4.2</span></a> <a href="#3.4.3"><span style="color:red">v 3.4.3</span></a> <a href="#3.4.4"><span style="color:red">v 3.4.4</span></a> <a href="#3.4.5"><span style="color:red">v 3.4.5</span></a> <a href="#3.4.6"><span style="color:red">v 3.4.6</span></a> <a href="#3.4.8"><span style="color:red">v 3.4.8</span></a> <a href="#3.4.9"><span style="color:red">v 3.4.9</span></a> <a href="#3.5.0"><span style="color:red">v 3.5.0</span></a> <a href="#3.5.1"><span style="color:red">v 3.5.1</span></a> <a href="#3.5.2"><span style="color:red">v 3.5.2</span></a> <a href="#3.5.3"><span style="color:red">v 3.5.3</span></a> <a href="#3.5.4"><span style="color:red">v 3.5.4</span></a> <a href="#3.5.5"><span style="color:red">v 3.5.5</span></a> <a href="#3.5.6"><span style="color:red">v 3.5.6</span></a> <a href="#3.5.7"><span style="color:red">v 3.5.7</span></a> <a href="#3.5.8"><span style="color:red">v 3.5.8</span></a> <a href="#3.6.1"><span style="color:red">v 3.6.1</span></a> <a href="#3.6.2"><span style="color:red">v 3.6.2</span></a> <a href="#3.6.3"><span style="color:red">v 3.6.3</span></a> <a href="#3.6.4"><span style="color:red">v 3.6.4</span></a> <a href="#3.6.7"><span style="color:green">v 3.6.7</span></a> <a href="#3.6.8"><span style="color:red">v 3.6.8</span></a> <a href="#3.7.0"><span style="color:red">v 3.7.0</span></a> <a href="#3.7.1"><span style="color:red">v 3.7.1</span></a> <a href="#3.7.3"><span style="color:red">v 3.7.3</span></a> <a href="#3.7.4"><span style="color:red">v 3.7.4</span></a> <a href="#3.7.8"><span style="color:red">v 3.7.8</span></a> <a href="#3.7.9"><span style="color:red">v 3.7.9</span></a> <a href="#3.8.1"><span style="color:red">v 3.8.1</span></a> <a href="#3.8.2"><span style="color:red">v 3.8.2</span></a> <a href="#3.8.3"><span style="color:red">v 3.8.3</span></a> <a href="#3.8.4"><span style="color:red">v 3.8.4</span></a> <a href="#3.8.5"><span style="color:red">v 3.8.5</span></a> <a href="#3.8.7"><span style="color:red">v 3.8.7</span></a> <a href="#3.8.8"><span style="color:red">v 3.8.8</span></a> <a href="#3.8.9"><span style="color:red">v 3.8.9</span></a> <a href="#3.9.0"><span style="color:red">v 3.9.0</span></a> <a href="#3.9.1"><span style="color:red">v 3.9.1</span></a> <a href="#3.9.2"><span style="color:red">v 3.9.2</span></a> <a href="#3.9.3"><span style="color:red">v 3.9.3</span></a> <a href="#3.9.4"><span style="color:red">v 3.9.4</span></a> <a href="#3.9.5"><span style="color:red">v 3.9.5</span></a> <a href="#3.9.6"><span style="color:red">v 3.9.6</span></a> <a href="#3.9.7"><span style="color:red">v 3.9.7</span></a> <a href="#3.9.8"><span style="color:red">v 3.9.8</span></a> <a href="#4.0.1"><span style="color:red">v 4.0.1</span></a> <a href="#4.0.2"><span style="color:red">v 4.0.2</span></a> <a href="#4.0.3"><span style="color:red">v 4.0.3</span></a> <a href="#4.0.4"><span style="color:red">v 4.0.4</span></a> <a href="#4.0.5"><span style="color:red">v 4.0.5</span></a> <a href="#4.0.6"><span style="color:red">v 4.0.6</span></a> <a href="#4.0.8"><span style="color:red">v 4.0.8</span></a> <a href="#4.1.1"><span style="color:red">v 4.1.1</span></a> <a href="#4.1.2"><span style="color:red">v 4.1.2</span></a> <a href="#4.1.4"><span style="color:red">v 4.1.4</span></a> <a href="#4.1.5"><span style="color:red">v 4.1.5</span></a> <a href="#4.1.6"><span style="color:red">v 4.1.6</span></a> <a href="#4.1.7"><span style="color:red">v 4.1.7</span></a> <a href="#4.1.9"><span style="color:red">v 4.1.9</span></a> <a href="#4.2.0"><span style="color:red">v 4.2.0</span></a> <a href="#4.2.2"><span style="color:red">v 4.2.2</span></a> <a href="#4.2.3"><span style="color:red">v 4.2.3</span></a> <a href="#4.2.4"><span style="color:red">v 4.2.4</span></a> <a href="#4.2.7"><span style="color:red">v 4.2.7</span></a> <a href="#4.2.9"><span style="color:red">v 4.2.9</span></a> <a href="#4.3.0"><span style="color:red">v 4.3.0</span></a> <a href="#4.3.1"><span style="color:red">v 4.3.1</span></a> <a href="#4.3.3"><span style="color:red">v 4.3.3</span></a>
 
 ### Safe versions
 #### v 1.1.1 — no shell/priv hooks
@@ -37,6 +37,18 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x6C9A8DA note</span>
 - <span style="color:green">guest computer with 0x4BA45A10 jecteventsiintrinfo</span>
 - <span style="color:green">null null with 0x4BA45A10 buffec</span>
+
+#### v 1.1.5 — no shell/priv hooks
+<a id="1.1.5"></a>
+- <span style="color:green">guest computer with 0x278ACE95 terrorigsizeb</span>
+- <span style="color:green">null null with 0x1FE95AD totalwidth</span>
+- <span style="color:green">??? password_change with 0x1FE95AD inputbufsizedelayonaryke</span>
+- <span style="color:green">guest computer with 0x1FE95AD setactotalbytest_f</span>
+- <span style="color:green">null null with 0x1C85945C parac</span>
+- <span style="color:green">guest file with 0x1C85945C feventpositionp</span>
+- <span style="color:green">null null with 0x1C85945C hile</span>
+- <span style="color:green">null null with 0x1C85945C windopositialr</span>
+- <span style="color:green">null null with 0x1C85945C roteswitc</span>
 
 #### v 1.4.7 — no shell/priv hooks
 <a id="1.4.7"></a>
@@ -93,6 +105,17 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x7A25BB39 hash_pend</span>
 - <span style="color:green">null null with 0x7A25BB39 endpositial</span>
 - <span style="color:green">null null with 0x7A25BB39 tran</span>
+- <span style="color:green">??? password_change with 0xC6222AA revp</span>
+- <span style="color:green">guest file with 0xC6222AA fsettextefunctio</span>
+- <span style="color:green">null null with 0x20CCA57E tefferrayclearheadivid</span>
+- <span style="color:green">null null with 0x20CCA57E case</span>
+- <span style="color:green">guest file with 0xFD6FB44 ultvmyieldin</span>
+- <span style="color:green">guest computer with 0xFD6FB44 thisrhsa</span>
+- <span style="color:green">??? password_change with 0xFD6FB44 literactionpointextinenumerdountil</span>
+- <span style="color:green">null null with 0xFD6FB44 tonclicitreestorplaysou</span>
+- <span style="color:green">??? password_change with 0x7A25BB39 hash_pend</span>
+- <span style="color:green">null null with 0x7A25BB39 endpositial</span>
+- <span style="color:green">guest file with 0x7A25BB39 tran</span>
 
 #### v 2.0.6 — no shell/priv hooks
 <a id="2.0.6"></a>
@@ -154,6 +177,21 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x7D2CD163 tionlyfalse</span>
 - <span style="color:green">null null with 0x7D2CD163 hes++</span>
 - <span style="color:green">null null with 0x7D2CD163 labledtas</span>
+
+#### v 2.4.4 — no shell/priv hooks
+<a id="2.4.4"></a>
+- <span style="color:green">guest file with 0x2DCA4B35 aorb</span>
+- <span style="color:green">null null with 0x2DCA4B35 entpositialid</span>
+- <span style="color:green">guest computer with 0x2DCA4B35 grount++</span>
+- <span style="color:green">guest file with 0x2DCA4B35 lorscrolly</span>
+- <span style="color:green">null null with 0x2DCA4B35 opt_lenb</span>
+- <span style="color:green">null null with 0x172BDD94 ower</span>
+- <span style="color:green">guest computer with 0x172BDD94 entposition++</span>
+- <span style="color:green">null null with 0x6FC46200 store</span>
+- <span style="color:green">guest file with 0x6FC46200 sbheady_deflategy</span>
+- <span style="color:green">null null with 0x6FC46200 dostateratorschemespace</span>
+- <span style="color:green">??? password_change with 0x6FC46200 notequalb</span>
+- <span style="color:green">null null with 0x6FC46200 th</span>
 
 #### v 2.6.4 — no shell/priv hooks
 <a id="2.6.4"></a>
@@ -282,6 +320,16 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 
 #### v 3.2.5 — no shell/priv hooks
 <a id="3.2.5"></a>
+- <span style="color:green">??? password_change with 0x42FD6AF5 exttext</span>
+- <span style="color:green">??? password_change with 0x42FD6AF5 void</span>
+- <span style="color:green">null null with 0xE9CE538 hlighlighlighlighlighlig</span>
+- <span style="color:green">null null with 0xE9CE538 alwindopos</span>
+- <span style="color:green">null null with 0xE9CE538 d_blockbuffectsetackgroupalposit</span>
+- <span style="color:green">null null with 0xE9CE538 buttonstackundos</span>
+- <span style="color:green">null null with 0x55ED6EF1 title</span>
+- <span style="color:green">null null with 0x55ED6EF1 aximizeline</span>
+- <span style="color:green">guest computer with 0x55ED6EF1 oundo</span>
+- <span style="color:green">null null with 0x6B2BE516 toveattimekeyw</span>
 - <span style="color:green">??? password_change with 0x42FD6AF5 exttext</span>
 - <span style="color:green">??? password_change with 0x42FD6AF5 void</span>
 - <span style="color:green">null null with 0xE9CE538 hlighlighlighlighlighlig</span>
@@ -510,6 +558,34 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - Icanle shell with 0x3344F68E _treelecttra
 - <span style="color:green">guest file with 0x3344F68E ewportmsbintendingbuttonishdo</span>
 
+#### v 1.0.4 — shell 3/25, priv 1/25
+<a id="1.0.4"></a>
+- Kirkarre shell with 0x19F3B821 shiftrue
+- <span style="color:green">guest computer with 0x19F3B821 losebac</span>
+- <span style="color:yellow">guest</span> shell with 0x19F3B821 color_titlet
+- <span style="color:green">guest file with 0x19F3B821 rigsizelinertype</span>
+- <span style="color:green">guest computer with 0x19F3B821 atchemeimat</span>
+- <span style="color:green">??? password_change with 0x53B8AB0D distemdiateoutoverl</span>
+- <span style="color:green">null null with 0x53B8AB0D n_ltreestextsireonp</span>
+- <span style="color:green">??? password_change with 0x53B8AB0D text</span>
+- <span style="color:green">null null with 0x53B8AB0D laytrue</span>
+- <span style="color:green">??? password_change with 0x74D5A20B engths</span>
+- <span style="color:green">guest computer with 0x74D5A20B ecttransformoff</span>
+- <span style="color:green">??? password_change with 0x74D5A20B titlength</span>
+- <span style="color:green">guest computer with 0x74D5A20B headdresu</span>
+- <span style="color:green">null null with 0x1ECE702A nittestemovelines</span>
+- <span style="color:green">guest file with 0x1ECE702A textsiin</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x1ECE702A alconnewuitextsii
+- <span style="color:green">null null with 0x1ECE702A ytebuttonstartcolo</span>
+- <span style="color:green">guest computer with 0x42DE8360 ransforwardowneventimekeys</span>
+- <span style="color:green">guest computer with 0x42DE8360 _lengtho</span>
+- <span style="color:green">Delskin computer with 0x42DE8360 elinemout_</span>
+- <span style="color:green">guest computer with 0x42DE8360 pend_bitlen</span>
+- <span style="color:green">??? password_change with 0x42DE8360 tonisteditorupdatemps</span>
+- Delskin shell with 0x357B61E2 hile
+- <span style="color:green">Kirkarre computer with 0x357B61E2 ged</span>
+- <span style="color:green">Kirkarre computer with 0x357B61E2 horttextimeanimato</span>
+
 #### v 1.0.6 — shell 3/20, priv 1/20
 <a id="1.0.6"></a>
 - <span style="color:green">null null with 0x19F3B821 shiftrue</span>
@@ -533,7 +609,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0xC44843B line</span>
 - <span style="color:green">Soutsout computer with 0xC44843B rategy</span>
 
-#### v 1.0.8 — shell 2/14, priv 1/14
+#### v 1.0.8 — shell 6/34, priv 3/34
 <a id="1.0.8"></a>
 - <span style="color:green">??? password_change with 0x716D6FD ev_lengthco</span>
 - <span style="color:green">null null with 0x716D6FD strollx</span>
@@ -549,6 +625,26 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:red">root</span> <span style="color:red">file</span> with 0x3B21B058 ebl_treendpointflush_maskbarfori
 - <span style="color:green">null null with 0x3B21B058 mask</span>
 - <span style="color:green">Uhuan file with 0x3B21B058 sourcevolumentsir</span>
+- <span style="color:green">??? password_change with 0x716D6FD ev_lengthco</span>
+- <span style="color:green">null null with 0x716D6FD strollx</span>
+- <span style="color:green">guest file with 0x716D6FD frequale</span>
+- <span style="color:green">??? password_change with 0x53B8AB0D taretur</span>
+- <span style="color:green">??? password_change with 0x53B8AB0D n_ltreestextsireonp</span>
+- <span style="color:green">??? password_change with 0x53B8AB0D text</span>
+- <span style="color:green">null null with 0x53B8AB0D laytrue</span>
+- <span style="color:green">??? password_change with 0x6A4DE7F6 ghtmidthisobjectsetpiv</span>
+- Eattengf shell with 0x6A4DE7F6 ormsirectsetackgroutl
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x76CD3794 rameteralse
+- <span style="color:yellow">guest</span> shell with 0x76CD3794 scanvasgrou
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x3B21B058 ebl_treendpointflush_maskbarfori
+- <span style="color:green">null null with 0x3B21B058 mask</span>
+- <span style="color:green">Reskyley file with 0x3B21B058 sourcevolumentsir</span>
+- Sonoghul shell with 0x3C636971 prevw_mask
+- <span style="color:green">null null with 0x67A05656 dtreebit</span>
+- <span style="color:green">Floss file with 0x67A05656 tflushp</span>
+- <span style="color:green">null null with 0x67A05656 toncl</span>
+- <span style="color:green">Floss file with 0x67A05656 sitializey</span>
+- Sonoghul shell with 0x41365CD0 functiveta
 
 #### v 1.1.0 — shell 2/30, priv 4/30
 <a id="1.1.0"></a>
@@ -666,7 +762,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x62ACF48C quoteout_</span>
 - <span style="color:green">guest file with 0x62ACF48C illwindents</span>
 
-#### v 1.2.0 — shell 2/24
+#### v 1.2.0 — shell 2/41
 <a id="1.2.0"></a>
 - <span style="color:green">Nhynes computer with 0x1E55D073 hisclo</span>
 - <span style="color:green">null null with 0x1E55D073 inition</span>
@@ -692,8 +788,25 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x638749AF indes</span>
 - <span style="color:green">null null with 0x638749AF th</span>
 - <span style="color:green">guest file with 0x638749AF ettexto</span>
+- <span style="color:green">Libover computer with 0x1E55D073 hisclo</span>
+- <span style="color:green">null null with 0x1E55D073 inition</span>
+- <span style="color:green">??? password_change with 0x7AFFBA80 letextposit</span>
+- <span style="color:green">null null with 0x7AFFBA80 laststri</span>
+- <span style="color:green">guest computer with 0x514A3515 apaddr</span>
+- <span style="color:green">null null with 0x514A3515 _block_sizede</span>
+- <span style="color:green">null null with 0x514A3515 ventsetreedy</span>
+- <span style="color:green">null null with 0x638749AF terdatef</span>
+- <span style="color:green">null null with 0x638749AF rotenerbu</span>
+- <span style="color:green">guest file with 0x638749AF indes</span>
+- <span style="color:green">??? password_change with 0x638749AF th</span>
+- <span style="color:green">guest file with 0x638749AF ettexto</span>
+- <span style="color:green">null null with 0x52C62B6C tflush_</span>
+- <span style="color:green">null null with 0x52C62B6C valuesaddundopo</span>
+- <span style="color:green">null null with 0x25EC13ED fsetelengthoffse</span>
+- <span style="color:green">Libover file with 0x2B08EE8C true</span>
+- <span style="color:green">null null with 0x2090DE4E _alighli</span>
 
-#### v 1.2.1 — shell 5/17, priv 1/17
+#### v 1.2.1 — shell 7/25, priv 2/25
 <a id="1.2.1"></a>
 - <span style="color:yellow">guest</span> shell with 0x243CF143 tioncodecds
 - <span style="color:green">null null with 0x243CF143 station</span>
@@ -712,8 +825,16 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x2D6CCBE4 ublintostationx</span>
 - <span style="color:green">guest computer with 0x776646D6 ceoffsetpivotreedyn_lt</span>
 - <span style="color:green">??? password_change with 0x776646D6 opminus</span>
+- <span style="color:yellow">guest</span> shell with 0x243CF143 tioncodecds
+- <span style="color:green">??? password_change with 0x243CF143 station</span>
+- <span style="color:green">guest file with 0x243CF143 nametex</span>
+- <span style="color:red">root</span> shell with 0x2D6CCBE4 _mask
+- <span style="color:green">null null with 0x2D6CCBE4 leventthist</span>
+- <span style="color:green">null null with 0x2D6CCBE4 ublintostationx</span>
+- <span style="color:green">guest computer with 0x776646D6 ceoffsetpivotreedyn_lt</span>
+- <span style="color:green">??? password_change with 0x776646D6 opminus</span>
 
-#### v 1.2.2 — shell 5/19, priv 2/19
+#### v 1.2.2 — shell 11/37, priv 4/37
 <a id="1.2.2"></a>
 - <span style="color:yellow">guest</span> shell with 0x243CF143 tioncodecds
 - <span style="color:green">guest file with 0x243CF143 nametex</span>
@@ -734,6 +855,24 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x3D090F7 codecflush_pen</span>
 - <span style="color:green">null null with 0x5CD9ED52 else</span>
 - <span style="color:red">root</span> shell with 0x2BE1884F os++
+- <span style="color:yellow">guest</span> shell with 0x243CF143 tioncodecds
+- <span style="color:green">guest file with 0x243CF143 nametex</span>
+- <span style="color:green">??? password_change with 0x3BC64DCF tartpositialigna</span>
+- <span style="color:green">null null with 0x3BC64DCF th</span>
+- <span style="color:yellow">guest</span> shell with 0x3BC64DCF slow
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x3BC64DCF cursh
+- <span style="color:green">null null with 0x3BC64DCF orstart++</span>
+- <span style="color:green">guest computer with 0x3B230265 rangenque</span>
+- <span style="color:yellow">guest</span> shell with 0x3B230265 linei
+- <span style="color:green">null null with 0x3B230265 yrep_3_10</span>
+- <span style="color:green">Enserjeetie file with 0xF301523 codecmes</span>
+- Enserjeetie shell with 0xF301523 listantsrep
+- Enserjeetie shell with 0xF301523 re
+- <span style="color:green">null null with 0x7BD07255 lor_buttonstanain</span>
+- <span style="color:green">??? password_change with 0x7BD07255 elendposit</span>
+- <span style="color:red">root</span> shell with 0x7BD07255 windownev
+- <span style="color:green">??? password_change with 0x450AA21F trat</span>
+- <span style="color:green">??? password_change with 0x450AA21F tefunctionter</span>
 
 #### v 1.2.3 — shell 1/16, priv 1/16
 <a id="1.2.3"></a>
@@ -875,6 +1014,48 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? password_change with 0x42BFC953 sof</span>
 - <span style="color:green">??? password_change with 0x42BFC953 height2tra</span>
 - <span style="color:green">??? password_change with 0x42BFC953 insertializefier</span>
+
+#### v 1.3.5 — shell 6/25, priv 2/25
+<a id="1.3.5"></a>
+- <span style="color:red">root</span> shell with 0x53B8A53C ored_bitssequa
+- <span style="color:green">??? password_change with 0x53B8A53C xesaddline</span>
+- <span style="color:green">null null with 0x39EFF2C8 all0f</span>
+- <span style="color:green">??? password_change with 0x39EFF2C8 codeintovel</span>
+- <span style="color:yellow">guest</span> shell with 0x39EFF2C8 lobalcontostri
+- <span style="color:yellow">guest</span> shell with 0x39EFF2C8 datelistringpend
+- <span style="color:green">null null with 0x39EFF2C8 or_viewpor</span>
+- <span style="color:green">??? password_change with 0x63D6E9CC line</span>
+- <span style="color:green">null null with 0x63D6E9CC sult++</span>
+- <span style="color:green">??? password_change with 0x63D6E9CC color_viewportionlyfalse</span>
+- Larinbert shell with 0x7B98734B ewportle
+- <span style="color:yellow">guest</span> shell with 0x7B98734B sdcolor_script
+- Larinbert shell with 0x7B98734B olorschemecharetoken
+- <span style="color:green">guest computer with 0x275849C1 s_h</span>
+- <span style="color:green">??? password_change with 0x275849C1 pushparen</span>
+- <span style="color:green">Larinbert file with 0x130C803B wardowmation</span>
+- <span style="color:green">guest file with 0x130C803B conterightedcallbackgroundthisinser</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x210F2D3E destemplicitreach
+- <span style="color:green">guest file with 0x35DFD303 orrentingbuttoncolorscrollinentim</span>
+- <span style="color:green">guest computer with 0x35DFD303 minusb</span>
+- <span style="color:green">Zini computer with 0x395B2319 aorb</span>
+- <span style="color:green">??? password_change with 0x7A582DFA iontsetsetactiv</span>
+- <span style="color:green">??? password_change with 0x7A582DFA reeendpointexttext</span>
+- <span style="color:green">??? password_change with 0x262D4C10 isrhsbui</span>
+- <span style="color:green">??? password_change with 0x1D00CDD1 alsstackundostreestreendi</span>
+
+#### v 1.3.7 — shell 2/11
+<a id="1.3.7"></a>
+- <span style="color:green">Crysunj computer with 0x5F69D398 olorschemeimag</span>
+- <span style="color:green">Crysunj file with 0x5F69D398 tlineanimator</span>
+- <span style="color:yellow">guest</span> shell with 0x5F69D398 inenum
+- <span style="color:green">Crysunj computer with 0x1A618165 ctivetreeendqu</span>
+- <span style="color:green">??? password_change with 0x1A618165 crolly</span>
+- <span style="color:yellow">guest</span> shell with 0x1A618165 rlend_
+- <span style="color:green">guest computer with 0x1A618165 portsiz</span>
+- <span style="color:green">null null with 0x4C41F597 tsirecttransform</span>
+- <span style="color:green">Crysunj file with 0x4C41F597 porttextsrea</span>
+- <span style="color:green">null null with 0x275849C1 torschecked</span>
+- <span style="color:green">??? password_change with 0x275849C1 pushparen</span>
 
 #### v 1.3.8 — shell 8/23, priv 1/23
 <a id="1.3.8"></a>
@@ -1029,7 +1210,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x46235A16 attinue
 - <span style="color:green">guest file with 0x711BD637 tifneedmor</span>
 
-#### v 1.5.1 — shell 8/30
+#### v 1.5.1 — shell 11/40
 <a id="1.5.1"></a>
 - <span style="color:green">null null with 0x1A698634 copya</span>
 - <span style="color:green">null null with 0x1A698634 rectionforminue</span>
@@ -1061,6 +1242,16 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x26A92FB3 ourcetheme
 - <span style="color:green">??? password_change with 0x72DA537F celisedcall001f</span>
 - <span style="color:green">guest computer with 0x72DA537F showbuttontrin</span>
+- <span style="color:yellow">guest</span> shell with 0x1A698634 copya
+- <span style="color:green">null null with 0x1A698634 rectionforminue</span>
+- <span style="color:green">??? password_change with 0x4F12690A ount++</span>
+- <span style="color:green">null null with 0x4F12690A reatequalbyte</span>
+- <span style="color:green">guest computer with 0x4F12690A color_titlendingpendisplaybackr</span>
+- <span style="color:green">null null with 0x4F12690A donenumer</span>
+- <span style="color:green">null null with 0x46235A16 date</span>
+- <span style="color:green">null null with 0x46235A16 trstartedcol</span>
+- <span style="color:yellow">guest</span> shell with 0x46235A16 constatequalbyteselengthsstarted
+- Nabelio shell with 0x46235A16 attinue
 
 #### v 1.5.3 — shell 9/27, priv 2/27
 <a id="1.5.3"></a>
@@ -1310,6 +1501,28 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">Hengorynescou file with 0x7405D772 seqsetacti</span>
 - <span style="color:green">null null with 0x7405D772 flush_bl</span>
 
+#### v 1.6.6 — shell 1/19
+<a id="1.6.6"></a>
+- <span style="color:green">null null with 0x4CAEA364 cast</span>
+- <span style="color:green">null null with 0x4CAEA364 ransformsi</span>
+- <span style="color:green">null null with 0x4CAEA364 temps</span>
+- <span style="color:green">null null with 0x4CAEA364 need</span>
+- <span style="color:green">guest file with 0x395D7D0 positiontextsi</span>
+- <span style="color:green">??? password_change with 0x395D7D0 heckransf</span>
+- <span style="color:green">??? password_change with 0x395D7D0 table</span>
+- <span style="color:green">guest file with 0x395D7D0 sizededitored</span>
+- <span style="color:green">null null with 0x395D7D0 _shadowneve</span>
+- <span style="color:green">null null with 0x4354EF itleftunteracti</span>
+- <span style="color:green">null null with 0x4354EF distyp</span>
+- <span style="color:green">null null with 0x2F67D318 proffsetelinespremod</span>
+- <span style="color:yellow">guest</span> shell with 0x2F67D318 dateiconsb
+- <span style="color:green">guest file with 0x2F67D318 exesa</span>
+- <span style="color:green">null null with 0x2F67D318 baseonclicked</span>
+- <span style="color:green">null null with 0x2F67D318 teralsstanchortbackconnewuitexting</span>
+- <span style="color:green">null null with 0x42C27A79 buttoncolor_ti</span>
+- <span style="color:green">null null with 0x42C27A79 icitreeintliner</span>
+- <span style="color:green">null null with 0x42C27A79 rectorequalbyt</span>
+
 #### v 1.6.7 — shell 2/15
 <a id="1.6.7"></a>
 - <span style="color:green">null null with 0xBF594F isrhsbui</span>
@@ -1328,7 +1541,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest computer with 0x5933698A undostreed</span>
 - <span style="color:green">??? password_change with 0x5933698A _lendingcoun</span>
 
-#### v 1.6.8 — shell 6/16, priv 1/16
+#### v 1.6.8 — shell 7/28, priv 1/28
 <a id="1.6.8"></a>
 - <span style="color:green">null null with 0xC92C65E mask</span>
 - <span style="color:green">??? password_change with 0xC92C65E untifieldingcoundopositiondexesad</span>
@@ -1346,6 +1559,18 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x1061810C transform
 - Yasudh shell with 0x1061810C n_length
 - <span style="color:red">root</span> shell with 0x1061810C ow++scan_end
+- <span style="color:green">null null with 0xC92C65E mask</span>
+- <span style="color:green">null null with 0xC92C65E untifieldingcoundopositiondexesad</span>
+- <span style="color:green">null null with 0xC92C65E tonhightmidtrees</span>
+- <span style="color:green">null null with 0x33B5942E namessages</span>
+- <span style="color:green">null null with 0x33B5942E icontsresu</span>
+- <span style="color:green">null null with 0x33B5942E inelit++</span>
+- <span style="color:green">null null with 0x6FF77D9F dingbutton</span>
+- <span style="color:green">null null with 0x6FF77D9F fload</span>
+- <span style="color:green">guest computer with 0x6FF77D9F retonty</span>
+- <span style="color:yellow">guest</span> shell with 0x46AF57A6 tposinition
+- <span style="color:green">??? password_change with 0x46AF57A6 enumsirectos</span>
+- <span style="color:green">null null with 0x46AF57A6 ditorscheckrangenque</span>
 
 #### v 1.6.9 — shell 3/28, priv 1/28
 <a id="1.6.9"></a>
@@ -1378,7 +1603,25 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest computer with 0x7E36B0B6 nalcontextefferraycodedittextparam</span>
 - <span style="color:green">null null with 0x7E36B0B6 inselend_</span>
 
-#### v 1.7.1 — shell 3/16, priv 2/16
+#### v 1.7.0 — shell 1/15, priv 1/15
+<a id="1.7.0"></a>
+- <span style="color:green">null null with 0x5BA2ABCB epth</span>
+- <span style="color:green">??? password_change with 0x5BA2ABCB um++</span>
+- <span style="color:green">null null with 0x5BA2ABCB notb</span>
+- <span style="color:green">null null with 0x5BA2ABCB soundopositionst</span>
+- Istavinsler shell with 0x5BA2ABCB maximizelin
+- <span style="color:green">null null with 0x33B5942E namessages</span>
+- <span style="color:green">null null with 0x33B5942E available</span>
+- <span style="color:green">null null with 0x33B5942E ifier</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x77B052AE hile
+- <span style="color:green">Istavinsler file with 0x77B052AE enumobjectsettext</span>
+- <span style="color:green">null null with 0x77B052AE sformlock_sto</span>
+- <span style="color:green">Istavinsler computer with 0x288F4E57 ightmidthi</span>
+- <span style="color:green">guest computer with 0x288F4E57 ositionima</span>
+- <span style="color:green">guest computer with 0x288F4E57 linenum</span>
+- <span style="color:green">null null with 0x288F4E57 distedcale</span>
+
+#### v 1.7.1 — shell 6/28, priv 3/28
 <a id="1.7.1"></a>
 - <span style="color:green">null null with 0x211B9962 selhight2transf</span>
 - <span style="color:green">guest file with 0x211B9962 positial</span>
@@ -1396,6 +1639,18 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x4903BE9E finitifnee</span>
 - <span style="color:green">??? password_change with 0x4903BE9E locallinescomponenum+</span>
 - <span style="color:green">null null with 0x4903BE9E fsetackgroundost</span>
+- <span style="color:green">null null with 0x211B9962 selhight2transf</span>
+- <span style="color:green">guest file with 0x211B9962 positial</span>
+- <span style="color:green">null null with 0x3FCC926A gth</span>
+- <span style="color:green">??? password_change with 0x3FCC926A nishdonenu</span>
+- <span style="color:green">null null with 0x3FCC926A suffector3</span>
+- <span style="color:green">guest file with 0x3FCC926A fast</span>
+- <span style="color:yellow">guest</span> shell with 0x3FCC926A nemovetreestenert
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x495C346D tictionshowani
+- <span style="color:yellow">guest</span> shell with 0x495C346D treeend_
+- <span style="color:yellow">guest</span> shell with 0x495C346D plicid
+- <span style="color:green">null null with 0x495C346D sches++</span>
+- <span style="color:green">null null with 0x495C346D color_buttontextui</span>
 
 #### v 1.7.2 — shell 1/17
 <a id="1.7.2"></a>
@@ -1456,7 +1711,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? password_change with 0x171ED988 terrorifnotex</span>
 - <span style="color:green">null null with 0x171ED988 eyrepz_3_10</span>
 
-#### v 1.7.6 — shell 2/17
+#### v 1.7.6 — shell 3/28, priv 1/28
 <a id="1.7.6"></a>
 - <span style="color:green">null null with 0x766DE669 lancesbuild_t</span>
 - Mellan shell with 0x766DE669 indostransf
@@ -1475,8 +1730,19 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">Fmanov file with 0x41988121 essagetundostate</span>
 - <span style="color:green">null null with 0x41988121 ualbytestancho</span>
 - <span style="color:green">Fmanov file with 0x67A05656 toncl</span>
+- <span style="color:green">null null with 0x766DE669 lancesbuild_t</span>
+- Litonu shell with 0x766DE669 indostransf
+- <span style="color:green">null null with 0x766DE669 upalpositionressaget</span>
+- <span style="color:green">??? password_change with 0x28D4789A valuesrep</span>
+- <span style="color:green">null null with 0x28D4789A retunt+</span>
+- <span style="color:green">guest file with 0x41988121 buttoninvokethis</span>
+- <span style="color:green">null null with 0x41988121 essagetundostate</span>
+- <span style="color:green">null null with 0x41988121 ualbytestancho</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x635537B1 ositionaryeresi
+- <span style="color:green">Yaraneyl computer with 0x635537B1 lised_bloc</span>
+- <span style="color:green">guest computer with 0x494189FC eadingp</span>
 
-#### v 1.7.7 — shell 2/32, priv 1/32
+#### v 1.7.7 — shell 6/48, priv 1/48
 <a id="1.7.7"></a>
 - <span style="color:green">null null with 0x4B00A64A onpointoffsetextsiint</span>
 - <span style="color:green">null null with 0x4B00A64A oundo</span>
@@ -1510,8 +1776,24 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x49793DE4 else</span>
 - <span style="color:green">null null with 0x49793DE4 strmdater</span>
 - <span style="color:green">null null with 0x49793DE4 uttoncodecdstartposit</span>
+- <span style="color:green">??? password_change with 0x4B00A64A onpointoffsetextsiint</span>
+- <span style="color:green">null null with 0x4B00A64A oundo</span>
+- Omin shell with 0x4B00A64A solewritelit++
+- <span style="color:green">null null with 0x4B00A64A d_treedi</span>
+- <span style="color:green">guest file with 0x4B00A64A matchemeimatch_availabledquotexteffec</span>
+- <span style="color:green">null null with 0x766DE669 lancesbuild_t</span>
+- Omin shell with 0x766DE669 indostransf
+- <span style="color:yellow">guest</span> shell with 0x766DE669 nota
+- <span style="color:green">guest file with 0x5D312409 iewports</span>
+- <span style="color:green">Omin file with 0x5D312409 saddgetex</span>
+- <span style="color:green">null null with 0x5D312409 ins_h</span>
+- <span style="color:green">null null with 0x5D312409 egion</span>
+- <span style="color:green">null null with 0x5D312409 _oncompositializefini</span>
+- <span style="color:green">guest computer with 0x49793DE4 else</span>
+- <span style="color:yellow">guest</span> shell with 0x49793DE4 strmdater
+- <span style="color:green">guest computer with 0x49793DE4 uttoncodecdstartposit</span>
 
-#### v 1.7.9 — shell 2/55
+#### v 1.7.9 — shell 3/72
 <a id="1.7.9"></a>
 - <span style="color:green">??? password_change with 0x2F70725E nimplicelistingsupdataposlicked</span>
 - <span style="color:green">??? password_change with 0x2F70725E yedcolor_v</span>
@@ -1568,8 +1850,25 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x16EB2E33 desetselengthcodedi</span>
 - <span style="color:green">null null with 0x78DCA2D3 opequal</span>
 - <span style="color:green">null null with 0x78DCA2D3 sicresel</span>
+- <span style="color:green">??? password_change with 0x2F70725E nimplicelistingsupdataposlicked</span>
+- <span style="color:green">??? password_change with 0x2F70725E yedcolor_v</span>
+- <span style="color:green">guest file with 0x2F70725E ountimessedcall_treed</span>
+- <span style="color:green">null null with 0x2F70725E colorschemecharam</span>
+- <span style="color:yellow">guest</span> shell with 0x2F70725E emax_codecf
+- <span style="color:green">null null with 0x129C1C4B osourcelistroybu</span>
+- <span style="color:green">null null with 0x129C1C4B rivarve</span>
+- <span style="color:green">null null with 0x129C1C4B evaluesaddrest</span>
+- <span style="color:green">Towick computer with 0x5C296B45 addparametextefu</span>
+- <span style="color:green">null null with 0x5C296B45 oubleditoregionle</span>
+- <span style="color:green">Razzaq file with 0x16EB2E33 heapk</span>
+- <span style="color:green">null null with 0x16EB2E33 animageturnalcontypelembofitextsremov</span>
+- <span style="color:green">null null with 0x16EB2E33 tion++</span>
+- <span style="color:green">guest computer with 0x16EB2E33 bitsselt</span>
+- <span style="color:green">guest file with 0x16EB2E33 desetselengthcodedi</span>
+- <span style="color:green">null null with 0x78DCA2D3 opequal</span>
+- <span style="color:green">null null with 0x78DCA2D3 sicresel</span>
 
-#### v 1.8.0 — shell 11/34, priv 2/34
+#### v 1.8.0 — shell 14/49, priv 3/49
 <a id="1.8.0"></a>
 - <span style="color:green">null null with 0x4560F67C tlined</span>
 - <span style="color:green">??? password_change with 0x4560F67C out_shift_color_s</span>
@@ -1605,6 +1904,21 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x1289C944 equalbytes
 - Choe shell with 0x1289C944 d_colorschemei
 - <span style="color:green">Sisleyer computer with 0x75E16450 char</span>
+- <span style="color:green">null null with 0x4560F67C tlined</span>
+- <span style="color:green">??? password_change with 0x4560F67C out_shift_color_s</span>
+- <span style="color:green">null null with 0x4560F67C bitsdistatic_l</span>
+- <span style="color:green">null null with 0x4560F67C setsetselanchorlinelist</span>
+- <span style="color:green">null null with 0x5C296B45 line</span>
+- <span style="color:green">null null with 0x5C296B45 oubleditoregionle</span>
+- <span style="color:green">null null with 0x1B85CD95 calpositionx</span>
+- <span style="color:green">null null with 0x1B85CD95 stact</span>
+- <span style="color:red">root</span> shell with 0x1B85CD95 avedorruntextrans
+- <span style="color:green">null null with 0x1B85CD95 tivetru</span>
+- <span style="color:yellow">guest</span> shell with 0x1B85CD95 aultfun
+- <span style="color:green">null null with 0x420AF0AE tletextransformoffset</span>
+- <span style="color:green">null null with 0x420AF0AE elanceoffseta</span>
+- <span style="color:green">null null with 0x420AF0AE ceoffsetd</span>
+- <span style="color:yellow">guest</span> shell with 0x420AF0AE reecurshiftitlebac
 
 #### v 1.8.3 — shell 2/14, priv 1/14
 <a id="1.8.3"></a>
@@ -1689,6 +2003,21 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x29E2D286 ewportsizedeltextenertyp</span>
 - <span style="color:green">null null with 0x29E2D286 ransformanchorev_matimean</span>
 
+#### v 1.8.5 — shell 4/12
+<a id="1.8.5"></a>
+- <span style="color:green">null null with 0x488C5389 etobjecttr</span>
+- <span style="color:green">null null with 0x488C5389 opy_blocks</span>
+- <span style="color:yellow">guest</span> shell with 0x488C5389 timeanimator
+- <span style="color:green">null null with 0x488C5389 keyrepeate</span>
+- <span style="color:green">null null with 0x488C5389 entpositializex</span>
+- <span style="color:green">??? password_change with 0x608D4B37 listackgro</span>
+- <span style="color:green">guest file with 0x608D4B37 tringsinsertypericientsizedeltaddg</span>
+- Ibbey shell with 0x608D4B37 toredp
+- Ibbey shell with 0x8C03D5 ontring
+- <span style="color:green">guest computer with 0x8C03D5 atch_</span>
+- Messoni shell with 0x5A97CC54 mask
+- <span style="color:green">null null with 0x319F78BC sterdateoutline</span>
+
 #### v 1.8.6 — shell 2/17
 <a id="1.8.6"></a>
 - <span style="color:yellow">guest</span> shell with 0x205D9E99 strue
@@ -1709,6 +2038,21 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x5A135C1B lor_glow</span>
 - <span style="color:green">null null with 0x5A135C1B insicresizebl_tre</span>
 
+#### v 1.8.8 — shell 2/12
+<a id="1.8.8"></a>
+- <span style="color:green">null null with 0x3E81FB84 buttonfontrinfontextctotalw</span>
+- <span style="color:green">??? password_change with 0x3E81FB84 orsches++</span>
+- <span style="color:yellow">guest</span> shell with 0x6D5950C7 tokethisob
+- <span style="color:green">??? password_change with 0x6D5950C7 putsiinteractionsolewrit</span>
+- <span style="color:green">guest computer with 0x6D5950C7 tanchored_blocalessof</span>
+- <span style="color:green">null null with 0x50CCAF0F eselh</span>
+- <span style="color:green">guest computer with 0x50CCAF0F seondingsizelaytr</span>
+- <span style="color:green">guest computer with 0x50CCAF0F trins_h</span>
+- <span style="color:green">null null with 0x34D04F05 delc</span>
+- Klins shell with 0x34D04F05 reec2
+- <span style="color:green">null null with 0x34D04F05 deinteractionstat</span>
+- <span style="color:green">Klins file with 0x34D04F05 _dtreelecttransfo</span>
+
 #### v 1.8.9 — shell 1/9, priv 1/9
 <a id="1.8.9"></a>
 - <span style="color:green">null null with 0x6D5950C7 fresizefie</span>
@@ -1721,7 +2065,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x5C753C62 _orderrorifnull</span>
 - <span style="color:green">null null with 0x5C753C62 orentdatelinen</span>
 
-#### v 1.9.0 — priv 1/18
+#### v 1.9.0 — priv 2/28
 <a id="1.9.0"></a>
 - <span style="color:green">null null with 0x20CCA57E tefferrayclearheadivid</span>
 - <span style="color:green">Merian computer with 0x20CCA57E shupdata_typelembofa</span>
@@ -1741,8 +2085,18 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x1246719C maprev</span>
 - <span style="color:green">guest computer with 0x20E8E396 buttoncloselayso</span>
 - <span style="color:green">null null with 0x20E8E396 activa</span>
+- <span style="color:green">null null with 0x20CCA57E tefferrayclearheadivid</span>
+- <span style="color:green">Harabid computer with 0x20CCA57E shupdata_typelembofa</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x1246719C elistartimplicked
+- <span style="color:green">null null with 0x1246719C itertlinestoreadp</span>
+- <span style="color:green">null null with 0x1246719C ixergroutoverlayedcall0f</span>
+- <span style="color:green">null null with 0x1246719C button</span>
+- <span style="color:green">Harabid file with 0x1246719C maprev</span>
+- <span style="color:green">Harabid computer with 0x20E8E396 buttoncloselayso</span>
+- <span style="color:green">null null with 0x20E8E396 activa</span>
+- <span style="color:green">guest computer with 0x7E3666C9 enoveategy</span>
 
-#### v 1.9.1 — shell 2/16, priv 4/16
+#### v 1.9.1 — shell 5/48, priv 7/48
 <a id="1.9.1"></a>
 - <span style="color:green">??? password_change with 0x557949F2 componenumer</span>
 - <span style="color:green">null null with 0x557949F2 equeuetoke</span>
@@ -1760,8 +2114,40 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x657206CD ommed</span>
 - <span style="color:red">root</span> shell with 0x657206CD this
 - <span style="color:green">null null with 0x657206CD ingbuttonbuttonternal</span>
+- <span style="color:green">??? password_change with 0x557949F2 componenumer</span>
+- <span style="color:green">null null with 0x557949F2 equeuetoke</span>
+- <span style="color:green">null null with 0x76CA44EF reatern</span>
+- <span style="color:green">null null with 0x76CA44EF bool</span>
+- <span style="color:green">null null with 0x20CCA57E tefferrayclearheadivid</span>
+- <span style="color:green">null null with 0x20CCA57E srep_3</span>
+- <span style="color:green">guest computer with 0x74649670 kinvoken</span>
+- <span style="color:green">null null with 0x74649670 on++</span>
+- <span style="color:yellow">guest</span> shell with 0x74649670 eventimelendpositial
+- <span style="color:green">null null with 0x74649670 urlengthoffse</span>
+- <span style="color:green">guest computer with 0x74649670 nextene</span>
+- <span style="color:green">null null with 0x657206CD nitionnextinetreetru</span>
+- <span style="color:green">null null with 0x657206CD treeintransformanceoffsetpivotnewu</span>
+- <span style="color:green">null null with 0x657206CD ommed</span>
+- <span style="color:green">null null with 0x657206CD this</span>
+- <span style="color:green">null null with 0x657206CD ingbuttonbuttonternal</span>
+- <span style="color:green">??? password_change with 0x557949F2 componenumer</span>
+- <span style="color:green">null null with 0x557949F2 equeuetoke</span>
+- <span style="color:green">null null with 0x76CA44EF reatern</span>
+- <span style="color:green">null null with 0x76CA44EF bool</span>
+- <span style="color:green">null null with 0x20CCA57E tefferrayclearheadivid</span>
+- <span style="color:green">??? password_change with 0x20CCA57E srep_3</span>
+- <span style="color:green">null null with 0x74649670 kinvoken</span>
+- <span style="color:green">null null with 0x74649670 on++</span>
+- <span style="color:red">root</span> shell with 0x74649670 eventimelendpositial
+- <span style="color:green">null null with 0x74649670 urlengthoffse</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x74649670 nextene
+- <span style="color:green">null null with 0x657206CD nitionnextinetreetru</span>
+- <span style="color:green">null null with 0x657206CD treeintransformanceoffsetpivotnewu</span>
+- <span style="color:green">null null with 0x657206CD ommed</span>
+- <span style="color:red">root</span> shell with 0x657206CD this
+- <span style="color:green">null null with 0x657206CD ingbuttonbuttonternal</span>
 
-#### v 1.9.3 — shell 4/28, priv 2/28
+#### v 1.9.3 — shell 6/42, priv 3/42
 <a id="1.9.3"></a>
 - <span style="color:green">null null with 0x48E5FEA8 pend_tr</span>
 - <span style="color:green">null null with 0x48E5FEA8 lready_de</span>
@@ -1791,8 +2177,46 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x45B8EAD0 atoregrountimes</span>
 - <span style="color:green">null null with 0x45B8EAD0 utlinei</span>
 - <span style="color:red">root</span> shell with 0x45B8EAD0 nawake
+- <span style="color:green">null null with 0x48E5FEA8 pend_tr</span>
+- <span style="color:green">null null with 0x48E5FEA8 lready_de</span>
+- <span style="color:green">??? password_change with 0x48E5FEA8 revn</span>
+- <span style="color:green">guest computer with 0x48E5FEA8 linenum++</span>
+- Stucks shell with 0x20CCA57E aller32
+- <span style="color:green">null null with 0x20CCA57E laydelayedcolorshiftrue</span>
+- <span style="color:green">null null with 0x1241EA5F quoteseloc</span>
+- <span style="color:green">null null with 0x1241EA5F scrollresi</span>
+- <span style="color:green">null null with 0x1241EA5F artialre</span>
+- <span style="color:green">??? password_change with 0x1241EA5F d_bitstransformof</span>
+- <span style="color:green">null null with 0x45B8EAD0 _ltreetran</span>
+- <span style="color:green">null null with 0x45B8EAD0 atoregrountimes</span>
+- <span style="color:green">null null with 0x45B8EAD0 utlinei</span>
+- <span style="color:red">root</span> shell with 0x45B8EAD0 nawake
 
-#### v 1.9.5 — shell 1/20, priv 1/20
+#### v 1.9.4 — shell 4/21
+<a id="1.9.4"></a>
+- <span style="color:green">null null with 0x264F05B7 start++</span>
+- <span style="color:green">guest computer with 0x264F05B7 verlayedcolor_butt</span>
+- <span style="color:green">null null with 0x264F05B7 n_ltreebl</span>
+- <span style="color:green">null null with 0x264F05B7 dopositializ</span>
+- <span style="color:yellow">guest</span> shell with 0x660A85ED elinelitextpositionc
+- <span style="color:green">??? password_change with 0x660A85ED lengthsbuild_t</span>
+- <span style="color:green">guest file with 0x3B66D33E ev_maskbar</span>
+- <span style="color:green">null null with 0x3B66D33E hisaudio</span>
+- <span style="color:yellow">guest</span> shell with 0x3B66D33E _sharetonter
+- <span style="color:yellow">guest</span> shell with 0x6C2432B4 gumentdatelineheightmin
+- <span style="color:green">null null with 0x6C2432B4 utlines</span>
+- <span style="color:green">??? password_change with 0x6C2432B4 paddre</span>
+- <span style="color:green">??? password_change with 0x4FCBB491 hash_head</span>
+- <span style="color:green">guest file with 0x4FCBB491 quotequaren</span>
+- <span style="color:green">null null with 0x1456B403 udiosourcevalmaprev_mat</span>
+- <span style="color:green">guest computer with 0x1456B403 eatorewinvok</span>
+- <span style="color:green">null null with 0x1456B403 kinvoken</span>
+- <span style="color:yellow">guest</span> shell with 0xF301CF0 or_viewport
+- <span style="color:green">null null with 0x61DE4304 _buffecttransformsirec</span>
+- <span style="color:green">null null with 0x61DE4304 updataudiosoundosetic_</span>
+- <span style="color:green">null null with 0x590D28FD etundo</span>
+
+#### v 1.9.5 — shell 1/35, priv 1/35
 <a id="1.9.5"></a>
 - <span style="color:green">null null with 0x39DCE130 andat</span>
 - <span style="color:green">null null with 0x39DCE130 objectsetsetrue</span>
@@ -1814,6 +2238,21 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - Ikerei shell with 0x4FA87F95 setpivotnewi
 - <span style="color:green">null null with 0x3D221C3D istroyuitextreest_lengthcodec</span>
 - <span style="color:green">null null with 0x3D221C3D dategy</span>
+- <span style="color:green">null null with 0x39DCE130 andat</span>
+- <span style="color:green">null null with 0x39DCE130 objectsetsetrue</span>
+- <span style="color:green">null null with 0x39DCE130 compr</span>
+- <span style="color:green">guest file with 0x3B66D33E ev_maskbar</span>
+- <span style="color:green">null null with 0x3B66D33E hisaudio</span>
+- <span style="color:green">null null with 0x3B66D33E ersprivarvent_o</span>
+- <span style="color:green">Wanley computer with 0xD6F51D1 _lengt</span>
+- <span style="color:green">null null with 0xD6F51D1 ontainl</span>
+- <span style="color:green">null null with 0xD6F51D1 code</span>
+- <span style="color:green">??? password_change with 0x4FCBB491 hash_head</span>
+- <span style="color:green">null null with 0x4DB0243C rinsuffec</span>
+- <span style="color:green">??? password_change with 0x4DB0243C magesaddparetonse</span>
+- <span style="color:green">null null with 0x4DB0243C ponentdata_typelengt</span>
+- <span style="color:green">null null with 0x4DB0243C t++</span>
+- <span style="color:green">null null with 0x4DB0243C roundosefieldinsicsins_h</span>
 
 #### v 1.9.6 — shell 2/17
 <a id="1.9.6"></a>
@@ -1916,6 +2355,24 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x164E851E end_bitsdisplayba</span>
 - <span style="color:green">null null with 0x164E851E distantsre</span>
 
+#### v 2.0.3 — priv 1/15
+<a id="2.0.3"></a>
+- <span style="color:green">null null with 0x38EE7A8B yn_ltree</span>
+- <span style="color:green">??? password_change with 0x38EE7A8B iewporti</span>
+- <span style="color:green">null null with 0x38EE7A8B aiftrue</span>
+- <span style="color:green">guest computer with 0x43D833E3 inesin</span>
+- <span style="color:green">Raimot computer with 0x43D833E3 tain_ltrectiv</span>
+- <span style="color:green">guest file with 0x43D833E3 toendselh</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x393A49B5 pointoffsetsetmid
+- <span style="color:green">null null with 0x393A49B5 ationclicit</span>
+- <span style="color:green">??? password_change with 0x393A49B5 thiscall_tr_sh</span>
+- <span style="color:green">null null with 0x393A49B5 diosourceplayanimatchecked</span>
+- <span style="color:green">null null with 0x393A49B5 button</span>
+- <span style="color:green">??? password_change with 0x4FCBB491 hash_head</span>
+- <span style="color:green">guest file with 0x4FCBB491 quotequaren</span>
+- <span style="color:green">??? password_change with 0x48D32219 onaryvalighligh</span>
+- <span style="color:green">??? password_change with 0x48D32219 qualbyt</span>
+
 #### v 2.0.4 — shell 3/40, priv 2/40
 <a id="2.0.4"></a>
 - <span style="color:green">guest computer with 0x78D17B74 removeatline</span>
@@ -1959,7 +2416,30 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? password_change with 0x4903BE9E locallinescomponenum+</span>
 - <span style="color:green">null null with 0x4903BE9E fsetackgroundost</span>
 
-#### v 2.0.7 — shell 4/33
+#### v 2.0.5 — shell 5/20
+<a id="2.0.5"></a>
+- <span style="color:green">guest file with 0x2187D9B8 oundow++scan</span>
+- <span style="color:green">guest computer with 0x2187D9B8 thangenque</span>
+- <span style="color:green">guest computer with 0x2187D9B8 bitsdyn_lengthss</span>
+- <span style="color:yellow">guest</span> shell with 0x2187D9B8 itch_s
+- <span style="color:green">??? password_change with 0x2187D9B8 onfig</span>
+- <span style="color:yellow">guest</span> shell with 0x6931DEE9 priterrorigsin
+- <span style="color:green">??? password_change with 0x6931DEE9 cevaluesaddgetcoroformalconternal</span>
+- <span style="color:green">null null with 0x6931DEE9 lor_titlendingsupdatei</span>
+- <span style="color:green">guest computer with 0x43D833E3 inesin</span>
+- Tauffm shell with 0x43D833E3 bitle
+- <span style="color:green">null null with 0x43D833E3 losefau</span>
+- <span style="color:yellow">guest</span> shell with 0x719D088D _dateliterna
+- <span style="color:green">guest computer with 0x719D088D sourcemecharam</span>
+- <span style="color:green">null null with 0x719D088D ob_lengthcod</span>
+- <span style="color:green">??? password_change with 0x4FCBB491 hash_head</span>
+- <span style="color:green">guest file with 0x4FCBB491 quotequaren</span>
+- <span style="color:green">null null with 0x7C968EFA enumerdound</span>
+- <span style="color:yellow">guest</span> shell with 0x7C968EFA dec_adlengthoffset++
+- <span style="color:green">null null with 0x7C968EFA paddre</span>
+- <span style="color:green">null null with 0x7C968EFA _lend_block0</span>
+
+#### v 2.0.7 — shell 6/51
 <a id="2.0.7"></a>
 - <span style="color:green">null null with 0x43D823CF evaluesaddgetex</span>
 - <span style="color:green">null null with 0x43D823CF alesselanc</span>
@@ -1993,6 +2473,24 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0xDFEDA91 sertypelembofitex</span>
 - <span style="color:green">null null with 0xDFEDA91 esing_length</span>
 - <span style="color:green">null null with 0xDFEDA91 dardowneventdatebu</span>
+- <span style="color:green">guest computer with 0xDFEDA91 ormpivotreeintextupda</span>
+- <span style="color:green">null null with 0x43D823CF evaluesaddgetex</span>
+- <span style="color:green">null null with 0x43D823CF alesselanc</span>
+- Eldres shell with 0x43D823CF efalse
+- <span style="color:green">guest file with 0x13FCA236 append_bitle</span>
+- <span style="color:green">Eldres computer with 0x13FCA236 z_3_6</span>
+- <span style="color:green">null null with 0x13FCA236 urscrolled</span>
+- <span style="color:green">??? password_change with 0x13FCA236 ontypelembofit</span>
+- <span style="color:green">guest computer with 0x13FCA236 outoviewpo</span>
+- Eldres shell with 0x565F6880 saddundostat
+- <span style="color:green">guest file with 0x565F6880 tuntimessor1</span>
+- <span style="color:green">??? password_change with 0x565F6880 _onlyflushparamargume</span>
+- <span style="color:green">??? password_change with 0x4FCBB491 hash_head</span>
+- <span style="color:green">guest file with 0x4FCBB491 quotequaren</span>
+- <span style="color:green">null null with 0xDFEDA91 shstartcorofo</span>
+- <span style="color:green">??? password_change with 0xDFEDA91 sertypelembofitex</span>
+- <span style="color:green">null null with 0xDFEDA91 esing_length</span>
+- <span style="color:green">??? password_change with 0xDFEDA91 dardowneventdatebu</span>
 - <span style="color:green">guest computer with 0xDFEDA91 ormpivotreeintextupda</span>
 
 #### v 2.0.8 — shell 1/16
@@ -2128,7 +2626,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest computer with 0x73ADEBA8 jectsetactiontextuitext</span>
 - <span style="color:red">root</span> <span style="color:red">file</span> with 0x73ADEBA8 overlaysourc
 
-#### v 2.1.8 — shell 3/12, priv 1/12
+#### v 2.1.8 — shell 8/26, priv 2/26
 <a id="2.1.8"></a>
 - Nehaack shell with 0x367DF404 ositionshowcal
 - <span style="color:green">null null with 0x367DF404 sforminusb</span>
@@ -2142,6 +2640,49 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x1265B8F3 veexistunt++</span>
 - <span style="color:green">null null with 0x1265B8F3 need</span>
 - <span style="color:green">??? password_change with 0x1265B8F3 odecodecflush_maskbarformoffsetf</span>
+- Voigt shell with 0x367DF404 ositionshowcal
+- <span style="color:green">null null with 0x367DF404 sforminusb</span>
+- <span style="color:green">null null with 0x25B38C1E buttoncompresultse</span>
+- <span style="color:yellow">guest</span> shell with 0x25B38C1E formoffsetfocusonclose
+- <span style="color:red">root</span> shell with 0x25B38C1E aorb
+- <span style="color:yellow">guest</span> shell with 0x434795A7 esulttex
+- <span style="color:green">??? password_change with 0x434795A7 _eob_length</span>
+- <span style="color:yellow">guest</span> shell with 0x434795A7 endselengthsbuild
+- <span style="color:green">guest file with 0x434795A7 resultsetack</span>
+- <span style="color:green">null null with 0x1265B8F3 lookaheapk</span>
+- <span style="color:green">guest computer with 0x1265B8F3 tlend1</span>
+- <span style="color:green">null null with 0x1265B8F3 veexistunt++</span>
+- <span style="color:green">null null with 0x1265B8F3 need</span>
+- <span style="color:green">??? password_change with 0x1265B8F3 odecodecflush_maskbarformoffsetf</span>
+
+#### v 2.1.9 — shell 2/11
+<a id="2.1.9"></a>
+- <span style="color:green">??? password_change with 0x4D843B6D chstanch</span>
+- <span style="color:green">null null with 0x4D843B6D sele</span>
+- <span style="color:green">??? password_change with 0x4D843B6D timessof</span>
+- <span style="color:green">null null with 0x4D843B6D char</span>
+- <span style="color:green">??? password_change with 0x4D843B6D epeatline++</span>
+- <span style="color:yellow">guest</span> shell with 0x434795A7 esulttex
+- <span style="color:green">??? password_change with 0x434795A7 _eob_length</span>
+- <span style="color:green">??? password_change with 0x1F40B2DF chorlinesizedeltaddregi</span>
+- <span style="color:green">null null with 0x1F40B2DF pos</span>
+- <span style="color:green">null null with 0x1F40B2DF atored_blic</span>
+- <span style="color:yellow">guest</span> shell with 0x1F40B2DF bledistarteditors
+
+#### v 2.2.1 — shell 6/12, priv 2/12
+<a id="2.2.1"></a>
+- <span style="color:yellow">guest</span> shell with 0x48649BC7 ountifieldingbuttonco
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x48649BC7 qualesprit
+- <span style="color:green">??? password_change with 0x66FC8AAB itlendpositionin</span>
+- <span style="color:green">null null with 0x66FC8AAB ength</span>
+- Hinivan shell with 0x66FC8AAB ferrentdat
+- <span style="color:red">root</span> shell with 0x66FC8AAB line
+- <span style="color:green">null null with 0x434795A7 edyn_treedeltaddl</span>
+- <span style="color:yellow">guest</span> shell with 0x434795A7 erlayanimagecolor
+- <span style="color:yellow">guest</span> shell with 0x434795A7 endselengthsbuild
+- <span style="color:green">null null with 0x7BAF677F settextuitextree</span>
+- Vullejoy shell with 0x7BAF677F extobjectsetic
+- <span style="color:green">null null with 0x7BAF677F prevw_mask</span>
 
 #### v 2.2.2 — shell 1/11
 <a id="2.2.2"></a>
@@ -2157,7 +2698,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x1DE7B091 hangeundostan</span>
 - <span style="color:green">guest computer with 0x1DE7B091 copya</span>
 
-#### v 2.2.3 — shell 2/16, priv 1/16
+#### v 2.2.3 — shell 4/32, priv 1/32
 <a id="2.2.3"></a>
 - <span style="color:green">null null with 0x5BB1EFB7 ourceplaydeltex</span>
 - <span style="color:green">guest file with 0x5BB1EFB7 alcodeaddgetex</span>
@@ -2175,8 +2716,24 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x5BADD6D5 uttonhighligna</span>
 - <span style="color:green">null null with 0x5BADD6D5 true</span>
 - Repa shell with 0x5BADD6D5 becolo
+- <span style="color:green">null null with 0x5BB1EFB7 ourceplaydeltex</span>
+- <span style="color:green">guest file with 0x5BB1EFB7 alcodeaddgetex</span>
+- <span style="color:green">null null with 0x5BB1EFB7 position++</span>
+- <span style="color:green">null null with 0x5BB1EFB7 istending_distanaineset+</span>
+- <span style="color:green">null null with 0x2827586E urceplaydelancho</span>
+- <span style="color:green">guest computer with 0x2827586E pos++</span>
+- <span style="color:green">null null with 0x2827586E apaddl</span>
+- <span style="color:green">??? password_change with 0x5A9E6EA2 ne</span>
+- <span style="color:green">null null with 0x5A9E6EA2 functionaryvaluesaddr</span>
+- <span style="color:green">null null with 0x5A9E6EA2 lesstartedi</span>
+- <span style="color:green">null null with 0x5A9E6EA2 valmapmapreval</span>
+- <span style="color:yellow">guest</span> shell with 0x5A9E6EA2 ighlighlighli
+- <span style="color:green">null null with 0x4415984 isonst</span>
+- <span style="color:green">null null with 0x5BADD6D5 uttonhighligna</span>
+- <span style="color:green">null null with 0x5BADD6D5 true</span>
+- Keunglen shell with 0x5BADD6D5 becolo
 
-#### v 2.2.5 — shell 3/18, priv 1/18
+#### v 2.2.5 — shell 10/42, priv 4/42
 <a id="2.2.5"></a>
 - <span style="color:green">null null with 0x20507451 or_buttonstancess</span>
 - <span style="color:green">null null with 0x20507451 teratemodee</span>
@@ -2196,6 +2753,30 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x6067FB89 greanimationt</span>
 - <span style="color:green">guest file with 0x6067FB89 indow_sizeline</span>
 - <span style="color:green">Odelli computer with 0x6067FB89 sized</span>
+- <span style="color:green">??? password_change with 0x20507451 or_buttonstancess</span>
+- <span style="color:green">??? password_change with 0x20507451 teratemodee</span>
+- <span style="color:green">??? password_change with 0x20507451 date</span>
+- <span style="color:green">??? password_change with 0x20507451 icid</span>
+- <span style="color:green">guest file with 0x20507451 epeatting_distvalues</span>
+- <span style="color:yellow">guest</span> shell with 0x3E36091E icked
+- <span style="color:yellow">guest</span> shell with 0x3E36091E fast
+- <span style="color:green">??? password_change with 0x3E36091E selhightediatelinentsr</span>
+- <span style="color:green">??? password_change with 0x3E36091E block_oncloseonclosel</span>
+- <span style="color:yellow">guest</span> shell with 0x3E36091E thismaxi
+- <span style="color:green">guest computer with 0x13FADFAC izeli</span>
+- <span style="color:red">root</span> shell with 0x13FADFAC ortbackgrountinus
+- <span style="color:green">Tinge computer with 0x4415984 isonst</span>
+- <span style="color:red">root</span> shell with 0x4415984 tlineslinercontsr
+- <span style="color:green">guest computer with 0x6067FB89 copy_block0</span>
+- <span style="color:green">??? password_change with 0x6067FB89 greanimationt</span>
+- <span style="color:green">guest file with 0x6067FB89 indow_sizeline</span>
+- <span style="color:green">Lemek computer with 0x6067FB89 sized</span>
+- <span style="color:yellow">guest</span> shell with 0x621D1357 valid
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x621D1357 sizeline
+- <span style="color:green">Serford computer with 0x74B14F6 strmda</span>
+- <span style="color:yellow">guest</span> shell with 0x74B14F6 ktypeopb
+- <span style="color:green">??? password_change with 0x44814EFA lancesdyn_ltree</span>
+- <span style="color:green">??? password_change with 0x44814EFA sformanceoffsetexteffectsetactabl</span>
 
 #### v 2.2.6 — shell 1/10, priv 1/10
 <a id="2.2.6"></a>
@@ -2353,7 +2934,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x66F9BB28 olorschemess</span>
 - <span style="color:green">null null with 0x66F9BB28 tontextobjecterici</span>
 
-#### v 2.3.8 — priv 1/11
+#### v 2.3.8 — shell 3/33, priv 3/33
 <a id="2.3.8"></a>
 - <span style="color:green">null null with 0x15C26FFD while</span>
 - <span style="color:green">null null with 0x15C26FFD minusb</span>
@@ -2366,6 +2947,28 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? password_change with 0x682287A7 sformloc</span>
 - <span style="color:green">null null with 0x420E9F9F lengthsdyn_dt</span>
 - <span style="color:green">null null with 0x420E9F9F dpointostation</span>
+- <span style="color:green">null null with 0x15C26FFD while</span>
+- <span style="color:green">null null with 0x15C26FFD minusb</span>
+- <span style="color:green">??? password_change with 0x15C26FFD paractio</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x15C26FFD slow
+- <span style="color:green">Ianiebums file with 0x15C26FFD buttonobjectselec</span>
+- <span style="color:green">guest computer with 0x682287A7 settimeshu</span>
+- <span style="color:green">null null with 0x682287A7 an_end_b</span>
+- <span style="color:green">null null with 0x682287A7 iconstanchoredpoint</span>
+- <span style="color:green">??? password_change with 0x682287A7 sformloc</span>
+- <span style="color:green">null null with 0x420E9F9F lengthsdyn_dt</span>
+- <span style="color:yellow">guest</span> shell with 0x420E9F9F dpointostation
+- <span style="color:green">null null with 0x15C26FFD while</span>
+- <span style="color:green">guest computer with 0x15C26FFD minusb</span>
+- <span style="color:green">??? password_change with 0x15C26FFD paractio</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x15C26FFD slow
+- <span style="color:green">Bertol file with 0x15C26FFD buttonobjectselec</span>
+- <span style="color:green">guest computer with 0x682287A7 settimeshu</span>
+- <span style="color:green">null null with 0x682287A7 an_end_b</span>
+- <span style="color:green">guest file with 0x682287A7 iconstanchoredpoint</span>
+- <span style="color:green">??? password_change with 0x682287A7 sformloc</span>
+- <span style="color:yellow">guest</span> shell with 0x420E9F9F lengthsdyn_dt
+- <span style="color:yellow">guest</span> shell with 0x420E9F9F dpointostation
 
 #### v 2.4.0 — shell 7/26
 <a id="2.4.0"></a>
@@ -2521,6 +3124,24 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - Esteruyua shell with 0x6BCBE901 enumsizedeltaddli
 - <span style="color:green">null null with 0x6BCBE901 tionpareanimatorcelengthsbuild_tr_scro</span>
 - <span style="color:green">Uange computer with 0x6BCBE901 ditorplayona</span>
+
+#### v 2.5.1 — shell 1/15
+<a id="2.5.1"></a>
+- <span style="color:green">null null with 0x1D34E38C glow</span>
+- <span style="color:green">null null with 0x1D34E38C odalpositio</span>
+- <span style="color:green">null null with 0x1D34E38C file</span>
+- <span style="color:green">null null with 0x1D34E38C currem</span>
+- <span style="color:green">Yle computer with 0x1D34E38C textransforwar</span>
+- <span style="color:green">null null with 0x7956A37B vecttra</span>
+- <span style="color:green">null null with 0x7956A37B _statedistunt</span>
+- <span style="color:green">null null with 0x7956A37B listgraphic</span>
+- <span style="color:green">null null with 0x7956A37B pushparen</span>
+- <span style="color:green">guest computer with 0x7956A37B ionaryeresultcodecu</span>
+- <span style="color:yellow">guest</span> shell with 0xDB1730C _lendingeun
+- <span style="color:green">null null with 0xDB1730C append_alizey</span>
+- <span style="color:green">null null with 0x770ED23 iscreebitlebackundow</span>
+- <span style="color:green">null null with 0x770ED23 isibledthi</span>
+- <span style="color:green">null null with 0x770ED23 otoaiftr</span>
 
 #### v 2.5.2 — shell 8/34, priv 1/34
 <a id="2.5.2"></a>
@@ -3006,6 +3627,30 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">Tolbranto computer with 0x6ABD051C tanchorequalbytebuttoncolorscript</span>
 - Tolbranto shell with 0x50348A94 isobje
 
+#### v 2.7.2 — shell 2/21, priv 1/21
+<a id="2.7.2"></a>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x507BF68C d_bitsblcolorstan
+- Eleen shell with 0x507BF68C true
+- <span style="color:green">guest file with 0x507BF68C comme</span>
+- <span style="color:green">Chambi file with 0x689E033C thisrhsa</span>
+- Eleen shell with 0x689E033C odecomponenumen
+- <span style="color:green">guest file with 0x689E033C aphic</span>
+- <span style="color:green">??? password_change with 0x689E033C alpositionx</span>
+- <span style="color:green">guest computer with 0x2FD3497B more</span>
+- <span style="color:green">null null with 0x2FD3497B partpo</span>
+- <span style="color:green">guest file with 0x2FD3497B lusb</span>
+- <span style="color:green">null null with 0x59432FEA pace</span>
+- <span style="color:green">guest file with 0x59432FEA pend_co</span>
+- <span style="color:green">null null with 0x59432FEA _ltreeintextvmyieldinsicsinse</span>
+- <span style="color:green">Chambi file with 0x2B08919F tatima</span>
+- <span style="color:green">null null with 0x2B08919F i_butt</span>
+- <span style="color:green">guest file with 0xA6B55CD yn_ltreelinemover</span>
+- <span style="color:green">Gvare computer with 0x79D2247E tonstackgrountericid</span>
+- <span style="color:green">Gvare file with 0x79D2247E aequalb</span>
+- <span style="color:green">??? password_change with 0x79D2247E arametext</span>
+- <span style="color:green">Gvare computer with 0x5E3BB526 reattimel</span>
+- <span style="color:green">guest file with 0x4902CA2E ghlighlighlight2transf</span>
+
 #### v 2.7.4 — shell 3/8, priv 1/8
 <a id="2.7.4"></a>
 - <span style="color:green">Arosel computer with 0x296019AC lastquotener</span>
@@ -3146,7 +3791,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x1425DDF codestemdiagnos</span>
 - <span style="color:green">null null with 0x1425DDF hrow</span>
 
-#### v 2.8.5 — shell 3/16, priv 1/16
+#### v 2.8.5 — shell 4/31, priv 1/31
 <a id="2.8.5"></a>
 - Iegelo shell with 0x74E628AB asforedp
 - <span style="color:green">null null with 0x74E628AB eady_d</span>
@@ -3164,6 +3809,39 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x39BF442C animmaxlazymatc
 - <span style="color:yellow">guest</span> shell with 0x39BF442C oaifb
 - <span style="color:green">guest computer with 0x39BF442C sizex</span>
+- <span style="color:green">null null with 0x74E628AB asforedp</span>
+- <span style="color:green">null null with 0x74E628AB eady_d</span>
+- <span style="color:green">null null with 0x74E628AB linetrue</span>
+- <span style="color:green">null null with 0x74E628AB istvarvent</span>
+- <span style="color:green">null null with 0x74E628AB note</span>
+- <span style="color:green">null null with 0x1D752455 orsprivarvent_onclicks</span>
+- <span style="color:green">null null with 0x1D752455 binteractivetr</span>
+- <span style="color:green">null null with 0x1D752455 viewportbackg</span>
+- <span style="color:green">null null with 0x1D752455 etransforewindow++scan_en</span>
+- <span style="color:green">null null with 0x1D752455 oundonenumsizelintextene</span>
+- <span style="color:green">null null with 0x651CAAF3 sabledistartpositio</span>
+- <span style="color:green">guest computer with 0x651CAAF3 izelinenumsireonding</span>
+- <span style="color:green">null null with 0x39BF442C animmaxlazymatc</span>
+- <span style="color:yellow">guest</span> shell with 0x39BF442C oaifb
+- <span style="color:green">null null with 0x39BF442C sizex</span>
+
+#### v 2.8.6 — shell 2/15
+<a id="2.8.6"></a>
+- Assinigar shell with 0x7A68E10B edtaskthismax_code
+- <span style="color:green">guest computer with 0x7A68E10B ortmsbin_fressageco</span>
+- <span style="color:green">null null with 0x7A68E10B dingeteline++</span>
+- <span style="color:green">??? password_change with 0x7A68E10B textslin</span>
+- <span style="color:green">null null with 0x7A68E10B clip</span>
+- <span style="color:green">null null with 0x14B943E0 yn_dtreed</span>
+- <span style="color:green">guest file with 0x14B943E0 titletextpa</span>
+- <span style="color:green">Assinigar file with 0x14B943E0 setackgrount++</span>
+- <span style="color:green">??? password_change with 0x14B943E0 color_titleftunte</span>
+- <span style="color:green">??? password_change with 0x14B943E0 token</span>
+- <span style="color:green">Assinigar file with 0x1E33A847 bi_buf</span>
+- <span style="color:yellow">guest</span> shell with 0x1E33A847 plush_
+- <span style="color:green">guest computer with 0x6D4393EB buttonobjectsetacti</span>
+- <span style="color:green">null null with 0x6D4393EB dingsupda</span>
+- <span style="color:green">null null with 0x6D4393EB sbintrinsertyp</span>
 
 #### v 2.9.0 — shell 1/10
 <a id="2.9.0"></a>
@@ -3285,6 +3963,24 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x7074CA49 splayedcall001f</span>
 - <span style="color:green">null null with 0x7074CA49 faultte</span>
 
+#### v 2.9.9 — shell 3/15, priv 1/15
+<a id="2.9.9"></a>
+- <span style="color:green">null null with 0x471AABAB elanchort~lenb</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x471AABAB temoverlaytransfor
+- <span style="color:green">??? password_change with 0x471AABAB nalcont</span>
+- <span style="color:green">Seveg computer with 0x471AABAB values</span>
+- <span style="color:green">null null with 0x1E33A847 opy_blocksray</span>
+- Ahlehaba shell with 0x63585798 ghtminitiontancheckrem
+- <span style="color:green">guest computer with 0x4C8A4824 d_treedi</span>
+- <span style="color:green">null null with 0x4C8A4824 all_treeinterna</span>
+- <span style="color:green">null null with 0x4C8A4824 rlineypositializelistem</span>
+- Tongs shell with 0x6B4B0BDD uttonclicked
+- <span style="color:green">null null with 0x3DF27B68 treeendpointrintl</span>
+- <span style="color:green">null null with 0x73C93321 siobjecttrans</span>
+- <span style="color:green">null null with 0x17B8A3C1 rhsbuild</span>
+- Aueres shell with 0x62A1AE55 eckremovea
+- <span style="color:green">null null with 0x62A1AE55 onaryvaluesaddl</span>
+
 #### v 3.0.0 — shell 5/20
 <a id="3.0.0"></a>
 - <span style="color:yellow">guest</span> shell with 0x51FF2794 dinge
@@ -3335,6 +4031,33 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - Westle shell with 0x63585798 ghtminitiontancheckrem
 - <span style="color:green">null null with 0x5CBB06CA show</span>
 - <span style="color:green">null null with 0x5CBB06CA processedtaskbarform</span>
+
+#### v 3.0.6 — shell 5/24, priv 2/24
+<a id="3.0.6"></a>
+- <span style="color:green">guest file with 0x61B83446 eundoposi</span>
+- <span style="color:green">null null with 0x61B83446 ocuso</span>
+- <span style="color:yellow">guest</span> shell with 0x61B83446 emoveattimagesaddgetun
+- <span style="color:green">null null with 0x61B83446 ompathbaseonclicked</span>
+- <span style="color:green">null null with 0x7599F5FC nametel</span>
+- <span style="color:green">null null with 0x7599F5FC riternalconter</span>
+- <span style="color:green">guest file with 0x7599F5FC factio</span>
+- <span style="color:yellow">guest</span> shell with 0x7599F5FC urly
+- <span style="color:green">guest file with 0x7599F5FC null</span>
+- <span style="color:green">guest file with 0x63585798 esaddundow</span>
+- Ossett shell with 0x63585798 ghtminitiontancheckrem
+- <span style="color:green">??? password_change with 0x2B29990C heady</span>
+- <span style="color:green">guest computer with 0x2B29990C eblock_onclosefalsmaxim</span>
+- <span style="color:green">null null with 0x2B29990C hile</span>
+- <span style="color:green">guest computer with 0x2B29990C rinsic</span>
+- <span style="color:green">??? password_change with 0x2B29990C ializelineslinerspritextuitext</span>
+- <span style="color:green">Lawran file with 0x1006C087 pritext</span>
+- <span style="color:green">??? password_change with 0x190AC9D0 isrepeat</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x190AC9D0 tivetrue
+- <span style="color:green">Ossett computer with 0x1C3C6F3C audiosoundow_siz</span>
+- <span style="color:red">root</span> shell with 0x1C3C6F3C tsetpositionx
+- <span style="color:green">null null with 0x3B7808FC paddli</span>
+- <span style="color:green">Schmoyleynol computer with 0x2F06089E elend_bitsbl_t</span>
+- Learde shell with 0x4DBD65C9 loselengt
 
 #### v 3.0.7 — shell 2/19
 <a id="3.0.7"></a>
@@ -3448,7 +4171,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x263ADD91 initialrea</span>
 - <span style="color:green">null null with 0x263ADD91 memaxim</span>
 
-#### v 3.1.7 — shell 1/12
+#### v 3.1.7 — shell 3/27, priv 2/27
 <a id="3.1.7"></a>
 - Caldanian shell with 0x7570C1AF scan
 - <span style="color:green">null null with 0x7570C1AF moredpo</span>
@@ -3462,6 +4185,21 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x47DA7482 otoaifnu</span>
 - <span style="color:green">null null with 0x263ADD91 es++</span>
 - <span style="color:green">null null with 0x263ADD91 exdequalby</span>
+- Amongn shell with 0x7570C1AF scan
+- <span style="color:green">null null with 0x7570C1AF moredpo</span>
+- <span style="color:green">guest computer with 0x7570C1AF eventdatapowbuttonclose</span>
+- <span style="color:green">null null with 0x7570C1AF ostanchorlineheight2transformp</span>
+- <span style="color:green">guest file with 0x7570C1AF iatequalbytestenersaddlistgr</span>
+- <span style="color:green">null null with 0x47DA7482 functivetreet</span>
+- <span style="color:green">null null with 0x47DA7482 ualbyte</span>
+- <span style="color:green">null null with 0x47DA7482 button</span>
+- <span style="color:green">null null with 0x47DA7482 codecdst</span>
+- <span style="color:green">null null with 0x47DA7482 otoaifnu</span>
+- <span style="color:green">null null with 0x263ADD91 es++</span>
+- <span style="color:green">null null with 0x263ADD91 exdequalby</span>
+- <span style="color:green">null null with 0x57335F91 length</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x5E9B8E64 startedis
+- <span style="color:red">root</span> shell with 0x5E9B8E64 signa
 
 #### v 3.2.0 — shell 2/22, priv 3/22
 <a id="3.2.0"></a>
@@ -3614,7 +4352,24 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x3C51B2EF ypareturnalco</span>
 - <span style="color:green">null null with 0x3C51B2EF srepeat</span>
 
-#### v 3.3.5 — shell 2/7, priv 1/7
+#### v 3.3.2 — shell 2/14, priv 2/14
+<a id="3.3.2"></a>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x28B2960A stopw
+- <span style="color:green">null null with 0x28B2960A num++</span>
+- <span style="color:green">null null with 0x28B2960A layanimationnew</span>
+- <span style="color:green">null null with 0x28B2960A tln</span>
+- <span style="color:red">root</span> shell with 0x28B2960A posit
+- <span style="color:green">null null with 0x3FC7C818 swindo</span>
+- <span style="color:green">null null with 0x3FC7C818 porttedistentd</span>
+- <span style="color:green">null null with 0x3FC7C818 crollx</span>
+- <span style="color:green">null null with 0x3FC7C818 tedist</span>
+- <span style="color:green">guest file with 0x3C51B2EF ypareturnalco</span>
+- <span style="color:yellow">guest</span> shell with 0x3C51B2EF ecttrank
+- <span style="color:green">??? password_change with 0xEB9DEB8 torupdategy</span>
+- <span style="color:green">Zimbel computer with 0x11F422E9 tionx</span>
+- <span style="color:green">Cherzbah computer with 0x11F422E9 saddlinei</span>
+
+#### v 3.3.5 — shell 4/14, priv 2/14
 <a id="3.3.5"></a>
 - <span style="color:red">root</span> shell with 0x7D1612CF ax_block_
 - <span style="color:green">null null with 0x7D1612CF _audiosounti</span>
@@ -3623,8 +4378,41 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x65F49E19 _lengthofa
 - <span style="color:green">guest file with 0x65F49E19 actionx</span>
 - <span style="color:green">guest file with 0x30BAD6C9 compro</span>
+- <span style="color:red">root</span> shell with 0x7D1612CF ax_block_
+- <span style="color:green">null null with 0x7D1612CF _audiosounti</span>
+- <span style="color:green">null null with 0x6063A3FD tundostrmdatemplickinvok</span>
+- <span style="color:green">guest computer with 0x6063A3FD gotoaift</span>
+- <span style="color:yellow">guest</span> shell with 0x65F49E19 _lengthofa
+- <span style="color:green">guest file with 0x65F49E19 actionx</span>
+- <span style="color:green">guest file with 0x30BAD6C9 compro</span>
 
-#### v 3.3.9 — shell 6/40, priv 1/40
+#### v 3.3.8 — shell 5/23
+<a id="3.3.8"></a>
+- <span style="color:green">guest computer with 0x72DA49CC more</span>
+- <span style="color:yellow">guest</span> shell with 0x72DA49CC n_dtrang
+- <span style="color:yellow">guest</span> shell with 0x72DA49CC histrolly
+- <span style="color:green">guest computer with 0x72DA49CC orttexteformlockd</span>
+- <span style="color:green">null null with 0x72DA49CC nota</span>
+- <span style="color:green">null null with 0x2F7809E0 rocesdyn_tr</span>
+- <span style="color:green">guest file with 0x2F7809E0 eselaytrue</span>
+- <span style="color:green">??? password_change with 0x2F7809E0 emps</span>
+- <span style="color:green">null null with 0x2F7809E0 standb</span>
+- <span style="color:yellow">guest</span> shell with 0x59BA1CE8 aplush
+- <span style="color:green">??? password_change with 0x59BA1CE8 ilabledis</span>
+- <span style="color:green">null null with 0x59BA1CE8 updateoutlinesprinsic</span>
+- <span style="color:green">null null with 0x59BA1CE8 stersaddregrount++</span>
+- <span style="color:green">guest computer with 0x59BA1CE8 window_s</span>
+- <span style="color:green">??? password_change with 0x7FA6FE45 thbaseoncome</span>
+- <span style="color:green">guest computer with 0x7FA6FE45 vecttra</span>
+- <span style="color:green">null null with 0x7FA6FE45 inenum</span>
+- <span style="color:green">guest file with 0x7FA6FE45 ebottonobjecterrorifnotal</span>
+- <span style="color:yellow">guest</span> shell with 0x1289C944 toninvokethistati
+- <span style="color:yellow">guest</span> shell with 0x1289C944 equalbytes
+- <span style="color:green">??? password_change with 0x1289C944 orsetmidthisclosefa</span>
+- <span style="color:green">null null with 0x1289C944 uesaddlis</span>
+- <span style="color:green">null null with 0x134D790B revst</span>
+
+#### v 3.3.9 — shell 8/59, priv 1/59
 <a id="3.3.9"></a>
 - <span style="color:green">null null with 0x20F6787B removerlayonaryereselhightm</span>
 - <span style="color:yellow">guest</span> shell with 0x20F6787B defirectset
@@ -3666,6 +4454,25 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x2707B138 showsountin</span>
 - <span style="color:green">null null with 0x1289C944 uesaddlis</span>
 - <span style="color:green">null null with 0x2D426E98 grountilsursor-1</span>
+- <span style="color:green">null null with 0x20F6787B removerlayonaryereselhightm</span>
+- <span style="color:yellow">guest</span> shell with 0x20F6787B defirectset
+- <span style="color:yellow">guest</span> shell with 0x20F6787B undowmatch_len
+- <span style="color:green">null null with 0x20F6787B thisob</span>
+- <span style="color:green">null null with 0x20F6787B oteopb</span>
+- <span style="color:green">null null with 0x284F0B8F base</span>
+- <span style="color:green">??? password_change with 0x284F0B8F _shight2</span>
+- <span style="color:green">Zaun computer with 0x284F0B8F alessignimmax</span>
+- <span style="color:green">null null with 0x284F0B8F pos++</span>
+- <span style="color:green">null null with 0x1000E2D0 groupblockbufsizeline</span>
+- <span style="color:green">guest computer with 0x1000E2D0 nesizey</span>
+- <span style="color:green">null null with 0x1000E2D0 sedcolor_buttonist</span>
+- <span style="color:green">null null with 0x1000E2D0 anchortbi_b</span>
+- <span style="color:green">null null with 0x1000E2D0 izedeltextransfo</span>
+- <span style="color:green">null null with 0x2707B138 ontostancessedtaskthisco</span>
+- <span style="color:green">null null with 0x2707B138 _lend_bl</span>
+- <span style="color:green">null null with 0x2707B138 dostanchorl</span>
+- <span style="color:green">null null with 0x2707B138 showsountin</span>
+- <span style="color:green">null null with 0x1289C944 uesaddlis</span>
 
 #### v 3.4.0 — shell 1/16, priv 1/16
 <a id="3.4.0"></a>
@@ -3718,7 +4525,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x60E3FA79 chored_bits</span>
 - <span style="color:yellow">guest</span> shell with 0x60E3FA79 result++
 
-#### v 3.4.3 — shell 1/11, priv 1/11
+#### v 3.4.3 — shell 5/29, priv 3/29
 <a id="3.4.3"></a>
 - <span style="color:red">root</span> <span style="color:red">computer</span> with 0xC33681F focus
 - <span style="color:green">null null with 0xC33681F values</span>
@@ -3731,6 +4538,24 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? password_change with 0x35C8DC73 ax_blocks</span>
 - Chotov shell with 0x35C8DC73 indowmatime
 - <span style="color:green">null null with 0x60E3FA79 portimerdelayt</span>
+- <span style="color:green">null null with 0xC33681F focus</span>
+- <span style="color:green">??? password_change with 0xC33681F values</span>
+- <span style="color:green">null null with 0xC33681F ring_lendp</span>
+- <span style="color:green">Vail computer with 0xC33681F initiontainleve</span>
+- <span style="color:green">??? password_change with 0xC33681F strees</span>
+- <span style="color:green">Vail file with 0x6D251B2A end_aliste</span>
+- <span style="color:green">guest computer with 0x6D251B2A flush_maskthistatus</span>
+- <span style="color:green">null null with 0x6D251B2A edelembofa</span>
+- <span style="color:green">??? password_change with 0x35C8DC73 ax_blocks</span>
+- Etlaker shell with 0x35C8DC73 indowmatime
+- Etlaker shell with 0x60E3FA79 chored_bits
+- <span style="color:green">null null with 0x60E3FA79 portimerdelayt</span>
+- <span style="color:green">Vail file with 0x1006C087 pritext</span>
+- Etlaker shell with 0x190AC9D0 yielding_displaye
+- <span style="color:green">??? password_change with 0x190AC9D0 isrepeat</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x190AC9D0 tivetrue
+- <span style="color:green">Vail computer with 0x1C3C6F3C audiosoundow_siz</span>
+- <span style="color:red">root</span> shell with 0x1C3C6F3C tsetpositionx
 
 #### v 3.4.4 — shell 3/10
 <a id="3.4.4"></a>
@@ -3822,7 +4647,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x2201FCDF cessor-1</span>
 - <span style="color:green">null null with 0x7E6585CB losetminu</span>
 
-#### v 3.5.1 — shell 3/12
+#### v 3.5.1 — shell 3/20
 <a id="3.5.1"></a>
 - <span style="color:green">null null with 0x7617FF64 osesoundosoundthist</span>
 - <span style="color:green">null null with 0x7617FF64 essionlyfa</span>
@@ -3836,6 +4661,14 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest computer with 0x6BA4583 pareto</span>
 - <span style="color:yellow">guest</span> shell with 0x23E72673 alfunctivet
 - <span style="color:yellow">guest</span> shell with 0xA7126C2 ovelinesetpivotreedyn
+- <span style="color:green">null null with 0x7617FF64 osesoundosoundthist</span>
+- <span style="color:green">null null with 0x7617FF64 essionlyfa</span>
+- <span style="color:green">null null with 0x7617FF64 conterals</span>
+- <span style="color:green">null null with 0x7617FF64 hash_sha</span>
+- <span style="color:green">guest file with 0x7617FF64 color_titlength</span>
+- <span style="color:green">null null with 0x2F8D571A ingsupdatecomprevn</span>
+- <span style="color:green">null null with 0x2F8D571A rinsertializelinesprit</span>
+- <span style="color:green">null null with 0x7E6585CB letextvmyieldi</span>
 
 #### v 3.5.2 — shell 5/18, priv 1/18
 <a id="3.5.2"></a>
@@ -3858,7 +4691,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x7E6585CB ebi_buffectselfliststr
 - <span style="color:green">null null with 0x7E6585CB ictreeinoverlaytransfor</span>
 
-#### v 3.5.3 — shell 3/17
+#### v 3.5.3 — shell 6/34
 <a id="3.5.3"></a>
 - <span style="color:green">null null with 0x65E8FFC4 daternalcontextrans</span>
 - <span style="color:yellow">guest</span> shell with 0x65E8FFC4 arenti
@@ -3868,6 +4701,23 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - Argerri shell with 0x2A0247DB titlengthoffseta
 - <span style="color:green">guest computer with 0x2A0247DB gbuttonstringbuttono</span>
 - <span style="color:green">null null with 0x40670D5 ending_lengt</span>
+- <span style="color:green">null null with 0x40670D5 lor_titlebackundo</span>
+- <span style="color:green">null null with 0x40670D5 bl_tree</span>
+- <span style="color:yellow">guest</span> shell with 0x40670D5 troyimmentsre
+- <span style="color:green">guest file with 0x40670D5 backgroundopositialiste</span>
+- <span style="color:green">null null with 0x4BB490FE ishstactio</span>
+- <span style="color:green">??? password_change with 0x4BB490FE flistemplaytrue</span>
+- <span style="color:green">null null with 0x4BB490FE eplategy</span>
+- <span style="color:green">null null with 0x4BB490FE tpositionresul</span>
+- <span style="color:green">null null with 0x7E6585CB gotoa</span>
+- <span style="color:green">null null with 0x65E8FFC4 daternalcontextrans</span>
+- <span style="color:yellow">guest</span> shell with 0x65E8FFC4 arenti
+- <span style="color:green">null null with 0x65E8FFC4 thisabled</span>
+- <span style="color:green">null null with 0x65E8FFC4 gthsb</span>
+- <span style="color:green">null null with 0x65E8FFC4 store</span>
+- Ramineh shell with 0x2A0247DB titlengthoffseta
+- <span style="color:green">guest computer with 0x2A0247DB gbuttonstringbuttono</span>
+- <span style="color:green">guest computer with 0x40670D5 ending_lengt</span>
 - <span style="color:green">null null with 0x40670D5 lor_titlebackundo</span>
 - <span style="color:green">null null with 0x40670D5 bl_tree</span>
 - <span style="color:yellow">guest</span> shell with 0x40670D5 troyimmentsre
@@ -3891,6 +4741,19 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest computer with 0x4793A1E4 attimesseqset</span>
 - <span style="color:green">null null with 0x3DA7044 tostanchortmsbint</span>
 - <span style="color:green">guest file with 0x3DA7044 dexes</span>
+
+#### v 3.5.5 — shell 4/10, priv 2/10
+<a id="3.5.5"></a>
+- <span style="color:red">root</span> shell with 0x54450673 schecklinentset
+- <span style="color:red">root</span> shell with 0x54450673 formsireonnexttextreecurrentpositiond
+- <span style="color:green">null null with 0x54450673 windosource</span>
+- <span style="color:green">null null with 0x54450673 tetictreeth</span>
+- <span style="color:green">guest computer with 0x54450673 esaddlisteditt</span>
+- <span style="color:green">null null with 0x480EED06 nalcontanceoffsettimerialistart</span>
+- <span style="color:green">null null with 0x480EED06 treestedistemplayedc</span>
+- Resitin shell with 0x480EED06 ternalcontex
+- <span style="color:green">guest file with 0x3DA7044 tostanchortmsbint</span>
+- <span style="color:yellow">guest</span> shell with 0x3DA7044 or_scrolly
 
 #### v 3.5.6 — shell 2/17
 <a id="3.5.6"></a>
@@ -3986,7 +4849,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - Loeb shell with 0x4FA87F95 setpivotnewi
 - <span style="color:green">null null with 0x3D221C3D istroyuitextreest_lengthcodec</span>
 
-#### v 3.6.2 — priv 1/12
+#### v 3.6.2 — priv 2/25
 <a id="3.6.2"></a>
 - <span style="color:green">null null with 0x186A2387 systendquotequalbytebutton</span>
 - <span style="color:green">null null with 0x186A2387 fsettexttextss</span>
@@ -3999,6 +4862,19 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:red">root</span> <span style="color:red">file</span> with 0x413F4E0E eractionpointroybuttonimato
 - <span style="color:green">??? password_change with 0x413F4E0E hile</span>
 - <span style="color:green">null null with 0x624F9E5C ringbuttonstan</span>
+- <span style="color:green">null null with 0x624F9E5C urcelend_block_</span>
+- <span style="color:green">null null with 0x186A2387 systendquotequalbytebutton</span>
+- <span style="color:green">null null with 0x186A2387 fsettexttextss</span>
+- <span style="color:green">??? password_change with 0x186A2387 color_title</span>
+- <span style="color:green">null null with 0x186A2387 istreedyn_</span>
+- <span style="color:green">Rovela file with 0x1D9BB881 nenumsirectt</span>
+- <span style="color:green">guest file with 0x1D9BB881 unctionpoin</span>
+- <span style="color:green">null null with 0x413F4E0E raycodecursche</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x413F4E0E sbintextimeshupdatecall_tree
+- <span style="color:green">null null with 0x413F4E0E eractionpointroybuttonimato</span>
+- <span style="color:green">??? password_change with 0x413F4E0E hile</span>
+- <span style="color:green">guest file with 0x624F9E5C tr_showan</span>
+- <span style="color:green">Gershne computer with 0x624F9E5C ringbuttonstan</span>
 - <span style="color:green">null null with 0x624F9E5C urcelend_block_</span>
 
 #### v 3.6.3 — shell 6/16
@@ -4037,7 +4913,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x45AC75B6 latethemech
 - <span style="color:green">null null with 0x45AC75B6 spressage</span>
 
-#### v 3.6.8 — shell 5/27
+#### v 3.6.8 — shell 7/40
 <a id="3.6.8"></a>
 - <span style="color:green">??? password_change with 0x6A8037F8 pointextend_colo</span>
 - <span style="color:green">guest computer with 0x6A8037F8 entpositialpha</span>
@@ -4062,6 +4938,19 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x60F9A230 opendin</span>
 - <span style="color:green">null null with 0x60F9A230 urlenb</span>
 - <span style="color:green">Shawth computer with 0x1FCF4AB4 settextsiin</span>
+- <span style="color:green">??? password_change with 0x169D8A51 endposlinesizelinehei</span>
+- <span style="color:yellow">guest</span> shell with 0x169D8A51 morewi
+- <span style="color:green">null null with 0x169D8A51 x++</span>
+- <span style="color:green">null null with 0x169D8A51 tuitexteffer</span>
+- <span style="color:green">null null with 0x6A8037F8 pointextend_colo</span>
+- <span style="color:green">guest computer with 0x6A8037F8 entpositialpha</span>
+- <span style="color:green">null null with 0x6A8037F8 pointoffsetitlebackund</span>
+- <span style="color:yellow">guest</span> shell with 0x60F9A230 udiosourcemeimag
+- <span style="color:green">null null with 0x60F9A230 ositializedelc</span>
+- <span style="color:green">null null with 0x60F9A230 teralscanvasg</span>
+- <span style="color:green">null null with 0x60F9A230 opendin</span>
+- <span style="color:green">??? password_change with 0x60F9A230 urlenb</span>
+- <span style="color:green">Cairanf computer with 0x1FCF4AB4 settextsiin</span>
 - <span style="color:green">??? password_change with 0x169D8A51 endposlinesizelinehei</span>
 - <span style="color:yellow">guest</span> shell with 0x169D8A51 morewi
 - <span style="color:green">null null with 0x169D8A51 x++</span>
@@ -4216,6 +5105,26 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x2337E973 tbackgroutline</span>
 - <span style="color:green">null null with 0x2337E973 tifnull</span>
 
+#### v 3.8.2 — shell 2/17, priv 2/17
+<a id="3.8.2"></a>
+- <span style="color:green">guest file with 0x331E3160 ut_buttonc</span>
+- <span style="color:green">Tsengerre file with 0x331E3160 gotoa</span>
+- <span style="color:green">guest computer with 0x331E3160 color_buttontex</span>
+- <span style="color:yellow">guest</span> shell with 0x5B8FF64C amode
+- <span style="color:green">??? password_change with 0x5B8FF64C colorsetactiondardowmat</span>
+- <span style="color:green">null null with 0x5B8FF64C can_tresu</span>
+- <span style="color:red">root</span> shell with 0x5B8FF64C onlevent_oncolorsprit
+- <span style="color:green">null null with 0x47F130CE coundowma</span>
+- <span style="color:green">null null with 0x47F130CE selanceoffsetac</span>
+- <span style="color:green">guest computer with 0x47F130CE copywinde</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x2B0DBFD3 itletextparsettimagete
+- <span style="color:green">null null with 0x2B0DBFD3 atemps</span>
+- <span style="color:green">null null with 0x2B0DBFD3 keyworderrans</span>
+- <span style="color:green">null null with 0x2B0DBFD3 clearheady_def</span>
+- <span style="color:green">guest computer with 0x552332AC this</span>
+- <span style="color:green">??? firewall_disable with 0x6FC62986 widthisabl</span>
+- <span style="color:green">??? firewall_disable with 0x6FC62986 uffici</span>
+
 #### v 3.8.3 — shell 1/9
 <a id="3.8.3"></a>
 - <span style="color:green">??? password_change with 0x328788F transformalcontinen</span>
@@ -4227,6 +5136,22 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x4EFB2F90 insica</span>
 - <span style="color:green">null null with 0x4EFB2F90 indow_sizedelet</span>
 - <span style="color:green">null null with 0x4EFB2F90 _size</span>
+
+#### v 3.8.4 — priv 1/13
+<a id="3.8.4"></a>
+- <span style="color:green">guest computer with 0x5F84DF2D ctivetrank</span>
+- <span style="color:green">Tioneckeoham computer with 0x1A9F45EA settimeshupdatabledcolor</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x1A9F45EA position
+- <span style="color:green">??? password_change with 0x1A9F45EA note</span>
+- <span style="color:green">??? password_change with 0x13E7F1D6 olor_globalco</span>
+- <span style="color:green">null null with 0x6DC29C8F ance</span>
+- <span style="color:green">Mayo computer with 0x6DC29C8F inoverlaysourceli</span>
+- <span style="color:green">??? password_change with 0x3A486649 bitsstan</span>
+- <span style="color:green">null null with 0x3A486649 textefferroright</span>
+- <span style="color:green">Tioneckeoham computer with 0x3A486649 ctionnamete</span>
+- <span style="color:green">??? password_change with 0x3A486649 ressageterderro</span>
+- <span style="color:green">??? password_change with 0x144CF9A tanchortbi</span>
+- <span style="color:green">null null with 0x441D8219 end_bi</span>
 
 #### v 3.8.5 — shell 2/16
 <a id="3.8.5"></a>
@@ -4398,6 +5323,18 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? password_change with 0x72D38C4F rangetextreedistackundosta</span>
 - <span style="color:yellow">guest</span> shell with 0x72D38C4F tartpos
 
+#### v 3.9.4 — shell 4/9, priv 2/9
+<a id="3.9.4"></a>
+- <span style="color:green">guest file with 0x23B8187F or_buttonfont</span>
+- Zhon shell with 0x61906398 izedelanche
+- <span style="color:green">guest computer with 0x61906398 elhight2transformances</span>
+- Zhon shell with 0x49C6B0F0 posit
+- <span style="color:red">root</span> shell with 0x49C6B0F0 falsbuild_tr_f
+- Ballanikangus shell with 0x49C6B0F0 nicelockbu
+- <span style="color:green">null null with 0x9A6C2B4 ighlightmidthis</span>
+- <span style="color:green">??? password_change with 0x9A6C2B4 dowmator3</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x9A6C2B4 rulyb
+
 #### v 3.9.5 — shell 1/11
 <a id="3.9.5"></a>
 - <span style="color:green">guest file with 0x23B8187F or_buttonfont</span>
@@ -4460,7 +5397,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x2A04F292 nabledquotequeuetobjectsettex</span>
 - <span style="color:green">null null with 0x2A04F292 putbuttonis</span>
 
-#### v 4.0.1 — shell 5/14, priv 2/14
+#### v 4.0.1 — shell 7/27, priv 2/27
 <a id="4.0.1"></a>
 - <span style="color:green">Drich computer with 0x25CFC7A2 treetrue</span>
 - <span style="color:yellow">guest</span> shell with 0x3E3D35AB hash_blo
@@ -4476,6 +5413,45 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x5A768208 imatibledcal</span>
 - Endranan shell with 0x1C3C8D70 need
 - <span style="color:green">null null with 0x1C3C8D70 ectsettimeani</span>
+- <span style="color:yellow">guest</span> shell with 0x3E3D35AB hash_blo
+- <span style="color:green">null null with 0x4292A9A1 curlen</span>
+- <span style="color:yellow">guest</span> shell with 0x4292A9A1 ericientpositia
+- <span style="color:green">null null with 0x4292A9A1 end_block_start</span>
+- <span style="color:green">null null with 0x288C6217 iconformlock_o</span>
+- <span style="color:green">null null with 0x288C6217 hasforewi</span>
+- <span style="color:green">null null with 0x288C6217 eaddundostroybu</span>
+- <span style="color:green">null null with 0x288C6217 getpivotnewicon</span>
+- <span style="color:green">null null with 0x5A768208 aplush</span>
+- <span style="color:green">null null with 0x5A768208 thiscolor_globalcodects</span>
+- <span style="color:green">null null with 0x5A768208 imatibledcal</span>
+- <span style="color:green">null null with 0x1C3C8D70 need</span>
+- <span style="color:green">null null with 0x1C3C8D70 ectsettimeani</span>
+
+#### v 4.0.2 — shell 5/23, priv 1/23
+<a id="4.0.2"></a>
+- <span style="color:green">Erbingo computer with 0x25CFC7A2 treetrue</span>
+- <span style="color:yellow">guest</span> shell with 0x3E3D35AB hash_blo
+- <span style="color:green">null null with 0x3953521 systenerbuttonclicked</span>
+- <span style="color:red">root</span> shell with 0x3953521 itsdyn_ltre
+- <span style="color:green">null null with 0x3953521 opyp</span>
+- <span style="color:green">null null with 0x3953521 fast</span>
+- <span style="color:green">null null with 0x59E3B05 redpositio</span>
+- <span style="color:green">null null with 0x59E3B05 lindexergroun</span>
+- <span style="color:green">guest computer with 0x59E3B05 eleftuntextrank</span>
+- <span style="color:green">null null with 0x59E3B05 calessedcaledq</span>
+- <span style="color:green">null null with 0x6F801C81 tsetictreeblocksraycase</span>
+- <span style="color:green">Faduyk file with 0x6F801C81 elinecodel</span>
+- <span style="color:green">null null with 0x6F801C81 positionarykeyrep</span>
+- <span style="color:green">null null with 0x6F801C81 focuseuptimeanimme</span>
+- <span style="color:yellow">guest</span> shell with 0x6F801C81 wardoubledquotextpare
+- <span style="color:green">??? password_change with 0x19E411B2 tandata_typebottom</span>
+- <span style="color:green">??? password_change with 0x1D20A60A ividents</span>
+- <span style="color:green">null null with 0x1D20A60A rupdatethisgoodler</span>
+- Rounat shell with 0x1D20A60A _codelte
+- <span style="color:yellow">guest</span> shell with 0x14C160BB sizelitex
+- <span style="color:green">??? password_change with 0x73725DFD tcolor_bu</span>
+- <span style="color:green">??? password_change with 0x2223E152 cast</span>
+- <span style="color:green">guest computer with 0x3A766458 anceoffsetactabut</span>
 
 #### v 4.0.3 — shell 1/15
 <a id="4.0.3"></a>
@@ -4508,6 +5484,31 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x3EF9155E odecme</span>
 - <span style="color:green">null null with 0x535B7112 siconteractable</span>
 
+#### v 4.0.5 — shell 4/22, priv 1/22
+<a id="4.0.5"></a>
+- <span style="color:green">guest file with 0x23B8187F agreaderrorif</span>
+- <span style="color:red">root</span> shell with 0x25CFC7A2 componenumber
+- <span style="color:green">??? password_change with 0x3E3D35AB iagnostatictreestend1</span>
+- <span style="color:green">null null with 0x2554F5B7 itionaryvalues</span>
+- <span style="color:green">null null with 0x2554F5B7 opyp</span>
+- <span style="color:green">Morg file with 0x2554F5B7 etvarv</span>
+- <span style="color:yellow">guest</span> shell with 0x2A04F292 sicsstorag
+- <span style="color:green">??? password_change with 0x2A04F292 putbuttonis</span>
+- <span style="color:green">guest computer with 0x4D74524A hash_head</span>
+- <span style="color:green">Morg file with 0x4D74524A bappend_</span>
+- <span style="color:green">??? password_change with 0x4D74524A atecalessof</span>
+- <span style="color:green">null null with 0x4D74524A scan</span>
+- <span style="color:green">null null with 0x4D74524A title</span>
+- <span style="color:green">Morg file with 0x7A3CBC putleteffe</span>
+- <span style="color:yellow">guest</span> shell with 0x7A3CBC seletexttespace
+- <span style="color:green">null null with 0x7A3CBC colorschecktyperia</span>
+- <span style="color:yellow">guest</span> shell with 0x7A3CBC functionshowc
+- <span style="color:green">Morg file with 0x1006C087 pritext</span>
+- <span style="color:green">guest file with 0xD9F5747 treeinte</span>
+- <span style="color:green">null null with 0x7384DC56 barformanchorttextef</span>
+- <span style="color:green">Morg computer with 0x75E16450 char</span>
+- <span style="color:green">guest computer with 0x75E16450 codecdstancessertyp</span>
+
 #### v 4.0.6 — shell 2/17
 <a id="4.0.6"></a>
 - <span style="color:yellow">guest</span> shell with 0x23B8187F token
@@ -4528,7 +5529,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x3ED3DDDD tmsbheady_def</span>
 - <span style="color:green">null null with 0x22AF7DF7 insertyperigsizel</span>
 
-#### v 4.0.8 — priv 2/12
+#### v 4.0.8 — shell 3/27, priv 5/27
 <a id="4.0.8"></a>
 - <span style="color:red">root</span> <span style="color:red">computer</span> with 0x3B59EA94 _length
 - <span style="color:green">null null with 0x3B59EA94 sirecttransforminue</span>
@@ -4542,8 +5543,23 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x69436E6D ratetictree</span>
 - <span style="color:green">null null with 0x69436E6D nishdonenumbe</span>
 - <span style="color:green">null null with 0x69436E6D consta</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x3B59EA94 _length
+- <span style="color:green">null null with 0x3B59EA94 sirecttransforminue</span>
+- <span style="color:green">null null with 0x3B59EA94 watch_st</span>
+- <span style="color:red">root</span> shell with 0x25CFC7A2 componenumber
+- <span style="color:green">null null with 0x75B7E560 _bitsdcolor_buttonte</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x75B7E560 color_bufficit
+- <span style="color:green">null null with 0x75B7E560 utlinesinsica</span>
+- <span style="color:green">guest computer with 0x75B7E560 esultcodectedcall</span>
+- <span style="color:yellow">guest</span> shell with 0x2A04F292 sicsstorag
+- <span style="color:green">??? password_change with 0x2A04F292 putbuttonis</span>
+- <span style="color:green">guest computer with 0x6AB009D7 chored_bitscompr</span>
+- <span style="color:green">null null with 0x6AB009D7 aphic</span>
+- <span style="color:yellow">guest</span> shell with 0x69436E6D ratetictree
+- <span style="color:green">null null with 0x69436E6D nishdonenumbe</span>
+- <span style="color:green">null null with 0x69436E6D consta</span>
 
-#### v 4.1.1 — shell 1/15
+#### v 4.1.1 — shell 5/35
 <a id="4.1.1"></a>
 - <span style="color:green">guest file with 0x25CFC7A2 elaytrue</span>
 - <span style="color:green">null null with 0x25CFC7A2 heapk</span>
@@ -4560,6 +5576,26 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">Toneb file with 0x19E411B2 tionaryeresultna</span>
 - <span style="color:green">null null with 0x10B3C8AF ternalconteralse</span>
 - <span style="color:green">null null with 0x10B3C8AF _11_138</span>
+- <span style="color:green">guest file with 0x25CFC7A2 elaytrue</span>
+- <span style="color:green">null null with 0x25CFC7A2 heapk</span>
+- <span style="color:green">null null with 0x2D9EE7C6 sformsirectorupdateiconsb</span>
+- <span style="color:green">Iyihch computer with 0x2D9EE7C6 ecome</span>
+- <span style="color:green">null null with 0x2D9EE7C6 ataudiosoundo</span>
+- <span style="color:yellow">guest</span> shell with 0x2D9EE7C6 line
+- <span style="color:green">??? password_change with 0x2D9EE7C6 valuesa</span>
+- <span style="color:yellow">guest</span> shell with 0x25412B46 chainemoverlaytran
+- <span style="color:yellow">guest</span> shell with 0x25412B46 okethisrep
+- <span style="color:green">guest file with 0x25412B46 lush_</span>
+- <span style="color:green">null null with 0x25412B46 _all001f</span>
+- <span style="color:green">??? password_change with 0x25412B46 iosoundostancesseq</span>
+- <span style="color:green">guest file with 0x5F08B812 erlaydelendlinetr</span>
+- <span style="color:green">guest computer with 0x7E3666C9 enoveategy</span>
+- <span style="color:green">guest file with 0x92ADD90 lush_</span>
+- <span style="color:green">Iyihch file with 0x4239B239 urcelinesets</span>
+- <span style="color:yellow">guest</span> shell with 0x4239B239 dostantset
+- <span style="color:green">null null with 0x2D426E98 grountilsursor-1</span>
+- <span style="color:green">guest computer with 0x797F5D2D overlaybackco</span>
+- <span style="color:green">Leonglot computer with 0x797F5D2D oken</span>
 
 #### v 4.1.2 — shell 2/8
 <a id="4.1.2"></a>
@@ -4572,7 +5608,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x2B774870 eaterest_len</span>
 - <span style="color:yellow">guest</span> shell with 0x2B774870 ritextpositia
 
-#### v 4.1.4 — shell 4/30
+#### v 4.1.4 — shell 6/44
 <a id="4.1.4"></a>
 - <span style="color:yellow">guest</span> shell with 0xDC68BBE sor-1
 - <span style="color:green">guest computer with 0xDC68BBE etreetreeinoverlaysourcev</span>
@@ -4598,6 +5634,20 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x5921ED5F smax_coundosetfocusonstring_distin</span>
 - <span style="color:green">guest file with 0x5921ED5F premoverlaybackremoved</span>
 - Palashi shell with 0x5921ED5F aorb
+- <span style="color:green">null null with 0x7FA9C5D3 color_viewport</span>
+- <span style="color:green">null null with 0x7FA9C5D3 need</span>
+- <span style="color:green">null null with 0x2DADE248 assionar</span>
+- <span style="color:green">null null with 0x2DADE248 temps</span>
+- <span style="color:green">null null with 0x2DADE248 color_buf</span>
+- <span style="color:green">null null with 0x2DADE248 a_typebot</span>
+- <span style="color:yellow">guest</span> shell with 0xDC68BBE sor-1
+- <span style="color:green">null null with 0x3732CB32 ettextlineselanceclip</span>
+- <span style="color:green">??? password_change with 0x3732CB32 rayclearheadingcoun</span>
+- <span style="color:green">null null with 0x3732CB32 distemodeaddresizelin</span>
+- <span style="color:green">??? password_change with 0x5921ED5F tartposi</span>
+- <span style="color:green">null null with 0x5921ED5F smax_coundosetfocusonstring_distin</span>
+- <span style="color:green">guest file with 0x5921ED5F premoverlaybackremoved</span>
+- Abalvo shell with 0x5921ED5F aorb
 - <span style="color:green">null null with 0x7FA9C5D3 color_viewport</span>
 - <span style="color:green">null null with 0x7FA9C5D3 need</span>
 - <span style="color:green">null null with 0x2DADE248 assionar</span>
@@ -4738,6 +5788,31 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:red">root</span> shell with 0x33B23F8F eturnalcontanchortshowso
 - <span style="color:green">null null with 0x33B23F8F date</span>
 
+#### v 4.2.3 — shell 3/22, priv 2/22
+<a id="4.2.3"></a>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x4F917343 scal
+- <span style="color:green">guest file with 0x4F917343 setvarventpositionar</span>
+- <span style="color:green">??? password_change with 0x4F917343 outline</span>
+- <span style="color:green">guest computer with 0x265147F2 buttonfontextransfori</span>
+- <span style="color:green">null null with 0x265147F2 codecflushp</span>
+- <span style="color:green">Rookseymann computer with 0x265147F2 jecttratemdiagnostationf</span>
+- <span style="color:green">null null with 0x671BB397 paret</span>
+- <span style="color:green">??? password_change with 0x671BB397 soundostringsized</span>
+- <span style="color:yellow">guest</span> shell with 0x671BB397 balcontextparama
+- <span style="color:green">null null with 0x129B2885 hanb</span>
+- <span style="color:green">Ellanasso computer with 0x129B2885 ionstreeinteratelin</span>
+- <span style="color:green">guest computer with 0x129B2885 etaskthisoncolor_titles</span>
+- <span style="color:green">guest computer with 0x129B2885 tatectionsh</span>
+- <span style="color:green">null null with 0x129B2885 equaretono</span>
+- <span style="color:green">guest computer with 0x450AA21F tletextsiin</span>
+- <span style="color:green">??? password_change with 0x450AA21F tefunctionter</span>
+- <span style="color:green">guest computer with 0x17017F5C olor_buttoncolors</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x17017F5C laysourceplaytrul
+- <span style="color:green">null null with 0x33BB8EB1 urscrolledt</span>
+- <span style="color:green">??? password_change with 0x33A420E5 rameshupdategy</span>
+- <span style="color:yellow">guest</span> shell with 0x33A420E5 equalbyteb
+- Ellanasso shell with 0x7DC23A6B rializedeltext
+
 #### v 4.2.4 — shell 3/15, priv 1/15
 <a id="4.2.4"></a>
 - <span style="color:green">Orngdo computer with 0x2B9C539A string_displate</span>
@@ -4768,7 +5843,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x4CDF8328 copydictreebl_treen</span>
 - <span style="color:red">root</span> <span style="color:red">file</span> with 0xE5FFB2F valuesad
 
-#### v 4.2.9 — shell 5/24, priv 3/24
+#### v 4.2.9 — shell 8/36, priv 5/36
 <a id="4.2.9"></a>
 - <span style="color:yellow">guest</span> shell with 0xB887183 nimator3
 - <span style="color:green">null null with 0xB887183 datebutto</span>
@@ -4794,6 +5869,30 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - Kiastela shell with 0x6BEB60C4 ghtminiscodecodeseleng
 - <span style="color:green">null null with 0x6BEB60C4 alse</span>
 - <span style="color:red">root</span> <span style="color:red">computer</span> with 0x6BEB60C4 regiondata
+- <span style="color:yellow">guest</span> shell with 0xB887183 nimator3
+- <span style="color:green">null null with 0xB887183 datebutto</span>
+- Amnertad shell with 0xB887183 ulttypelen
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0xB887183 conclic
+- <span style="color:green">guest computer with 0xB887183 pos++</span>
+- <span style="color:green">??? password_change with 0x7787778B dorruntimatch_length</span>
+- <span style="color:green">null null with 0x7787778B saddparactivarventpo</span>
+- <span style="color:green">null null with 0x7787778B donenumentimplicksourcemeim</span>
+- <span style="color:green">null null with 0x6BEB60C4 sendpositions</span>
+- Amnertad shell with 0x6BEB60C4 ghtminiscodecodeseleng
+- <span style="color:green">null null with 0x6BEB60C4 alse</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x6BEB60C4 regiondata
+
+#### v 4.3.0 — shell 4/9
+<a id="4.3.0"></a>
+- <span style="color:yellow">guest</span> shell with 0xB887183 nimator3
+- <span style="color:green">null null with 0xB887183 datebutto</span>
+- Homaya shell with 0xB887183 ulttypelen
+- <span style="color:green">null null with 0xB887183 pos++</span>
+- <span style="color:yellow">guest</span> shell with 0x35DFD303 vatebi_
+- <span style="color:green">??? password_change with 0x6262C308 stor3</span>
+- <span style="color:green">Homaya computer with 0x395B2319 aorb</span>
+- Flahe shell with 0x395B2319 onbackgroundowmationdal
+- <span style="color:green">??? password_change with 0x395B2319 olorshight2tr</span>
 
 #### v 4.3.1 — shell 2/6
 <a id="4.3.1"></a>
@@ -4816,11 +5915,11 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 ## `libhttp.so`
 <a id="libhttp-so"></a>
 
-- Total Hooked lines: 1867
-- Can provide shell: 276
-- Has privileged object: 91
-- Safe versions: 10
-Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#1.0.1"><span style="color:red">v 1.0.1</span></a> <a href="#1.0.2"><span style="color:red">v 1.0.2</span></a> <a href="#1.0.3"><span style="color:red">v 1.0.3</span></a> <a href="#1.0.4"><span style="color:red">v 1.0.4</span></a> <a href="#1.0.5"><span style="color:red">v 1.0.5</span></a> <a href="#1.0.6"><span style="color:red">v 1.0.6</span></a> <a href="#1.0.7"><span style="color:red">v 1.0.7</span></a> <a href="#1.0.8"><span style="color:red">v 1.0.8</span></a> <a href="#1.0.9"><span style="color:red">v 1.0.9</span></a> <a href="#1.1.0"><span style="color:red">v 1.1.0</span></a> <a href="#1.1.1"><span style="color:red">v 1.1.1</span></a> <a href="#1.1.2"><span style="color:red">v 1.1.2</span></a> <a href="#1.1.3"><span style="color:green">v 1.1.3</span></a> <a href="#1.1.4"><span style="color:red">v 1.1.4</span></a> <a href="#1.1.5"><span style="color:red">v 1.1.5</span></a> <a href="#1.1.6"><span style="color:red">v 1.1.6</span></a> <a href="#1.1.7"><span style="color:red">v 1.1.7</span></a> <a href="#1.1.8"><span style="color:red">v 1.1.8</span></a> <a href="#1.1.9"><span style="color:red">v 1.1.9</span></a> <a href="#1.2.0"><span style="color:green">v 1.2.0</span></a> <a href="#1.2.1"><span style="color:red">v 1.2.1</span></a> <a href="#1.2.2"><span style="color:red">v 1.2.2</span></a> <a href="#1.2.3"><span style="color:red">v 1.2.3</span></a> <a href="#1.2.4"><span style="color:green">v 1.2.4</span></a> <a href="#1.2.5"><span style="color:red">v 1.2.5</span></a> <a href="#1.2.6"><span style="color:red">v 1.2.6</span></a> <a href="#1.2.7"><span style="color:red">v 1.2.7</span></a> <a href="#1.2.9"><span style="color:red">v 1.2.9</span></a> <a href="#1.3.0"><span style="color:red">v 1.3.0</span></a> <a href="#1.3.1"><span style="color:red">v 1.3.1</span></a> <a href="#1.3.2"><span style="color:red">v 1.3.2</span></a> <a href="#1.3.3"><span style="color:red">v 1.3.3</span></a> <a href="#1.3.4"><span style="color:red">v 1.3.4</span></a> <a href="#1.3.5"><span style="color:red">v 1.3.5</span></a> <a href="#1.3.6"><span style="color:red">v 1.3.6</span></a> <a href="#1.3.8"><span style="color:red">v 1.3.8</span></a> <a href="#1.3.9"><span style="color:red">v 1.3.9</span></a> <a href="#1.4.0"><span style="color:red">v 1.4.0</span></a> <a href="#1.4.1"><span style="color:red">v 1.4.1</span></a> <a href="#1.4.2"><span style="color:red">v 1.4.2</span></a> <a href="#1.4.3"><span style="color:red">v 1.4.3</span></a> <a href="#1.4.4"><span style="color:red">v 1.4.4</span></a> <a href="#1.4.5"><span style="color:red">v 1.4.5</span></a> <a href="#1.4.6"><span style="color:red">v 1.4.6</span></a> <a href="#1.4.7"><span style="color:green">v 1.4.7</span></a> <a href="#1.4.8"><span style="color:red">v 1.4.8</span></a> <a href="#1.4.9"><span style="color:red">v 1.4.9</span></a> <a href="#1.5.0"><span style="color:red">v 1.5.0</span></a> <a href="#1.5.1"><span style="color:red">v 1.5.1</span></a> <a href="#1.5.2"><span style="color:red">v 1.5.2</span></a> <a href="#1.5.3"><span style="color:red">v 1.5.3</span></a> <a href="#1.5.4"><span style="color:red">v 1.5.4</span></a> <a href="#1.5.5"><span style="color:red">v 1.5.5</span></a> <a href="#1.5.6"><span style="color:red">v 1.5.6</span></a> <a href="#1.5.7"><span style="color:red">v 1.5.7</span></a> <a href="#1.5.8"><span style="color:red">v 1.5.8</span></a> <a href="#1.5.9"><span style="color:red">v 1.5.9</span></a> <a href="#1.6.0"><span style="color:red">v 1.6.0</span></a> <a href="#1.6.1"><span style="color:green">v 1.6.1</span></a> <a href="#1.6.2"><span style="color:red">v 1.6.2</span></a> <a href="#1.6.3"><span style="color:red">v 1.6.3</span></a> <a href="#1.6.4"><span style="color:red">v 1.6.4</span></a> <a href="#1.6.5"><span style="color:red">v 1.6.5</span></a> <a href="#1.6.6"><span style="color:red">v 1.6.6</span></a> <a href="#1.6.7"><span style="color:red">v 1.6.7</span></a> <a href="#1.6.8"><span style="color:red">v 1.6.8</span></a> <a href="#1.6.9"><span style="color:red">v 1.6.9</span></a> <a href="#1.7.0"><span style="color:red">v 1.7.0</span></a> <a href="#1.7.1"><span style="color:red">v 1.7.1</span></a> <a href="#1.7.2"><span style="color:green">v 1.7.2</span></a> <a href="#1.7.3"><span style="color:red">v 1.7.3</span></a> <a href="#1.7.4"><span style="color:red">v 1.7.4</span></a> <a href="#1.7.5"><span style="color:red">v 1.7.5</span></a> <a href="#1.7.6"><span style="color:red">v 1.7.6</span></a> <a href="#1.7.7"><span style="color:red">v 1.7.7</span></a> <a href="#1.7.8"><span style="color:red">v 1.7.8</span></a> <a href="#1.7.9"><span style="color:red">v 1.7.9</span></a> <a href="#1.8.0"><span style="color:red">v 1.8.0</span></a> <a href="#1.8.1"><span style="color:red">v 1.8.1</span></a> <a href="#1.8.2"><span style="color:red">v 1.8.2</span></a> <a href="#1.8.3"><span style="color:red">v 1.8.3</span></a> <a href="#1.8.4"><span style="color:red">v 1.8.4</span></a> <a href="#1.8.5"><span style="color:red">v 1.8.5</span></a> <a href="#1.8.6"><span style="color:red">v 1.8.6</span></a> <a href="#1.8.7"><span style="color:red">v 1.8.7</span></a> <a href="#1.8.8"><span style="color:red">v 1.8.8</span></a> <a href="#1.8.9"><span style="color:green">v 1.8.9</span></a> <a href="#1.9.0"><span style="color:red">v 1.9.0</span></a> <a href="#1.9.1"><span style="color:red">v 1.9.1</span></a> <a href="#1.9.2"><span style="color:red">v 1.9.2</span></a> <a href="#1.9.3"><span style="color:green">v 1.9.3</span></a> <a href="#1.9.4"><span style="color:red">v 1.9.4</span></a> <a href="#1.9.5"><span style="color:red">v 1.9.5</span></a> <a href="#1.9.6"><span style="color:green">v 1.9.6</span></a> <a href="#1.9.7"><span style="color:red">v 1.9.7</span></a> <a href="#1.9.8"><span style="color:red">v 1.9.8</span></a> <a href="#1.9.9"><span style="color:red">v 1.9.9</span></a> <a href="#2.0.0"><span style="color:green">v 2.0.0</span></a>
+- Total Hooked lines: 2788
+- Can provide shell: 425
+- Has privileged object: 136
+- Safe versions: 7
+Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#1.0.1"><span style="color:red">v 1.0.1</span></a> <a href="#1.0.2"><span style="color:red">v 1.0.2</span></a> <a href="#1.0.3"><span style="color:red">v 1.0.3</span></a> <a href="#1.0.4"><span style="color:red">v 1.0.4</span></a> <a href="#1.0.5"><span style="color:red">v 1.0.5</span></a> <a href="#1.0.6"><span style="color:red">v 1.0.6</span></a> <a href="#1.0.7"><span style="color:red">v 1.0.7</span></a> <a href="#1.0.8"><span style="color:red">v 1.0.8</span></a> <a href="#1.0.9"><span style="color:red">v 1.0.9</span></a> <a href="#1.1.0"><span style="color:red">v 1.1.0</span></a> <a href="#1.1.1"><span style="color:red">v 1.1.1</span></a> <a href="#1.1.2"><span style="color:red">v 1.1.2</span></a> <a href="#1.1.3"><span style="color:green">v 1.1.3</span></a> <a href="#1.1.4"><span style="color:red">v 1.1.4</span></a> <a href="#1.1.5"><span style="color:red">v 1.1.5</span></a> <a href="#1.1.6"><span style="color:red">v 1.1.6</span></a> <a href="#1.1.7"><span style="color:red">v 1.1.7</span></a> <a href="#1.1.8"><span style="color:red">v 1.1.8</span></a> <a href="#1.1.9"><span style="color:red">v 1.1.9</span></a> <a href="#1.2.0"><span style="color:green">v 1.2.0</span></a> <a href="#1.2.1"><span style="color:red">v 1.2.1</span></a> <a href="#1.2.2"><span style="color:red">v 1.2.2</span></a> <a href="#1.2.3"><span style="color:red">v 1.2.3</span></a> <a href="#1.2.4"><span style="color:green">v 1.2.4</span></a> <a href="#1.2.5"><span style="color:red">v 1.2.5</span></a> <a href="#1.2.6"><span style="color:red">v 1.2.6</span></a> <a href="#1.2.7"><span style="color:red">v 1.2.7</span></a> <a href="#1.2.8"><span style="color:red">v 1.2.8</span></a> <a href="#1.2.9"><span style="color:red">v 1.2.9</span></a> <a href="#1.3.0"><span style="color:red">v 1.3.0</span></a> <a href="#1.3.1"><span style="color:red">v 1.3.1</span></a> <a href="#1.3.2"><span style="color:red">v 1.3.2</span></a> <a href="#1.3.3"><span style="color:red">v 1.3.3</span></a> <a href="#1.3.4"><span style="color:red">v 1.3.4</span></a> <a href="#1.3.5"><span style="color:red">v 1.3.5</span></a> <a href="#1.3.6"><span style="color:red">v 1.3.6</span></a> <a href="#1.3.7"><span style="color:red">v 1.3.7</span></a> <a href="#1.3.8"><span style="color:red">v 1.3.8</span></a> <a href="#1.3.9"><span style="color:red">v 1.3.9</span></a> <a href="#1.4.0"><span style="color:red">v 1.4.0</span></a> <a href="#1.4.1"><span style="color:red">v 1.4.1</span></a> <a href="#1.4.2"><span style="color:red">v 1.4.2</span></a> <a href="#1.4.3"><span style="color:red">v 1.4.3</span></a> <a href="#1.4.4"><span style="color:red">v 1.4.4</span></a> <a href="#1.4.5"><span style="color:red">v 1.4.5</span></a> <a href="#1.4.6"><span style="color:red">v 1.4.6</span></a> <a href="#1.4.7"><span style="color:red">v 1.4.7</span></a> <a href="#1.4.8"><span style="color:red">v 1.4.8</span></a> <a href="#1.4.9"><span style="color:red">v 1.4.9</span></a> <a href="#1.5.0"><span style="color:red">v 1.5.0</span></a> <a href="#1.5.1"><span style="color:red">v 1.5.1</span></a> <a href="#1.5.2"><span style="color:red">v 1.5.2</span></a> <a href="#1.5.3"><span style="color:red">v 1.5.3</span></a> <a href="#1.5.4"><span style="color:red">v 1.5.4</span></a> <a href="#1.5.5"><span style="color:red">v 1.5.5</span></a> <a href="#1.5.6"><span style="color:red">v 1.5.6</span></a> <a href="#1.5.7"><span style="color:red">v 1.5.7</span></a> <a href="#1.5.8"><span style="color:red">v 1.5.8</span></a> <a href="#1.5.9"><span style="color:red">v 1.5.9</span></a> <a href="#1.6.0"><span style="color:red">v 1.6.0</span></a> <a href="#1.6.1"><span style="color:green">v 1.6.1</span></a> <a href="#1.6.2"><span style="color:red">v 1.6.2</span></a> <a href="#1.6.3"><span style="color:red">v 1.6.3</span></a> <a href="#1.6.4"><span style="color:red">v 1.6.4</span></a> <a href="#1.6.5"><span style="color:red">v 1.6.5</span></a> <a href="#1.6.6"><span style="color:red">v 1.6.6</span></a> <a href="#1.6.7"><span style="color:red">v 1.6.7</span></a> <a href="#1.6.8"><span style="color:red">v 1.6.8</span></a> <a href="#1.6.9"><span style="color:red">v 1.6.9</span></a> <a href="#1.7.0"><span style="color:red">v 1.7.0</span></a> <a href="#1.7.1"><span style="color:red">v 1.7.1</span></a> <a href="#1.7.2"><span style="color:red">v 1.7.2</span></a> <a href="#1.7.3"><span style="color:red">v 1.7.3</span></a> <a href="#1.7.4"><span style="color:red">v 1.7.4</span></a> <a href="#1.7.5"><span style="color:red">v 1.7.5</span></a> <a href="#1.7.6"><span style="color:red">v 1.7.6</span></a> <a href="#1.7.7"><span style="color:red">v 1.7.7</span></a> <a href="#1.7.8"><span style="color:red">v 1.7.8</span></a> <a href="#1.7.9"><span style="color:red">v 1.7.9</span></a> <a href="#1.8.0"><span style="color:red">v 1.8.0</span></a> <a href="#1.8.1"><span style="color:red">v 1.8.1</span></a> <a href="#1.8.2"><span style="color:red">v 1.8.2</span></a> <a href="#1.8.3"><span style="color:red">v 1.8.3</span></a> <a href="#1.8.4"><span style="color:red">v 1.8.4</span></a> <a href="#1.8.5"><span style="color:red">v 1.8.5</span></a> <a href="#1.8.6"><span style="color:red">v 1.8.6</span></a> <a href="#1.8.7"><span style="color:red">v 1.8.7</span></a> <a href="#1.8.8"><span style="color:red">v 1.8.8</span></a> <a href="#1.8.9"><span style="color:green">v 1.8.9</span></a> <a href="#1.9.0"><span style="color:red">v 1.9.0</span></a> <a href="#1.9.1"><span style="color:red">v 1.9.1</span></a> <a href="#1.9.2"><span style="color:red">v 1.9.2</span></a> <a href="#1.9.3"><span style="color:red">v 1.9.3</span></a> <a href="#1.9.4"><span style="color:red">v 1.9.4</span></a> <a href="#1.9.5"><span style="color:red">v 1.9.5</span></a> <a href="#1.9.6"><span style="color:green">v 1.9.6</span></a> <a href="#1.9.7"><span style="color:red">v 1.9.7</span></a> <a href="#1.9.8"><span style="color:red">v 1.9.8</span></a> <a href="#1.9.9"><span style="color:red">v 1.9.9</span></a> <a href="#2.0.0"><span style="color:green">v 2.0.0</span></a>
 
 ### Safe versions
 #### v 1.1.3 — no shell/priv hooks
@@ -4872,29 +5971,12 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x316DA750 ostatebytebuttonteratelist</span>
 - <span style="color:green">??? password_change with 0x316DA750 last_lit_b</span>
 - <span style="color:green">null null with 0x316DA750 celend_bitsdyn</span>
-
-#### v 1.4.7 — no shell/priv hooks
-<a id="1.4.7"></a>
-- <span style="color:green">Rezerno computer with 0x5135AB69 codelanchoredpoi</span>
-- <span style="color:green">null null with 0x55644E19 ifnull</span>
-- <span style="color:green">null null with 0x55644E19 pend_bitscom</span>
-- <span style="color:green">null null with 0x55644E19 sicontain</span>
-- <span style="color:green">??? password_change with 0x3FE8178E plush_</span>
-- <span style="color:green">null null with 0x3FE8178E letextsizel</span>
-- <span style="color:green">null null with 0x3FE8178E fresult</span>
-- <span style="color:green">null null with 0x5F408616 rollrecttr</span>
-- <span style="color:green">null null with 0x5F408616 x++</span>
-- <span style="color:green">Loost file with 0x5F408616 moveratebitsdcolor_viewportmsbheadp</span>
-- <span style="color:green">null null with 0x5135AB69 start++</span>
-- <span style="color:green">null null with 0x55644E19 ifnull</span>
-- <span style="color:green">null null with 0x55644E19 pend_bitscom</span>
-- <span style="color:green">null null with 0x55644E19 sicontain</span>
-- <span style="color:green">null null with 0x3FE8178E plush_</span>
-- <span style="color:green">Sonsm computer with 0x3FE8178E letextsizel</span>
-- <span style="color:green">null null with 0x3FE8178E fresult</span>
-- <span style="color:green">null null with 0x5F408616 rollrecttr</span>
-- <span style="color:green">null null with 0x5F408616 x++</span>
-- <span style="color:green">Sonsm file with 0x5F408616 moveratebitsdcolor_viewportmsbheadp</span>
+- <span style="color:green">null null with 0x2068E6F8 text</span>
+- <span style="color:green">null null with 0x4DAA783D showbuttoncli</span>
+- <span style="color:green">guest file with 0x4DAA783D throw</span>
+- <span style="color:green">null null with 0x316DA750 ostatebytebuttonteratelist</span>
+- <span style="color:green">??? password_change with 0x316DA750 last_lit_b</span>
+- <span style="color:green">null null with 0x316DA750 celend_bitsdyn</span>
 
 #### v 1.6.1 — no shell/priv hooks
 <a id="1.6.1"></a>
@@ -4906,16 +5988,14 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x367A4ADB ator3</span>
 - <span style="color:green">null null with 0x239962AD uided</span>
 - <span style="color:green">??? password_change with 0x239962AD ocusoncl</span>
-
-#### v 1.7.2 — no shell/priv hooks
-<a id="1.7.2"></a>
-- <span style="color:green">null null with 0x370C46B7 onfont</span>
-- <span style="color:green">null null with 0x370C46B7 estentimeransforman</span>
-- <span style="color:green">null null with 0x370C46B7 thisrepz</span>
-- <span style="color:green">null null with 0x370C46B7 skeyrepeate</span>
-- <span style="color:green">null null with 0x53C4D07C itletextsiintovi</span>
-- <span style="color:green">??? password_change with 0x53C4D07C pres</span>
-- <span style="color:green">??? password_change with 0x53C4D07C lessages</span>
+- <span style="color:green">Lotni file with 0x1EF5678E iosoundthismaxim</span>
+- <span style="color:green">null null with 0x1EF5678E neventpos</span>
+- <span style="color:green">null null with 0x367A4ADB aultadd</span>
+- <span style="color:green">null null with 0x367A4ADB olorschemeimatictreedis</span>
+- <span style="color:green">??? password_change with 0x367A4ADB flushparamargumentsr</span>
+- <span style="color:green">null null with 0x367A4ADB ator3</span>
+- <span style="color:green">??? password_change with 0x239962AD uided</span>
+- <span style="color:green">??? password_change with 0x239962AD ocusoncl</span>
 
 #### v 1.8.9 — no shell/priv hooks
 <a id="1.8.9"></a>
@@ -4936,22 +6016,6 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest computer with 0x4239B239 positionx</span>
 - <span style="color:green">null null with 0x4239B239 urcelinesets</span>
 - <span style="color:green">null null with 0x4239B239 dostantset</span>
-
-#### v 1.9.3 — no shell/priv hooks
-<a id="1.9.3"></a>
-- <span style="color:green">??? password_change with 0x7E3666C9 essor-1</span>
-- <span style="color:green">null null with 0x7E3666C9 aphic</span>
-- <span style="color:green">guest computer with 0x179F8330 dressigna</span>
-- <span style="color:green">??? password_change with 0x179F8330 opcontextc</span>
-- <span style="color:green">null null with 0x179F8330 shore</span>
-- <span style="color:green">Pigner file with 0x179F8330 startpo</span>
-- <span style="color:green">guest computer with 0x179F8330 n_dtransf</span>
-- <span style="color:green">null null with 0x732268F3 terdataused_bitssedtaskbarf</span>
-- <span style="color:green">null null with 0x732268F3 void</span>
-- <span style="color:green">Pigner computer with 0x9677FCE tintextsinishdonenumsionsbarfo</span>
-- <span style="color:green">??? password_change with 0x9677FCE elinentsrepeatti</span>
-- <span style="color:green">null null with 0x9677FCE estemoveexistin</span>
-- <span style="color:green">null null with 0x9677FCE sizelinen</span>
 
 #### v 1.9.6 — no shell/priv hooks
 <a id="1.9.6"></a>
@@ -4991,7 +6055,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? password_change with 0x283792B8 finitionsbapplu</span>
 - <span style="color:green">null null with 0x283792B8 lineheightminishstanceoff</span>
 
-#### v 1.0.1 — shell 9/23, priv 2/23
+#### v 1.0.1 — shell 15/36, priv 3/36
 <a id="1.0.1"></a>
 - <span style="color:red">root</span> shell with 0x63C3A316 horttextuitexteffe
 - <span style="color:green">Ehelle computer with 0x63C3A316 dostancho</span>
@@ -5016,8 +6080,21 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - Mallocc shell with 0x5F0BB2FA odlengthoffset
 - <span style="color:green">guest computer with 0x5F0BB2FA lexde</span>
 - <span style="color:yellow">guest</span> shell with 0x5F0BB2FA abletexto
+- <span style="color:red">root</span> shell with 0x63C3A316 horttextuitexteffe
+- <span style="color:green">Rochetze computer with 0x63C3A316 dostancho</span>
+- <span style="color:green">??? password_change with 0x63C3A316 slow</span>
+- <span style="color:yellow">guest</span> shell with 0x621F5F60 highlighlightminue
+- <span style="color:yellow">guest</span> shell with 0x3EE97275 slow
+- Rochetze shell with 0x3EE97275 engthsbuil
+- <span style="color:green">??? password_change with 0x3EE97275 localse</span>
+- <span style="color:green">null null with 0x5F0BB2FA serializedelecttran</span>
+- Euncam shell with 0x5F0BB2FA odlengthoffset
+- <span style="color:green">guest computer with 0x5F0BB2FA lexde</span>
+- <span style="color:yellow">guest</span> shell with 0x5F0BB2FA abletexto
+- <span style="color:green">guest file with 0x6BA4583 backundthisclosebackpu</span>
+- <span style="color:green">guest computer with 0x6BA4583 pareto</span>
 
-#### v 1.0.2 — shell 16/46, priv 6/46
+#### v 1.0.2 — shell 23/66, priv 9/66
 <a id="1.0.2"></a>
 - <span style="color:red">root</span> shell with 0x63C3A316 horttextuitexteffe
 - <span style="color:yellow">guest</span> shell with 0x63C3A316 cii_frequa
@@ -5065,11 +6142,47 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:red">root</span> shell with 0x74B3E09A length
 - Achininge shell with 0x30C945C6 atchs
 - <span style="color:green">guest computer with 0x30C945C6 deset</span>
+- <span style="color:red">root</span> shell with 0x63C3A316 horttextuitexteffe
+- <span style="color:yellow">guest</span> shell with 0x63C3A316 cii_frequa
+- <span style="color:green">??? password_change with 0x63C3A316 slow</span>
+- <span style="color:yellow">guest</span> shell with 0x621F5F60 highlighlightminue
+- <span style="color:green">??? password_change with 0x1738C603 templ</span>
+- Incenti shell with 0x1738C603 redpointeransformin
+- <span style="color:green">null null with 0x1738C603 islhs</span>
+- <span style="color:green">guest computer with 0x1738C603 valid</span>
+- <span style="color:green">Nowns computer with 0x1738C603 ow_sizelanc</span>
+- <span style="color:green">null null with 0x6E95DAA thofa</span>
+- <span style="color:green">null null with 0x6E95DAA ovebuttonsh</span>
+- <span style="color:red">root</span> shell with 0x6E95DAA _bitstrstorupdata_typerialize
+- <span style="color:green">guest computer with 0x6E95DAA tingcou</span>
+- <span style="color:green">guest file with 0x6E95DAA aseondentantsetaction</span>
+- <span style="color:green">guest file with 0x74B3E09A extefferrorigh</span>
+- <span style="color:green">Nowns file with 0x74B3E09A line</span>
+- <span style="color:green">??? password_change with 0x74B3E09A st_lengths</span>
+- <span style="color:red">root</span> shell with 0x74B3E09A length
+- Incenti shell with 0x30C945C6 atchs
+- <span style="color:green">guest computer with 0x30C945C6 deset</span>
 
-#### v 1.0.3 — shell 2/7
+#### v 1.0.3 — shell 6/23
 <a id="1.0.3"></a>
 - <span style="color:yellow">guest</span> shell with 0x63C3A316 tefferrentdatelinenumb
 - <span style="color:yellow">guest</span> shell with 0x63C3A316 cii_frequa
+- <span style="color:green">guest computer with 0x37CBB135 oredut</span>
+- <span style="color:green">guest file with 0x37CBB135 arupdateliternalconshowanim</span>
+- <span style="color:green">null null with 0x37CBB135 deend_bitleteliste</span>
+- <span style="color:green">null null with 0x33379ED6 pequalb</span>
+- <span style="color:green">??? password_change with 0x33379ED6 enumentimpliceleftundo</span>
+- <span style="color:yellow">guest</span> shell with 0x63C3A316 tefferrentdatelinenumb
+- <span style="color:yellow">guest</span> shell with 0x63C3A316 cii_frequa
+- <span style="color:green">??? password_change with 0x63C3A316 slow</span>
+- <span style="color:green">guest computer with 0x37CBB135 oredut</span>
+- <span style="color:green">guest file with 0x37CBB135 arupdateliternalconshowanim</span>
+- <span style="color:green">null null with 0x37CBB135 deend_bitleteliste</span>
+- <span style="color:green">null null with 0x33379ED6 pequalb</span>
+- <span style="color:green">??? password_change with 0x33379ED6 enumentimpliceleftundo</span>
+- <span style="color:yellow">guest</span> shell with 0x63C3A316 tefferrentdatelinenumb
+- <span style="color:yellow">guest</span> shell with 0x63C3A316 cii_frequa
+- <span style="color:green">??? password_change with 0x63C3A316 slow</span>
 - <span style="color:green">guest computer with 0x37CBB135 oredut</span>
 - <span style="color:green">guest file with 0x37CBB135 arupdateliternalconshowanim</span>
 - <span style="color:green">null null with 0x37CBB135 deend_bitleteliste</span>
@@ -5095,7 +6208,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x4B83F098 constartedoutovec
 - <span style="color:green">null null with 0x4B83F098 copy_</span>
 
-#### v 1.0.5 — shell 10/20, priv 2/20
+#### v 1.0.5 — shell 21/42, priv 4/42
 <a id="1.0.5"></a>
 - <span style="color:green">??? password_change with 0x7DD8F3DE onteresultty</span>
 - <span style="color:red">root</span> shell with 0x7DD8F3DE ansformanchortializebl_treedyn_tr_allfu
@@ -5117,8 +6230,30 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x4D0D7F5D lenb
 - <span style="color:green">null null with 0x4D0D7F5D aytrue</span>
 - <span style="color:green">??? password_change with 0x4D0D7F5D textobjectotalwindexes</span>
+- <span style="color:green">??? password_change with 0x7DD8F3DE onteresultty</span>
+- <span style="color:yellow">guest</span> shell with 0x7DD8F3DE layonandb
+- <span style="color:red">root</span> shell with 0x7DD8F3DE ansformanchortializebl_treedyn_tr_allfu
+- <span style="color:yellow">guest</span> shell with 0x621F5F60 highlighlightminue
+- <span style="color:green">??? password_change with 0x692AB004 atecttrangenq</span>
+- <span style="color:yellow">guest</span> shell with 0x692AB004 coundostart
+- <span style="color:green">Helvikie computer with 0x2BFBEE22 os++</span>
+- Helvikie shell with 0x2BFBEE22 i_valfun
+- Helvikie shell with 0x4D0D7F5D lor_viewporttesing
+- <span style="color:yellow">guest</span> shell with 0x4D0D7F5D lenb
+- <span style="color:green">null null with 0x4D0D7F5D aytrue</span>
+- <span style="color:green">??? password_change with 0x4D0D7F5D textobjectotalwindexes</span>
+- <span style="color:green">??? password_change with 0x7DD8F3DE onteresultty</span>
+- <span style="color:red">root</span> shell with 0x7DD8F3DE ansformanchortializebl_treedyn_tr_allfu
+- <span style="color:green">??? password_change with 0x692AB004 atecttrangenq</span>
+- <span style="color:green">null null with 0x692AB004 coundostart</span>
+- <span style="color:green">null null with 0x2BFBEE22 os++</span>
+- Show shell with 0x2BFBEE22 i_valfun
+- Lavonnels shell with 0x4D0D7F5D lor_viewporttesing
+- <span style="color:yellow">guest</span> shell with 0x4D0D7F5D lenb
+- <span style="color:green">null null with 0x4D0D7F5D aytrue</span>
+- <span style="color:green">??? password_change with 0x4D0D7F5D textobjectotalwindexes</span>
 
-#### v 1.0.6 — shell 7/20, priv 2/20
+#### v 1.0.6 — shell 10/31, priv 3/31
 <a id="1.0.6"></a>
 - <span style="color:green">??? password_change with 0x7DD8F3DE onteresultty</span>
 - <span style="color:yellow">guest</span> shell with 0x7DD8F3DE layonandb
@@ -5140,8 +6275,19 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">Nerardard file with 0x4317BD20 varventintoveexi</span>
 - <span style="color:yellow">guest</span> shell with 0x257985FE eselt
 - <span style="color:green">null null with 0x257985FE flatectevelisedtaskthison</span>
+- <span style="color:green">null null with 0x7DD8F3DE ansformanchortializebl_treedyn_tr_allfu</span>
+- <span style="color:green">null null with 0x4317BD20 color_buttoncode</span>
+- <span style="color:green">Attag file with 0x4317BD20 varventintoveexi</span>
+- <span style="color:yellow">guest</span> shell with 0x257985FE eselt
+- <span style="color:green">null null with 0x257985FE flatectevelisedtaskthison</span>
+- <span style="color:green">??? password_change with 0x7DD8F3DE onteresultty</span>
+- <span style="color:red">root</span> shell with 0x7DD8F3DE ansformanchortializebl_treedyn_tr_allfu
+- <span style="color:green">null null with 0x4317BD20 color_buttoncode</span>
+- <span style="color:green">Ontegaran file with 0x4317BD20 varventintoveexi</span>
+- <span style="color:yellow">guest</span> shell with 0x257985FE eselt
+- <span style="color:green">null null with 0x257985FE flatectevelisedtaskthison</span>
 
-#### v 1.0.7 — shell 3/31, priv 1/31
+#### v 1.0.7 — shell 6/48, priv 2/48
 <a id="1.0.7"></a>
 - <span style="color:green">??? password_change with 0x7DD8F3DE onteresultty</span>
 - <span style="color:green">null null with 0x7DD8F3DE ulttesemi</span>
@@ -5173,6 +6319,23 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x22723470 publin</span>
 - <span style="color:green">null null with 0x462692D treebi_bufsizedel</span>
 - <span style="color:green">null null with 0x462692D nenum++</span>
+- <span style="color:green">null null with 0x462692D tetextuitex</span>
+- <span style="color:green">null null with 0x7DD8F3DE ulttesemi</span>
+- <span style="color:green">null null with 0x7DD8F3DE ansformanchortializebl_treedyn_tr_allfu</span>
+- <span style="color:green">null null with 0x22723470 sremove</span>
+- <span style="color:green">guest file with 0x22723470 publin</span>
+- <span style="color:green">null null with 0x462692D treebi_bufsizedel</span>
+- <span style="color:green">null null with 0x462692D nenum++</span>
+- <span style="color:green">null null with 0x462692D tetextuitex</span>
+- <span style="color:green">??? password_change with 0x7DD8F3DE onteresultty</span>
+- <span style="color:green">Cellishi computer with 0x7DD8F3DE ulttesemi</span>
+- <span style="color:yellow">guest</span> shell with 0x7DD8F3DE layonandb
+- <span style="color:red">root</span> shell with 0x7DD8F3DE ansformanchortializebl_treedyn_tr_allfu
+- <span style="color:yellow">guest</span> shell with 0x621F5F60 highlighlightminue
+- <span style="color:green">null null with 0x22723470 sremove</span>
+- <span style="color:green">guest file with 0x22723470 publin</span>
+- <span style="color:green">Mirstei computer with 0x462692D treebi_bufsizedel</span>
+- <span style="color:green">guest computer with 0x462692D nenum++</span>
 - <span style="color:green">null null with 0x462692D tetextuitex</span>
 
 #### v 1.0.8 — shell 8/34
@@ -5304,7 +6467,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - Uccaf shell with 0x68B66B6 text
 - <span style="color:green">null null with 0x68B66B6 egion++</span>
 
-#### v 1.1.2 — shell 2/9, priv 1/9
+#### v 1.1.2 — shell 7/25, priv 3/25
 <a id="1.1.2"></a>
 - <span style="color:green">Retton computer with 0x6EB28804 eadividen</span>
 - <span style="color:green">Nerji computer with 0x6EB28804 spush_h</span>
@@ -5315,8 +6478,24 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:red">root</span> shell with 0x3656C2BF ourcelooka
 - <span style="color:green">guest file with 0x3656C2BF ctionspritext</span>
 - <span style="color:green">??? password_change with 0x3656C2BF thofa</span>
+- <span style="color:yellow">guest</span> shell with 0x2BACD66F abledcodecdstac
+- <span style="color:green">guest computer with 0x2BACD66F engthoffse</span>
+- <span style="color:green">null null with 0x2BACD66F orifnotequalby</span>
+- <span style="color:green">null null with 0x2BACD66F etuntinesrep_3_6</span>
+- <span style="color:red">root</span> shell with 0x3656C2BF ourcelooka
+- <span style="color:green">guest file with 0x3656C2BF ctionspritext</span>
+- <span style="color:green">??? password_change with 0x3656C2BF thofa</span>
+- <span style="color:yellow">guest</span> shell with 0x2BACD66F abledcodecdstac
+- <span style="color:green">guest computer with 0x2BACD66F engthoffse</span>
+- <span style="color:green">null null with 0x2BACD66F orifnotequalby</span>
+- <span style="color:green">null null with 0x2BACD66F etuntinesrep_3_6</span>
+- <span style="color:red">root</span> shell with 0x3656C2BF ourcelooka
+- <span style="color:green">guest file with 0x3656C2BF ctionspritext</span>
+- <span style="color:green">??? password_change with 0x3656C2BF thofa</span>
+- <span style="color:green">Flesk computer with 0x6E66C5E0 squalby</span>
+- Flesk shell with 0x6E66C5E0 etelecttransfor
 
-#### v 1.1.4 — shell 2/12, priv 2/12
+#### v 1.1.4 — shell 6/40, priv 4/40
 <a id="1.1.4"></a>
 - <span style="color:green">Laurowo computer with 0x6EB28804 spush_h</span>
 - <span style="color:yellow">guest</span> shell with 0x21445D8A hisop
@@ -5328,6 +6507,34 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:red">root</span> <span style="color:red">computer</span> with 0x4D42B989 contextparametex
 - <span style="color:green">??? password_change with 0x4D42B989 sformanchoreq</span>
 - Simhanitz shell with 0x4A6A91C7 witche
+- <span style="color:green">??? password_change with 0x4A6A91C7 itlen</span>
+- <span style="color:green">??? password_change with 0x4A6A91C7 tonobjecttransfo</span>
+- <span style="color:yellow">guest</span> shell with 0x21445D8A hisop
+- <span style="color:green">guest file with 0x17872D6E sraycodestenerbuttontingpend</span>
+- <span style="color:green">guest file with 0x17872D6E codecdstanchorlinetrue</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x17872D6E nenumobjectsetmax_codeintlin
+- <span style="color:green">Bloodac computer with 0x17872D6E data</span>
+- <span style="color:green">Antezam file with 0x4D42B989 xselhightedcolor_globalcolor_</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x4D42B989 contextparametex
+- <span style="color:green">??? password_change with 0x4D42B989 sformanchoreq</span>
+- Antezam shell with 0x4A6A91C7 witche
+- <span style="color:green">??? password_change with 0x4A6A91C7 itlen</span>
+- <span style="color:green">??? password_change with 0x4A6A91C7 tonobjecttransfo</span>
+- <span style="color:green">??? firewall_disable with 0x608D044E trintertedcolor_viewport</span>
+- <span style="color:green">??? firewall_disable with 0x608D044E isop</span>
+- <span style="color:green">??? firewall_disable with 0x608D044E settextef</span>
+- <span style="color:green">??? firewall_disable with 0x608D044E odeadei</span>
+- <span style="color:green">??? firewall_disable with 0xB8DE195 donenume</span>
+- <span style="color:green">??? firewall_disable with 0xB8DE195 datefonternalcontex</span>
+- <span style="color:yellow">guest</span> shell with 0x21445D8A hisop
+- <span style="color:green">guest file with 0x17872D6E sraycodestenerbuttontingpend</span>
+- <span style="color:green">guest file with 0x17872D6E codecdstanchorlinetrue</span>
+- <span style="color:green">guest file with 0x17872D6E nenumobjectsetmax_codeintlin</span>
+- <span style="color:green">guest computer with 0x17872D6E data</span>
+- <span style="color:green">guest file with 0x4D42B989 xselhightedcolor_globalcolor_</span>
+- <span style="color:green">guest computer with 0x4D42B989 contextparametex</span>
+- <span style="color:green">??? password_change with 0x4D42B989 sformanchoreq</span>
+- <span style="color:yellow">guest</span> shell with 0x4A6A91C7 witche
 - <span style="color:green">??? password_change with 0x4A6A91C7 itlen</span>
 - <span style="color:green">??? password_change with 0x4A6A91C7 tonobjecttransfo</span>
 
@@ -5379,7 +6586,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x54F67F02 rev_l</span>
 - <span style="color:green">null null with 0x54F67F02 maxchanb</span>
 
-#### v 1.1.8 — shell 1/10, priv 1/10
+#### v 1.1.8 — shell 6/32, priv 1/32
 <a id="1.1.8"></a>
 - <span style="color:green">null null with 0x57A5878F pend_codecolor</span>
 - <span style="color:green">null null with 0x57A5878F asforena</span>
@@ -5391,8 +6598,30 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:red">root</span> <span style="color:red">computer</span> with 0x50A10FEC dateracta
 - <span style="color:green">guest file with 0x29FA6722 ild_treetryparetrue</span>
 - <span style="color:green">guest computer with 0x29FA6722 sourcelinenumobjectsets</span>
+- <span style="color:yellow">guest</span> shell with 0x21445D8A hisop
+- <span style="color:green">null null with 0x57A5878F pend_codecolor</span>
+- <span style="color:yellow">guest</span> shell with 0x57A5878F asforena
+- <span style="color:yellow">guest</span> shell with 0x57A5878F ontextenertlin
+- <span style="color:green">guest file with 0x57A5878F functionary</span>
+- <span style="color:green">??? password_change with 0x57A5878F udiosoundostacti</span>
+- <span style="color:green">guest file with 0x50A10FEC ypelend_c</span>
+- <span style="color:green">null null with 0x50A10FEC screebl_tr</span>
+- <span style="color:green">guest computer with 0x50A10FEC dateracta</span>
+- <span style="color:green">guest file with 0x29FA6722 ild_treetryparetrue</span>
+- <span style="color:green">guest computer with 0x29FA6722 sourcelinenumobjectsets</span>
+- <span style="color:green">??? password_change with 0x7430E854 hisgoodl</span>
+- <span style="color:yellow">guest</span> shell with 0x7430E854 lbackgroupintenertlinei
+- <span style="color:green">guest computer with 0x7430E854 shorline++</span>
+- <span style="color:green">guest computer with 0x5F84DF2D ctivetrank</span>
+- <span style="color:green">guest computer with 0x1A9F45EA settimeshupdatabledcolor</span>
+- <span style="color:green">guest computer with 0x1A9F45EA tatics</span>
+- <span style="color:green">??? password_change with 0x13E7F1D6 olor_globalco</span>
+- <span style="color:green">guest computer with 0x19FEF6CA elenb</span>
+- <span style="color:green">guest computer with 0x19FEF6CA power</span>
+- <span style="color:yellow">guest</span> shell with 0x2337E973 n_treetrue
+- <span style="color:green">guest file with 0x2337E973 tbackgroutline</span>
 
-#### v 1.1.9 — shell 3/19, priv 2/19
+#### v 1.1.9 — shell 5/29, priv 3/29
 <a id="1.1.9"></a>
 - <span style="color:green">null null with 0x7DA23128 _lengthsdy</span>
 - <span style="color:green">null null with 0x7DA23128 escountimelend_codeady_def</span>
@@ -5413,8 +6642,18 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x18E982DA _match_le</span>
 - <span style="color:green">null null with 0x18E982DA sultcontex</span>
 - <span style="color:red">root</span> shell with 0x18E982DA eapk
+- <span style="color:yellow">guest</span> shell with 0x21445D8A hisop
+- <span style="color:green">null null with 0x7DA23128 _lengthsdy</span>
+- <span style="color:green">guest computer with 0x7DA23128 escountimelend_codeady_def</span>
+- <span style="color:green">Dreatesz computer with 0x7DA23128 modeadeinte</span>
+- <span style="color:green">null null with 0x7DA23128 end_bitslinenumsire</span>
+- <span style="color:green">guest file with 0x55E8B97A buffectostanch</span>
+- <span style="color:green">null null with 0x55E8B97A settimeractiva</span>
+- <span style="color:green">null null with 0x18E982DA _match_le</span>
+- <span style="color:green">null null with 0x18E982DA sultcontex</span>
+- <span style="color:red">root</span> shell with 0x18E982DA eapk
 
-#### v 1.2.1 — shell 4/13, priv 2/13
+#### v 1.2.1 — shell 8/26, priv 4/26
 <a id="1.2.1"></a>
 - <span style="color:green">guest computer with 0x21445D8A contypebottono</span>
 - Chuq shell with 0x6167E41D color_buttoncolor_
@@ -5427,6 +6666,19 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - Chuq shell with 0x7DD54E5A lor_bufficid
 - <span style="color:green">guest computer with 0x7DD54E5A erlayanimatorr</span>
 - Chuq shell with 0x7DD54E5A raphic
+- <span style="color:green">null null with 0x7DD54E5A ersaddgetextsin</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x7DD54E5A tree
+- <span style="color:green">guest computer with 0x21445D8A contypebottono</span>
+- Wette shell with 0x6167E41D color_buttoncolor_
+- <span style="color:green">null null with 0x6167E41D thisclosefirec</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x6167E41D elinerbutt
+- <span style="color:green">??? password_change with 0x6167E41D nota</span>
+- <span style="color:green">null null with 0x6167E41D phic</span>
+- <span style="color:green">??? password_change with 0x2068E6F8 extsrep_3_6</span>
+- <span style="color:yellow">guest</span> shell with 0x2068E6F8 nusb
+- Wette shell with 0x7DD54E5A lor_bufficid
+- <span style="color:green">guest computer with 0x7DD54E5A erlayanimatorr</span>
+- Sterse shell with 0x7DD54E5A raphic
 - <span style="color:green">null null with 0x7DD54E5A ersaddgetextsin</span>
 - <span style="color:red">root</span> <span style="color:red">computer</span> with 0x7DD54E5A tree
 
@@ -5447,7 +6699,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x535B7112 pref</span>
 - <span style="color:green">null null with 0x535B7112 aststopw</span>
 
-#### v 1.2.3 — shell 7/83
+#### v 1.2.3 — shell 12/124
 <a id="1.2.3"></a>
 - <span style="color:green">guest file with 0x141B2F77 flush</span>
 - Ampbelfe shell with 0x141B2F77 itextslconshorttemplaybackc
@@ -5532,8 +6784,49 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x61DE4304 upblockbufficienumber</span>
 - <span style="color:green">null null with 0x61DE4304 updataudiosoundosetic_</span>
 - <span style="color:green">null null with 0x590D28FD etundo</span>
+- <span style="color:green">guest file with 0x141B2F77 flush</span>
+- Gavra shell with 0x141B2F77 itextslconshorttemplaybackc
+- <span style="color:green">null null with 0x141B2F77 itionnames</span>
+- <span style="color:green">guest file with 0x779C5E08 height2tra</span>
+- <span style="color:green">null null with 0x779C5E08 positionpoin</span>
+- <span style="color:green">guest file with 0x779C5E08 wardow++scal</span>
+- <span style="color:green">null null with 0x779C5E08 lineypositionclos</span>
+- <span style="color:green">null null with 0x779C5E08 ionimmax_color</span>
+- <span style="color:green">null null with 0x2068E6F8 fast</span>
+- <span style="color:green">null null with 0x2068E6F8 aramemapresultnumsion</span>
+- <span style="color:green">null null with 0x72C00933 eopend_co</span>
+- <span style="color:green">null null with 0x72C00933 caretob</span>
+- <span style="color:green">null null with 0x72C00933 epth</span>
+- <span style="color:green">null null with 0x72C00933 olorshifti</span>
+- <span style="color:green">null null with 0x72C00933 buttoncolon</span>
+- <span style="color:green">null null with 0x2DBF5B43 positiontera</span>
+- <span style="color:green">null null with 0x2DBF5B43 orshift_codecursh</span>
+- <span style="color:green">null null with 0x2DBF5B43 liststroyimm</span>
+- <span style="color:green">null null with 0x2DBF5B43 tostantsetactabuttonsertlengthoff</span>
+- <span style="color:green">null null with 0x2DBF5B43 oybuttonbuttonobjec</span>
+- <span style="color:green">guest file with 0x141B2F77 flush</span>
+- Moliano shell with 0x141B2F77 itextslconshorttemplaybackc
+- <span style="color:green">null null with 0x141B2F77 itionnames</span>
+- <span style="color:green">guest file with 0x779C5E08 height2tra</span>
+- <span style="color:green">null null with 0x779C5E08 positionpoin</span>
+- <span style="color:green">guest file with 0x779C5E08 wardow++scal</span>
+- <span style="color:green">null null with 0x779C5E08 lineypositionclos</span>
+- <span style="color:green">null null with 0x779C5E08 ionimmax_color</span>
+- <span style="color:green">null null with 0x2068E6F8 fast</span>
+- <span style="color:yellow">guest</span> shell with 0x2068E6F8 aramemapresultnumsion
+- <span style="color:green">null null with 0x72C00933 eopend_co</span>
+- <span style="color:green">null null with 0x72C00933 caretob</span>
+- <span style="color:green">??? password_change with 0x72C00933 epth</span>
+- <span style="color:green">null null with 0x72C00933 olorshifti</span>
+- <span style="color:green">Moliano file with 0x72C00933 buttoncolon</span>
+- Revanarsh shell with 0x2DBF5B43 positiontera
+- <span style="color:yellow">guest</span> shell with 0x2DBF5B43 orshift_codecursh
+- <span style="color:green">null null with 0x2DBF5B43 liststroyimm</span>
+- <span style="color:green">guest file with 0x2DBF5B43 tostantsetactabuttonsertlengthoff</span>
+- <span style="color:green">null null with 0x2DBF5B43 oybuttonbuttonobjec</span>
+- <span style="color:green">Mijn file with 0x2FA759C5 nalconsolewriteresultparsetactionst</span>
 
-#### v 1.2.5 — shell 2/16, priv 3/16
+#### v 1.2.5 — shell 3/24, priv 4/24
 <a id="1.2.5"></a>
 - <span style="color:green">??? password_change with 0x2068E6F8 elocksourcelist</span>
 - <span style="color:green">null null with 0x2068E6F8 text</span>
@@ -5551,10 +6844,33 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x5E80FA1D anchortbackundowm</span>
 - <span style="color:red">root</span> shell with 0x5E80FA1D toredpositionstre
 - <span style="color:green">null null with 0x5E80FA1D itiontsetitleba</span>
+- <span style="color:green">null null with 0x2068E6F8 elocksourcelist</span>
+- <span style="color:green">null null with 0x2068E6F8 text</span>
+- <span style="color:green">null null with 0x57471125 sizefier</span>
+- <span style="color:green">null null with 0x57471125 posit</span>
+- <span style="color:green">guest file with 0x57471125 nimagesaddundopos</span>
+- <span style="color:green">null null with 0x5E80FA1D anchortbackundowm</span>
+- <span style="color:red">root</span> shell with 0x5E80FA1D toredpositionstre
+- <span style="color:green">null null with 0x5E80FA1D itiontsetitleba</span>
 
-#### v 1.2.6 — priv 1/7
+#### v 1.2.6 — priv 2/22
 <a id="1.2.6"></a>
 - <span style="color:red">root</span> <span style="color:red">file</span> with 0x5276A6C0 gthsbuild_t
+- <span style="color:green">null null with 0x6C0C545 utsirectsetactionclosefi</span>
+- <span style="color:green">null null with 0x6C0C545 sforequarentimekeywor</span>
+- <span style="color:green">null null with 0x6C0C545 hlightedistreemapresul</span>
+- <span style="color:green">null null with 0x6C0C545 addlistrstartpositionstr</span>
+- <span style="color:green">null null with 0x3950AA91 oseoncodeltaddlinenum</span>
+- <span style="color:green">null null with 0x3950AA91 dposlinei</span>
+- <span style="color:green">??? password_change with 0x5276A6C0 ockblocale</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x5276A6C0 gthsbuild_t
+- <span style="color:green">??? password_change with 0x6C0C545 utsirectsetactionclosefi</span>
+- <span style="color:green">null null with 0x6C0C545 sforequarentimekeywor</span>
+- <span style="color:green">null null with 0x6C0C545 hlightedistreemapresul</span>
+- <span style="color:green">Asakise computer with 0x6C0C545 addlistrstartpositionstr</span>
+- <span style="color:green">null null with 0x3950AA91 oseoncodeltaddlinenum</span>
+- <span style="color:green">null null with 0x3950AA91 dposlinei</span>
+- <span style="color:green">null null with 0x5276A6C0 gthsbuild_t</span>
 - <span style="color:green">null null with 0x6C0C545 utsirectsetactionclosefi</span>
 - <span style="color:green">null null with 0x6C0C545 sforequarentimekeywor</span>
 - <span style="color:green">null null with 0x6C0C545 hlightedistreemapresul</span>
@@ -5584,12 +6900,55 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x4255F5AA singsupdatapower</span>
 - <span style="color:green">null null with 0x1BC146FA fast</span>
 
-#### v 1.2.9 — shell 2/9
+#### v 1.2.8 — shell 5/31, priv 2/31
+<a id="1.2.8"></a>
+- <span style="color:green">guest computer with 0x5276A6C0 window</span>
+- <span style="color:green">??? password_change with 0x5276A6C0 ockblocale</span>
+- <span style="color:green">??? password_change with 0x539F02D7 nandalpos++</span>
+- <span style="color:green">null null with 0x539F02D7 kstatebitstrstanceoffset_dat</span>
+- <span style="color:green">null null with 0x1ED046DB unctionaryva</span>
+- <span style="color:red">root</span> shell with 0x1ED046DB dundow_sizedelan
+- <span style="color:green">guest file with 0x1ED046DB hortbackadd</span>
+- <span style="color:green">guest file with 0x3B8BFD8F utlinesinishstact</span>
+- <span style="color:yellow">guest</span> shell with 0x3B8BFD8F _lengthsdyn
+- <span style="color:yellow">guest</span> shell with 0x3B8BFD8F ifneedittestentain_
+- <span style="color:green">null null with 0x3B8BFD8F cessertimel</span>
+- <span style="color:green">null null with 0x3B8BFD8F regionaryvaluesrepz_3_10</span>
+- <span style="color:green">guest computer with 0x5B1783D5 factiv</span>
+- <span style="color:green">??? password_change with 0x5B1783D5 inesinitionteresultt</span>
+- <span style="color:green">null null with 0x5B1783D5 thisgoodler32</span>
+- <span style="color:green">guest computer with 0x5276A6C0 window</span>
+- <span style="color:green">??? password_change with 0x5276A6C0 ockblocale</span>
+- <span style="color:green">null null with 0x5276A6C0 ernalcol</span>
+- <span style="color:green">null null with 0x539F02D7 nandalpos++</span>
+- <span style="color:green">null null with 0x539F02D7 kstatebitstrstanceoffset_dat</span>
+- <span style="color:green">null null with 0x1ED046DB unctionaryva</span>
+- <span style="color:red">root</span> shell with 0x1ED046DB dundow_sizedelan
+- <span style="color:green">guest file with 0x1ED046DB hortbackadd</span>
+- <span style="color:green">guest file with 0x3B8BFD8F utlinesinishstact</span>
+- <span style="color:yellow">guest</span> shell with 0x3B8BFD8F _lengthsdyn
+- <span style="color:green">null null with 0x3B8BFD8F ifneedittestentain_</span>
+- <span style="color:green">null null with 0x3B8BFD8F cessertimel</span>
+- <span style="color:green">null null with 0x3B8BFD8F regionaryvaluesrepz_3_10</span>
+- <span style="color:green">guest computer with 0x5B1783D5 factiv</span>
+- <span style="color:green">??? password_change with 0x5B1783D5 inesinitionteresultt</span>
+- <span style="color:green">guest computer with 0x5B1783D5 thisgoodler32</span>
+
+#### v 1.2.9 — shell 4/18
 <a id="1.2.9"></a>
 - <span style="color:green">guest computer with 0x5276A6C0 window</span>
 - <span style="color:green">??? password_change with 0x5276A6C0 ockblocale</span>
 - <span style="color:yellow">guest</span> shell with 0x5276A6C0 gotoa
 - <span style="color:green">Goussarl file with 0x1100799C odec_a</span>
+- <span style="color:green">null null with 0x1100799C chemessof</span>
+- <span style="color:green">null null with 0x1100799C dexesaddu</span>
+- <span style="color:green">null null with 0x1100799C queuetonformo</span>
+- <span style="color:green">null null with 0xED0154D token</span>
+- <span style="color:yellow">guest</span> shell with 0xED0154D alladdparetobjects
+- <span style="color:green">guest computer with 0x5276A6C0 window</span>
+- <span style="color:green">??? password_change with 0x5276A6C0 ockblocale</span>
+- <span style="color:yellow">guest</span> shell with 0x5276A6C0 gotoa
+- <span style="color:green">Hels file with 0x1100799C odec_a</span>
 - <span style="color:green">null null with 0x1100799C chemessof</span>
 - <span style="color:green">null null with 0x1100799C dexesaddu</span>
 - <span style="color:green">null null with 0x1100799C queuetonformo</span>
@@ -5627,7 +6986,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x6ABD051C dostatus</span>
 - <span style="color:green">null null with 0x6ABD051C tanchorequalbytebuttoncolorscript</span>
 
-#### v 1.3.2 — shell 1/9
+#### v 1.3.2 — shell 5/31
 <a id="1.3.2"></a>
 - <span style="color:green">Carris file with 0x77ED7A31 close</span>
 - <span style="color:green">null null with 0x77ED7A31 goodlengthcode</span>
@@ -5638,6 +6997,28 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x1A508625 atic_l
 - <span style="color:green">null null with 0x1A508625 alizewindent_code</span>
 - <span style="color:green">null null with 0x1A508625 imekeys</span>
+- <span style="color:green">Andiy file with 0x77ED7A31 close</span>
+- <span style="color:green">null null with 0x77ED7A31 goodlengthcode</span>
+- <span style="color:green">null null with 0x77ED7A31 aractiond</span>
+- <span style="color:green">null null with 0x1F5C2DB7 squalby</span>
+- <span style="color:green">null null with 0x1F5C2DB7 tmsbintextparame</span>
+- <span style="color:green">Andiy file with 0x6ABD051C chortlinetreestacterdow++scaller32</span>
+- <span style="color:green">Awayman computer with 0x6ABD051C tanchorequalbytebuttoncolorscript</span>
+- <span style="color:green">null null with 0x1A508625 ecked</span>
+- <span style="color:yellow">guest</span> shell with 0x1A508625 atic_l
+- <span style="color:yellow">guest</span> shell with 0x1A508625 alizewindent_code
+- <span style="color:green">??? password_change with 0x1A508625 imekeys</span>
+- <span style="color:green">Lucci file with 0x77ED7A31 close</span>
+- <span style="color:green">null null with 0x77ED7A31 goodlengthcode</span>
+- <span style="color:green">guest file with 0x77ED7A31 aractiond</span>
+- <span style="color:green">null null with 0x1F5C2DB7 squalby</span>
+- <span style="color:green">null null with 0x1F5C2DB7 tmsbintextparame</span>
+- <span style="color:green">Dehr file with 0x6ABD051C chortlinetreestacterdow++scaller32</span>
+- <span style="color:green">Lucci computer with 0x6ABD051C tanchorequalbytebuttoncolorscript</span>
+- <span style="color:green">null null with 0x1A508625 ecked</span>
+- <span style="color:yellow">guest</span> shell with 0x1A508625 atic_l
+- <span style="color:yellow">guest</span> shell with 0x1A508625 alizewindent_code
+- <span style="color:green">??? password_change with 0x1A508625 imekeys</span>
 
 #### v 1.3.3 — priv 1/12
 <a id="1.3.3"></a>
@@ -5701,6 +7082,28 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x2538E057 lushpa</span>
 - <span style="color:green">null null with 0x2538E057 hortmsbheadeint</span>
 
+#### v 1.3.7 — shell 2/19, priv 1/19
+<a id="1.3.7"></a>
+- <span style="color:green">??? password_change with 0x144CF9A tanchortbi</span>
+- <span style="color:green">null null with 0x328C7C84 histrans</span>
+- <span style="color:green">Escha file with 0x328C7C84 valuesadd</span>
+- <span style="color:green">null null with 0x328C7C84 showbuttonclicit</span>
+- <span style="color:green">null null with 0x328C7C84 itialize</span>
+- <span style="color:green">null null with 0x48C9C912 cevalizedeltaddun</span>
+- <span style="color:green">null null with 0x48C9C912 contrinsicontilcl</span>
+- <span style="color:green">guest file with 0x5159919A buttom</span>
+- <span style="color:green">null null with 0x5159919A _length</span>
+- <span style="color:green">null null with 0x5159919A color_buttonclicked</span>
+- <span style="color:green">null null with 0x5159919A tlessignimagesadd</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x2F4EAD3D sdiststringsupdata_
+- <span style="color:green">null null with 0x2F4EAD3D or-1</span>
+- <span style="color:yellow">guest</span> shell with 0x2F4EAD3D tnumerans
+- <span style="color:green">null null with 0x2F4EAD3D ctivetactablet</span>
+- <span style="color:green">null null with 0x67AB9881 frequalbyt</span>
+- <span style="color:yellow">guest</span> shell with 0x67AB9881 vokethisibledthiscan_t
+- <span style="color:green">null null with 0x67AB9881 izede</span>
+- <span style="color:green">null null with 0x67AB9881 taddgetco</span>
+
 #### v 1.3.8 — shell 3/15
 <a id="1.3.8"></a>
 - <span style="color:green">null null with 0x144CF9A tanchortbi</span>
@@ -5719,7 +7122,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - Mann shell with 0x1BCFA908 hash_mask
 - <span style="color:green">Duind file with 0x7405D772 seqsetacti</span>
 
-#### v 1.3.9 — shell 5/18, priv 1/18
+#### v 1.3.9 — shell 12/52, priv 2/52
 <a id="1.3.9"></a>
 - Boliste shell with 0x144CF9A conobjecte
 - <span style="color:green">??? password_change with 0x144CF9A tanchortbi</span>
@@ -5739,8 +7142,42 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">Boliste file with 0x7541CB63 aphic</span>
 - <span style="color:green">Boliste file with 0x6B6671D4 sendpositionary</span>
 - Boliste shell with 0x690F3AE1 esskeycodecin
+- <span style="color:yellow">guest</span> shell with 0x144CF9A conobjecte
+- <span style="color:green">??? password_change with 0x144CF9A tanchortbi</span>
+- <span style="color:green">??? password_change with 0x78C0CE32 lresultpar</span>
+- <span style="color:green">null null with 0x78C0CE32 engtho</span>
+- <span style="color:green">null null with 0x78C0CE32 horml</span>
+- <span style="color:green">guest file with 0x78C0CE32 ne</span>
+- <span style="color:green">null null with 0x48C9C912 contrinsicontilcl</span>
+- <span style="color:green">guest file with 0x2D591441 exesa</span>
+- <span style="color:yellow">guest</span> shell with 0x2D591441 atus
+- <span style="color:green">guest file with 0x2D591441 more</span>
+- <span style="color:yellow">guest</span> shell with 0x660D6CC6 ormlockbuff
+- <span style="color:green">null null with 0x660D6CC6 reviouscou</span>
+- <span style="color:green">??? password_change with 0x5FAE4637 numsirectotalwidtreedyn_ltre</span>
+- <span style="color:yellow">guest</span> shell with 0x5FAE4637 evstrinsicss
+- <span style="color:green">??? password_change with 0x5FAE4637 blockblocalpositio</span>
+- <span style="color:green">??? password_change with 0x5FAE4637 existgraphic</span>
+- <span style="color:green">guest file with 0x71D8FA88 chormsizedelc</span>
+- <span style="color:green">guest file with 0x2627A9D olledthisf</span>
+- <span style="color:green">guest computer with 0x2627A9D itextpendingpend_color_butto</span>
+- Tsengerre shell with 0x144CF9A conobjecte
+- <span style="color:green">??? password_change with 0x144CF9A tanchortbi</span>
+- <span style="color:green">??? password_change with 0x78C0CE32 lresultpar</span>
+- <span style="color:green">null null with 0x78C0CE32 engtho</span>
+- <span style="color:green">null null with 0x78C0CE32 horml</span>
+- <span style="color:green">guest file with 0x78C0CE32 ne</span>
+- <span style="color:green">null null with 0x2D591441 exesa</span>
+- <span style="color:green">null null with 0x2D591441 atus</span>
+- <span style="color:green">guest file with 0x2D591441 more</span>
+- <span style="color:yellow">guest</span> shell with 0x660D6CC6 ormlockbuff
+- <span style="color:green">null null with 0x660D6CC6 reviouscou</span>
+- <span style="color:green">??? password_change with 0x5FAE4637 numsirectotalwidtreedyn_ltre</span>
+- <span style="color:red">root</span> shell with 0x5FAE4637 evstrinsicss
+- <span style="color:green">??? password_change with 0x5FAE4637 blockblocalpositio</span>
+- <span style="color:green">null null with 0x5FAE4637 existgraphic</span>
 
-#### v 1.4.0 — shell 3/29, priv 1/29
+#### v 1.4.0 — shell 4/44, priv 1/44
 <a id="1.4.0"></a>
 - <span style="color:green">null null with 0x7E18A7EC lusb</span>
 - <span style="color:green">null null with 0x7E18A7EC ackpush_sizetrue</span>
@@ -5771,8 +7208,23 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x63ABF5F stvaluesa</span>
 - <span style="color:green">null null with 0x63ABF5F mapadd</span>
 - <span style="color:green">null null with 0x63ABF5F groupintextpend_color_g</span>
+- <span style="color:green">null null with 0x7E18A7EC lusb</span>
+- <span style="color:green">null null with 0x7E18A7EC ackpush_sizetrue</span>
+- <span style="color:green">Ilgordu computer with 0x7E18A7EC bi_buffer</span>
+- Ilgordu shell with 0x7E18A7EC saddlinesizetreebitsb
+- <span style="color:green">guest file with 0x7E18A7EC d_block_oncompresult</span>
+- <span style="color:green">null null with 0x48C9C912 contrinsicontilcl</span>
+- <span style="color:green">null null with 0x4EDE9238 seevent_codec_adler32</span>
+- <span style="color:green">null null with 0x4EDE9238 apmapmapmapa</span>
+- <span style="color:green">null null with 0x4EDE9238 rhsa</span>
+- <span style="color:green">null null with 0x4EDE9238 numsiz</span>
+- <span style="color:green">null null with 0x63ABF5F snormsizewiconob</span>
+- <span style="color:green">null null with 0x63ABF5F aminish</span>
+- <span style="color:green">null null with 0x63ABF5F stvaluesa</span>
+- <span style="color:green">guest file with 0x63ABF5F mapadd</span>
+- <span style="color:green">null null with 0x63ABF5F groupintextpend_color_g</span>
 
-#### v 1.4.1 — shell 4/15, priv 1/15
+#### v 1.4.1 — shell 8/38, priv 2/38
 <a id="1.4.1"></a>
 - <span style="color:green">guest file with 0x34881B55 bool</span>
 - <span style="color:green">null null with 0x34881B55 shift_code</span>
@@ -5789,8 +7241,31 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - Pirovsk shell with 0x25EC13ED sibletelin
 - <span style="color:yellow">guest</span> shell with 0x24336F84 nesinp
 - <span style="color:green">Pirovsk file with 0x24336F84 denti</span>
+- <span style="color:green">guest file with 0x34881B55 bool</span>
+- <span style="color:green">null null with 0x34881B55 shift_code</span>
+- <span style="color:green">null null with 0x48C9C912 dreselen</span>
+- <span style="color:green">??? password_change with 0x7CBB1DD1 tlengthof</span>
+- <span style="color:green">null null with 0x7CBB1DD1 equeuetons</span>
+- <span style="color:green">Vartmans computer with 0x7CBB1DD1 lexdequare</span>
+- <span style="color:green">guest file with 0x82C0E76 tiontertype</span>
+- <span style="color:green">null null with 0x82C0E76 qualbyt</span>
+- <span style="color:green">guest file with 0x34881B55 bool</span>
+- <span style="color:green">null null with 0x34881B55 shift_code</span>
+- <span style="color:green">null null with 0x48C9C912 dreselen</span>
+- <span style="color:green">??? password_change with 0x7CBB1DD1 tlengthof</span>
+- <span style="color:green">null null with 0x7CBB1DD1 equeuetons</span>
+- <span style="color:green">Ukasp computer with 0x7CBB1DD1 lexdequare</span>
+- <span style="color:green">guest file with 0x82C0E76 tiontertype</span>
+- <span style="color:green">null null with 0x82C0E76 qualbyt</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x284474ED cound
+- <span style="color:green">??? password_change with 0x284474ED hight2transfo</span>
+- <span style="color:yellow">guest</span> shell with 0x48472FE undostinf
+- Eldres shell with 0x5E5AEC31 oublinesizedel
+- Eldres shell with 0x5E5AEC31 oused_bitlend_color
+- <span style="color:yellow">guest</span> shell with 0x5E5AEC31 tiontextpositi
+- <span style="color:green">??? password_change with 0x5D5D4F29 baseonnextsre</span>
 
-#### v 1.4.2 — shell 2/13, priv 1/13
+#### v 1.4.2 — shell 6/26, priv 2/26
 <a id="1.4.2"></a>
 - <span style="color:green">null null with 0x335E72DF reatera</span>
 - <span style="color:green">null null with 0x335E72DF pend_bitsdy</span>
@@ -5805,6 +7280,19 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x3086C3D9 thismax</span>
 - <span style="color:green">null null with 0x3086C3D9 _length</span>
 - <span style="color:green">null null with 0x3086C3D9 eaddp</span>
+- <span style="color:green">guest file with 0x335E72DF reatera</span>
+- Transkis shell with 0x335E72DF pend_bitsdy
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x335E72DF chainetremovebutto
+- <span style="color:yellow">guest</span> shell with 0x760EF9C5 agetcodecttrans
+- <span style="color:green">guest file with 0x67484661 bintline++</span>
+- <span style="color:green">guest computer with 0x67484661 line</span>
+- <span style="color:yellow">guest</span> shell with 0x67484661 aluesremo
+- <span style="color:green">null null with 0x67484661 ostartpos</span>
+- <span style="color:green">Aganell file with 0x3086C3D9 opplushparetonobject</span>
+- <span style="color:green">null null with 0x3086C3D9 ator2</span>
+- <span style="color:green">null null with 0x3086C3D9 thismax</span>
+- <span style="color:yellow">guest</span> shell with 0x3086C3D9 _length
+- <span style="color:green">??? password_change with 0x3086C3D9 eaddp</span>
 
 #### v 1.4.3 — shell 1/13, priv 1/13
 <a id="1.4.3"></a>
@@ -5822,7 +7310,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x71A4FF2E void</span>
 - <span style="color:green">null null with 0x71A4FF2E oredpo</span>
 
-#### v 1.4.4 — shell 3/32, priv 2/32
+#### v 1.4.4 — shell 3/60, priv 6/60
 <a id="1.4.4"></a>
 - <span style="color:green">null null with 0x527D8FAF rlaysourcethi</span>
 - <span style="color:green">null null with 0x527D8FAF componenum++</span>
@@ -5855,6 +7343,34 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest computer with 0x5381FDED color_buttonhightmidthi</span>
 - <span style="color:green">guest computer with 0x5381FDED atabledth</span>
 - <span style="color:green">null null with 0x5381FDED iewportt</span>
+- <span style="color:green">??? password_change with 0x5381FDED treeintextresized</span>
+- <span style="color:green">null null with 0x527D8FAF rlaysourcethi</span>
+- <span style="color:green">guest file with 0x527D8FAF componenum++</span>
+- <span style="color:green">??? password_change with 0x527D8FAF rentdaterdow++</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x527D8FAF lush_b
+- <span style="color:green">null null with 0x527D8FAF ins_h</span>
+- <span style="color:green">??? password_change with 0x44F90779 setackgroundopositia</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x44F90779 code
+- <span style="color:green">guest computer with 0x44F90779 textobject</span>
+- <span style="color:green">null null with 0x44F90779 sourcevolumeringb</span>
+- <span style="color:green">null null with 0x44F90779 cast</span>
+- <span style="color:green">guest computer with 0x5381FDED color_buttonhightmidthi</span>
+- <span style="color:green">guest computer with 0x5381FDED atabledth</span>
+- <span style="color:green">??? password_change with 0x5381FDED iewportt</span>
+- <span style="color:green">??? password_change with 0x5381FDED treeintextresized</span>
+- <span style="color:green">null null with 0x527D8FAF rlaysourcethi</span>
+- <span style="color:green">null null with 0x527D8FAF componenum++</span>
+- <span style="color:green">??? password_change with 0x527D8FAF rentdaterdow++</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x527D8FAF lush_b
+- <span style="color:green">null null with 0x527D8FAF ins_h</span>
+- <span style="color:green">null null with 0x44F90779 setackgroundopositia</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x44F90779 code
+- <span style="color:green">guest computer with 0x44F90779 textobject</span>
+- <span style="color:green">null null with 0x44F90779 sourcevolumeringb</span>
+- <span style="color:green">null null with 0x44F90779 cast</span>
+- <span style="color:green">guest computer with 0x5381FDED color_buttonhightmidthi</span>
+- <span style="color:green">null null with 0x5381FDED atabledth</span>
+- <span style="color:green">??? password_change with 0x5381FDED iewportt</span>
 - <span style="color:green">??? password_change with 0x5381FDED treeintextresized</span>
 
 #### v 1.4.5 — shell 1/20, priv 1/20
@@ -5904,6 +7420,50 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x77FBEC76 etactivetreeinterroright2tran</span>
 - <span style="color:green">null null with 0x77FBEC76 tebuttonshortmsbhe</span>
 
+#### v 1.4.7 — shell 2/41
+<a id="1.4.7"></a>
+- <span style="color:green">Rezerno computer with 0x5135AB69 codelanchoredpoi</span>
+- <span style="color:green">null null with 0x55644E19 ifnull</span>
+- <span style="color:green">null null with 0x55644E19 pend_bitscom</span>
+- <span style="color:green">null null with 0x55644E19 sicontain</span>
+- <span style="color:green">??? password_change with 0x3FE8178E plush_</span>
+- <span style="color:green">null null with 0x3FE8178E letextsizel</span>
+- <span style="color:green">null null with 0x3FE8178E fresult</span>
+- <span style="color:green">null null with 0x5F408616 rollrecttr</span>
+- <span style="color:green">null null with 0x5F408616 x++</span>
+- <span style="color:green">Loost file with 0x5F408616 moveratebitsdcolor_viewportmsbheadp</span>
+- <span style="color:green">null null with 0x5135AB69 start++</span>
+- <span style="color:green">null null with 0x55644E19 ifnull</span>
+- <span style="color:green">null null with 0x55644E19 pend_bitscom</span>
+- <span style="color:green">null null with 0x55644E19 sicontain</span>
+- <span style="color:green">null null with 0x3FE8178E plush_</span>
+- <span style="color:green">Sonsm computer with 0x3FE8178E letextsizel</span>
+- <span style="color:green">null null with 0x3FE8178E fresult</span>
+- <span style="color:green">null null with 0x5F408616 rollrecttr</span>
+- <span style="color:green">null null with 0x5F408616 x++</span>
+- <span style="color:green">Sonsm file with 0x5F408616 moveratebitsdcolor_viewportmsbheadp</span>
+- <span style="color:green">guest computer with 0x5135AB69 codelanchoredpoi</span>
+- <span style="color:green">??? password_change with 0x55644E19 ifnull</span>
+- <span style="color:green">null null with 0x55644E19 pend_bitscom</span>
+- <span style="color:green">null null with 0x55644E19 sicontain</span>
+- <span style="color:green">??? password_change with 0x3FE8178E plush_</span>
+- <span style="color:green">guest computer with 0x3FE8178E letextsizel</span>
+- <span style="color:green">guest computer with 0x3FE8178E fresult</span>
+- <span style="color:green">null null with 0x5F408616 rollrecttr</span>
+- <span style="color:yellow">guest</span> shell with 0x5F408616 x++
+- <span style="color:green">guest file with 0x5F408616 moveratebitsdcolor_viewportmsbheadp</span>
+- <span style="color:green">Toroff computer with 0x5135AB69 codelanchoredpoi</span>
+- <span style="color:green">null null with 0x5135AB69 start++</span>
+- <span style="color:green">null null with 0x55644E19 ifnull</span>
+- <span style="color:green">null null with 0x55644E19 pend_bitscom</span>
+- Ortenberg shell with 0x55644E19 sicontain
+- <span style="color:green">??? password_change with 0x3FE8178E plush_</span>
+- <span style="color:green">Ortenberg computer with 0x3FE8178E letextsizel</span>
+- <span style="color:green">null null with 0x3FE8178E fresult</span>
+- <span style="color:green">??? password_change with 0x5F408616 rollrecttr</span>
+- <span style="color:green">null null with 0x5F408616 x++</span>
+- <span style="color:green">Toroff file with 0x5F408616 moveratebitsdcolor_viewportmsbheadp</span>
+
 #### v 1.4.8 — shell 3/12, priv 1/12
 <a id="1.4.8"></a>
 - <span style="color:green">guest computer with 0x5135AB69 pericid</span>
@@ -5919,7 +7479,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x6BC25761 tenerthanb
 - <span style="color:red">root</span> shell with 0x6BC25761 flush_bl
 
-#### v 1.4.9 — priv 5/29
+#### v 1.4.9 — priv 8/44
 <a id="1.4.9"></a>
 - <span style="color:green">null null with 0x5F687B21 lizedelength</span>
 - <span style="color:green">Allatest file with 0x5F687B21 teline++</span>
@@ -5950,8 +7510,23 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x571751F0 hight2tranged</span>
 - <span style="color:green">null null with 0x571751F0 d_colorschemeimagesaddlistvar</span>
 - <span style="color:green">guest file with 0x571751F0 ch_lengtho</span>
+- <span style="color:green">null null with 0x5F687B21 lizedelength</span>
+- <span style="color:green">Sanjal file with 0x5F687B21 teline++</span>
+- <span style="color:green">null null with 0x5F687B21 sultse</span>
+- <span style="color:green">Sanjal file with 0x5F687B21 andb</span>
+- <span style="color:green">Sterg computer with 0x5135AB69 codelanchoredpoi</span>
+- <span style="color:green">guest file with 0x5135AB69 positio</span>
+- <span style="color:green">guest file with 0x23BF68F0 layanimator3</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x23BF68F0 ecttratorschemessof
+- <span style="color:green">??? password_change with 0x23BF68F0 osourcelocatiction</span>
+- <span style="color:green">null null with 0x773EA3FC sizelistgraphi</span>
+- <span style="color:green">null null with 0x773EA3FC maprevalfunc</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x571751F0 raycodeleftundt
+- <span style="color:green">??? password_change with 0x571751F0 hight2tranged</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x571751F0 d_colorschemeimagesaddlistvar
+- <span style="color:green">guest file with 0x571751F0 ch_lengtho</span>
 
-#### v 1.5.0 — shell 4/40, priv 1/40
+#### v 1.5.0 — shell 6/65, priv 1/65
 <a id="1.5.0"></a>
 - <span style="color:green">Kumarla file with 0x14698C89 ignimag</span>
 - <span style="color:green">null null with 0x29E7EB8C aticsstance</span>
@@ -5993,6 +7568,31 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x7B815B67 infonter
 - <span style="color:green">Gravelle computer with 0x7B815B67 tsetfocusonsba</span>
 - <span style="color:green">null null with 0x7B815B67 codeenov</span>
+- <span style="color:green">guest file with 0x14698C89 ignimag</span>
+- <span style="color:green">null null with 0x29E7EB8C aticsstance</span>
+- <span style="color:green">null null with 0x29E7EB8C verlayonarykeyedcolor_buttoncli</span>
+- <span style="color:green">null null with 0x29E7EB8C hrow</span>
+- <span style="color:green">??? password_change with 0x29E7EB8C ienumeralse</span>
+- <span style="color:green">null null with 0x7B815B67 sela</span>
+- <span style="color:green">null null with 0x7B815B67 stedisabledq</span>
+- <span style="color:yellow">guest</span> shell with 0x7B815B67 infonter
+- <span style="color:green">guest computer with 0x7B815B67 tsetfocusonsba</span>
+- <span style="color:green">null null with 0x7B815B67 codeenov</span>
+- <span style="color:green">Eider file with 0x14698C89 ignimag</span>
+- <span style="color:green">null null with 0x29E7EB8C aticsstance</span>
+- <span style="color:green">null null with 0x29E7EB8C verlayonarykeyedcolor_buttoncli</span>
+- <span style="color:green">null null with 0x29E7EB8C hrow</span>
+- <span style="color:green">??? password_change with 0x29E7EB8C ienumeralse</span>
+- <span style="color:green">null null with 0x7B815B67 sela</span>
+- <span style="color:green">null null with 0x7B815B67 stedisabledq</span>
+- <span style="color:yellow">guest</span> shell with 0x7B815B67 infonter
+- <span style="color:green">Eider computer with 0x7B815B67 tsetfocusonsba</span>
+- <span style="color:green">null null with 0x7B815B67 codeenov</span>
+- <span style="color:green">guest file with 0xA6B55CD yn_ltreelinemover</span>
+- <span style="color:green">Motak computer with 0x79D2247E tonstackgrountericid</span>
+- <span style="color:green">Baby file with 0x79D2247E aequalb</span>
+- <span style="color:green">??? password_change with 0x79D2247E arametext</span>
+- <span style="color:green">guest file with 0x4902CA2E ghlighlighlight2transf</span>
 
 #### v 1.5.1 — shell 2/16, priv 1/16
 <a id="1.5.1"></a>
@@ -6110,7 +7710,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x11EF9391 n_dtreeenoverlaysourc</span>
 - <span style="color:green">null null with 0x11EF9391 _codecom</span>
 
-#### v 1.5.8 — shell 1/8
+#### v 1.5.8 — shell 4/30, priv 2/30
 <a id="1.5.8"></a>
 - <span style="color:green">guest file with 0x1EF5678E lecttr</span>
 - <span style="color:green">null null with 0x4F7132E7 urly</span>
@@ -6120,6 +7720,28 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? password_change with 0x3EBDB925 itles</span>
 - <span style="color:green">null null with 0x3EBDB925 indos</span>
 - <span style="color:yellow">guest</span> shell with 0x6E66C5E0 etelecttransfor
+- <span style="color:green">null null with 0x1EF5678E deflate</span>
+- <span style="color:green">guest file with 0x1EF5678E lecttr</span>
+- <span style="color:green">null null with 0x4F7132E7 urly</span>
+- <span style="color:green">null null with 0x4F7132E7 eading</span>
+- <span style="color:green">null null with 0x3EBDB925 depth</span>
+- <span style="color:green">null null with 0x3EBDB925 build_flush_blockblockdyn_d</span>
+- <span style="color:green">??? password_change with 0x3EBDB925 itles</span>
+- <span style="color:green">null null with 0x3EBDB925 indos</span>
+- <span style="color:green">guest file with 0x1EF5678E lecttr</span>
+- <span style="color:green">null null with 0x4F7132E7 urly</span>
+- <span style="color:green">null null with 0x4F7132E7 eading</span>
+- <span style="color:green">null null with 0x3EBDB925 depth</span>
+- <span style="color:green">null null with 0x3EBDB925 build_flush_blockblockdyn_d</span>
+- <span style="color:green">??? password_change with 0x3EBDB925 itles</span>
+- <span style="color:green">??? password_change with 0x3EBDB925 indos</span>
+- <span style="color:green">guest file with 0x45108135 _lenb</span>
+- <span style="color:green">Arge file with 0x45108135 iscrollineypositionr</span>
+- <span style="color:red">root</span> shell with 0xA780AFF thsbuild
+- Arge shell with 0xA780AFF ethisonclicksraycodecflu
+- <span style="color:red">root</span> shell with 0x4A8ED280 uttonimatchecked
+- <span style="color:green">??? password_change with 0x4A8ED280 more</span>
+- <span style="color:green">null null with 0x2D426E98 grountilsursor-1</span>
 
 #### v 1.5.9 — shell 2/11, priv 2/11
 <a id="1.5.9"></a>
@@ -6153,7 +7775,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x1B2D773B or_buttoncolor_buttonc</span>
 - <span style="color:green">??? password_change with 0x1B2D773B tsetextupdatabuttontof</span>
 
-#### v 1.6.2 — shell 4/32
+#### v 1.6.2 — shell 6/54
 <a id="1.6.2"></a>
 - <span style="color:green">null null with 0x73618F45 contsetactiontifneedistvarvent_onc</span>
 - <span style="color:green">null null with 0x73618F45 transformpivotnew</span>
@@ -6187,8 +7809,30 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x2AEFF5E0 transformlock</span>
 - <span style="color:green">null null with 0x2AEFF5E0 isinsuffi</span>
 - <span style="color:yellow">guest</span> shell with 0x2AEFF5E0 enumsirecte
+- <span style="color:green">Bond file with 0x73618F45 contsetactiontifneedistvarvent_onc</span>
+- <span style="color:green">??? password_change with 0x73618F45 transformpivotnew</span>
+- <span style="color:green">??? password_change with 0x50D23A23 this</span>
+- <span style="color:green">null null with 0x50D23A23 ilabledtaskbarf</span>
+- <span style="color:green">??? password_change with 0x50D23A23 baseondingbu</span>
+- <span style="color:green">null null with 0x50D23A23 scallfunc</span>
+- <span style="color:green">??? password_change with 0x50D23A23 recterrorigsingenqueue</span>
+- <span style="color:green">??? password_change with 0x1DC0410B bitsbl_treetrue</span>
+- <span style="color:yellow">guest</span> shell with 0x1DC0410B reviouseup
+- <span style="color:green">null null with 0x1DC0410B posit</span>
+- <span style="color:green">null null with 0x1DC0410B moffsettinteractiony</span>
+- <span style="color:green">??? password_change with 0x2AEFF5E0 end_treeline</span>
+- <span style="color:green">null null with 0x2AEFF5E0 apowe</span>
+- <span style="color:green">null null with 0x2AEFF5E0 transformlock</span>
+- <span style="color:green">??? password_change with 0x2AEFF5E0 isinsuffi</span>
+- <span style="color:yellow">guest</span> shell with 0x2AEFF5E0 enumsirecte
+- <span style="color:green">Anderm file with 0x1006C087 pritext</span>
+- <span style="color:green">guest file with 0x36A9B5E8 void</span>
+- <span style="color:green">guest file with 0xD9F5747 treeinte</span>
+- <span style="color:green">null null with 0x7384DC56 barformanchorttextef</span>
+- <span style="color:green">Anderm computer with 0x75E16450 char</span>
+- <span style="color:green">guest computer with 0x75E16450 codecdstancessertyp</span>
 
-#### v 1.6.3 — shell 4/34, priv 2/34
+#### v 1.6.3 — shell 6/50, priv 2/50
 <a id="1.6.3"></a>
 - Mattono shell with 0x23119887 addregrou
 - <span style="color:green">null null with 0x23119887 fier</span>
@@ -6224,8 +7868,24 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x24413D79 ranged</span>
 - <span style="color:green">null null with 0x1112CE01 vetackgrountintlinenumerdoub</span>
 - <span style="color:green">null null with 0x39F903D0 tlineslindostartc</span>
+- <span style="color:green">null null with 0x23119887 addregrou</span>
+- <span style="color:green">null null with 0x23119887 fier</span>
+- <span style="color:green">null null with 0x23119887 text</span>
+- <span style="color:green">??? password_change with 0x23119887 atebitlengthofa</span>
+- <span style="color:green">null null with 0x23119887 tonobjectevent_color_</span>
+- <span style="color:green">null null with 0x73618F45 contsetactiontifneedistvarvent_onc</span>
+- <span style="color:green">null null with 0x73618F45 ataudiosourcelit+</span>
+- <span style="color:green">null null with 0x1CF87C9A ringsizebl</span>
+- Gongree shell with 0x1CF87C9A thanb
+- <span style="color:green">??? password_change with 0x1CF87C9A hisonstartialreach</span>
+- <span style="color:green">guest file with 0x7EB021E opgream</span>
+- <span style="color:green">null null with 0x7EB021E gthsbuild_fl</span>
+- <span style="color:yellow">guest</span> shell with 0x6EE2CB7F schecktyp
+- <span style="color:green">null null with 0x6EE2CB7F stemplayanimage</span>
+- <span style="color:green">null null with 0x6EE2CB7F consba</span>
+- <span style="color:green">??? password_change with 0x450AA21F tefunctionter</span>
 
-#### v 1.6.4 — shell 7/32
+#### v 1.6.4 — shell 10/42
 <a id="1.6.4"></a>
 - <span style="color:green">null null with 0x73618F45 ataudiosourcelit+</span>
 - <span style="color:yellow">guest</span> shell with 0x18B44D11 datesizelist
@@ -6259,6 +7919,16 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x71773C88 modb</span>
 - <span style="color:green">null null with 0x71773C88 verateralse</span>
 - <span style="color:green">null null with 0x3B7808FC paddli</span>
+- <span style="color:green">null null with 0x73618F45 ataudiosourcelit+</span>
+- <span style="color:yellow">guest</span> shell with 0x18B44D11 datesizelist
+- <span style="color:green">guest file with 0x18B44D11 presulttyp</span>
+- Istavinsler shell with 0x18B44D11 lembofitexto
+- <span style="color:green">guest computer with 0x18B44D11 minitions</span>
+- <span style="color:green">null null with 0x18B44D11 text</span>
+- <span style="color:green">guest file with 0x71773C88 errorighteditte</span>
+- <span style="color:green">??? password_change with 0x71773C88 inecodeen</span>
+- <span style="color:green">??? password_change with 0x71773C88 modb</span>
+- <span style="color:yellow">guest</span> shell with 0x71773C88 verateralse
 
 #### v 1.6.5 — shell 3/15
 <a id="1.6.5"></a>
@@ -6299,7 +7969,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x38BCA4B7 tingcoun
 - <span style="color:green">null null with 0x38BCA4B7 valid</span>
 
-#### v 1.6.7 — shell 3/9, priv 1/9
+#### v 1.6.7 — shell 5/16, priv 1/16
 <a id="1.6.7"></a>
 - <span style="color:green">null null with 0x1072C7B0 _blockbloc</span>
 - <span style="color:red">root</span> shell with 0x13A02757 oubled
@@ -6310,6 +7980,13 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x23EA585C transformanches++</span>
 - <span style="color:green">??? password_change with 0x23EA585C etexttext</span>
 - Uryan shell with 0x5E5AEC31 oublinesizedel
+- <span style="color:yellow">guest</span> shell with 0x13A02757 oubled
+- <span style="color:green">guest computer with 0x13A02757 orifnull</span>
+- <span style="color:green">guest computer with 0x13A02757 ouseuptimek</span>
+- <span style="color:yellow">guest</span> shell with 0x13A02757 hortmsbheadein
+- <span style="color:green">null null with 0x23EA585C aycopya</span>
+- <span style="color:green">guest computer with 0x23EA585C transformanches++</span>
+- <span style="color:green">??? password_change with 0x23EA585C etexttext</span>
 
 #### v 1.6.8 — shell 3/15
 <a id="1.6.8"></a>
@@ -6329,7 +8006,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x5903C05C color_titlespriv</span>
 - <span style="color:green">null null with 0x15BA3A54 ansforequeuetobjecteralse</span>
 
-#### v 1.6.9 — shell 2/8, priv 2/8
+#### v 1.6.9 — shell 4/16, priv 5/16
 <a id="1.6.9"></a>
 - <span style="color:green">null null with 0x1072C7B0 etdata_type</span>
 - <span style="color:green">??? password_change with 0x34592BAD displayd</span>
@@ -6338,6 +8015,14 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x65416AEB line</span>
 - <span style="color:red">root</span> shell with 0x65416AEB sformponenumobjecttransf
 - <span style="color:green">null null with 0x65416AEB sdyn_dtremovecurly</span>
+- <span style="color:red">root</span> shell with 0x65416AEB treetreein
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x1072C7B0 etdata_type
+- <span style="color:green">??? password_change with 0x34592BAD displayd</span>
+- <span style="color:green">null null with 0x34592BAD tesizelitextpositio</span>
+- <span style="color:green">guest computer with 0x65416AEB edelc</span>
+- <span style="color:green">null null with 0x65416AEB line</span>
+- <span style="color:red">root</span> shell with 0x65416AEB sformponenumobjecttransf
+- <span style="color:green">guest computer with 0x65416AEB sdyn_dtremovecurly</span>
 - <span style="color:red">root</span> shell with 0x65416AEB treetreein
 
 #### v 1.7.0 — shell 2/11, priv 1/11
@@ -6375,6 +8060,23 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? password_change with 0x1EDA930E tainputshortte</span>
 - <span style="color:green">guest file with 0x1EDA930E selanc</span>
 
+#### v 1.7.2 — shell 1/14
+<a id="1.7.2"></a>
+- <span style="color:green">null null with 0x370C46B7 onfont</span>
+- <span style="color:green">null null with 0x370C46B7 estentimeransforman</span>
+- <span style="color:green">null null with 0x370C46B7 thisrepz</span>
+- <span style="color:green">null null with 0x370C46B7 skeyrepeate</span>
+- <span style="color:green">null null with 0x53C4D07C itletextsiintovi</span>
+- <span style="color:green">??? password_change with 0x53C4D07C pres</span>
+- <span style="color:green">??? password_change with 0x53C4D07C lessages</span>
+- <span style="color:green">null null with 0x370C46B7 onfont</span>
+- <span style="color:yellow">guest</span> shell with 0x370C46B7 estentimeransforman
+- <span style="color:green">null null with 0x370C46B7 thisrepz</span>
+- <span style="color:green">null null with 0x370C46B7 skeyrepeate</span>
+- <span style="color:green">null null with 0x53C4D07C itletextsiintovi</span>
+- <span style="color:green">??? password_change with 0x53C4D07C pres</span>
+- <span style="color:green">??? password_change with 0x53C4D07C lessages</span>
+
 #### v 1.7.3 — shell 1/9
 <a id="1.7.3"></a>
 - <span style="color:yellow">guest</span> shell with 0x2B382FAB ion++
@@ -6387,7 +8089,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x57B6BCDB loset++</span>
 - <span style="color:green">null null with 0x57B6BCDB sionlend_bitsdisternalconobj</span>
 
-#### v 1.7.4 — shell 2/14
+#### v 1.7.4 — shell 6/42
 <a id="1.7.4"></a>
 - <span style="color:green">null null with 0x7A582DFA ettexts</span>
 - <span style="color:green">null null with 0x7A582DFA orentp</span>
@@ -6403,8 +8105,36 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0xC3B4411 graphic</span>
 - <span style="color:green">null null with 0xC3B4411 insicssta</span>
 - <span style="color:green">??? password_change with 0xC3B4411 spriterac</span>
+- <span style="color:green">null null with 0x7A582DFA ettexts</span>
+- <span style="color:green">null null with 0x7A582DFA orentp</span>
+- Faduyk shell with 0x7A582DFA enertypelengthsbuild_treeends
+- <span style="color:green">??? password_change with 0x15299154 itionarykeys</span>
+- <span style="color:green">null null with 0x15299154 urcethistvaluesremodeltadd</span>
+- <span style="color:green">null null with 0x15299154 formsirectsetpivotgetur</span>
+- <span style="color:green">null null with 0x15299154 tonstransfo</span>
+- <span style="color:green">guest file with 0x200CA5D1 istemps</span>
+- <span style="color:green">null null with 0x200CA5D1 color_scroll</span>
+- <span style="color:green">null null with 0x200CA5D1 plespriv</span>
+- <span style="color:yellow">guest</span> shell with 0x200CA5D1 hisobjec
+- <span style="color:green">null null with 0xC3B4411 graphic</span>
+- <span style="color:green">null null with 0xC3B4411 insicssta</span>
+- <span style="color:green">??? password_change with 0xC3B4411 spriterac</span>
+- <span style="color:green">null null with 0x7A582DFA ettexts</span>
+- <span style="color:green">null null with 0x7A582DFA orentp</span>
+- Sborthyn shell with 0x7A582DFA enertypelengthsbuild_treeends
+- <span style="color:green">??? password_change with 0x15299154 itionarykeys</span>
+- <span style="color:green">guest computer with 0x15299154 urcethistvaluesremodeltadd</span>
+- <span style="color:green">null null with 0x15299154 formsirectsetpivotgetur</span>
+- <span style="color:green">null null with 0x15299154 tonstransfo</span>
+- <span style="color:green">null null with 0x200CA5D1 istemps</span>
+- <span style="color:green">null null with 0x200CA5D1 color_scroll</span>
+- <span style="color:green">null null with 0x200CA5D1 plespriv</span>
+- <span style="color:yellow">guest</span> shell with 0x200CA5D1 hisobjec
+- <span style="color:green">null null with 0xC3B4411 graphic</span>
+- <span style="color:green">null null with 0xC3B4411 insicssta</span>
+- <span style="color:green">??? password_change with 0xC3B4411 spriterac</span>
 
-#### v 1.7.5 — shell 6/30, priv 2/30
+#### v 1.7.5 — shell 11/60, priv 2/60
 <a id="1.7.5"></a>
 - <span style="color:green">null null with 0x7A582DFA ettexts</span>
 - <span style="color:green">null null with 0x7A582DFA orentp</span>
@@ -6436,8 +8166,38 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x5FAB8AE4 nimatchemeimatorsnormsirectoredx</span>
 - <span style="color:green">null null with 0x357C8895 paren</span>
 - <span style="color:green">Dozo file with 0x357C8895 need</span>
+- <span style="color:green">null null with 0x7A582DFA ettexts</span>
+- <span style="color:green">null null with 0x7A582DFA orentp</span>
+- <span style="color:green">null null with 0x7A582DFA balconnextssth</span>
+- <span style="color:yellow">guest</span> shell with 0xEF7E256 buttoncode
+- <span style="color:green">null null with 0xEF7E256 sitionaryvalizelin</span>
+- <span style="color:green">null null with 0xEF7E256 aximizedela</span>
+- <span style="color:yellow">guest</span> shell with 0xEF7E256 defalsdyn_tr_a
+- <span style="color:green">null null with 0xEF7E256 inenumber</span>
+- <span style="color:green">null null with 0x647C8928 undostackadd</span>
+- <span style="color:yellow">guest</span> shell with 0x647C8928 _lenb
+- <span style="color:green">null null with 0x5FAB8AE4 _lengths</span>
+- <span style="color:green">??? password_change with 0x5FAB8AE4 color_viewportshore</span>
+- <span style="color:green">null null with 0x5FAB8AE4 nimatchemeimatorsnormsirectoredx</span>
+- <span style="color:green">null null with 0x357C8895 paren</span>
+- <span style="color:green">null null with 0x357C8895 need</span>
+- <span style="color:green">null null with 0x7A582DFA ettexts</span>
+- <span style="color:green">null null with 0x7A582DFA orentp</span>
+- <span style="color:green">null null with 0x7A582DFA balconnextssth</span>
+- <span style="color:yellow">guest</span> shell with 0xEF7E256 buttoncode
+- <span style="color:green">null null with 0xEF7E256 sitionaryvalizelin</span>
+- <span style="color:green">null null with 0xEF7E256 aximizedela</span>
+- <span style="color:yellow">guest</span> shell with 0xEF7E256 defalsdyn_tr_a
+- <span style="color:green">null null with 0xEF7E256 inenumber</span>
+- <span style="color:green">null null with 0x647C8928 undostackadd</span>
+- <span style="color:green">null null with 0x647C8928 _lenb</span>
+- <span style="color:green">null null with 0x5FAB8AE4 _lengths</span>
+- <span style="color:green">??? password_change with 0x5FAB8AE4 color_viewportshore</span>
+- <span style="color:green">guest file with 0x5FAB8AE4 nimatchemeimatorsnormsirectoredx</span>
+- <span style="color:green">null null with 0x357C8895 paren</span>
+- <span style="color:green">null null with 0x357C8895 need</span>
 
-#### v 1.7.6 — shell 5/44, priv 1/44
+#### v 1.7.6 — shell 6/70, priv 1/70
 <a id="1.7.6"></a>
 - <span style="color:green">??? password_change with 0x7A582DFA iontsetsetactiv</span>
 - <span style="color:green">null null with 0x7A582DFA orentp</span>
@@ -6483,6 +8243,32 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest computer with 0x1D20A60A titletext</span>
 - <span style="color:green">null null with 0x1D20A60A rupdatethisgoodler</span>
 - <span style="color:yellow">guest</span> shell with 0x1D20A60A _codelte
+- <span style="color:green">null null with 0x7A582DFA orentp</span>
+- <span style="color:green">null null with 0x7A582DFA balconnextssth</span>
+- <span style="color:green">null null with 0x498F30DB data_typele</span>
+- <span style="color:green">null null with 0x498F30DB t++</span>
+- <span style="color:green">null null with 0x498F30DB _tresultstrstantsize</span>
+- <span style="color:green">null null with 0x498F30DB atetitlend_</span>
+- <span style="color:green">null null with 0x498F30DB minitifier</span>
+- <span style="color:green">null null with 0x5A4F1554 indopo</span>
+- <span style="color:green">null null with 0x5A4F1554 sh_blocalladdparamess</span>
+- <span style="color:green">null null with 0x5A4F1554 justcontroyimmax</span>
+- <span style="color:green">null null with 0x5A4F1554 dictivetreetrue</span>
+- <span style="color:green">null null with 0x5EEF48BC sulttypele</span>
+- <span style="color:green">guest computer with 0x5EEF48BC an_endingpend_bloc</span>
+- <span style="color:green">null null with 0x7A582DFA orentp</span>
+- <span style="color:green">null null with 0x7A582DFA balconnextssth</span>
+- <span style="color:green">null null with 0x498F30DB data_typele</span>
+- <span style="color:green">null null with 0x498F30DB t++</span>
+- <span style="color:green">null null with 0x498F30DB _tresultstrstantsize</span>
+- <span style="color:yellow">guest</span> shell with 0x498F30DB atetitlend_
+- <span style="color:green">null null with 0x498F30DB minitifier</span>
+- <span style="color:green">null null with 0x5A4F1554 indopo</span>
+- <span style="color:green">null null with 0x5A4F1554 sh_blocalladdparamess</span>
+- <span style="color:green">null null with 0x5A4F1554 justcontroyimmax</span>
+- <span style="color:green">null null with 0x5A4F1554 dictivetreetrue</span>
+- <span style="color:green">null null with 0x5EEF48BC sulttypele</span>
+- <span style="color:green">guest computer with 0x5EEF48BC an_endingpend_bloc</span>
 
 #### v 1.7.7 — shell 2/13
 <a id="1.7.7"></a>
@@ -6518,7 +8304,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x3A766458 each</span>
 - <span style="color:green">null null with 0x3A766458 anceoffsetactabut</span>
 
-#### v 1.7.9 — shell 2/23
+#### v 1.7.9 — shell 4/51, priv 2/51
 <a id="1.7.9"></a>
 - <span style="color:yellow">guest</span> shell with 0x14C160BB sizelitex
 - <span style="color:green">guest computer with 0x14C160BB xistvarvent_onleventpositializelines</span>
@@ -6543,8 +8329,36 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? password_change with 0x44964192 lorsetvaluesaddgetpo</span>
 - <span style="color:green">null null with 0xFB46BFE intenert</span>
 - <span style="color:green">guest computer with 0xFB46BFE resse</span>
+- <span style="color:green">null null with 0x14C160BB showsourceloop</span>
+- <span style="color:green">null null with 0x44964192 iscolorset</span>
+- <span style="color:green">null null with 0x44964192 inishdonent_onc</span>
+- <span style="color:green">Echbauguste file with 0x44964192 edateransformpivotge</span>
+- <span style="color:green">null null with 0x44964192 fig</span>
+- <span style="color:green">??? password_change with 0x44964192 lorsetvaluesaddgetpo</span>
+- <span style="color:green">null null with 0xFB46BFE intenert</span>
+- <span style="color:green">guest computer with 0xFB46BFE resse</span>
+- <span style="color:yellow">guest</span> shell with 0x14C160BB sizelitex
+- <span style="color:green">null null with 0x14C160BB showsourceloop</span>
+- <span style="color:green">null null with 0x44964192 iscolorset</span>
+- <span style="color:green">null null with 0x44964192 inishdonent_onc</span>
+- <span style="color:green">guest file with 0x44964192 edateransformpivotge</span>
+- <span style="color:green">null null with 0x44964192 fig</span>
+- <span style="color:green">??? password_change with 0x44964192 lorsetvaluesaddgetpo</span>
+- <span style="color:green">null null with 0xFB46BFE intenert</span>
+- <span style="color:green">guest computer with 0xFB46BFE resse</span>
+- <span style="color:green">guest file with 0x79B28568 putbufsize</span>
+- <span style="color:green">Wette file with 0x69A67A5 sof</span>
+- <span style="color:green">guest computer with 0x69A67A5 viouseuptimespace</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x60D24685 pointextvmy
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x60D24685 epz_11_138
+- Sterse shell with 0x4AC71137 sagesaddregrou
+- <span style="color:green">??? password_change with 0x1B0535B9 ommedit</span>
+- <span style="color:green">guest computer with 0x5A3A83A5 curly</span>
+- <span style="color:green">guest file with 0x5A3A83A5 pace</span>
+- <span style="color:green">guest computer with 0x11637A86 buttonobjectsetting_lendpos</span>
+- <span style="color:green">guest computer with 0x11637A86 onpointernalconformalconte</span>
 
-#### v 1.8.0 — shell 9/34, priv 2/34
+#### v 1.8.0 — shell 11/49, priv 2/49
 <a id="1.8.0"></a>
 - <span style="color:yellow">guest</span> shell with 0x14C160BB sizelitex
 - <span style="color:yellow">guest</span> shell with 0x14C160BB send_blicelocksray
@@ -6580,8 +8394,23 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - Warnes shell with 0x62A1AE55 eckremovea
 - <span style="color:green">null null with 0x62A1AE55 ieldi</span>
 - <span style="color:green">guest computer with 0x62A1AE55 onaryvaluesaddl</span>
+- <span style="color:yellow">guest</span> shell with 0x14C160BB sizelitex
+- <span style="color:green">null null with 0x14C160BB pace</span>
+- <span style="color:green">null null with 0x14C160BB showsourceloop</span>
+- <span style="color:green">guest computer with 0x3DF27B68 treeendpointrintl</span>
+- <span style="color:green">null null with 0x3DF27B68 emovetremov</span>
+- <span style="color:green">null null with 0x3DF27B68 sobjectsetdatabledquote</span>
+- <span style="color:green">null null with 0x73C93321 graphic</span>
+- <span style="color:green">guest file with 0x73C93321 siobjecttrans</span>
+- <span style="color:green">guest file with 0x73C93321 vasgroupblocalledcolorscheme</span>
+- <span style="color:green">null null with 0x17B8A3C1 elanchored_bloc</span>
+- <span style="color:yellow">guest</span> shell with 0x17B8A3C1 rhsbuild
+- <span style="color:green">guest computer with 0x17B8A3C1 modal</span>
+- <span style="color:green">null null with 0x62A1AE55 eckremovea</span>
+- <span style="color:green">null null with 0x62A1AE55 ieldi</span>
+- <span style="color:green">guest computer with 0x62A1AE55 onaryvaluesaddl</span>
 
-#### v 1.8.1 — shell 6/15, priv 1/15
+#### v 1.8.1 — shell 11/34, priv 1/34
 <a id="1.8.1"></a>
 - <span style="color:green">null null with 0x14C160BB tionaryeresultna</span>
 - <span style="color:yellow">guest</span> shell with 0x14C160BB send_blicelocksray
@@ -6598,6 +8427,25 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">Horno computer with 0x7033EDF4 enercolor_titleob_lendpointxs</span>
 - <span style="color:green">null null with 0x69FD71D1 end_color_shore</span>
 - <span style="color:green">null null with 0x69FD71D1 tation</span>
+- <span style="color:green">null null with 0x14C160BB tionaryeresultna</span>
+- <span style="color:yellow">guest</span> shell with 0x14C160BB send_blicelocksray
+- <span style="color:green">guest computer with 0x14C160BB pace</span>
+- <span style="color:green">guest computer with 0x14C160BB xistvarvent_onleventpositializelines</span>
+- Duyk shell with 0x14C160BB showsourceloop
+- Mannald shell with 0x5E9378E2 itionstreethisa
+- <span style="color:green">null null with 0x5E9378E2 alcontyperintener</span>
+- <span style="color:green">null null with 0x5E9378E2 tivetrue</span>
+- <span style="color:green">null null with 0x5E9378E2 all0f</span>
+- <span style="color:green">Duyk computer with 0x7033EDF4 bitssedtaskthisrhsa</span>
+- <span style="color:yellow">guest</span> shell with 0x7033EDF4 dateoutpriteractivefalse
+- Mannald shell with 0x7033EDF4 tatibl
+- <span style="color:green">Mannald computer with 0x7033EDF4 enercolor_titleob_lendpointxs</span>
+- <span style="color:green">null null with 0x69FD71D1 end_color_shore</span>
+- <span style="color:green">null null with 0x69FD71D1 tation</span>
+- <span style="color:green">guest file with 0x36A9B5E8 void</span>
+- <span style="color:green">guest file with 0x522F139E spresultnum</span>
+- <span style="color:green">guest computer with 0x522F139E fig</span>
+- <span style="color:green">??? password_change with 0x522F139E irectotalwidthiscript</span>
 
 #### v 1.8.2 — shell 1/21
 <a id="1.8.2"></a>
@@ -6676,7 +8524,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x1867035B outlineslintlinenu</span>
 - <span style="color:green">null null with 0x1867035B ax_codecd</span>
 
-#### v 1.8.5 — shell 2/14
+#### v 1.8.5 — shell 4/27
 <a id="1.8.5"></a>
 - <span style="color:green">Umitt file with 0x494387FF stanchor</span>
 - <span style="color:yellow">guest</span> shell with 0x494387FF tanchortbackco
@@ -6692,8 +8540,21 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x4E596B04 aderro</span>
 - <span style="color:green">null null with 0x4E596B04 um++</span>
 - <span style="color:green">null null with 0x4E596B04 s_h</span>
+- <span style="color:green">null null with 0x210F926C datepoint</span>
+- <span style="color:green">null null with 0x210F926C anchecklin</span>
+- <span style="color:green">guest computer with 0x210F926C ablet</span>
+- <span style="color:green">null null with 0x4E596B04 aderro</span>
+- <span style="color:green">null null with 0x4E596B04 um++</span>
+- <span style="color:green">null null with 0x4E596B04 s_h</span>
+- <span style="color:yellow">guest</span> shell with 0x494387FF tanchortbackco
+- <span style="color:green">null null with 0x210F926C datepoint</span>
+- <span style="color:green">null null with 0x210F926C anchecklin</span>
+- <span style="color:green">guest computer with 0x210F926C ablet</span>
+- <span style="color:green">null null with 0x4E596B04 aderro</span>
+- <span style="color:yellow">guest</span> shell with 0x4E596B04 um++
+- <span style="color:green">guest computer with 0x4E596B04 s_h</span>
 
-#### v 1.8.6 — shell 2/17
+#### v 1.8.6 — shell 5/40, priv 1/40
 <a id="1.8.6"></a>
 - <span style="color:green">null null with 0x494387FF os</span>
 - <span style="color:green">Reag computer with 0x92ADD90 resing_distrin</span>
@@ -6712,6 +8573,29 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x69BAE2FC aluesrepz</span>
 - <span style="color:green">null null with 0x737AB45C extvmyieldingcoundoposition</span>
 - Oppelch shell with 0x737AB45C antsetextinesline
+- <span style="color:green">null null with 0x494387FF os</span>
+- <span style="color:green">null null with 0x69BAE2FC parent</span>
+- <span style="color:green">null null with 0x69BAE2FC t_codec_adler3</span>
+- <span style="color:green">null null with 0x69BAE2FC ead</span>
+- <span style="color:green">guest file with 0x69BAE2FC _bitsstationstar</span>
+- <span style="color:green">null null with 0x69BAE2FC aluesrepz</span>
+- <span style="color:green">null null with 0x737AB45C extvmyieldingcoundoposition</span>
+- Ramats shell with 0x737AB45C antsetextinesline
+- <span style="color:yellow">guest</span> shell with 0x494387FF linenu
+- <span style="color:green">Ombield file with 0x494387FF stanchor</span>
+- <span style="color:green">null null with 0x494387FF os</span>
+- <span style="color:green">Ombield file with 0x69BAE2FC parent</span>
+- <span style="color:green">null null with 0x69BAE2FC t_codec_adler3</span>
+- <span style="color:green">null null with 0x69BAE2FC ead</span>
+- <span style="color:green">guest file with 0x69BAE2FC _bitsstationstar</span>
+- <span style="color:green">??? password_change with 0x69BAE2FC aluesrepz</span>
+- <span style="color:green">null null with 0x737AB45C extvmyieldingcoundoposition</span>
+- Ombield shell with 0x737AB45C antsetextinesline
+- <span style="color:green">guest computer with 0x20C49BD2 codedbyb</span>
+- <span style="color:green">null null with 0x20C49BD2 verlaytrue</span>
+- <span style="color:green">guest file with 0x20C49BD2 rinsicreestrolledquote</span>
+- <span style="color:green">guest file with 0x707D0FEE sizew</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0xFE0294C s_h
 
 #### v 1.8.7 — shell 4/20
 <a id="1.8.7"></a>
@@ -6736,7 +8620,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - Ordaner shell with 0x6E66C5E0 etelecttransfor
 - <span style="color:green">Ordaner file with 0x6E66C5E0 exerground</span>
 
-#### v 1.8.8 — shell 1/18
+#### v 1.8.8 — shell 1/34
 <a id="1.8.8"></a>
 - <span style="color:green">??? password_change with 0x5300DAD4 cesskeys</span>
 - <span style="color:green">Orehnan computer with 0x5300DAD4 textefunctivefalscan_end_</span>
@@ -6751,6 +8635,22 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest computer with 0x7E3666C9 enoveategy</span>
 - <span style="color:green">null null with 0x5300DAD4 cesskeys</span>
 - <span style="color:green">Iullee computer with 0x5300DAD4 textefunctivefalscan_end_</span>
+- <span style="color:green">guest file with 0x5300DAD4 svisualbyt</span>
+- <span style="color:green">guest file with 0x5300DAD4 tialid</span>
+- <span style="color:green">null null with 0x5300DAD4 eading</span>
+- <span style="color:green">null null with 0x6AB4192A storeund</span>
+- <span style="color:green">null null with 0x6AB4192A tresingc</span>
+- <span style="color:green">Neraja computer with 0x92ADD90 resing_distrin</span>
+- <span style="color:green">null null with 0x5300DAD4 cesskeys</span>
+- <span style="color:green">Senni computer with 0x5300DAD4 textefunctivefalscan_end_</span>
+- <span style="color:green">guest file with 0x5300DAD4 svisualbyt</span>
+- <span style="color:green">null null with 0x5300DAD4 tialid</span>
+- <span style="color:green">null null with 0x5300DAD4 eading</span>
+- <span style="color:green">null null with 0x6AB4192A storeund</span>
+- <span style="color:green">Neraja file with 0x6AB4192A tresingc</span>
+- <span style="color:green">guest computer with 0x7E3666C9 enoveategy</span>
+- <span style="color:green">null null with 0x5300DAD4 cesskeys</span>
+- <span style="color:green">Eynolovc computer with 0x5300DAD4 textefunctivefalscan_end_</span>
 - <span style="color:green">guest file with 0x5300DAD4 svisualbyt</span>
 - <span style="color:green">guest file with 0x5300DAD4 tialid</span>
 - <span style="color:green">null null with 0x5300DAD4 eading</span>
@@ -6775,7 +8675,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x6FE235DD eadin</span>
 - <span style="color:yellow">guest</span> shell with 0x6FE235DD edeltaddu
 
-#### v 1.9.1 — shell 3/40
+#### v 1.9.1 — shell 8/69, priv 3/69
 <a id="1.9.1"></a>
 - <span style="color:green">null null with 0x7E3666C9 playbackgroupalp</span>
 - <span style="color:green">??? password_change with 0x343D85C4 revn</span>
@@ -6817,8 +8717,37 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - Dlerko shell with 0x43E47E5E magesaddgetextobjectsettextt
 - <span style="color:green">null null with 0x43E47E5E headdl</span>
 - <span style="color:green">??? firewall_disable with 0x22FC4709 codecmessagecol</span>
+- <span style="color:green">null null with 0x7E3666C9 playbackgroupalp</span>
+- <span style="color:green">??? password_change with 0x343D85C4 revn</span>
+- <span style="color:green">null null with 0x343D85C4 s_h</span>
+- <span style="color:green">null null with 0x343D85C4 nest_eobjecteventpositi</span>
+- <span style="color:green">null null with 0xED5E51F eleftundopositi</span>
+- <span style="color:green">null null with 0xED5E51F ansfore</span>
+- <span style="color:green">null null with 0x4E183391 databledthiscrollre</span>
+- <span style="color:red">root</span> shell with 0x4E183391 plicked
+- <span style="color:green">null null with 0x4E183391 title</span>
+- <span style="color:green">null null with 0x4E183391 rinsicsstartedi</span>
+- <span style="color:green">null null with 0x4E183391 buttonstringpendif</span>
+- Viari shell with 0x43E47E5E magesaddgetextobjectsettextt
+- <span style="color:green">null null with 0x43E47E5E headdl</span>
+- <span style="color:green">null null with 0x172BDD94 ower</span>
+- <span style="color:green">null null with 0x172BDD94 ountexteffectsetackgroundosoun</span>
+- <span style="color:green">null null with 0x52348368 tstrank</span>
+- <span style="color:green">??? password_change with 0x7E3666C9 playbackgroupalp</span>
+- <span style="color:green">??? password_change with 0x343D85C4 revn</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x343D85C4 s_h
+- <span style="color:green">null null with 0x343D85C4 nest_eobjecteventpositi</span>
+- <span style="color:green">null null with 0xED5E51F eleftundopositi</span>
+- <span style="color:green">null null with 0xED5E51F ansfore</span>
+- <span style="color:green">null null with 0x4E183391 databledthiscrollre</span>
+- <span style="color:red">root</span> shell with 0x4E183391 plicked
+- <span style="color:green">null null with 0x4E183391 title</span>
+- <span style="color:green">null null with 0x4E183391 rinsicsstartedi</span>
+- <span style="color:green">guest file with 0x4E183391 buttonstringpendif</span>
+- Beling shell with 0x43E47E5E magesaddgetextobjectsettextt
+- <span style="color:yellow">guest</span> shell with 0x43E47E5E headdl
 
-#### v 1.9.2 — shell 14/72, priv 9/72
+#### v 1.9.2 — shell 18/89, priv 11/89
 <a id="1.9.2"></a>
 - <span style="color:green">null null with 0x7E3666C9 playbackgroupalp</span>
 - <span style="color:green">null null with 0x7E3666C9 oundowmatic_</span>
@@ -6892,6 +8821,65 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest computer with 0x71B47772 viouscoundow++scanv</span>
 - <span style="color:red">root</span> <span style="color:red">computer</span> with 0x263ADD91 memaxim
 - <span style="color:green">??? password_change with 0x2E2E2ECD tialistextobjectedisplayedval</span>
+- <span style="color:green">null null with 0x7E3666C9 playbackgroupalp</span>
+- <span style="color:green">null null with 0x7E3666C9 oundowmatic_</span>
+- <span style="color:green">null null with 0x42A83392 _buttonclicked</span>
+- <span style="color:green">??? password_change with 0x42A83392 tlineselflised_bitsdi</span>
+- <span style="color:green">??? password_change with 0x42A83392 aorb</span>
+- <span style="color:yellow">guest</span> shell with 0x42A83392 dler32
+- <span style="color:red">root</span> shell with 0x552EB937 linesinitaudiosoun
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x552EB937 enertypebottonfig
+- <span style="color:green">null null with 0x48070DDF sultsetact</span>
+- Hard shell with 0x48070DDF engthofa
+- <span style="color:green">null null with 0x48070DDF text</span>
+- <span style="color:green">??? password_change with 0x48070DDF gthsbuild</span>
+- <span style="color:green">null null with 0xE7015FE insicsing</span>
+- <span style="color:yellow">guest</span> shell with 0xE7015FE void
+- <span style="color:green">Sendleyessfor file with 0xE7015FE essequalbytebuttonf</span>
+- <span style="color:green">null null with 0xE7015FE ked</span>
+- <span style="color:green">null null with 0xE7015FE magesaddundostare</span>
+
+#### v 1.9.3 — shell 2/39
+<a id="1.9.3"></a>
+- <span style="color:green">??? password_change with 0x7E3666C9 essor-1</span>
+- <span style="color:green">null null with 0x7E3666C9 aphic</span>
+- <span style="color:green">guest computer with 0x179F8330 dressigna</span>
+- <span style="color:green">??? password_change with 0x179F8330 opcontextc</span>
+- <span style="color:green">null null with 0x179F8330 shore</span>
+- <span style="color:green">Pigner file with 0x179F8330 startpo</span>
+- <span style="color:green">guest computer with 0x179F8330 n_dtransf</span>
+- <span style="color:green">null null with 0x732268F3 terdataused_bitssedtaskbarf</span>
+- <span style="color:green">null null with 0x732268F3 void</span>
+- <span style="color:green">Pigner computer with 0x9677FCE tintextsinishdonenumsionsbarfo</span>
+- <span style="color:green">??? password_change with 0x9677FCE elinentsrepeatti</span>
+- <span style="color:green">null null with 0x9677FCE estemoveexistin</span>
+- <span style="color:green">null null with 0x9677FCE sizelinen</span>
+- <span style="color:green">??? password_change with 0x7E3666C9 essor-1</span>
+- <span style="color:green">null null with 0x7E3666C9 aphic</span>
+- <span style="color:green">null null with 0x179F8330 dressigna</span>
+- <span style="color:green">??? password_change with 0x179F8330 opcontextc</span>
+- <span style="color:green">null null with 0x179F8330 shore</span>
+- <span style="color:green">Pering file with 0x179F8330 startpo</span>
+- <span style="color:green">guest computer with 0x179F8330 n_dtransf</span>
+- <span style="color:yellow">guest</span> shell with 0x732268F3 terdataused_bitssedtaskbarf
+- <span style="color:green">null null with 0x732268F3 void</span>
+- <span style="color:green">null null with 0x9677FCE tintextsinishdonenumsionsbarfo</span>
+- <span style="color:green">null null with 0x9677FCE elinentsrepeatti</span>
+- <span style="color:green">null null with 0x9677FCE estemoveexistin</span>
+- <span style="color:green">null null with 0x9677FCE sizelinen</span>
+- <span style="color:green">??? password_change with 0x7E3666C9 essor-1</span>
+- <span style="color:green">null null with 0x7E3666C9 aphic</span>
+- <span style="color:green">null null with 0x179F8330 dressigna</span>
+- <span style="color:green">??? password_change with 0x179F8330 opcontextc</span>
+- <span style="color:green">null null with 0x179F8330 shore</span>
+- <span style="color:green">Vins file with 0x179F8330 startpo</span>
+- <span style="color:green">guest computer with 0x179F8330 n_dtransf</span>
+- <span style="color:yellow">guest</span> shell with 0x732268F3 terdataused_bitssedtaskbarf
+- <span style="color:green">null null with 0x732268F3 void</span>
+- <span style="color:green">null null with 0x9677FCE tintextsinishdonenumsionsbarfo</span>
+- <span style="color:green">null null with 0x9677FCE elinentsrepeatti</span>
+- <span style="color:green">null null with 0x9677FCE estemoveexistin</span>
+- <span style="color:green">null null with 0x9677FCE sizelinen</span>
 
 #### v 1.9.4 — shell 2/13
 <a id="1.9.4"></a>
@@ -6919,7 +8907,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x280329C6 andb</span>
 - <span style="color:green">guest file with 0x280329C6 texteffec</span>
 
-#### v 1.9.7 — shell 4/26, priv 3/26
+#### v 1.9.7 — shell 6/39, priv 5/39
 <a id="1.9.7"></a>
 - <span style="color:green">null null with 0x2D426E98 date</span>
 - <span style="color:red">root</span> shell with 0x6D2BD2B0 odec_adler32
@@ -6947,8 +8935,21 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? password_change with 0x2915B5A0 sultnametext</span>
 - <span style="color:green">??? password_change with 0x3C544DD4 globalcon</span>
 - <span style="color:green">null null with 0x3C544DD4 undow_sizex</span>
+- <span style="color:green">null null with 0x2D426E98 date</span>
+- <span style="color:red">root</span> shell with 0x6D2BD2B0 odec_adler32
+- <span style="color:green">null null with 0x6D2BD2B0 bool</span>
+- <span style="color:green">Etlaker computer with 0x6D2BD2B0 edcaller32</span>
+- <span style="color:yellow">guest</span> shell with 0x6D2BD2B0 chorline
+- <span style="color:green">null null with 0x7FB4ECB4 isicreendi</span>
+- <span style="color:green">guest computer with 0x7FB4ECB4 dest</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x7FB4ECB4 typebotto
+- <span style="color:green">guest file with 0x7FB4ECB4 positializ</span>
+- <span style="color:green">null null with 0x2915B5A0 paramar</span>
+- <span style="color:green">??? password_change with 0x2915B5A0 sultnametext</span>
+- <span style="color:green">??? password_change with 0x3C544DD4 globalcon</span>
+- <span style="color:green">null null with 0x3C544DD4 undow_sizex</span>
 
-#### v 1.9.8 — shell 3/18
+#### v 1.9.8 — shell 7/43
 <a id="1.9.8"></a>
 - <span style="color:yellow">guest</span> shell with 0x450AA21F infontex
 - <span style="color:green">??? password_change with 0x4C024F81 extstringeundoseb</span>
@@ -6968,6 +8969,31 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x6863510A bool</span>
 - <span style="color:green">null null with 0x32B48CB0 themessed_bitlete</span>
 - <span style="color:green">??? password_change with 0x32B48CB0 publed</span>
+- <span style="color:green">null null with 0x450AA21F infontex</span>
+- <span style="color:green">??? password_change with 0x4C024F81 extstringeundoseb</span>
+- <span style="color:yellow">guest</span> shell with 0x4C024F81 x++
+- <span style="color:green">null null with 0x4D569DAB leventimeke</span>
+- <span style="color:green">null null with 0x4D569DAB uttonged</span>
+- <span style="color:green">null null with 0x6863510A olor_</span>
+- <span style="color:green">null null with 0x6863510A bool</span>
+- <span style="color:green">??? password_change with 0x32B48CB0 themessed_bitlete</span>
+- <span style="color:green">null null with 0x32B48CB0 publed</span>
+- <span style="color:green">null null with 0x3EF9155E odecme</span>
+- <span style="color:green">null null with 0x535B7112 siconteractable</span>
+- <span style="color:green">guest computer with 0x450AA21F tletextsiin</span>
+- <span style="color:green">null null with 0x450AA21F infontex</span>
+- <span style="color:green">??? password_change with 0x4C024F81 extstringeundoseb</span>
+- <span style="color:yellow">guest</span> shell with 0x4C024F81 x++
+- <span style="color:green">null null with 0x4D569DAB leventimeke</span>
+- <span style="color:green">null null with 0x4D569DAB uttonged</span>
+- <span style="color:green">??? password_change with 0x6863510A olor_</span>
+- <span style="color:green">null null with 0x6863510A bool</span>
+- <span style="color:green">??? password_change with 0x32B48CB0 themessed_bitlete</span>
+- <span style="color:green">??? password_change with 0x32B48CB0 publed</span>
+- Khainenning shell with 0x6189728C ualbytebyteswi
+- <span style="color:green">Khainenning file with 0x2D4B5315 cast</span>
+- <span style="color:green">guest file with 0x2D4B5315 textbufsizeli</span>
+- <span style="color:yellow">guest</span> shell with 0x37409F54 portbi_
 
 #### v 1.9.9 — shell 2/16
 <a id="1.9.9"></a>
@@ -6993,11 +9019,11 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 ## `kernel_router.so`
 <a id="kernel_router-so"></a>
 
-- Total Hooked lines: 1831
-- Can provide shell: 488
-- Has privileged object: 75
-- Safe versions: 102
-Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#1.0.1"><span style="color:green">v 1.0.1</span></a> <a href="#1.0.3"><span style="color:red">v 1.0.3</span></a> <a href="#1.0.4"><span style="color:red">v 1.0.4</span></a> <a href="#1.0.5"><span style="color:green">v 1.0.5</span></a> <a href="#1.1.2"><span style="color:red">v 1.1.2</span></a> <a href="#1.1.4"><span style="color:red">v 1.1.4</span></a> <a href="#1.1.6"><span style="color:red">v 1.1.6</span></a> <a href="#1.1.7"><span style="color:red">v 1.1.7</span></a> <a href="#1.1.8"><span style="color:red">v 1.1.8</span></a> <a href="#1.1.9"><span style="color:red">v 1.1.9</span></a> <a href="#1.2.0"><span style="color:red">v 1.2.0</span></a> <a href="#1.2.1"><span style="color:green">v 1.2.1</span></a> <a href="#1.2.4"><span style="color:green">v 1.2.4</span></a> <a href="#1.2.5"><span style="color:green">v 1.2.5</span></a> <a href="#1.2.6"><span style="color:green">v 1.2.6</span></a> <a href="#1.2.7"><span style="color:red">v 1.2.7</span></a> <a href="#1.2.8"><span style="color:red">v 1.2.8</span></a> <a href="#1.3.3"><span style="color:red">v 1.3.3</span></a> <a href="#1.3.7"><span style="color:green">v 1.3.7</span></a> <a href="#1.4.0"><span style="color:red">v 1.4.0</span></a> <a href="#1.4.1"><span style="color:red">v 1.4.1</span></a> <a href="#1.4.3"><span style="color:red">v 1.4.3</span></a> <a href="#1.4.5"><span style="color:green">v 1.4.5</span></a> <a href="#1.4.6"><span style="color:green">v 1.4.6</span></a> <a href="#1.4.7"><span style="color:red">v 1.4.7</span></a> <a href="#1.4.8"><span style="color:red">v 1.4.8</span></a> <a href="#1.4.9"><span style="color:red">v 1.4.9</span></a> <a href="#1.5.0"><span style="color:red">v 1.5.0</span></a> <a href="#1.5.1"><span style="color:red">v 1.5.1</span></a> <a href="#1.5.4"><span style="color:red">v 1.5.4</span></a> <a href="#1.5.6"><span style="color:green">v 1.5.6</span></a> <a href="#1.5.7"><span style="color:red">v 1.5.7</span></a> <a href="#1.5.8"><span style="color:green">v 1.5.8</span></a> <a href="#1.5.9"><span style="color:red">v 1.5.9</span></a> <a href="#1.6.0"><span style="color:red">v 1.6.0</span></a> <a href="#1.6.1"><span style="color:green">v 1.6.1</span></a> <a href="#1.6.2"><span style="color:red">v 1.6.2</span></a> <a href="#1.6.4"><span style="color:green">v 1.6.4</span></a> <a href="#1.6.5"><span style="color:green">v 1.6.5</span></a> <a href="#1.6.6"><span style="color:red">v 1.6.6</span></a> <a href="#1.6.7"><span style="color:red">v 1.6.7</span></a> <a href="#1.6.9"><span style="color:red">v 1.6.9</span></a> <a href="#1.7.0"><span style="color:red">v 1.7.0</span></a> <a href="#1.7.2"><span style="color:red">v 1.7.2</span></a> <a href="#1.7.3"><span style="color:red">v 1.7.3</span></a> <a href="#1.7.6"><span style="color:red">v 1.7.6</span></a> <a href="#1.7.7"><span style="color:red">v 1.7.7</span></a> <a href="#1.7.8"><span style="color:red">v 1.7.8</span></a> <a href="#1.7.9"><span style="color:red">v 1.7.9</span></a> <a href="#1.8.5"><span style="color:red">v 1.8.5</span></a> <a href="#1.8.6"><span style="color:green">v 1.8.6</span></a> <a href="#1.8.7"><span style="color:green">v 1.8.7</span></a> <a href="#1.8.9"><span style="color:green">v 1.8.9</span></a> <a href="#1.9.1"><span style="color:red">v 1.9.1</span></a> <a href="#1.9.2"><span style="color:red">v 1.9.2</span></a> <a href="#1.9.3"><span style="color:green">v 1.9.3</span></a> <a href="#1.9.7"><span style="color:red">v 1.9.7</span></a> <a href="#2.0.0"><span style="color:red">v 2.0.0</span></a> <a href="#2.0.1"><span style="color:red">v 2.0.1</span></a> <a href="#2.0.3"><span style="color:red">v 2.0.3</span></a> <a href="#2.0.4"><span style="color:red">v 2.0.4</span></a> <a href="#2.0.5"><span style="color:red">v 2.0.5</span></a> <a href="#2.0.6"><span style="color:red">v 2.0.6</span></a> <a href="#2.0.8"><span style="color:green">v 2.0.8</span></a> <a href="#2.0.9"><span style="color:red">v 2.0.9</span></a> <a href="#2.1.1"><span style="color:green">v 2.1.1</span></a> <a href="#2.1.2"><span style="color:red">v 2.1.2</span></a> <a href="#2.1.3"><span style="color:red">v 2.1.3</span></a> <a href="#2.1.5"><span style="color:red">v 2.1.5</span></a> <a href="#2.1.7"><span style="color:red">v 2.1.7</span></a> <a href="#2.2.1"><span style="color:red">v 2.2.1</span></a> <a href="#2.2.2"><span style="color:red">v 2.2.2</span></a> <a href="#2.2.3"><span style="color:red">v 2.2.3</span></a> <a href="#2.2.4"><span style="color:red">v 2.2.4</span></a> <a href="#2.2.5"><span style="color:red">v 2.2.5</span></a> <a href="#2.2.7"><span style="color:green">v 2.2.7</span></a> <a href="#2.2.9"><span style="color:red">v 2.2.9</span></a> <a href="#2.3.1"><span style="color:green">v 2.3.1</span></a> <a href="#2.3.6"><span style="color:red">v 2.3.6</span></a> <a href="#2.3.7"><span style="color:red">v 2.3.7</span></a> <a href="#2.3.8"><span style="color:red">v 2.3.8</span></a> <a href="#2.4.0"><span style="color:red">v 2.4.0</span></a> <a href="#2.4.3"><span style="color:red">v 2.4.3</span></a> <a href="#2.4.5"><span style="color:red">v 2.4.5</span></a> <a href="#2.4.8"><span style="color:red">v 2.4.8</span></a> <a href="#2.4.9"><span style="color:red">v 2.4.9</span></a> <a href="#2.5.1"><span style="color:red">v 2.5.1</span></a> <a href="#2.5.3"><span style="color:red">v 2.5.3</span></a> <a href="#2.5.6"><span style="color:green">v 2.5.6</span></a> <a href="#2.5.7"><span style="color:red">v 2.5.7</span></a> <a href="#2.5.8"><span style="color:green">v 2.5.8</span></a> <a href="#2.5.9"><span style="color:red">v 2.5.9</span></a> <a href="#2.6.0"><span style="color:red">v 2.6.0</span></a> <a href="#2.6.1"><span style="color:red">v 2.6.1</span></a> <a href="#2.6.2"><span style="color:green">v 2.6.2</span></a> <a href="#2.6.3"><span style="color:red">v 2.6.3</span></a> <a href="#2.6.4"><span style="color:red">v 2.6.4</span></a> <a href="#2.6.6"><span style="color:red">v 2.6.6</span></a> <a href="#2.6.8"><span style="color:red">v 2.6.8</span></a> <a href="#2.6.9"><span style="color:green">v 2.6.9</span></a> <a href="#2.7.0"><span style="color:red">v 2.7.0</span></a> <a href="#2.7.1"><span style="color:red">v 2.7.1</span></a> <a href="#2.7.2"><span style="color:red">v 2.7.2</span></a> <a href="#2.7.4"><span style="color:red">v 2.7.4</span></a> <a href="#2.7.5"><span style="color:red">v 2.7.5</span></a> <a href="#2.7.8"><span style="color:red">v 2.7.8</span></a> <a href="#2.7.9"><span style="color:red">v 2.7.9</span></a> <a href="#2.8.1"><span style="color:red">v 2.8.1</span></a> <a href="#2.8.2"><span style="color:green">v 2.8.2</span></a> <a href="#2.8.4"><span style="color:green">v 2.8.4</span></a> <a href="#2.8.5"><span style="color:green">v 2.8.5</span></a> <a href="#2.8.7"><span style="color:red">v 2.8.7</span></a> <a href="#2.8.8"><span style="color:red">v 2.8.8</span></a> <a href="#2.8.9"><span style="color:red">v 2.8.9</span></a> <a href="#2.9.0"><span style="color:green">v 2.9.0</span></a> <a href="#2.9.1"><span style="color:red">v 2.9.1</span></a> <a href="#2.9.2"><span style="color:red">v 2.9.2</span></a> <a href="#2.9.3"><span style="color:red">v 2.9.3</span></a> <a href="#2.9.4"><span style="color:green">v 2.9.4</span></a> <a href="#2.9.5"><span style="color:red">v 2.9.5</span></a> <a href="#2.9.8"><span style="color:red">v 2.9.8</span></a> <a href="#3.0.0"><span style="color:red">v 3.0.0</span></a> <a href="#3.0.1"><span style="color:red">v 3.0.1</span></a> <a href="#3.0.2"><span style="color:red">v 3.0.2</span></a> <a href="#3.0.3"><span style="color:green">v 3.0.3</span></a> <a href="#3.0.4"><span style="color:red">v 3.0.4</span></a> <a href="#3.0.5"><span style="color:red">v 3.0.5</span></a> <a href="#3.0.6"><span style="color:green">v 3.0.6</span></a> <a href="#3.0.8"><span style="color:green">v 3.0.8</span></a> <a href="#3.0.9"><span style="color:green">v 3.0.9</span></a> <a href="#3.1.0"><span style="color:green">v 3.1.0</span></a> <a href="#3.1.1"><span style="color:red">v 3.1.1</span></a> <a href="#3.1.2"><span style="color:red">v 3.1.2</span></a> <a href="#3.1.3"><span style="color:green">v 3.1.3</span></a> <a href="#3.1.5"><span style="color:red">v 3.1.5</span></a> <a href="#3.1.6"><span style="color:red">v 3.1.6</span></a> <a href="#3.1.8"><span style="color:red">v 3.1.8</span></a> <a href="#3.2.0"><span style="color:green">v 3.2.0</span></a> <a href="#3.2.1"><span style="color:red">v 3.2.1</span></a> <a href="#3.2.3"><span style="color:red">v 3.2.3</span></a> <a href="#3.2.6"><span style="color:red">v 3.2.6</span></a> <a href="#3.2.8"><span style="color:red">v 3.2.8</span></a> <a href="#3.3.0"><span style="color:green">v 3.3.0</span></a> <a href="#3.3.1"><span style="color:green">v 3.3.1</span></a> <a href="#3.3.2"><span style="color:red">v 3.3.2</span></a> <a href="#3.3.3"><span style="color:red">v 3.3.3</span></a> <a href="#3.3.6"><span style="color:red">v 3.3.6</span></a> <a href="#3.3.8"><span style="color:red">v 3.3.8</span></a> <a href="#3.3.9"><span style="color:red">v 3.3.9</span></a> <a href="#3.4.1"><span style="color:green">v 3.4.1</span></a> <a href="#3.4.2"><span style="color:green">v 3.4.2</span></a> <a href="#3.4.3"><span style="color:green">v 3.4.3</span></a> <a href="#3.4.6"><span style="color:red">v 3.4.6</span></a> <a href="#3.4.7"><span style="color:green">v 3.4.7</span></a> <a href="#3.4.8"><span style="color:red">v 3.4.8</span></a> <a href="#3.4.9"><span style="color:red">v 3.4.9</span></a> <a href="#3.5.0"><span style="color:red">v 3.5.0</span></a> <a href="#3.5.1"><span style="color:green">v 3.5.1</span></a> <a href="#3.5.2"><span style="color:red">v 3.5.2</span></a> <a href="#3.5.3"><span style="color:red">v 3.5.3</span></a> <a href="#3.5.6"><span style="color:red">v 3.5.6</span></a> <a href="#3.5.8"><span style="color:red">v 3.5.8</span></a> <a href="#3.6.5"><span style="color:green">v 3.6.5</span></a> <a href="#3.6.6"><span style="color:green">v 3.6.6</span></a> <a href="#3.6.7"><span style="color:green">v 3.6.7</span></a> <a href="#3.6.9"><span style="color:red">v 3.6.9</span></a> <a href="#3.7.0"><span style="color:green">v 3.7.0</span></a> <a href="#3.7.1"><span style="color:red">v 3.7.1</span></a> <a href="#3.7.2"><span style="color:red">v 3.7.2</span></a> <a href="#3.7.3"><span style="color:red">v 3.7.3</span></a> <a href="#3.7.6"><span style="color:red">v 3.7.6</span></a> <a href="#3.7.8"><span style="color:green">v 3.7.8</span></a> <a href="#3.7.9"><span style="color:red">v 3.7.9</span></a> <a href="#3.8.0"><span style="color:red">v 3.8.0</span></a> <a href="#3.8.1"><span style="color:red">v 3.8.1</span></a> <a href="#3.8.3"><span style="color:red">v 3.8.3</span></a> <a href="#3.8.4"><span style="color:red">v 3.8.4</span></a> <a href="#3.9.1"><span style="color:red">v 3.9.1</span></a> <a href="#3.9.2"><span style="color:red">v 3.9.2</span></a> <a href="#3.9.3"><span style="color:green">v 3.9.3</span></a> <a href="#3.9.5"><span style="color:red">v 3.9.5</span></a> <a href="#3.9.7"><span style="color:red">v 3.9.7</span></a> <a href="#3.9.8"><span style="color:red">v 3.9.8</span></a> <a href="#3.9.9"><span style="color:green">v 3.9.9</span></a> <a href="#4.0.2"><span style="color:red">v 4.0.2</span></a> <a href="#4.0.5"><span style="color:green">v 4.0.5</span></a> <a href="#4.0.6"><span style="color:red">v 4.0.6</span></a> <a href="#4.0.8"><span style="color:red">v 4.0.8</span></a> <a href="#4.1.0"><span style="color:red">v 4.1.0</span></a> <a href="#4.1.2"><span style="color:green">v 4.1.2</span></a> <a href="#4.1.4"><span style="color:red">v 4.1.4</span></a> <a href="#4.1.9"><span style="color:red">v 4.1.9</span></a> <a href="#4.2.0"><span style="color:red">v 4.2.0</span></a> <a href="#4.2.1"><span style="color:green">v 4.2.1</span></a> <a href="#4.2.3"><span style="color:red">v 4.2.3</span></a> <a href="#4.2.4"><span style="color:green">v 4.2.4</span></a> <a href="#4.2.5"><span style="color:red">v 4.2.5</span></a> <a href="#4.2.7"><span style="color:red">v 4.2.7</span></a> <a href="#4.3.0"><span style="color:green">v 4.3.0</span></a> <a href="#4.3.1"><span style="color:red">v 4.3.1</span></a> <a href="#4.3.2"><span style="color:green">v 4.3.2</span></a> <a href="#4.3.3"><span style="color:red">v 4.3.3</span></a> <a href="#4.3.4"><span style="color:red">v 4.3.4</span></a> <a href="#4.3.5"><span style="color:red">v 4.3.5</span></a> <a href="#4.3.7"><span style="color:red">v 4.3.7</span></a> <a href="#4.3.8"><span style="color:green">v 4.3.8</span></a> <a href="#4.3.9"><span style="color:red">v 4.3.9</span></a> <a href="#4.4.0"><span style="color:green">v 4.4.0</span></a> <a href="#4.4.1"><span style="color:green">v 4.4.1</span></a> <a href="#4.4.2"><span style="color:red">v 4.4.2</span></a> <a href="#4.4.3"><span style="color:red">v 4.4.3</span></a> <a href="#4.4.4"><span style="color:green">v 4.4.4</span></a> <a href="#4.4.5"><span style="color:red">v 4.4.5</span></a> <a href="#4.4.6"><span style="color:green">v 4.4.6</span></a> <a href="#4.4.7"><span style="color:red">v 4.4.7</span></a> <a href="#4.4.8"><span style="color:red">v 4.4.8</span></a> <a href="#4.4.9"><span style="color:green">v 4.4.9</span></a> <a href="#4.5.0"><span style="color:red">v 4.5.0</span></a> <a href="#4.5.5"><span style="color:red">v 4.5.5</span></a> <a href="#4.5.8"><span style="color:red">v 4.5.8</span></a> <a href="#4.6.0"><span style="color:red">v 4.6.0</span></a> <a href="#4.6.1"><span style="color:red">v 4.6.1</span></a> <a href="#4.6.2"><span style="color:red">v 4.6.2</span></a> <a href="#4.6.3"><span style="color:red">v 4.6.3</span></a> <a href="#4.6.4"><span style="color:red">v 4.6.4</span></a> <a href="#4.6.6"><span style="color:red">v 4.6.6</span></a> <a href="#4.6.7"><span style="color:red">v 4.6.7</span></a> <a href="#4.6.8"><span style="color:red">v 4.6.8</span></a> <a href="#4.6.9"><span style="color:red">v 4.6.9</span></a> <a href="#4.7.0"><span style="color:green">v 4.7.0</span></a> <a href="#4.7.2"><span style="color:red">v 4.7.2</span></a> <a href="#4.7.4"><span style="color:red">v 4.7.4</span></a> <a href="#4.7.6"><span style="color:red">v 4.7.6</span></a> <a href="#4.7.7"><span style="color:red">v 4.7.7</span></a> <a href="#4.7.9"><span style="color:green">v 4.7.9</span></a> <a href="#4.8.4"><span style="color:red">v 4.8.4</span></a> <a href="#4.8.7"><span style="color:green">v 4.8.7</span></a> <a href="#4.8.9"><span style="color:red">v 4.8.9</span></a> <a href="#4.9.3"><span style="color:red">v 4.9.3</span></a> <a href="#4.9.7"><span style="color:green">v 4.9.7</span></a> <a href="#4.9.8"><span style="color:red">v 4.9.8</span></a> <a href="#4.9.9"><span style="color:red">v 4.9.9</span></a> <a href="#5.0.2"><span style="color:red">v 5.0.2</span></a> <a href="#5.0.3"><span style="color:red">v 5.0.3</span></a> <a href="#5.0.5"><span style="color:green">v 5.0.5</span></a> <a href="#5.0.7"><span style="color:red">v 5.0.7</span></a> <a href="#5.0.8"><span style="color:red">v 5.0.8</span></a> <a href="#5.1.0"><span style="color:green">v 5.1.0</span></a> <a href="#5.1.2"><span style="color:red">v 5.1.2</span></a> <a href="#5.1.5"><span style="color:red">v 5.1.5</span></a> <a href="#5.1.6"><span style="color:green">v 5.1.6</span></a> <a href="#5.1.7"><span style="color:green">v 5.1.7</span></a> <a href="#5.1.9"><span style="color:green">v 5.1.9</span></a> <a href="#5.2.0"><span style="color:red">v 5.2.0</span></a> <a href="#5.2.2"><span style="color:red">v 5.2.2</span></a> <a href="#5.2.3"><span style="color:red">v 5.2.3</span></a> <a href="#5.2.4"><span style="color:red">v 5.2.4</span></a> <a href="#5.2.5"><span style="color:red">v 5.2.5</span></a> <a href="#5.2.7"><span style="color:red">v 5.2.7</span></a> <a href="#5.2.9"><span style="color:red">v 5.2.9</span></a> <a href="#5.3.0"><span style="color:red">v 5.3.0</span></a> <a href="#5.3.2"><span style="color:red">v 5.3.2</span></a> <a href="#5.3.3"><span style="color:red">v 5.3.3</span></a> <a href="#5.3.5"><span style="color:red">v 5.3.5</span></a> <a href="#5.3.6"><span style="color:red">v 5.3.6</span></a> <a href="#5.3.7"><span style="color:red">v 5.3.7</span></a> <a href="#5.3.9"><span style="color:red">v 5.3.9</span></a> <a href="#5.4.1"><span style="color:red">v 5.4.1</span></a> <a href="#5.4.2"><span style="color:red">v 5.4.2</span></a> <a href="#5.4.4"><span style="color:red">v 5.4.4</span></a> <a href="#5.4.7"><span style="color:green">v 5.4.7</span></a> <a href="#5.5.0"><span style="color:green">v 5.5.0</span></a> <a href="#5.5.4"><span style="color:red">v 5.5.4</span></a> <a href="#5.5.6"><span style="color:green">v 5.5.6</span></a> <a href="#5.5.7"><span style="color:red">v 5.5.7</span></a> <a href="#5.5.9"><span style="color:red">v 5.5.9</span></a> <a href="#5.6.0"><span style="color:red">v 5.6.0</span></a> <a href="#5.6.2"><span style="color:red">v 5.6.2</span></a> <a href="#5.6.3"><span style="color:red">v 5.6.3</span></a> <a href="#5.6.4"><span style="color:green">v 5.6.4</span></a> <a href="#5.6.5"><span style="color:red">v 5.6.5</span></a> <a href="#5.6.6"><span style="color:green">v 5.6.6</span></a> <a href="#5.6.9"><span style="color:red">v 5.6.9</span></a> <a href="#5.7.0"><span style="color:red">v 5.7.0</span></a> <a href="#5.7.1"><span style="color:green">v 5.7.1</span></a> <a href="#5.7.2"><span style="color:red">v 5.7.2</span></a> <a href="#5.7.4"><span style="color:green">v 5.7.4</span></a> <a href="#5.7.5"><span style="color:green">v 5.7.5</span></a> <a href="#5.7.6"><span style="color:red">v 5.7.6</span></a> <a href="#5.7.7"><span style="color:green">v 5.7.7</span></a> <a href="#5.7.8"><span style="color:green">v 5.7.8</span></a> <a href="#5.7.9"><span style="color:red">v 5.7.9</span></a> <a href="#5.8.2"><span style="color:green">v 5.8.2</span></a> <a href="#5.8.3"><span style="color:green">v 5.8.3</span></a> <a href="#5.8.4"><span style="color:red">v 5.8.4</span></a> <a href="#5.8.7"><span style="color:red">v 5.8.7</span></a> <a href="#5.8.9"><span style="color:red">v 5.8.9</span></a> <a href="#5.9.0"><span style="color:red">v 5.9.0</span></a> <a href="#5.9.5"><span style="color:red">v 5.9.5</span></a> <a href="#5.9.6"><span style="color:red">v 5.9.6</span></a> <a href="#5.9.9"><span style="color:red">v 5.9.9</span></a> <a href="#6.0.3"><span style="color:red">v 6.0.3</span></a> <a href="#6.0.4"><span style="color:red">v 6.0.4</span></a> <a href="#6.0.6"><span style="color:red">v 6.0.6</span></a> <a href="#6.0.7"><span style="color:green">v 6.0.7</span></a> <a href="#6.1.1"><span style="color:red">v 6.1.1</span></a> <a href="#6.1.3"><span style="color:red">v 6.1.3</span></a> <a href="#6.1.8"><span style="color:red">v 6.1.8</span></a> <a href="#6.1.9"><span style="color:red">v 6.1.9</span></a> <a href="#6.2.0"><span style="color:red">v 6.2.0</span></a> <a href="#6.2.2"><span style="color:red">v 6.2.2</span></a> <a href="#6.2.3"><span style="color:red">v 6.2.3</span></a> <a href="#6.2.4"><span style="color:red">v 6.2.4</span></a> <a href="#6.2.5"><span style="color:red">v 6.2.5</span></a> <a href="#6.2.6"><span style="color:green">v 6.2.6</span></a> <a href="#6.2.8"><span style="color:red">v 6.2.8</span></a> <a href="#6.2.9"><span style="color:green">v 6.2.9</span></a> <a href="#6.3.0"><span style="color:green">v 6.3.0</span></a> <a href="#6.3.1"><span style="color:red">v 6.3.1</span></a> <a href="#6.3.4"><span style="color:red">v 6.3.4</span></a> <a href="#6.3.5"><span style="color:green">v 6.3.5</span></a> <a href="#6.3.6"><span style="color:green">v 6.3.6</span></a> <a href="#6.3.7"><span style="color:green">v 6.3.7</span></a> <a href="#6.3.8"><span style="color:green">v 6.3.8</span></a> <a href="#6.3.9"><span style="color:red">v 6.3.9</span></a> <a href="#6.4.1"><span style="color:red">v 6.4.1</span></a> <a href="#6.4.5"><span style="color:red">v 6.4.5</span></a> <a href="#6.4.6"><span style="color:red">v 6.4.6</span></a> <a href="#6.4.7"><span style="color:green">v 6.4.7</span></a> <a href="#6.5.0"><span style="color:red">v 6.5.0</span></a> <a href="#6.5.1"><span style="color:red">v 6.5.1</span></a> <a href="#6.5.2"><span style="color:red">v 6.5.2</span></a> <a href="#6.5.3"><span style="color:red">v 6.5.3</span></a> <a href="#6.5.4"><span style="color:red">v 6.5.4</span></a> <a href="#6.5.5"><span style="color:red">v 6.5.5</span></a> <a href="#6.5.6"><span style="color:red">v 6.5.6</span></a> <a href="#6.5.7"><span style="color:green">v 6.5.7</span></a> <a href="#6.5.9"><span style="color:red">v 6.5.9</span></a> <a href="#6.6.0"><span style="color:green">v 6.6.0</span></a> <a href="#6.6.2"><span style="color:red">v 6.6.2</span></a> <a href="#6.6.5"><span style="color:red">v 6.6.5</span></a> <a href="#6.6.6"><span style="color:green">v 6.6.6</span></a> <a href="#6.6.7"><span style="color:green">v 6.6.7</span></a> <a href="#6.7.1"><span style="color:red">v 6.7.1</span></a> <a href="#6.7.2"><span style="color:green">v 6.7.2</span></a> <a href="#6.7.4"><span style="color:red">v 6.7.4</span></a> <a href="#6.7.7"><span style="color:red">v 6.7.7</span></a> <a href="#6.7.9"><span style="color:red">v 6.7.9</span></a> <a href="#6.8.0"><span style="color:red">v 6.8.0</span></a> <a href="#6.8.1"><span style="color:red">v 6.8.1</span></a> <a href="#6.8.5"><span style="color:red">v 6.8.5</span></a> <a href="#6.8.6"><span style="color:red">v 6.8.6</span></a> <a href="#6.8.7"><span style="color:green">v 6.8.7</span></a> <a href="#6.8.9"><span style="color:green">v 6.8.9</span></a> <a href="#6.9.0"><span style="color:green">v 6.9.0</span></a>
+- Total Hooked lines: 2295
+- Can provide shell: 604
+- Has privileged object: 93
+- Safe versions: 129
+Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#1.0.1"><span style="color:green">v 1.0.1</span></a> <a href="#1.0.3"><span style="color:red">v 1.0.3</span></a> <a href="#1.0.4"><span style="color:red">v 1.0.4</span></a> <a href="#1.0.5"><span style="color:green">v 1.0.5</span></a> <a href="#1.0.8"><span style="color:red">v 1.0.8</span></a> <a href="#1.0.9"><span style="color:red">v 1.0.9</span></a> <a href="#1.1.2"><span style="color:red">v 1.1.2</span></a> <a href="#1.1.4"><span style="color:red">v 1.1.4</span></a> <a href="#1.1.6"><span style="color:red">v 1.1.6</span></a> <a href="#1.1.7"><span style="color:red">v 1.1.7</span></a> <a href="#1.1.8"><span style="color:red">v 1.1.8</span></a> <a href="#1.1.9"><span style="color:red">v 1.1.9</span></a> <a href="#1.2.0"><span style="color:red">v 1.2.0</span></a> <a href="#1.2.1"><span style="color:green">v 1.2.1</span></a> <a href="#1.2.4"><span style="color:green">v 1.2.4</span></a> <a href="#1.2.5"><span style="color:green">v 1.2.5</span></a> <a href="#1.2.6"><span style="color:green">v 1.2.6</span></a> <a href="#1.2.7"><span style="color:red">v 1.2.7</span></a> <a href="#1.2.8"><span style="color:red">v 1.2.8</span></a> <a href="#1.3.0"><span style="color:red">v 1.3.0</span></a> <a href="#1.3.2"><span style="color:red">v 1.3.2</span></a> <a href="#1.3.3"><span style="color:red">v 1.3.3</span></a> <a href="#1.3.5"><span style="color:red">v 1.3.5</span></a> <a href="#1.3.6"><span style="color:red">v 1.3.6</span></a> <a href="#1.3.7"><span style="color:green">v 1.3.7</span></a> <a href="#1.3.9"><span style="color:green">v 1.3.9</span></a> <a href="#1.4.0"><span style="color:red">v 1.4.0</span></a> <a href="#1.4.1"><span style="color:red">v 1.4.1</span></a> <a href="#1.4.3"><span style="color:red">v 1.4.3</span></a> <a href="#1.4.5"><span style="color:green">v 1.4.5</span></a> <a href="#1.4.6"><span style="color:green">v 1.4.6</span></a> <a href="#1.4.7"><span style="color:red">v 1.4.7</span></a> <a href="#1.4.8"><span style="color:red">v 1.4.8</span></a> <a href="#1.4.9"><span style="color:red">v 1.4.9</span></a> <a href="#1.5.0"><span style="color:red">v 1.5.0</span></a> <a href="#1.5.1"><span style="color:red">v 1.5.1</span></a> <a href="#1.5.2"><span style="color:green">v 1.5.2</span></a> <a href="#1.5.4"><span style="color:red">v 1.5.4</span></a> <a href="#1.5.5"><span style="color:red">v 1.5.5</span></a> <a href="#1.5.6"><span style="color:green">v 1.5.6</span></a> <a href="#1.5.7"><span style="color:red">v 1.5.7</span></a> <a href="#1.5.8"><span style="color:green">v 1.5.8</span></a> <a href="#1.5.9"><span style="color:red">v 1.5.9</span></a> <a href="#1.6.0"><span style="color:red">v 1.6.0</span></a> <a href="#1.6.1"><span style="color:green">v 1.6.1</span></a> <a href="#1.6.2"><span style="color:red">v 1.6.2</span></a> <a href="#1.6.4"><span style="color:green">v 1.6.4</span></a> <a href="#1.6.5"><span style="color:green">v 1.6.5</span></a> <a href="#1.6.6"><span style="color:red">v 1.6.6</span></a> <a href="#1.6.7"><span style="color:red">v 1.6.7</span></a> <a href="#1.6.9"><span style="color:red">v 1.6.9</span></a> <a href="#1.7.0"><span style="color:red">v 1.7.0</span></a> <a href="#1.7.1"><span style="color:red">v 1.7.1</span></a> <a href="#1.7.2"><span style="color:red">v 1.7.2</span></a> <a href="#1.7.3"><span style="color:red">v 1.7.3</span></a> <a href="#1.7.4"><span style="color:green">v 1.7.4</span></a> <a href="#1.7.5"><span style="color:red">v 1.7.5</span></a> <a href="#1.7.6"><span style="color:red">v 1.7.6</span></a> <a href="#1.7.7"><span style="color:red">v 1.7.7</span></a> <a href="#1.7.8"><span style="color:red">v 1.7.8</span></a> <a href="#1.7.9"><span style="color:red">v 1.7.9</span></a> <a href="#1.8.0"><span style="color:red">v 1.8.0</span></a> <a href="#1.8.1"><span style="color:green">v 1.8.1</span></a> <a href="#1.8.4"><span style="color:red">v 1.8.4</span></a> <a href="#1.8.5"><span style="color:red">v 1.8.5</span></a> <a href="#1.8.6"><span style="color:green">v 1.8.6</span></a> <a href="#1.8.7"><span style="color:green">v 1.8.7</span></a> <a href="#1.8.9"><span style="color:green">v 1.8.9</span></a> <a href="#1.9.1"><span style="color:red">v 1.9.1</span></a> <a href="#1.9.2"><span style="color:red">v 1.9.2</span></a> <a href="#1.9.3"><span style="color:green">v 1.9.3</span></a> <a href="#1.9.5"><span style="color:red">v 1.9.5</span></a> <a href="#1.9.7"><span style="color:red">v 1.9.7</span></a> <a href="#2.0.0"><span style="color:red">v 2.0.0</span></a> <a href="#2.0.1"><span style="color:red">v 2.0.1</span></a> <a href="#2.0.3"><span style="color:red">v 2.0.3</span></a> <a href="#2.0.4"><span style="color:red">v 2.0.4</span></a> <a href="#2.0.5"><span style="color:red">v 2.0.5</span></a> <a href="#2.0.6"><span style="color:red">v 2.0.6</span></a> <a href="#2.0.8"><span style="color:green">v 2.0.8</span></a> <a href="#2.0.9"><span style="color:red">v 2.0.9</span></a> <a href="#2.1.1"><span style="color:green">v 2.1.1</span></a> <a href="#2.1.2"><span style="color:red">v 2.1.2</span></a> <a href="#2.1.3"><span style="color:red">v 2.1.3</span></a> <a href="#2.1.5"><span style="color:red">v 2.1.5</span></a> <a href="#2.1.7"><span style="color:red">v 2.1.7</span></a> <a href="#2.2.1"><span style="color:red">v 2.2.1</span></a> <a href="#2.2.2"><span style="color:red">v 2.2.2</span></a> <a href="#2.2.3"><span style="color:red">v 2.2.3</span></a> <a href="#2.2.4"><span style="color:red">v 2.2.4</span></a> <a href="#2.2.5"><span style="color:red">v 2.2.5</span></a> <a href="#2.2.7"><span style="color:green">v 2.2.7</span></a> <a href="#2.2.8"><span style="color:green">v 2.2.8</span></a> <a href="#2.2.9"><span style="color:red">v 2.2.9</span></a> <a href="#2.3.1"><span style="color:green">v 2.3.1</span></a> <a href="#2.3.2"><span style="color:green">v 2.3.2</span></a> <a href="#2.3.4"><span style="color:green">v 2.3.4</span></a> <a href="#2.3.6"><span style="color:red">v 2.3.6</span></a> <a href="#2.3.7"><span style="color:red">v 2.3.7</span></a> <a href="#2.3.8"><span style="color:red">v 2.3.8</span></a> <a href="#2.3.9"><span style="color:red">v 2.3.9</span></a> <a href="#2.4.0"><span style="color:red">v 2.4.0</span></a> <a href="#2.4.3"><span style="color:red">v 2.4.3</span></a> <a href="#2.4.5"><span style="color:red">v 2.4.5</span></a> <a href="#2.4.6"><span style="color:green">v 2.4.6</span></a> <a href="#2.4.8"><span style="color:red">v 2.4.8</span></a> <a href="#2.4.9"><span style="color:red">v 2.4.9</span></a> <a href="#2.5.0"><span style="color:green">v 2.5.0</span></a> <a href="#2.5.1"><span style="color:red">v 2.5.1</span></a> <a href="#2.5.3"><span style="color:red">v 2.5.3</span></a> <a href="#2.5.6"><span style="color:green">v 2.5.6</span></a> <a href="#2.5.7"><span style="color:red">v 2.5.7</span></a> <a href="#2.5.8"><span style="color:green">v 2.5.8</span></a> <a href="#2.5.9"><span style="color:red">v 2.5.9</span></a> <a href="#2.6.0"><span style="color:red">v 2.6.0</span></a> <a href="#2.6.1"><span style="color:red">v 2.6.1</span></a> <a href="#2.6.2"><span style="color:green">v 2.6.2</span></a> <a href="#2.6.3"><span style="color:red">v 2.6.3</span></a> <a href="#2.6.4"><span style="color:red">v 2.6.4</span></a> <a href="#2.6.5"><span style="color:red">v 2.6.5</span></a> <a href="#2.6.6"><span style="color:red">v 2.6.6</span></a> <a href="#2.6.8"><span style="color:red">v 2.6.8</span></a> <a href="#2.6.9"><span style="color:green">v 2.6.9</span></a> <a href="#2.7.0"><span style="color:red">v 2.7.0</span></a> <a href="#2.7.1"><span style="color:red">v 2.7.1</span></a> <a href="#2.7.2"><span style="color:red">v 2.7.2</span></a> <a href="#2.7.4"><span style="color:red">v 2.7.4</span></a> <a href="#2.7.5"><span style="color:red">v 2.7.5</span></a> <a href="#2.7.8"><span style="color:red">v 2.7.8</span></a> <a href="#2.7.9"><span style="color:red">v 2.7.9</span></a> <a href="#2.8.0"><span style="color:red">v 2.8.0</span></a> <a href="#2.8.1"><span style="color:red">v 2.8.1</span></a> <a href="#2.8.2"><span style="color:green">v 2.8.2</span></a> <a href="#2.8.4"><span style="color:green">v 2.8.4</span></a> <a href="#2.8.5"><span style="color:green">v 2.8.5</span></a> <a href="#2.8.7"><span style="color:red">v 2.8.7</span></a> <a href="#2.8.8"><span style="color:red">v 2.8.8</span></a> <a href="#2.8.9"><span style="color:red">v 2.8.9</span></a> <a href="#2.9.0"><span style="color:green">v 2.9.0</span></a> <a href="#2.9.1"><span style="color:red">v 2.9.1</span></a> <a href="#2.9.2"><span style="color:red">v 2.9.2</span></a> <a href="#2.9.3"><span style="color:red">v 2.9.3</span></a> <a href="#2.9.4"><span style="color:green">v 2.9.4</span></a> <a href="#2.9.5"><span style="color:red">v 2.9.5</span></a> <a href="#2.9.6"><span style="color:red">v 2.9.6</span></a> <a href="#2.9.7"><span style="color:red">v 2.9.7</span></a> <a href="#2.9.8"><span style="color:red">v 2.9.8</span></a> <a href="#3.0.0"><span style="color:red">v 3.0.0</span></a> <a href="#3.0.1"><span style="color:red">v 3.0.1</span></a> <a href="#3.0.2"><span style="color:red">v 3.0.2</span></a> <a href="#3.0.3"><span style="color:green">v 3.0.3</span></a> <a href="#3.0.4"><span style="color:red">v 3.0.4</span></a> <a href="#3.0.5"><span style="color:red">v 3.0.5</span></a> <a href="#3.0.6"><span style="color:green">v 3.0.6</span></a> <a href="#3.0.7"><span style="color:red">v 3.0.7</span></a> <a href="#3.0.8"><span style="color:green">v 3.0.8</span></a> <a href="#3.0.9"><span style="color:green">v 3.0.9</span></a> <a href="#3.1.0"><span style="color:green">v 3.1.0</span></a> <a href="#3.1.1"><span style="color:red">v 3.1.1</span></a> <a href="#3.1.2"><span style="color:red">v 3.1.2</span></a> <a href="#3.1.3"><span style="color:green">v 3.1.3</span></a> <a href="#3.1.4"><span style="color:red">v 3.1.4</span></a> <a href="#3.1.5"><span style="color:red">v 3.1.5</span></a> <a href="#3.1.6"><span style="color:red">v 3.1.6</span></a> <a href="#3.1.8"><span style="color:red">v 3.1.8</span></a> <a href="#3.1.9"><span style="color:green">v 3.1.9</span></a> <a href="#3.2.0"><span style="color:green">v 3.2.0</span></a> <a href="#3.2.1"><span style="color:red">v 3.2.1</span></a> <a href="#3.2.3"><span style="color:red">v 3.2.3</span></a> <a href="#3.2.6"><span style="color:red">v 3.2.6</span></a> <a href="#3.2.8"><span style="color:red">v 3.2.8</span></a> <a href="#3.3.0"><span style="color:green">v 3.3.0</span></a> <a href="#3.3.1"><span style="color:green">v 3.3.1</span></a> <a href="#3.3.2"><span style="color:red">v 3.3.2</span></a> <a href="#3.3.3"><span style="color:red">v 3.3.3</span></a> <a href="#3.3.4"><span style="color:red">v 3.3.4</span></a> <a href="#3.3.6"><span style="color:red">v 3.3.6</span></a> <a href="#3.3.8"><span style="color:red">v 3.3.8</span></a> <a href="#3.3.9"><span style="color:red">v 3.3.9</span></a> <a href="#3.4.0"><span style="color:green">v 3.4.0</span></a> <a href="#3.4.1"><span style="color:green">v 3.4.1</span></a> <a href="#3.4.2"><span style="color:green">v 3.4.2</span></a> <a href="#3.4.3"><span style="color:green">v 3.4.3</span></a> <a href="#3.4.6"><span style="color:red">v 3.4.6</span></a> <a href="#3.4.7"><span style="color:green">v 3.4.7</span></a> <a href="#3.4.8"><span style="color:red">v 3.4.8</span></a> <a href="#3.4.9"><span style="color:red">v 3.4.9</span></a> <a href="#3.5.0"><span style="color:red">v 3.5.0</span></a> <a href="#3.5.1"><span style="color:green">v 3.5.1</span></a> <a href="#3.5.2"><span style="color:red">v 3.5.2</span></a> <a href="#3.5.3"><span style="color:red">v 3.5.3</span></a> <a href="#3.5.6"><span style="color:red">v 3.5.6</span></a> <a href="#3.5.8"><span style="color:red">v 3.5.8</span></a> <a href="#3.6.0"><span style="color:green">v 3.6.0</span></a> <a href="#3.6.2"><span style="color:green">v 3.6.2</span></a> <a href="#3.6.3"><span style="color:red">v 3.6.3</span></a> <a href="#3.6.5"><span style="color:green">v 3.6.5</span></a> <a href="#3.6.6"><span style="color:green">v 3.6.6</span></a> <a href="#3.6.7"><span style="color:green">v 3.6.7</span></a> <a href="#3.6.9"><span style="color:red">v 3.6.9</span></a> <a href="#3.7.0"><span style="color:green">v 3.7.0</span></a> <a href="#3.7.1"><span style="color:red">v 3.7.1</span></a> <a href="#3.7.2"><span style="color:red">v 3.7.2</span></a> <a href="#3.7.3"><span style="color:red">v 3.7.3</span></a> <a href="#3.7.5"><span style="color:green">v 3.7.5</span></a> <a href="#3.7.6"><span style="color:red">v 3.7.6</span></a> <a href="#3.7.8"><span style="color:green">v 3.7.8</span></a> <a href="#3.7.9"><span style="color:red">v 3.7.9</span></a> <a href="#3.8.0"><span style="color:red">v 3.8.0</span></a> <a href="#3.8.1"><span style="color:red">v 3.8.1</span></a> <a href="#3.8.3"><span style="color:red">v 3.8.3</span></a> <a href="#3.8.4"><span style="color:red">v 3.8.4</span></a> <a href="#3.8.6"><span style="color:red">v 3.8.6</span></a> <a href="#3.9.0"><span style="color:green">v 3.9.0</span></a> <a href="#3.9.1"><span style="color:red">v 3.9.1</span></a> <a href="#3.9.2"><span style="color:red">v 3.9.2</span></a> <a href="#3.9.3"><span style="color:green">v 3.9.3</span></a> <a href="#3.9.5"><span style="color:red">v 3.9.5</span></a> <a href="#3.9.7"><span style="color:red">v 3.9.7</span></a> <a href="#3.9.8"><span style="color:red">v 3.9.8</span></a> <a href="#3.9.9"><span style="color:green">v 3.9.9</span></a> <a href="#4.0.0"><span style="color:green">v 4.0.0</span></a> <a href="#4.0.2"><span style="color:red">v 4.0.2</span></a> <a href="#4.0.3"><span style="color:red">v 4.0.3</span></a> <a href="#4.0.4"><span style="color:green">v 4.0.4</span></a> <a href="#4.0.5"><span style="color:green">v 4.0.5</span></a> <a href="#4.0.6"><span style="color:red">v 4.0.6</span></a> <a href="#4.0.8"><span style="color:red">v 4.0.8</span></a> <a href="#4.1.0"><span style="color:red">v 4.1.0</span></a> <a href="#4.1.1"><span style="color:green">v 4.1.1</span></a> <a href="#4.1.2"><span style="color:green">v 4.1.2</span></a> <a href="#4.1.3"><span style="color:red">v 4.1.3</span></a> <a href="#4.1.4"><span style="color:red">v 4.1.4</span></a> <a href="#4.1.6"><span style="color:red">v 4.1.6</span></a> <a href="#4.1.8"><span style="color:green">v 4.1.8</span></a> <a href="#4.1.9"><span style="color:red">v 4.1.9</span></a> <a href="#4.2.0"><span style="color:red">v 4.2.0</span></a> <a href="#4.2.1"><span style="color:green">v 4.2.1</span></a> <a href="#4.2.3"><span style="color:red">v 4.2.3</span></a> <a href="#4.2.4"><span style="color:green">v 4.2.4</span></a> <a href="#4.2.5"><span style="color:red">v 4.2.5</span></a> <a href="#4.2.7"><span style="color:red">v 4.2.7</span></a> <a href="#4.3.0"><span style="color:green">v 4.3.0</span></a> <a href="#4.3.1"><span style="color:red">v 4.3.1</span></a> <a href="#4.3.2"><span style="color:red">v 4.3.2</span></a> <a href="#4.3.3"><span style="color:red">v 4.3.3</span></a> <a href="#4.3.4"><span style="color:red">v 4.3.4</span></a> <a href="#4.3.5"><span style="color:red">v 4.3.5</span></a> <a href="#4.3.7"><span style="color:red">v 4.3.7</span></a> <a href="#4.3.8"><span style="color:green">v 4.3.8</span></a> <a href="#4.3.9"><span style="color:red">v 4.3.9</span></a> <a href="#4.4.0"><span style="color:green">v 4.4.0</span></a> <a href="#4.4.1"><span style="color:red">v 4.4.1</span></a> <a href="#4.4.2"><span style="color:red">v 4.4.2</span></a> <a href="#4.4.3"><span style="color:red">v 4.4.3</span></a> <a href="#4.4.4"><span style="color:green">v 4.4.4</span></a> <a href="#4.4.5"><span style="color:red">v 4.4.5</span></a> <a href="#4.4.6"><span style="color:green">v 4.4.6</span></a> <a href="#4.4.7"><span style="color:red">v 4.4.7</span></a> <a href="#4.4.8"><span style="color:red">v 4.4.8</span></a> <a href="#4.4.9"><span style="color:green">v 4.4.9</span></a> <a href="#4.5.0"><span style="color:red">v 4.5.0</span></a> <a href="#4.5.1"><span style="color:red">v 4.5.1</span></a> <a href="#4.5.3"><span style="color:red">v 4.5.3</span></a> <a href="#4.5.5"><span style="color:red">v 4.5.5</span></a> <a href="#4.5.8"><span style="color:red">v 4.5.8</span></a> <a href="#4.6.0"><span style="color:red">v 4.6.0</span></a> <a href="#4.6.1"><span style="color:red">v 4.6.1</span></a> <a href="#4.6.2"><span style="color:red">v 4.6.2</span></a> <a href="#4.6.3"><span style="color:red">v 4.6.3</span></a> <a href="#4.6.4"><span style="color:red">v 4.6.4</span></a> <a href="#4.6.6"><span style="color:red">v 4.6.6</span></a> <a href="#4.6.7"><span style="color:red">v 4.6.7</span></a> <a href="#4.6.8"><span style="color:red">v 4.6.8</span></a> <a href="#4.6.9"><span style="color:red">v 4.6.9</span></a> <a href="#4.7.0"><span style="color:green">v 4.7.0</span></a> <a href="#4.7.2"><span style="color:red">v 4.7.2</span></a> <a href="#4.7.3"><span style="color:red">v 4.7.3</span></a> <a href="#4.7.4"><span style="color:red">v 4.7.4</span></a> <a href="#4.7.6"><span style="color:red">v 4.7.6</span></a> <a href="#4.7.7"><span style="color:red">v 4.7.7</span></a> <a href="#4.7.9"><span style="color:green">v 4.7.9</span></a> <a href="#4.8.3"><span style="color:red">v 4.8.3</span></a> <a href="#4.8.4"><span style="color:red">v 4.8.4</span></a> <a href="#4.8.6"><span style="color:green">v 4.8.6</span></a> <a href="#4.8.7"><span style="color:green">v 4.8.7</span></a> <a href="#4.8.9"><span style="color:red">v 4.8.9</span></a> <a href="#4.9.3"><span style="color:red">v 4.9.3</span></a> <a href="#4.9.7"><span style="color:green">v 4.9.7</span></a> <a href="#4.9.8"><span style="color:red">v 4.9.8</span></a> <a href="#4.9.9"><span style="color:red">v 4.9.9</span></a> <a href="#5.0.2"><span style="color:red">v 5.0.2</span></a> <a href="#5.0.3"><span style="color:red">v 5.0.3</span></a> <a href="#5.0.5"><span style="color:green">v 5.0.5</span></a> <a href="#5.0.6"><span style="color:red">v 5.0.6</span></a> <a href="#5.0.7"><span style="color:red">v 5.0.7</span></a> <a href="#5.0.8"><span style="color:red">v 5.0.8</span></a> <a href="#5.1.0"><span style="color:green">v 5.1.0</span></a> <a href="#5.1.2"><span style="color:red">v 5.1.2</span></a> <a href="#5.1.5"><span style="color:red">v 5.1.5</span></a> <a href="#5.1.6"><span style="color:green">v 5.1.6</span></a> <a href="#5.1.7"><span style="color:green">v 5.1.7</span></a> <a href="#5.1.9"><span style="color:green">v 5.1.9</span></a> <a href="#5.2.0"><span style="color:red">v 5.2.0</span></a> <a href="#5.2.2"><span style="color:red">v 5.2.2</span></a> <a href="#5.2.3"><span style="color:red">v 5.2.3</span></a> <a href="#5.2.4"><span style="color:red">v 5.2.4</span></a> <a href="#5.2.5"><span style="color:red">v 5.2.5</span></a> <a href="#5.2.7"><span style="color:red">v 5.2.7</span></a> <a href="#5.2.8"><span style="color:green">v 5.2.8</span></a> <a href="#5.2.9"><span style="color:red">v 5.2.9</span></a> <a href="#5.3.0"><span style="color:red">v 5.3.0</span></a> <a href="#5.3.2"><span style="color:red">v 5.3.2</span></a> <a href="#5.3.3"><span style="color:red">v 5.3.3</span></a> <a href="#5.3.5"><span style="color:red">v 5.3.5</span></a> <a href="#5.3.6"><span style="color:red">v 5.3.6</span></a> <a href="#5.3.7"><span style="color:red">v 5.3.7</span></a> <a href="#5.3.9"><span style="color:red">v 5.3.9</span></a> <a href="#5.4.1"><span style="color:red">v 5.4.1</span></a> <a href="#5.4.2"><span style="color:red">v 5.4.2</span></a> <a href="#5.4.4"><span style="color:red">v 5.4.4</span></a> <a href="#5.4.7"><span style="color:green">v 5.4.7</span></a> <a href="#5.5.0"><span style="color:green">v 5.5.0</span></a> <a href="#5.5.2"><span style="color:green">v 5.5.2</span></a> <a href="#5.5.4"><span style="color:red">v 5.5.4</span></a> <a href="#5.5.5"><span style="color:green">v 5.5.5</span></a> <a href="#5.5.6"><span style="color:green">v 5.5.6</span></a> <a href="#5.5.7"><span style="color:red">v 5.5.7</span></a> <a href="#5.5.8"><span style="color:red">v 5.5.8</span></a> <a href="#5.5.9"><span style="color:red">v 5.5.9</span></a> <a href="#5.6.0"><span style="color:red">v 5.6.0</span></a> <a href="#5.6.2"><span style="color:red">v 5.6.2</span></a> <a href="#5.6.3"><span style="color:red">v 5.6.3</span></a> <a href="#5.6.4"><span style="color:green">v 5.6.4</span></a> <a href="#5.6.5"><span style="color:red">v 5.6.5</span></a> <a href="#5.6.6"><span style="color:green">v 5.6.6</span></a> <a href="#5.6.7"><span style="color:green">v 5.6.7</span></a> <a href="#5.6.9"><span style="color:red">v 5.6.9</span></a> <a href="#5.7.0"><span style="color:red">v 5.7.0</span></a> <a href="#5.7.1"><span style="color:green">v 5.7.1</span></a> <a href="#5.7.2"><span style="color:red">v 5.7.2</span></a> <a href="#5.7.4"><span style="color:green">v 5.7.4</span></a> <a href="#5.7.5"><span style="color:green">v 5.7.5</span></a> <a href="#5.7.6"><span style="color:red">v 5.7.6</span></a> <a href="#5.7.7"><span style="color:green">v 5.7.7</span></a> <a href="#5.7.8"><span style="color:green">v 5.7.8</span></a> <a href="#5.7.9"><span style="color:red">v 5.7.9</span></a> <a href="#5.8.0"><span style="color:red">v 5.8.0</span></a> <a href="#5.8.2"><span style="color:green">v 5.8.2</span></a> <a href="#5.8.3"><span style="color:green">v 5.8.3</span></a> <a href="#5.8.4"><span style="color:red">v 5.8.4</span></a> <a href="#5.8.7"><span style="color:red">v 5.8.7</span></a> <a href="#5.8.9"><span style="color:red">v 5.8.9</span></a> <a href="#5.9.0"><span style="color:red">v 5.9.0</span></a> <a href="#5.9.5"><span style="color:red">v 5.9.5</span></a> <a href="#5.9.6"><span style="color:red">v 5.9.6</span></a> <a href="#5.9.9"><span style="color:red">v 5.9.9</span></a> <a href="#6.0.2"><span style="color:red">v 6.0.2</span></a> <a href="#6.0.3"><span style="color:red">v 6.0.3</span></a> <a href="#6.0.4"><span style="color:red">v 6.0.4</span></a> <a href="#6.0.5"><span style="color:green">v 6.0.5</span></a> <a href="#6.0.6"><span style="color:red">v 6.0.6</span></a> <a href="#6.0.7"><span style="color:green">v 6.0.7</span></a> <a href="#6.1.1"><span style="color:red">v 6.1.1</span></a> <a href="#6.1.3"><span style="color:red">v 6.1.3</span></a> <a href="#6.1.6"><span style="color:red">v 6.1.6</span></a> <a href="#6.1.8"><span style="color:red">v 6.1.8</span></a> <a href="#6.1.9"><span style="color:red">v 6.1.9</span></a> <a href="#6.2.0"><span style="color:red">v 6.2.0</span></a> <a href="#6.2.2"><span style="color:red">v 6.2.2</span></a> <a href="#6.2.3"><span style="color:red">v 6.2.3</span></a> <a href="#6.2.4"><span style="color:red">v 6.2.4</span></a> <a href="#6.2.5"><span style="color:red">v 6.2.5</span></a> <a href="#6.2.6"><span style="color:green">v 6.2.6</span></a> <a href="#6.2.8"><span style="color:red">v 6.2.8</span></a> <a href="#6.2.9"><span style="color:green">v 6.2.9</span></a> <a href="#6.3.0"><span style="color:green">v 6.3.0</span></a> <a href="#6.3.1"><span style="color:red">v 6.3.1</span></a> <a href="#6.3.2"><span style="color:red">v 6.3.2</span></a> <a href="#6.3.4"><span style="color:red">v 6.3.4</span></a> <a href="#6.3.5"><span style="color:green">v 6.3.5</span></a> <a href="#6.3.6"><span style="color:green">v 6.3.6</span></a> <a href="#6.3.7"><span style="color:green">v 6.3.7</span></a> <a href="#6.3.8"><span style="color:green">v 6.3.8</span></a> <a href="#6.3.9"><span style="color:red">v 6.3.9</span></a> <a href="#6.4.1"><span style="color:red">v 6.4.1</span></a> <a href="#6.4.3"><span style="color:red">v 6.4.3</span></a> <a href="#6.4.4"><span style="color:green">v 6.4.4</span></a> <a href="#6.4.5"><span style="color:red">v 6.4.5</span></a> <a href="#6.4.6"><span style="color:red">v 6.4.6</span></a> <a href="#6.4.7"><span style="color:green">v 6.4.7</span></a> <a href="#6.4.8"><span style="color:red">v 6.4.8</span></a> <a href="#6.4.9"><span style="color:green">v 6.4.9</span></a> <a href="#6.5.0"><span style="color:red">v 6.5.0</span></a> <a href="#6.5.1"><span style="color:red">v 6.5.1</span></a> <a href="#6.5.2"><span style="color:red">v 6.5.2</span></a> <a href="#6.5.3"><span style="color:red">v 6.5.3</span></a> <a href="#6.5.4"><span style="color:red">v 6.5.4</span></a> <a href="#6.5.5"><span style="color:red">v 6.5.5</span></a> <a href="#6.5.6"><span style="color:red">v 6.5.6</span></a> <a href="#6.5.7"><span style="color:green">v 6.5.7</span></a> <a href="#6.5.9"><span style="color:red">v 6.5.9</span></a> <a href="#6.6.0"><span style="color:green">v 6.6.0</span></a> <a href="#6.6.1"><span style="color:red">v 6.6.1</span></a> <a href="#6.6.2"><span style="color:red">v 6.6.2</span></a> <a href="#6.6.3"><span style="color:red">v 6.6.3</span></a> <a href="#6.6.5"><span style="color:red">v 6.6.5</span></a> <a href="#6.6.6"><span style="color:green">v 6.6.6</span></a> <a href="#6.6.7"><span style="color:green">v 6.6.7</span></a> <a href="#6.7.0"><span style="color:red">v 6.7.0</span></a> <a href="#6.7.1"><span style="color:red">v 6.7.1</span></a> <a href="#6.7.2"><span style="color:green">v 6.7.2</span></a> <a href="#6.7.3"><span style="color:green">v 6.7.3</span></a> <a href="#6.7.4"><span style="color:red">v 6.7.4</span></a> <a href="#6.7.5"><span style="color:red">v 6.7.5</span></a> <a href="#6.7.7"><span style="color:red">v 6.7.7</span></a> <a href="#6.7.8"><span style="color:red">v 6.7.8</span></a> <a href="#6.7.9"><span style="color:red">v 6.7.9</span></a> <a href="#6.8.0"><span style="color:red">v 6.8.0</span></a> <a href="#6.8.1"><span style="color:red">v 6.8.1</span></a> <a href="#6.8.4"><span style="color:red">v 6.8.4</span></a> <a href="#6.8.5"><span style="color:red">v 6.8.5</span></a> <a href="#6.8.6"><span style="color:red">v 6.8.6</span></a> <a href="#6.8.7"><span style="color:green">v 6.8.7</span></a> <a href="#6.8.9"><span style="color:green">v 6.8.9</span></a> <a href="#6.9.0"><span style="color:green">v 6.9.0</span></a> <a href="#6.9.1"><span style="color:green">v 6.9.1</span></a>
 
 ### Safe versions
 #### v 1.0.1 — no shell/priv hooks
@@ -7045,12 +9071,24 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 #### v 1.2.6 — no shell/priv hooks
 <a id="1.2.6"></a>
 - <span style="color:green">guest computer:bounce with 0x74EAF22F inset</span>
+- <span style="color:green">guest computer:bounce with 0x74EAF22F inset</span>
+- <span style="color:green">null null with 0xAC58E1 timerderrori</span>
+- <span style="color:green">null null with 0xAC58E1 ationx</span>
+- <span style="color:green">null null with 0x51A233F9 portlinemovecttransfore</span>
+- <span style="color:green">null null with 0x51A233F9 ush_blockstantsremo</span>
+- <span style="color:green">null null with 0x3FBDDFB4 using</span>
+- <span style="color:green">null null with 0x3FBDDFB4 atch_</span>
+- <span style="color:green">Senni computer with 0x2614BFF2 valuesr</span>
 
 #### v 1.3.7 — no shell/priv hooks
 <a id="1.3.7"></a>
 - <span style="color:green">guest computer:bounce with 0x9DA5102 watchemeshupd</span>
 - <span style="color:green">guest file with 0x9DA5102 ansforman</span>
 - <span style="color:green">??? firewall_disable with 0x9DA5102 diagnostrstanchecktypebot</span>
+
+#### v 1.3.9 — no shell/priv hooks
+<a id="1.3.9"></a>
+- <span style="color:green">guest file with 0x9DA5102 ansforman</span>
 
 #### v 1.4.5 — no shell/priv hooks
 <a id="1.4.5"></a>
@@ -7063,6 +9101,12 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? firewall_disable with 0x16CE8FDA windosesourc</span>
 - <span style="color:green">??? firewall_disable with 0x16CE8FDA push_hea</span>
 - <span style="color:green">guest computer:bounce with 0x16CE8FDA olumentdata_typele</span>
+
+#### v 1.5.2 — no shell/priv hooks
+<a id="1.5.2"></a>
+- <span style="color:green">??? firewall_disable with 0x6513DC66 thisrepe</span>
+- <span style="color:green">guest computer:bounce with 0x6513DC66 urnalco</span>
+- <span style="color:green">null null with 0x6513DC66 introybuttoncommaximizede</span>
 
 #### v 1.5.6 — no shell/priv hooks
 <a id="1.5.6"></a>
@@ -7092,6 +9136,18 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 #### v 1.6.5 — no shell/priv hooks
 <a id="1.6.5"></a>
 - <span style="color:green">guest computer:bounce with 0x7C41A9D8 canvasgr</span>
+
+#### v 1.7.4 — no shell/priv hooks
+<a id="1.7.4"></a>
+- <span style="color:green">??? firewall_disable with 0x1284C3B5 sinput_</span>
+
+#### v 1.8.1 — no shell/priv hooks
+<a id="1.8.1"></a>
+- <span style="color:green">??? firewall_disable with 0x14AE30B8 startpos</span>
+- <span style="color:green">guest file with 0x14AE30B8 constartedistu</span>
+- <span style="color:green">??? firewall_disable with 0x42C1FE34 pressof</span>
+- <span style="color:green">??? firewall_disable with 0x24C457D6 eadiv</span>
+- <span style="color:green">null null with 0x793DC936 _138</span>
 
 #### v 1.8.6 — no shell/priv hooks
 <a id="1.8.6"></a>
@@ -7125,10 +9181,16 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 #### v 2.1.1 — no shell/priv hooks
 <a id="2.1.1"></a>
 - <span style="color:green">guest computer:bounce with 0x62BB3022 red_block_sizedelte</span>
+- <span style="color:green">guest computer:bounce with 0x62BB3022 red_block_sizedelte</span>
 
 #### v 2.2.7 — no shell/priv hooks
 <a id="2.2.7"></a>
 - <span style="color:green">guest computer:bounce with 0x1A59CAE0 copya</span>
+- <span style="color:green">null null with 0x1A59CAE0 sebackgrounteralse</span>
+
+#### v 2.2.8 — no shell/priv hooks
+<a id="2.2.8"></a>
+- <span style="color:green">??? firewall_disable with 0x1A59CAE0 crollinent</span>
 - <span style="color:green">null null with 0x1A59CAE0 sebackgrounteralse</span>
 
 #### v 2.3.1 — no shell/priv hooks
@@ -7139,6 +9201,23 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? firewall_disable with 0x6AAD55E3 entanain_f</span>
 - <span style="color:green">guest file with 0x161559D6 testopwatchstartio</span>
 - <span style="color:green">guest file with 0x161559D6 ptoendin</span>
+
+#### v 2.3.2 — no shell/priv hooks
+<a id="2.3.2"></a>
+- <span style="color:green">??? firewall_disable with 0x701D1A69 nenumber</span>
+- <span style="color:green">??? firewall_disable with 0x701D1A69 nenumber</span>
+
+#### v 2.3.4 — no shell/priv hooks
+<a id="2.3.4"></a>
+- <span style="color:green">??? firewall_disable with 0x701D1A69 nenumber</span>
+
+#### v 2.4.6 — no shell/priv hooks
+<a id="2.4.6"></a>
+- <span style="color:green">??? firewall_disable with 0x7D2307B7 getpositifieldi</span>
+
+#### v 2.5.0 — no shell/priv hooks
+<a id="2.5.0"></a>
+- <span style="color:green">guest computer:bounce with 0x13FEDA20 esultstopw</span>
 
 #### v 2.5.6 — no shell/priv hooks
 <a id="2.5.6"></a>
@@ -7185,6 +9264,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 #### v 2.9.0 — no shell/priv hooks
 <a id="2.9.0"></a>
 - <span style="color:green">guest file with 0x262D7872 positionstartedoubletefunctivetr</span>
+- <span style="color:green">guest file with 0x262D7872 positionstartedoubletefunctivetr</span>
 
 #### v 2.9.4 — no shell/priv hooks
 <a id="2.9.4"></a>
@@ -7210,10 +9290,12 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 <a id="3.0.9"></a>
 - <span style="color:green">??? firewall_disable with 0x6FC62986 widthisabl</span>
 - <span style="color:green">??? firewall_disable with 0x6FC62986 sizedelt</span>
+- <span style="color:green">??? firewall_disable with 0x6FC62986 sizedelt</span>
 
 #### v 3.1.0 — no shell/priv hooks
 <a id="3.1.0"></a>
 - <span style="color:green">??? firewall_disable with 0x6FC62986 widthisabl</span>
+- <span style="color:green">guest file with 0x6FC62986 isvisualby</span>
 - <span style="color:green">guest file with 0x6FC62986 isvisualby</span>
 
 #### v 3.1.3 — no shell/priv hooks
@@ -7223,6 +9305,10 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest computer with 0x7E3666C9 enoveategy</span>
 - <span style="color:green">null null with 0x5ED4F14E nimagetextsir</span>
 - <span style="color:green">Don computer with 0x41D6F9E6 eapk</span>
+
+#### v 3.1.9 — no shell/priv hooks
+<a id="3.1.9"></a>
+- <span style="color:green">??? firewall_disable with 0xF8316 nobjectsetvalfunctionclos</span>
 
 #### v 3.2.0 — no shell/priv hooks
 <a id="3.2.0"></a>
@@ -7238,6 +9324,12 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 <a id="3.3.1"></a>
 - <span style="color:green">guest file with 0xB51451D albytestopwatch_si</span>
 - <span style="color:green">guest file with 0xB51451D albytestopwatch_si</span>
+
+#### v 3.4.0 — no shell/priv hooks
+<a id="3.4.0"></a>
+- <span style="color:green">??? firewall_disable with 0x666792BC n_ltresultvaluesr</span>
+- <span style="color:green">null null with 0x3EF9155E odecme</span>
+- <span style="color:green">null null with 0x535B7112 siconteractable</span>
 
 #### v 3.4.1 — no shell/priv hooks
 <a id="3.4.1"></a>
@@ -7269,6 +9361,15 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">Enfloregr file with 0x73714347 ommax</span>
 - <span style="color:green">Tauvie file with 0x1EF5678E iosoundthismaxim</span>
 
+#### v 3.6.0 — no shell/priv hooks
+<a id="3.6.0"></a>
+- <span style="color:green">??? firewall_disable with 0x29741C44 pointln</span>
+
+#### v 3.6.2 — no shell/priv hooks
+<a id="3.6.2"></a>
+- <span style="color:green">??? firewall_disable with 0x531203CF ackgroundopositionshoread</span>
+- <span style="color:green">guest computer:bounce with 0x531203CF ourcelit++</span>
+
 #### v 3.6.5 — no shell/priv hooks
 <a id="3.6.5"></a>
 - <span style="color:green">??? firewall_disable with 0x531203CF teralse</span>
@@ -7277,6 +9378,11 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 #### v 3.6.6 — no shell/priv hooks
 <a id="3.6.6"></a>
 - <span style="color:green">??? firewall_disable with 0x203815FC ublick</span>
+- <span style="color:green">??? firewall_disable with 0x203815FC ublick</span>
+- <span style="color:green">null null with 0x53DF60A8 jectostartpositialid</span>
+- <span style="color:green">null null with 0x13D0FD3E tonged</span>
+- <span style="color:green">Nasimo file with 0x6ABD051C chortlinetreestacterdow++scaller32</span>
+- <span style="color:green">Randel computer with 0x6ABD051C tanchorequalbytebuttoncolorscript</span>
 
 #### v 3.6.7 — no shell/priv hooks
 <a id="3.6.7"></a>
@@ -7290,6 +9396,11 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest computer:bounce with 0x7D4F0CEE terdel</span>
 - <span style="color:green">??? firewall_disable with 0x7D4F0CEE fast</span>
 
+#### v 3.7.5 — no shell/priv hooks
+<a id="3.7.5"></a>
+- <span style="color:green">guest file with 0x2D1FA642 brean</span>
+- <span style="color:green">guest file with 0x2D1FA642 parametex</span>
+
 #### v 3.7.8 — no shell/priv hooks
 <a id="3.7.8"></a>
 - <span style="color:green">??? firewall_disable with 0x6352E4BF focusonserici</span>
@@ -7298,6 +9409,10 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x6352E4BF tartpos</span>
 - <span style="color:green">??? firewall_disable with 0x6352E4BF lush_blo</span>
 - <span style="color:green">guest computer:bounce with 0x6352E4BF portbackcontain_lengthoff</span>
+
+#### v 3.9.0 — no shell/priv hooks
+<a id="3.9.0"></a>
+- <span style="color:green">guest file with 0x2DCE3061 eadings</span>
 
 #### v 3.9.3 — no shell/priv hooks
 <a id="3.9.3"></a>
@@ -7313,14 +9428,43 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x30F1081E editor3</span>
 - <span style="color:green">??? firewall_disable with 0x30F1081E more</span>
 
+#### v 4.0.0 — no shell/priv hooks
+<a id="4.0.0"></a>
+- <span style="color:green">null null with 0x67D4D286 elhighlighligna</span>
+- <span style="color:green">guest computer:bounce with 0x67D4D286 block_star</span>
+
+#### v 4.0.4 — no shell/priv hooks
+<a id="4.0.4"></a>
+- <span style="color:green">??? firewall_disable with 0x2A511EA3 sebackgroundostationdexesadd</span>
+- <span style="color:green">guest file with 0x2A511EA3 statectse</span>
+
 #### v 4.0.5 — no shell/priv hooks
 <a id="4.0.5"></a>
 - <span style="color:green">guest file with 0x2A511EA3 statectse</span>
+
+#### v 4.1.1 — no shell/priv hooks
+<a id="4.1.1"></a>
+- <span style="color:green">??? firewall_disable with 0x499FAF8C yn_ltreecurly</span>
+- <span style="color:green">??? firewall_disable with 0x499FAF8C inenumsizewimatch</span>
+- <span style="color:green">??? firewall_disable with 0x499FAF8C diosourceloc</span>
+- <span style="color:green">??? firewall_disable with 0x5EE5DBDF _viewportbackgrountinusb</span>
+- <span style="color:green">??? firewall_disable with 0x499FAF8C yn_ltreecurly</span>
+- <span style="color:green">guest computer:bounce with 0x499FAF8C inenumsizewimatch</span>
+- <span style="color:green">??? firewall_disable with 0x499FAF8C diosourceloc</span>
+- <span style="color:green">null null with 0x53DF60A8 jectostartpositialid</span>
+- <span style="color:green">null null with 0x13D0FD3E tonged</span>
+- <span style="color:green">Rienk file with 0x6ABD051C chortlinetreestacterdow++scaller32</span>
+- <span style="color:green">Arric computer with 0x6ABD051C tanchorequalbytebuttoncolorscript</span>
 
 #### v 4.1.2 — no shell/priv hooks
 <a id="4.1.2"></a>
 - <span style="color:green">guest computer:bounce with 0x5EE5DBDF _viewportbackgrountinusb</span>
 - <span style="color:green">guest file with 0x5EE5DBDF flush_</span>
+
+#### v 4.1.8 — no shell/priv hooks
+<a id="4.1.8"></a>
+- <span style="color:green">guest computer:bounce with 0x660044A5 svisinitio</span>
+- <span style="color:green">??? firewall_disable with 0x660044A5 adividedi</span>
 
 #### v 4.2.1 — no shell/priv hooks
 <a id="4.2.1"></a>
@@ -7336,10 +9480,6 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 <a id="4.3.0"></a>
 - <span style="color:green">null null with 0x8B2FF7 terderraycopydictr</span>
 
-#### v 4.3.2 — no shell/priv hooks
-<a id="4.3.2"></a>
-- <span style="color:green">guest file with 0x8B2FF7 codecursoren</span>
-
 #### v 4.3.8 — no shell/priv hooks
 <a id="4.3.8"></a>
 - <span style="color:green">guest file with 0x33673302 eoutline++</span>
@@ -7351,17 +9491,6 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x7AC68B3A it++</span>
 - <span style="color:green">guest file with 0x7AC68B3A ositionima</span>
 - <span style="color:green">guest file with 0x7AC68B3A ocuso</span>
-
-#### v 4.4.1 — no shell/priv hooks
-<a id="4.4.1"></a>
-- <span style="color:green">guest file with 0x7AC68B3A text</span>
-- <span style="color:green">guest file with 0x7AC68B3A ositionima</span>
-- <span style="color:green">guest file with 0x7AC68B3A ocuso</span>
-- <span style="color:green">null null with 0x2D4B5315 cast</span>
-- <span style="color:green">null null with 0x7E6585CB ebi_buffectselfliststr</span>
-- <span style="color:green">guest file with 0x36A9B5E8 void</span>
-- <span style="color:green">Petro computer with 0x51A233F9 portlinemovecttransfore</span>
-- <span style="color:green">Petro computer with 0x2614BFF2 valuesr</span>
 
 #### v 4.4.4 — no shell/priv hooks
 <a id="4.4.4"></a>
@@ -7384,6 +9513,12 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 <a id="4.7.9"></a>
 - <span style="color:green">??? firewall_disable with 0x72D11B09 head</span>
 - <span style="color:green">??? firewall_disable with 0x79B28568 offsetackgroundopos</span>
+
+#### v 4.8.6 — no shell/priv hooks
+<a id="4.8.6"></a>
+- <span style="color:green">null null with 0x79B28568 pareturnalcolor_titl</span>
+- <span style="color:green">??? firewall_disable with 0x79B28568 tackundow</span>
+- <span style="color:green">guest computer:bounce with 0x79B28568 uttonobjecttransformlocal</span>
 
 #### v 4.8.7 — no shell/priv hooks
 <a id="4.8.7"></a>
@@ -7432,6 +9567,10 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x4663C858 kgroundostingbuttonte</span>
 - <span style="color:green">guest file with 0x4663C858 lengthsd</span>
 
+#### v 5.2.8 — no shell/priv hooks
+<a id="5.2.8"></a>
+- <span style="color:green">guest computer:bounce with 0x6E9AC57F arentpositio</span>
+
 #### v 5.4.7 — no shell/priv hooks
 <a id="5.4.7"></a>
 - <span style="color:green">null null with 0xB8DE195 evstringpend</span>
@@ -7441,6 +9580,17 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? firewall_disable with 0x6D020132 oseevent_o</span>
 - <span style="color:green">guest file with 0x6D020132 memapre</span>
 - <span style="color:green">guest file with 0x6D020132 emapresultco</span>
+
+#### v 5.5.2 — no shell/priv hooks
+<a id="5.5.2"></a>
+- <span style="color:green">guest computer:bounce with 0x6D020132 presult++</span>
+- <span style="color:green">null null with 0x6D020132 stopwatch</span>
+- <span style="color:green">guest file with 0x6D020132 textpare</span>
+
+#### v 5.5.5 — no shell/priv hooks
+<a id="5.5.5"></a>
+- <span style="color:green">??? firewall_disable with 0x4E61D4D elinenum++</span>
+- <span style="color:green">??? firewall_disable with 0x4E61D4D elinenum++</span>
 
 #### v 5.5.6 — no shell/priv hooks
 <a id="5.5.6"></a>
@@ -7456,6 +9606,10 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 #### v 5.6.6 — no shell/priv hooks
 <a id="5.6.6"></a>
 - <span style="color:green">guest file with 0x7F6C7AC3 base</span>
+
+#### v 5.6.7 — no shell/priv hooks
+<a id="5.6.7"></a>
+- <span style="color:green">??? firewall_disable with 0x7F6C7AC3 eltaddlinenumeracta</span>
 
 #### v 5.7.1 — no shell/priv hooks
 <a id="5.7.1"></a>
@@ -7502,6 +9656,9 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? firewall_disable with 0x7BE5B4A8 mentsr</span>
 - <span style="color:green">??? firewall_disable with 0x7BE5B4A8 file</span>
 - <span style="color:green">guest file with 0x7BE5B4A8 dowmator2</span>
+- <span style="color:green">??? firewall_disable with 0x2D268AB9 essigna</span>
+- <span style="color:green">??? firewall_disable with 0x7BE5B4A8 file</span>
+- <span style="color:green">guest file with 0x7BE5B4A8 dowmator2</span>
 
 #### v 5.8.3 — no shell/priv hooks
 <a id="5.8.3"></a>
@@ -7514,6 +9671,11 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest computer:bounce with 0x7BE5B4A8 mentsr</span>
 - <span style="color:green">??? firewall_disable with 0x7BE5B4A8 sourceplaydeltaddgetexto</span>
 - <span style="color:green">null null with 0x7BE5B4A8 frequeu</span>
+
+#### v 6.0.5 — no shell/priv hooks
+<a id="6.0.5"></a>
+- <span style="color:green">??? firewall_disable with 0x1D795F65 usedtaskbarupdatet</span>
+- <span style="color:green">guest file with 0x1D795F65 cound</span>
 
 #### v 6.0.7 — no shell/priv hooks
 <a id="6.0.7"></a>
@@ -7563,10 +9725,22 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? firewall_disable with 0x7560CF95 ocusedcolor_bufficit</span>
 - <span style="color:green">guest file with 0x7560CF95 mask</span>
 
+#### v 6.4.4 — no shell/priv hooks
+<a id="6.4.4"></a>
+- <span style="color:green">??? firewall_disable with 0xF301CF0 sdistenertypelen</span>
+- <span style="color:green">null null with 0x25710D83 emax_block_s</span>
+- <span style="color:green">null null with 0x5853F081 itlending_l</span>
+- <span style="color:green">null null with 0x47C6C00C onclosettimesst</span>
+
 #### v 6.4.7 — no shell/priv hooks
 <a id="6.4.7"></a>
 - <span style="color:green">??? firewall_disable with 0x27B14F75 lenb</span>
 - <span style="color:green">??? firewall_disable with 0x27B14F75 lenb</span>
+- <span style="color:green">??? firewall_disable with 0x27B14F75 lenb</span>
+
+#### v 6.4.9 — no shell/priv hooks
+<a id="6.4.9"></a>
+- <span style="color:green">guest computer:bounce with 0x27B14F75 eckransforma</span>
 
 #### v 6.5.7 — no shell/priv hooks
 <a id="6.5.7"></a>
@@ -7592,6 +9766,12 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 <a id="6.7.2"></a>
 - <span style="color:green">??? firewall_disable with 0x77EBA594 canvasgroundosourc</span>
 
+#### v 6.7.3 — no shell/priv hooks
+<a id="6.7.3"></a>
+- <span style="color:green">??? firewall_disable with 0x77EBA594 canvasgroundosourc</span>
+- <span style="color:green">??? firewall_disable with 0x77EBA594 ralsmaximizelistictree</span>
+- <span style="color:green">Lacqu computer with 0x797F5D2D oken</span>
+
 #### v 6.8.7 — no shell/priv hooks
 <a id="6.8.7"></a>
 - <span style="color:green">??? firewall_disable with 0x1848CC70 extslinesetactiv</span>
@@ -7607,6 +9787,12 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 <a id="6.9.0"></a>
 - <span style="color:green">guest computer:bounce with 0x18B8A289 olor_bufferred_bi</span>
 - <span style="color:green">guest computer:bounce with 0x18B8A289 minusb</span>
+
+#### v 6.9.1 — no shell/priv hooks
+<a id="6.9.1"></a>
+- <span style="color:green">??? firewall_disable with 0x4EDC14AA embofiteract</span>
+- <span style="color:green">??? firewall_disable with 0x4EDC14AA resultstr</span>
+- <span style="color:green">??? firewall_disable with 0x4EDC14AA fast</span>
 
 ### Unsafe versions (per-version details)
 #### v 1.0.0 — shell 1/7
@@ -7637,6 +9823,29 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x74B14F6 ktypeopb
 - <span style="color:green">??? password_change with 0x44814EFA sformanceoffsetexteffectsetactabl</span>
 - <span style="color:green">null null with 0x44814EFA arameter</span>
+
+#### v 1.0.8 — shell 5/12
+<a id="1.0.8"></a>
+- <span style="color:yellow">guest</span> shell with 0x2B48EBB4 eselayanimizelinenumsiz
+- <span style="color:green">??? firewall_disable with 0x774F91AF aorb</span>
+- <span style="color:yellow">guest</span> shell with 0x774F91AF ringcoundow_si
+- <span style="color:green">guest computer:bounce with 0x12C916D5 ent_onshowanima</span>
+- <span style="color:yellow">guest</span> shell with 0x12C916D5 steralse
+- <span style="color:green">Herstm file with 0x494387FF stanchor</span>
+- <span style="color:yellow">guest</span> shell with 0x494387FF tanchortbackco
+- Herstm shell with 0x6BCBE901 enumsizedeltaddli
+- <span style="color:green">guest computer with 0x6BCBE901 namemaxchanb</span>
+- <span style="color:green">Herstm computer with 0x6BCBE901 ditorplayona</span>
+- <span style="color:green">Herstm file with 0x92ADD90 tivetreeenovetrue</span>
+- <span style="color:green">??? firewall_disable with 0x262D7872 plespresult</span>
+
+#### v 1.0.9 — shell 3/5
+<a id="1.0.9"></a>
+- <span style="color:yellow">guest</span> shell with 0x2B48EBB4 eselayanimizelinenumsiz
+- <span style="color:green">??? firewall_disable with 0x2B48EBB4 hisstand</span>
+- <span style="color:yellow">guest</span> shell with 0x2B48EBB4 atch_
+- <span style="color:green">guest computer:bounce with 0x12C916D5 ent_onshowanima</span>
+- <span style="color:yellow">guest</span> shell with 0x12C916D5 steralse
 
 #### v 1.1.2 — shell 4/14, priv 1/14
 <a id="1.1.2"></a>
@@ -7767,6 +9976,30 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x7C0DCAD5 derrorifnotenertl
 - <span style="color:green">guest file with 0x7C0DCAD5 tvmyieldingsizet</span>
 
+#### v 1.3.0 — shell 2/10, priv 2/10
+<a id="1.3.0"></a>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x7C9F39F8 tput_bytesp
+- <span style="color:green">??? firewall_disable with 0x7C9F39F8 tequalbyte</span>
+- <span style="color:green">guest file with 0x7C9F39F8 etitlend_bloca</span>
+- <span style="color:green">??? firewall_disable with 0x7C9F39F8 presu</span>
+- <span style="color:yellow">guest</span> shell with 0x7C9F39F8 tartionan
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x7C9F39F8 tput_bytesp
+- <span style="color:green">??? firewall_disable with 0x7C9F39F8 tequalbyte</span>
+- <span style="color:green">guest file with 0x7C9F39F8 etitlend_bloca</span>
+- <span style="color:green">??? firewall_disable with 0x7C9F39F8 presu</span>
+- <span style="color:yellow">guest</span> shell with 0x7C9F39F8 tartionan
+
+#### v 1.3.2 — shell 1/8, priv 1/8
+<a id="1.3.2"></a>
+- <span style="color:green">guest computer:bounce with 0x9DA5102 watchemeshupd</span>
+- <span style="color:green">guest file with 0x9DA5102 ansforman</span>
+- <span style="color:green">??? firewall_disable with 0x9DA5102 diagnostrstanchecktypebot</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x7C9F39F8 tput_bytesp
+- <span style="color:green">??? firewall_disable with 0x7C9F39F8 tequalbyte</span>
+- <span style="color:green">guest file with 0x7C9F39F8 etitlend_bloca</span>
+- <span style="color:green">??? firewall_disable with 0x7C9F39F8 presu</span>
+- <span style="color:yellow">guest</span> shell with 0x7C9F39F8 tartionan
+
 #### v 1.3.3 — shell 1/10, priv 1/10
 <a id="1.3.3"></a>
 - <span style="color:green">guest computer:bounce with 0x9DA5102 watchemeshupd</span>
@@ -7779,6 +10012,31 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x7C9F39F8 tartionan
 - <span style="color:green">guest file with 0x7C0DCAD5 k_onlend_bits</span>
 - <span style="color:green">guest computer:bounce with 0x7C0DCAD5 ocuse</span>
+
+#### v 1.3.5 — shell 1/8, priv 1/8
+<a id="1.3.5"></a>
+- <span style="color:green">guest computer:bounce with 0x9DA5102 watchemeshupd</span>
+- <span style="color:green">guest file with 0x9DA5102 ansforman</span>
+- <span style="color:green">??? firewall_disable with 0x9DA5102 diagnostrstanchecktypebot</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x7C9F39F8 tput_bytesp
+- <span style="color:green">??? firewall_disable with 0x7C9F39F8 tequalbyte</span>
+- <span style="color:green">guest file with 0x7C9F39F8 etitlend_bloca</span>
+- <span style="color:green">??? firewall_disable with 0x7C9F39F8 presu</span>
+- <span style="color:yellow">guest</span> shell with 0x7C9F39F8 tartionan
+
+#### v 1.3.6 — shell 2/11
+<a id="1.3.6"></a>
+- <span style="color:green">??? firewall_disable with 0x7C9F39F8 tmidthiscreedistationx</span>
+- <span style="color:yellow">guest</span> shell with 0x7C9F39F8 ointextsiintlinenum
+- <span style="color:green">??? firewall_disable with 0x7C9F39F8 or_buttoncolo</span>
+- <span style="color:green">Rinkiwon computer with 0x40341465 stroyb</span>
+- Sala shell with 0x6E66C5E0 etelecttransfor
+- <span style="color:green">Rinkiwon file with 0x58E1D388 itionparsettext</span>
+- <span style="color:green">Sala file with 0x1644290 eategy</span>
+- <span style="color:green">null null with 0x49EA315E raycodeinvokethism</span>
+- <span style="color:green">null null with 0x49EA315E buttonclicksraycast_lengthc</span>
+- <span style="color:green">Ercovanlon file with 0x782C11D1 plicked</span>
+- <span style="color:green">null null with 0x365ADA7F scloseino</span>
 
 #### v 1.4.0 — shell 1/7
 <a id="1.4.0"></a>
@@ -7804,7 +10062,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x2090DE4E hisibled</span>
 - <span style="color:green">null null with 0x2090DE4E _alighli</span>
 
-#### v 1.4.3 — shell 4/6
+#### v 1.4.3 — shell 7/11
 <a id="1.4.3"></a>
 - <span style="color:yellow">guest</span> shell with 0x18AFBE74 falsmax_blocal
 - <span style="color:green">guest computer:bounce with 0x18AFBE74 pivotnewin</span>
@@ -7812,6 +10070,11 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x18AFBE74 falsmax_blocal
 - <span style="color:green">guest computer:bounce with 0x18AFBE74 pivotnewin</span>
 - <span style="color:yellow">guest</span> shell with 0x18AFBE74 _lendingsiz
+- <span style="color:yellow">guest</span> shell with 0x18AFBE74 falsmax_blocal
+- <span style="color:green">guest computer:bounce with 0x18AFBE74 pivotnewin</span>
+- <span style="color:yellow">guest</span> shell with 0x18AFBE74 _lendingsiz
+- <span style="color:green">??? password_change with 0x7DD8F3DE onteresultty</span>
+- Kohl shell with 0x4B83F098 constartedoutovec
 
 #### v 1.4.7 — shell 1/3
 <a id="1.4.7"></a>
@@ -7853,10 +10116,24 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x6513DC66 introybuttoncommaximizede</span>
 - <span style="color:red">root</span> <span style="color:red">computer</span> with 0x263ADD91 memaxim
 
-#### v 1.5.4 — shell 1/2
+#### v 1.5.4 — shell 2/4
 <a id="1.5.4"></a>
 - <span style="color:yellow">guest</span> shell with 0xC49F15E apresultcoun
 - <span style="color:green">null null with 0xC49F15E ne++</span>
+- <span style="color:yellow">guest</span> shell with 0xC49F15E apresultcoun
+- <span style="color:green">null null with 0xC49F15E ne++</span>
+
+#### v 1.5.5 — shell 4/9, priv 1/9
+<a id="1.5.5"></a>
+- <span style="color:green">guest file with 0xC49F15E codeselecttrank</span>
+- <span style="color:green">null null with 0xC49F15E ne++</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x5F0E25E6 celistactivetr
+- Rockson shell with 0x3206C638 i_values
+- <span style="color:yellow">guest</span> shell with 0x3206C638 etryparentsizedelancessa
+- <span style="color:green">null null with 0x3206C638 lendse</span>
+- Rockson shell with 0x25EC13ED sibletelin
+- <span style="color:yellow">guest</span> shell with 0x24336F84 nesinp
+- <span style="color:green">Unwit file with 0x24336F84 denti</span>
 
 #### v 1.5.7 — shell 1/2
 <a id="1.5.7"></a>
@@ -7887,9 +10164,12 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0xC821D24 imeleng
 - <span style="color:green">guest file with 0xC821D24 treelc</span>
 
-#### v 1.6.7 — shell 1/1
+#### v 1.6.7 — shell 2/4
 <a id="1.6.7"></a>
 - <span style="color:yellow">guest</span> shell with 0x7C41A9D8 ebuttontrins_h
+- <span style="color:yellow">guest</span> shell with 0x7C41A9D8 ebuttontrins_h
+- <span style="color:green">??? password_change with 0x1D9FBAE9 ading_dista</span>
+- <span style="color:green">guest file with 0x330AE823 eltextctoragupdater</span>
 
 #### v 1.6.9 — shell 1/10
 <a id="1.6.9"></a>
@@ -7919,6 +10199,17 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? password_change with 0x1D9FBAE9 ading_dista</span>
 - <span style="color:green">Chikan computer with 0x3BE80D5C sendingbuttonhighl</span>
 
+#### v 1.7.1 — shell 2/8
+<a id="1.7.1"></a>
+- <span style="color:yellow">guest</span> shell with 0x491319D9 ortbackgroundownev
+- <span style="color:green">??? firewall_disable with 0x491319D9 ledtaskthiscloselembofitextransf</span>
+- <span style="color:green">guest computer:bounce with 0x491319D9 dreground</span>
+- <span style="color:green">null null with 0x241D7B0C thanb</span>
+- <span style="color:green">??? firewall_disable with 0x241D7B0C x++</span>
+- <span style="color:green">guest computer:bounce with 0x241D7B0C textuiteralse</span>
+- <span style="color:yellow">guest</span> shell with 0x241D7B0C _mationx
+- <span style="color:green">null null with 0x241D7B0C uptimatch_a</span>
+
 #### v 1.7.2 — shell 2/10
 <a id="1.7.2"></a>
 - <span style="color:yellow">guest</span> shell with 0x1284C3B5 emeimatch_lend_cod
@@ -7944,6 +10235,16 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x24C457D6 itsbl_tr_flush_</span>
 - <span style="color:green">??? firewall_disable with 0x24C457D6 datelistart++</span>
 - <span style="color:green">null null with 0x24C457D6 sof</span>
+
+#### v 1.7.5 — shell 1/7
+<a id="1.7.5"></a>
+- <span style="color:green">null null with 0x1284C3B5 enum++</span>
+- <span style="color:green">guest computer:bounce with 0x1284C3B5 esinsicsinsicreelc</span>
+- <span style="color:green">??? firewall_disable with 0x1284C3B5 sinput_</span>
+- <span style="color:green">??? firewall_disable with 0x1284C3B5 checklint</span>
+- <span style="color:green">Ielixi file with 0x43E75632 istenertypebotton</span>
+- <span style="color:green">guest computer with 0x14131AF _buffectsetactableteli</span>
+- Ielixi shell with 0x14131AF kaheady_def
 
 #### v 1.7.6 — shell 3/10
 <a id="1.7.6"></a>
@@ -7987,7 +10288,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest computer:bounce with 0x24C457D6 eadiv</span>
 - <span style="color:green">null null with 0x24C457D6 sof</span>
 
-#### v 1.7.9 — shell 1/7
+#### v 1.7.9 — shell 1/11
 <a id="1.7.9"></a>
 - <span style="color:green">??? firewall_disable with 0x14AE30B8 dtresize</span>
 - <span style="color:green">??? password_change with 0x19E411B2 tandata_typebottom</span>
@@ -7996,6 +10297,34 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - Skinsk shell with 0x1D20A60A _codelte
 - <span style="color:green">null null with 0x14AE30B8 dtresize</span>
 - <span style="color:green">null null with 0x14AE30B8 nenumber</span>
+- <span style="color:green">??? firewall_disable with 0x14AE30B8 dtresize</span>
+- <span style="color:green">??? firewall_disable with 0x14AE30B8 dtresize</span>
+- <span style="color:green">null null with 0xABFA31 s_h</span>
+- <span style="color:green">null null with 0xABFA31 schemechainentilsu</span>
+
+#### v 1.8.0 — shell 1/8
+<a id="1.8.0"></a>
+- <span style="color:green">guest computer:bounce with 0x14AE30B8 startpos</span>
+- <span style="color:green">??? firewall_disable with 0x14AE30B8 dtresize</span>
+- <span style="color:green">guest computer:bounce with 0x14AE30B8 startpos</span>
+- <span style="color:green">??? firewall_disable with 0x14AE30B8 dtresize</span>
+- <span style="color:green">guest file with 0x1EF5678E deflate</span>
+- <span style="color:green">guest file with 0x2F06089E datectsetactionstrato</span>
+- <span style="color:green">guest computer with 0x2F06089E elend_bitsbl_t</span>
+- <span style="color:yellow">guest</span> shell with 0x4DBD65C9 loselengt
+
+#### v 1.8.4 — shell 2/10
+<a id="1.8.4"></a>
+- <span style="color:green">Edianit file with 0x7541CB63 aphic</span>
+- <span style="color:green">null null with 0x6B6671D4 nesrep_3_10</span>
+- <span style="color:green">Edianit file with 0x6B6671D4 sendpositionary</span>
+- Edianit shell with 0x690F3AE1 esskeycodecin
+- <span style="color:green">null null with 0x35E0E4A9 line</span>
+- <span style="color:green">Erluko file with 0x494387FF stanchor</span>
+- Erluko shell with 0x6BCBE901 enumsizedeltaddli
+- <span style="color:green">guest computer with 0x6BCBE901 namemaxchanb</span>
+- <span style="color:green">Erluko computer with 0x6BCBE901 ditorplayona</span>
+- <span style="color:green">Erluko file with 0x92ADD90 tivetreeenovetrue</span>
 
 #### v 1.8.5 — shell 1/5, priv 1/5
 <a id="1.8.5"></a>
@@ -8016,6 +10345,13 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest computer:bounce with 0x707A1EB9 bread</span>
 - <span style="color:green">??? firewall_disable with 0x707A1EB9 indopositio</span>
 - <span style="color:yellow">guest</span> shell with 0x707A1EB9 etextobjec
+
+#### v 1.9.5 — shell 1/4
+<a id="1.9.5"></a>
+- <span style="color:green">guest computer:bounce with 0x2401145E tonobjecttransformoffset</span>
+- <span style="color:green">guest file with 0x2401145E _lend1</span>
+- <span style="color:yellow">guest</span> shell with 0x2401145E bitsdyn_dtreed
+- <span style="color:green">guest file with 0x2401145E tmsbintoffsetmin</span>
 
 #### v 1.9.7 — shell 1/4
 <a id="1.9.7"></a>
@@ -8048,8 +10384,10 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x3C0A38C9 d_flush_bitslconstreenove
 - <span style="color:green">??? firewall_disable with 0x3C0A38C9 this</span>
 
-#### v 2.0.5 — shell 1/2
+#### v 2.0.5 — shell 2/4
 <a id="2.0.5"></a>
+- <span style="color:green">??? firewall_disable with 0x42A0EE43 adlength</span>
+- <span style="color:yellow">guest</span> shell with 0x42A0EE43 hecklinenums
 - <span style="color:green">??? firewall_disable with 0x42A0EE43 adlength</span>
 - <span style="color:yellow">guest</span> shell with 0x42A0EE43 hecklinenums
 
@@ -8230,6 +10568,12 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? firewall_disable with 0x7D2307B7 setactorplaybackundostati</span>
 - <span style="color:green">guest computer:bounce with 0x7D2307B7 tonte</span>
 
+#### v 2.3.9 — shell 1/3
+<a id="2.3.9"></a>
+- <span style="color:yellow">guest</span> shell with 0x77944C3E essertialid
+- <span style="color:green">??? password_change with 0x3A8A10B7 unctionx</span>
+- <span style="color:green">null null with 0x4E0AE315 text</span>
+
 #### v 2.4.0 — shell 3/6
 <a id="2.4.0"></a>
 - <span style="color:yellow">guest</span> shell with 0x77944C3E essertialid
@@ -8359,6 +10703,10 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x2814A540 malcontextnewicon
 - <span style="color:green">guest computer with 0x2A32E39F glow</span>
 
+#### v 2.6.5 — shell 1/1
+<a id="2.6.5"></a>
+- <span style="color:yellow">guest</span> shell with 0x56348D65 port~len
+
 #### v 2.6.6 — shell 3/5
 <a id="2.6.6"></a>
 - <span style="color:green">??? firewall_disable with 0x56348D65 ontinformsizedel</span>
@@ -8428,6 +10776,13 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x586E3DB1 zedelc</span>
 - <span style="color:green">??? firewall_disable with 0x586E3DB1 guide</span>
 
+#### v 2.8.0 — shell 1/4, priv 1/4
+<a id="2.8.0"></a>
+- <span style="color:green">??? firewall_disable with 0x586E3DB1 emax_co</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x2D426E98 ifminiscro
+- <span style="color:green">null null with 0x2D426E98 grountilsursor-1</span>
+- Lutf shell with 0x28F32678 emapmap
+
 #### v 2.8.1 — shell 1/1
 <a id="2.8.1"></a>
 - <span style="color:yellow">guest</span> shell with 0x586E3DB1 spritextuitex
@@ -8487,13 +10842,37 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x1D32FA02 opequaren</span>
 - <span style="color:green">guest file with 0x1D32FA02 remodalposit</span>
 
-#### v 2.9.8 — shell 2/5
+#### v 2.9.6 — shell 1/5
+<a id="2.9.6"></a>
+- <span style="color:green">??? firewall_disable with 0x1D32FA02 insicsiniscan_endposit</span>
+- <span style="color:yellow">guest</span> shell with 0x1D32FA02 slow
+- <span style="color:green">??? firewall_disable with 0x1D32FA02 comprevp</span>
+- <span style="color:green">guest file with 0x1D32FA02 opequaren</span>
+- <span style="color:green">guest file with 0x1D32FA02 remodalposit</span>
+
+#### v 2.9.7 — shell 1/5
+<a id="2.9.7"></a>
+- <span style="color:green">??? firewall_disable with 0x1D32FA02 urly</span>
+- <span style="color:yellow">guest</span> shell with 0x1D32FA02 slow
+- <span style="color:green">??? firewall_disable with 0x1D32FA02 comprevp</span>
+- <span style="color:green">guest file with 0x1D32FA02 opequaren</span>
+- <span style="color:green">guest file with 0x1D32FA02 remodalposit</span>
+
+#### v 2.9.8 — shell 4/13, priv 1/13
 <a id="2.9.8"></a>
 - <span style="color:green">??? firewall_disable with 0x1D32FA02 urly</span>
 - <span style="color:yellow">guest</span> shell with 0x1D32FA02 slow
 - <span style="color:yellow">guest</span> shell with 0x1D32FA02 pathbaseons
 - <span style="color:green">guest file with 0x1D32FA02 opequaren</span>
 - <span style="color:green">guest file with 0x1D32FA02 remodalposit</span>
+- <span style="color:green">??? firewall_disable with 0x1D32FA02 urly</span>
+- <span style="color:yellow">guest</span> shell with 0x1D32FA02 slow
+- <span style="color:yellow">guest</span> shell with 0x1D32FA02 pathbaseons
+- <span style="color:green">guest file with 0x1D32FA02 opequaren</span>
+- <span style="color:green">guest file with 0x1D32FA02 remodalposit</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x7C6C96F1 ponenumsizewindostrollrectse
+- <span style="color:green">Suskins file with 0x20804A68 dittextvmyie</span>
+- <span style="color:green">Suskins computer with 0x60E3FA79 onterialresi</span>
 
 #### v 3.0.0 — shell 1/1
 <a id="3.0.0"></a>
@@ -8537,6 +10916,29 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:red">root</span> <span style="color:red">file</span> with 0x23E295E2 carenab
 - <span style="color:green">null null with 0x23E295E2 treeinvoken</span>
 
+#### v 3.0.7 — shell 5/20, priv 1/20
+<a id="3.0.7"></a>
+- <span style="color:green">guest file with 0x2D328E95 sefaultreestendpositi</span>
+- <span style="color:green">null null with 0x7CBB1DD1 tlengthof</span>
+- <span style="color:yellow">guest</span> shell with 0x7CBB1DD1 equeuetons
+- <span style="color:green">Berley computer with 0x7CBB1DD1 lexdequare</span>
+- <span style="color:green">null null with 0x33118C10 nimatch_lend_co</span>
+- <span style="color:green">null null with 0x5C29F7AE ebackaddlintroybuttonstancho</span>
+- <span style="color:green">Olingen file with 0x782C11D1 plicked</span>
+- <span style="color:green">null null with 0x322151F5 self</span>
+- Patri shell with 0xCE494F9 opt_len
+- <span style="color:green">Patri file with 0x348A893C os++</span>
+- <span style="color:green">guest file with 0xE78DFEC copyd</span>
+- <span style="color:green">??? password_change with 0xE78DFEC elengthofa</span>
+- <span style="color:green">guest computer with 0x25EC13ED inesin</span>
+- <span style="color:green">null null with 0x23B8187F opend_bit</span>
+- <span style="color:yellow">guest</span> shell with 0x49C6B0F0 posit
+- <span style="color:yellow">guest</span> shell with 0x49C6B0F0 falsbuild_tr_f
+- <span style="color:yellow">guest</span> shell with 0x49C6B0F0 nicelockbu
+- <span style="color:green">guest file with 0x9A6C2B4 rulyb</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x797F5D2D sele
+- <span style="color:green">Seveg computer with 0x797F5D2D oken</span>
+
 #### v 3.1.1 — shell 3/5
 <a id="3.1.1"></a>
 - <span style="color:yellow">guest</span> shell with 0x6FC62986 _codeintlinter
@@ -8553,14 +10955,18 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x6FC62986 this
 - <span style="color:green">guest computer:bounce with 0x6FC62986 uffici</span>
 
-#### v 3.1.5 — shell 2/4
+#### v 3.1.4 — shell 1/2
+<a id="3.1.4"></a>
+- <span style="color:yellow">guest</span> shell with 0x1E806748 parset
+- <span style="color:green">guest file with 0x1E806748 noverlaysountimea</span>
+
+#### v 3.1.5 — shell 2/3
 <a id="3.1.5"></a>
 - <span style="color:yellow">guest</span> shell with 0x1E806748 tinenumsiz
 - <span style="color:green">guest file with 0x1E806748 noverlaysountimea</span>
 - Serridio shell with 0x62C8B9D9 coundosta
-- <span style="color:green">null null with 0x4255F5AA singsupdatapower</span>
 
-#### v 3.1.6 — shell 2/8
+#### v 3.1.6 — shell 3/10
 <a id="3.1.6"></a>
 - <span style="color:yellow">guest</span> shell with 0x1E806748 dostroybutton
 - <span style="color:green">guest file with 0x1E806748 noverlaysountimea</span>
@@ -8570,6 +10976,8 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x6BC25761 srhsa</span>
 - <span style="color:green">null null with 0x6BC25761 tenerthanb</span>
 - <span style="color:green">null null with 0x6BC25761 flush_bl</span>
+- <span style="color:yellow">guest</span> shell with 0x1E806748 dostroybutton
+- <span style="color:green">guest file with 0x1E806748 noverlaysountimea</span>
 
 #### v 3.1.8 — shell 4/5
 <a id="3.1.8"></a>
@@ -8619,6 +11027,10 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x2737FF3 codeintline+
 - <span style="color:green">??? firewall_disable with 0x2737FF3 shoroffsettingco</span>
 
+#### v 3.3.4 — shell 1/1
+<a id="3.3.4"></a>
+- <span style="color:yellow">guest</span> shell with 0x2737FF3 codeintline+
+
 #### v 3.3.6 — shell 3/5
 <a id="3.3.6"></a>
 - <span style="color:green">??? firewall_disable with 0x2737FF3 erinfon</span>
@@ -8651,7 +11063,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x19A46069 localedtaskthisca</span>
 - <span style="color:yellow">guest</span> shell with 0x19A46069 ocksoundo
 
-#### v 3.4.8 — shell 1/13
+#### v 3.4.8 — shell 3/24, priv 2/24
 <a id="3.4.8"></a>
 - <span style="color:green">null null with 0x1EF5678E deflate</span>
 - <span style="color:green">null null with 0x2F06089E elend_bitsbl_t</span>
@@ -8666,6 +11078,17 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x24413D79 pivotreeth</span>
 - <span style="color:green">null null with 0x1112CE01 vetackgrountintlinenumerdoub</span>
 - <span style="color:green">null null with 0x39F903D0 tlineslindostartc</span>
+- <span style="color:green">Erriz computer with 0x6EB28804 spush_h</span>
+- <span style="color:yellow">guest</span> shell with 0x4DB86EBE publed
+- <span style="color:green">null null with 0xE5FFB2F nimplicevalfu</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0xE5FFB2F valuesad
+- <span style="color:green">guest file with 0x55E8B97A rep_3_6</span>
+- <span style="color:green">guest computer with 0x1F3A3482 peopb</span>
+- <span style="color:green">guest computer with 0x28D9FE84 osebackgroundo</span>
+- <span style="color:green">guest file with 0xC460EEB dressionsb</span>
+- <span style="color:green">??? password_change with 0x263ADD91 date</span>
+- Beling shell with 0x263ADD91 heapk
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x263ADD91 memaxim
 
 #### v 3.4.9 — shell 1/2, priv 1/2
 <a id="3.4.9"></a>
@@ -8723,6 +11146,19 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? firewall_disable with 0x30A7FB03 text</span>
 - <span style="color:yellow">guest</span> shell with 0x29741C44 onformoffsettinusb
 - <span style="color:green">null null with 0x29741C44 ourcevolumerialighlight</span>
+
+#### v 3.6.3 — shell 1/10
+<a id="3.6.3"></a>
+- <span style="color:green">??? firewall_disable with 0x531203CF ackgroundopositionshoread</span>
+- <span style="color:green">guest computer:bounce with 0x531203CF tarentsi</span>
+- <span style="color:green">??? firewall_disable with 0x531203CF ackgroundopositionshoread</span>
+- <span style="color:green">guest computer:bounce with 0x531203CF tarentsi</span>
+- <span style="color:green">??? password_change with 0x5276A6C0 ockblocale</span>
+- Talcox shell with 0x62C8B9D9 coundosta
+- <span style="color:green">??? password_change with 0x62C8B9D9 aycastendpointe</span>
+- <span style="color:green">guest file with 0xDD2F8D itleb</span>
+- <span style="color:green">Talcox computer with 0x48E71B2C retrue</span>
+- <span style="color:green">guest computer with 0x4255F5AA ueuetoketh</span>
 
 #### v 3.6.9 — shell 3/5
 <a id="3.6.9"></a>
@@ -8821,6 +11257,12 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? firewall_disable with 0x564BC3F1 urceli</span>
 - <span style="color:yellow">guest</span> shell with 0x564BC3F1 this
 
+#### v 3.8.6 — shell 2/3
+<a id="3.8.6"></a>
+- <span style="color:yellow">guest</span> shell with 0x6EDD9590 audiosourcevalue
+- <span style="color:yellow">guest</span> shell with 0x6EDD9590 ritextslcon
+- <span style="color:green">guest file with 0x6EDD9590 ed_bitsstatictreedy</span>
+
 #### v 3.9.1 — shell 1/3
 <a id="3.9.1"></a>
 - <span style="color:green">??? firewall_disable with 0x2DCE3061 sagesaddgeteli</span>
@@ -8858,6 +11300,21 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x67D4D286 tontsreak
 - <span style="color:yellow">guest</span> shell with 0x67D4D286 chorline++
 
+#### v 4.0.3 — shell 3/12, priv 1/12
+<a id="4.0.3"></a>
+- <span style="color:yellow">guest</span> shell with 0x2A511EA3 dingsupdate
+- <span style="color:green">??? firewall_disable with 0x2A511EA3 sebackgroundostationdexesadd</span>
+- <span style="color:green">guest file with 0x2A511EA3 statectse</span>
+- <span style="color:green">??? password_change with 0xEB9DEB8 torupdategy</span>
+- <span style="color:green">guest computer with 0x6C62B4A9 dateiconternalcontex</span>
+- <span style="color:green">Aliustich computer with 0x11F422E9 tionx</span>
+- <span style="color:green">Santerm computer with 0x11F422E9 saddlinei</span>
+- <span style="color:green">guest file with 0x7713EC53 ttransformof</span>
+- <span style="color:yellow">guest</span> shell with 0x7713EC53 viewport
+- <span style="color:green">guest file with 0x1658D04C ock_oncolor_shadow+</span>
+- Santerm shell with 0x263ADD91 heapk
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x263ADD91 memaxim
+
 #### v 4.0.6 — shell 3/4
 <a id="4.0.6"></a>
 - <span style="color:yellow">guest</span> shell with 0x2A511EA3 esetsetransforigsizetru
@@ -8881,13 +11338,22 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x5EE5DBDF ineslinecolorschecklinenum</span>
 - <span style="color:yellow">guest</span> shell with 0x5EE5DBDF stanchore
 
+#### v 4.1.3 — shell 1/1
+<a id="4.1.3"></a>
+- <span style="color:yellow">guest</span> shell with 0x5EE5DBDF _ltreeintextobjectselance
+
 #### v 4.1.4 — shell 1/3
 <a id="4.1.4"></a>
 - <span style="color:green">guest file with 0x2B581D67 ring_distactivetransfo</span>
 - <span style="color:green">guest computer:bounce with 0x2B581D67 jectsetdeflavor</span>
 - <span style="color:yellow">guest</span> shell with 0x2B581D67 sizededistgraphic
 
-#### v 4.1.9 — shell 4/16
+#### v 4.1.6 — shell 1/2
+<a id="4.1.6"></a>
+- <span style="color:yellow">guest</span> shell with 0x2B581D67 imizedeltaddgetpivotgetcol
+- <span style="color:green">null null with 0x2B581D67 ialpositial</span>
+
+#### v 4.1.9 — shell 4/18
 <a id="4.1.9"></a>
 - <span style="color:green">??? firewall_disable with 0x660044A5 ovedoutlinenumeractedoundowneve</span>
 - <span style="color:green">??? firewall_disable with 0x660044A5 adividedi</span>
@@ -8905,8 +11371,10 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x24336F84 componenumsirect</span>
 - <span style="color:yellow">guest</span> shell with 0x24336F84 nesinp
 - <span style="color:green">guest file with 0x24336F84 denti</span>
+- <span style="color:green">??? firewall_disable with 0x660044A5 ovedoutlinenumeractedoundowneve</span>
+- <span style="color:green">??? firewall_disable with 0x660044A5 adividedi</span>
 
-#### v 4.2.0 — shell 2/6, priv 2/6
+#### v 4.2.0 — shell 2/7, priv 2/7
 <a id="4.2.0"></a>
 - <span style="color:green">??? firewall_disable with 0x660044A5 ovedoutlinenumeractedoundowneve</span>
 - Hatanourke shell with 0x7C0DB291 t++
@@ -8914,9 +11382,11 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x761E664F ydictreebitlebacka</span>
 - <span style="color:red">root</span> shell with 0x7A23ED70 buttonobjectevent
 - <span style="color:green">guest computer with 0x6E4E8457 eapk</span>
+- <span style="color:green">??? firewall_disable with 0x660044A5 ovedoutlinenumeractedoundowneve</span>
 
-#### v 4.2.3 — shell 1/1
+#### v 4.2.3 — shell 2/2
 <a id="4.2.3"></a>
+- <span style="color:yellow">guest</span> shell with 0x686BD474 lhighlighlightm
 - <span style="color:yellow">guest</span> shell with 0x686BD474 lhighlighlightm
 
 #### v 4.2.5 — shell 4/9
@@ -8943,7 +11413,20 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x8B2FF7 ad
 - <span style="color:green">??? firewall_disable with 0x8B2FF7 eady_de</span>
 
-#### v 4.3.3 — shell 1/6
+#### v 4.3.2 — shell 1/10
+<a id="4.3.2"></a>
+- <span style="color:green">guest file with 0x8B2FF7 codecursoren</span>
+- <span style="color:green">guest file with 0x8B2FF7 codecursoren</span>
+- <span style="color:green">Enzie file with 0x14CB3403 eyrepz_3_6</span>
+- <span style="color:green">null null with 0x24413D79 statei</span>
+- <span style="color:green">Reiadri file with 0x24413D79 ranged</span>
+- <span style="color:green">guest file with 0x362B4DD2 ore</span>
+- <span style="color:green">guest file with 0x46C1C25B tatic_treestringcount</span>
+- <span style="color:green">guest file with 0x46C1C25B abletryparsetactivetreelitexteffe</span>
+- <span style="color:green">??? password_change with 0x46C1C25B sh_pend_bitsbl_tree</span>
+- Rovela shell with 0x5EA7D8C3 codecinputshowanimatibletextvm
+
+#### v 4.3.3 — shell 1/9
 <a id="4.3.3"></a>
 - <span style="color:green">guest file with 0x5F93B5C2 undthiscloselayanimatch_sizey</span>
 - <span style="color:green">null null with 0x5F93B5C2 treedist</span>
@@ -8951,6 +11434,9 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - Elgerse shell with 0x1A9F45EA stopwatch_avai
 - <span style="color:green">Elgerse file with 0x30B31D19 file</span>
 - <span style="color:green">Elgerse file with 0x30B31D19 closeback</span>
+- <span style="color:green">guest file with 0x5F93B5C2 undthiscloselayanimatch_sizey</span>
+- <span style="color:green">null null with 0x5F93B5C2 treedist</span>
+- <span style="color:green">guest file with 0x5F93B5C2 stringsupdategy</span>
 
 #### v 4.3.4 — shell 2/9, priv 1/9
 <a id="4.3.4"></a>
@@ -8981,6 +11467,23 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 #### v 4.3.9 — priv 1/1
 <a id="4.3.9"></a>
 - <span style="color:red">root</span> <span style="color:red">file</span> with 0x33673302 guide
+
+#### v 4.4.1 — shell 1/14
+<a id="4.4.1"></a>
+- <span style="color:green">guest file with 0x7AC68B3A text</span>
+- <span style="color:green">guest file with 0x7AC68B3A ositionima</span>
+- <span style="color:green">guest file with 0x7AC68B3A ocuso</span>
+- <span style="color:green">null null with 0x2D4B5315 cast</span>
+- <span style="color:green">null null with 0x7E6585CB ebi_buffectselfliststr</span>
+- <span style="color:green">guest file with 0x36A9B5E8 void</span>
+- <span style="color:green">Petro computer with 0x51A233F9 portlinemovecttransfore</span>
+- <span style="color:green">Petro computer with 0x2614BFF2 valuesr</span>
+- <span style="color:green">guest file with 0x7AC68B3A text</span>
+- <span style="color:green">guest file with 0x7AC68B3A ositionima</span>
+- <span style="color:green">guest file with 0x7AC68B3A ocuso</span>
+- <span style="color:green">Aldreast computer with 0x6E66C5E0 squalby</span>
+- Aldreast shell with 0x6E66C5E0 etelecttransfor
+- <span style="color:green">Aldreast file with 0x6E66C5E0 exerground</span>
 
 #### v 4.4.2 — shell 1/5
 <a id="4.4.2"></a>
@@ -9024,6 +11527,31 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 <a id="4.5.0"></a>
 - <span style="color:green">guest file with 0x34960449 copyd</span>
 - <span style="color:yellow">guest</span> shell with 0x34960449 oublic
+
+#### v 4.5.1 — shell 2/8, priv 1/8
+<a id="4.5.1"></a>
+- <span style="color:red">root</span> shell with 0x34960449 moverlaybackaddparetreetre
+- <span style="color:green">Csitehon file with 0x130C803B wardowmation</span>
+- <span style="color:green">guest file with 0x267845BA repeatored_bitslcode</span>
+- <span style="color:green">null null with 0x58E1D388 iosourcelit_butt</span>
+- Csitehon shell with 0x58E1D388 onfig
+- <span style="color:green">Poph file with 0x58E1D388 itionparsettext</span>
+- <span style="color:green">Csitehon file with 0x1644290 eategy</span>
+- <span style="color:green">null null with 0xB726D1F taddparac</span>
+
+#### v 4.5.3 — shell 1/11
+<a id="4.5.3"></a>
+- <span style="color:green">??? firewall_disable with 0x34960449 palpha</span>
+- <span style="color:green">??? firewall_disable with 0x34960449 videdbyb</span>
+- <span style="color:green">??? password_change with 0x5276A6C0 ockblocale</span>
+- <span style="color:green">null null with 0x5276A6C0 ernalcol</span>
+- Enbottely shell with 0x62C8B9D9 coundosta
+- <span style="color:green">??? password_change with 0x62C8B9D9 aycastendpointe</span>
+- <span style="color:green">null null with 0x48E71B2C repeatlinemovecursch</span>
+- <span style="color:green">guest file with 0x48E71B2C sdcolor_viewpor</span>
+- <span style="color:green">Enbottely computer with 0x48E71B2C retrue</span>
+- <span style="color:green">guest computer with 0x4255F5AA ueuetoketh</span>
+- <span style="color:green">??? password_change with 0x4255F5AA singsupdatapower</span>
 
 #### v 4.5.5 — shell 3/6
 <a id="4.5.5"></a>
@@ -9145,10 +11673,23 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x67757E71 need</span>
 - <span style="color:green">guest file with 0x67757E71 sh_blocal</span>
 
-#### v 4.7.4 — shell 1/2
+#### v 4.7.3 — shell 3/6
+<a id="4.7.3"></a>
+- <span style="color:green">??? firewall_disable with 0x67757E71 etexteffector</span>
+- <span style="color:green">Stinsonysi file with 0x19E411B2 tionaryeresultna</span>
+- Doertoc shell with 0x28F32678 emapmap
+- <span style="color:green">Tlockst computer with 0x63C3A316 dostancho</span>
+- Tlockst shell with 0x3EE97275 engthsbuil
+- Skinson shell with 0x5F0BB2FA odlengthoffset
+
+#### v 4.7.4 — shell 2/6
 <a id="4.7.4"></a>
 - <span style="color:yellow">guest</span> shell with 0x3F97A3C5 blocallbackpe
 - <span style="color:green">guest file with 0x3F97A3C5 royuitextobjecttransforedpos</span>
+- <span style="color:yellow">guest</span> shell with 0x3F97A3C5 blocallbackpe
+- <span style="color:green">guest file with 0x3F97A3C5 royuitextobjecttransforedpos</span>
+- <span style="color:green">null null with 0x54E361AB contextobjec</span>
+- <span style="color:green">Scottlehmi computer with 0xC44843B rategy</span>
 
 #### v 4.7.6 — shell 1/12
 <a id="4.7.6"></a>
@@ -9169,6 +11710,15 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 <a id="4.7.7"></a>
 - <span style="color:green">guest file with 0x67757E71 treeintoviewportmsbintflu</span>
 - <span style="color:yellow">guest</span> shell with 0x67757E71 horof
+
+#### v 4.8.3 — shell 2/6
+<a id="4.8.3"></a>
+- <span style="color:green">guest computer with 0x76384B3C itletextsiz</span>
+- <span style="color:green">null null with 0x76384B3C lock_sizelistatus</span>
+- <span style="color:green">guest computer with 0x218A2CE5 databledistanchorl</span>
+- Silveano shell with 0x309AA49F elit++
+- Silveano shell with 0x2814A540 malcontextnewicon
+- <span style="color:green">null null with 0x2A32E39F glow</span>
 
 #### v 4.8.4 — shell 4/19, priv 1/19
 <a id="4.8.4"></a>
@@ -9254,6 +11804,11 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? firewall_disable with 0x4E559A49 ewportsirectse</span>
 - <span style="color:green">??? firewall_disable with 0x4E559A49 values</span>
 
+#### v 5.0.6 — shell 1/2
+<a id="5.0.6"></a>
+- <span style="color:yellow">guest</span> shell with 0x479DFC04 _headein
+- <span style="color:green">guest file with 0x479DFC04 n_lend_colorsches</span>
+
 #### v 5.0.7 — shell 2/8
 <a id="5.0.7"></a>
 - <span style="color:green">guest computer:bounce with 0x60EB85C6 onobjecttransformsi</span>
@@ -9297,10 +11852,16 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x581EF3D8 tersaddgetcodedbyb
 - <span style="color:green">??? firewall_disable with 0x581EF3D8 atch_</span>
 
-#### v 5.2.3 — shell 1/2
+#### v 5.2.3 — shell 3/8, priv 1/8
 <a id="5.2.3"></a>
 - <span style="color:yellow">guest</span> shell with 0x581EF3D8 tersaddgetcodedbyb
 - <span style="color:green">??? firewall_disable with 0x581EF3D8 atch_</span>
+- <span style="color:yellow">guest</span> shell with 0x581EF3D8 tersaddgetcodedbyb
+- <span style="color:green">??? firewall_disable with 0x581EF3D8 atch_</span>
+- <span style="color:yellow">guest</span> shell with 0x4DB86EBE publed
+- <span style="color:green">guest computer with 0x4DB86EBE buttongeundopositionlevel_f</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0xE5FFB2F valuesad
+- <span style="color:green">guest file with 0x55E8B97A rep_3_6</span>
 
 #### v 5.2.4 — shell 2/3, priv 1/3
 <a id="5.2.4"></a>
@@ -9319,8 +11880,10 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest computer:bounce with 0x6E9AC57F arentpositio</span>
 - <span style="color:green">??? firewall_disable with 0x6E9AC57F semitteselend_bitsb</span>
 
-#### v 5.2.7 — shell 1/2
+#### v 5.2.7 — shell 2/4
 <a id="5.2.7"></a>
+- <span style="color:yellow">guest</span> shell with 0x167D6BC8 itionshowbuttonstatebytebu
+- <span style="color:green">guest computer:bounce with 0x6E9AC57F arentpositio</span>
 - <span style="color:yellow">guest</span> shell with 0x167D6BC8 itionshowbuttonstatebytebu
 - <span style="color:green">guest computer:bounce with 0x6E9AC57F arentpositio</span>
 
@@ -9384,10 +11947,13 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest computer:bounce with 0xB8DE195 datefonternalcontex</span>
 - <span style="color:red">root</span> <span style="color:red">file</span> with 0xB8DE195 settinue
 
-#### v 5.3.9 — priv 1/2
+#### v 5.3.9 — priv 1/5
 <a id="5.3.9"></a>
 - <span style="color:red">root</span> <span style="color:red">file</span> with 0x51329C47 thisoncomponen
 - <span style="color:green">guest file with 0x51329C47 windopos</span>
+- <span style="color:green">guest file with 0x51329C47 thisoncomponen</span>
+- <span style="color:green">guest file with 0x51329C47 windopos</span>
+- <span style="color:green">guest file with 0xB8DE195 settinue</span>
 
 #### v 5.4.1 — shell 2/12, priv 1/12
 <a id="5.4.1"></a>
@@ -9447,6 +12013,15 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x3D5EC5B3 qualbyt
 - <span style="color:green">??? firewall_disable with 0x3D5EC5B3 saddundonenu</span>
 
+#### v 5.5.8 — shell 3/6
+<a id="5.5.8"></a>
+- <span style="color:yellow">guest</span> shell with 0x3D5EC5B3 qualbyt
+- <span style="color:green">??? firewall_disable with 0x3D5EC5B3 saddundonenu</span>
+- <span style="color:green">null null with 0x73618F45 shorlinesel</span>
+- <span style="color:green">null null with 0x4410FB93 greatlin</span>
+- <span style="color:yellow">guest</span> shell with 0x1672C9 positializeline
+- <span style="color:yellow">guest</span> shell with 0x608D044E d_bitlengthoffse
+
 #### v 5.5.9 — shell 1/5
 <a id="5.5.9"></a>
 - <span style="color:green">null null with 0x3D5EC5B3 double</span>
@@ -9455,8 +12030,11 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest computer:bounce with 0x3D5EC5B3 frequaled</span>
 - <span style="color:green">guest file with 0x3D5EC5B3 knowne</span>
 
-#### v 5.6.0 — shell 2/3, priv 1/3
+#### v 5.6.0 — shell 4/6, priv 2/6
 <a id="5.6.0"></a>
+- <span style="color:yellow">guest</span> shell with 0x7735712A dresultst
+- <span style="color:green">??? firewall_disable with 0x7735712A file</span>
+- <span style="color:red">root</span> shell with 0x7735712A laddpa
 - <span style="color:yellow">guest</span> shell with 0x7735712A dresultst
 - <span style="color:green">??? firewall_disable with 0x7735712A file</span>
 - <span style="color:red">root</span> shell with 0x7735712A laddpa
@@ -9485,8 +12063,11 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x41FA8B8A textlinent_color_title</span>
 - <span style="color:green">Terso computer with 0x41FA8B8A hortl</span>
 
-#### v 5.6.3 — shell 6/6
+#### v 5.6.3 — shell 9/9
 <a id="5.6.3"></a>
+- <span style="color:yellow">guest</span> shell with 0x7735712A eonclosebackgroupalph
+- <span style="color:yellow">guest</span> shell with 0x7735712A timerinsertim
+- <span style="color:yellow">guest</span> shell with 0x7735712A hisingeu
 - <span style="color:yellow">guest</span> shell with 0x7735712A eonclosebackgroupalph
 - <span style="color:yellow">guest</span> shell with 0x7735712A timerinsertim
 - <span style="color:yellow">guest</span> shell with 0x7735712A hisingeu
@@ -9530,10 +12111,20 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? firewall_disable with 0x1D7CA527 fload</span>
 - <span style="color:yellow">guest</span> shell with 0x1D7CA527 hain_ltreecu
 
-#### v 5.7.9 — shell 1/2
+#### v 5.7.9 — shell 2/5
 <a id="5.7.9"></a>
 - <span style="color:green">null null with 0xDB2D9D nabledisplayani</span>
 - <span style="color:yellow">guest</span> shell with 0xDB2D9D _size
+- <span style="color:green">null null with 0xDB2D9D nabledisplayani</span>
+- <span style="color:yellow">guest</span> shell with 0xDB2D9D _size
+- <span style="color:green">??? firewall_disable with 0x7B42FF42 reselhight</span>
+
+#### v 5.8.0 — shell 1/4
+<a id="5.8.0"></a>
+- <span style="color:green">null null with 0xDB2D9D fast</span>
+- <span style="color:green">null null with 0xDB2D9D nabledisplayani</span>
+- <span style="color:yellow">guest</span> shell with 0xDB2D9D _size
+- <span style="color:green">??? firewall_disable with 0x7B42FF42 focusedcall0</span>
 
 #### v 5.8.4 — shell 1/2
 <a id="5.8.4"></a>
@@ -9585,6 +12176,12 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x5222EEA3 sh_pendpo
 - <span style="color:yellow">guest</span> shell with 0x5222EEA3 matchemeim
 
+#### v 6.0.2 — shell 1/3
+<a id="6.0.2"></a>
+- <span style="color:yellow">guest</span> shell with 0x1D795F65 deflatersaddres
+- <span style="color:green">guest file with 0x5222EEA3 et_dateiconsh</span>
+- <span style="color:green">Lemelblit file with 0x1EF5678E iosoundthismaxim</span>
+
 #### v 6.0.3 — shell 1/1
 <a id="6.0.3"></a>
 - <span style="color:yellow">guest</span> shell with 0x1D795F65 deflatersaddres
@@ -9623,6 +12220,10 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x3F022162 turnal
 - <span style="color:green">??? firewall_disable with 0x3F022162 alues</span>
 
+#### v 6.1.6 — shell 1/1
+<a id="6.1.6"></a>
+- <span style="color:yellow">guest</span> shell with 0x5B7B6DEF end1
+
 #### v 6.1.8 — shell 4/10
 <a id="6.1.8"></a>
 - <span style="color:green">??? firewall_disable with 0x56924762 _showani</span>
@@ -9653,8 +12254,16 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x5DD7F2DD emax_bl</span>
 - Hanth shell with 0x5DD7F2DD oveexistendpointliney
 
-#### v 6.2.2 — shell 2/4, priv 1/4
+#### v 6.2.2 — shell 6/12, priv 3/12
 <a id="6.2.2"></a>
+- <span style="color:green">??? firewall_disable with 0x56924762 ontenertlinersaddgetcolor</span>
+- <span style="color:red">root</span> shell with 0x56924762 uscountextsinsertha
+- <span style="color:green">null null with 0x56924762 outovedoubledtaskthistant</span>
+- <span style="color:yellow">guest</span> shell with 0x2DA38407 end_bitss
+- <span style="color:green">??? firewall_disable with 0x56924762 ontenertlinersaddgetcolor</span>
+- <span style="color:red">root</span> shell with 0x56924762 uscountextsinsertha
+- <span style="color:green">null null with 0x56924762 outovedoubledtaskthistant</span>
+- <span style="color:yellow">guest</span> shell with 0x2DA38407 end_bitss
 - <span style="color:green">??? firewall_disable with 0x56924762 ontenertlinersaddgetcolor</span>
 - <span style="color:red">root</span> shell with 0x56924762 uscountextsinsertha
 - <span style="color:green">null null with 0x56924762 outovedoubledtaskthistant</span>
@@ -9707,6 +12316,16 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? firewall_disable with 0x4684B759 edisplayanimagecodestreethem</span>
 - <span style="color:yellow">guest</span> shell with 0x4684B759 treetresu
 
+#### v 6.3.2 — shell 3/7
+<a id="6.3.2"></a>
+- <span style="color:green">??? firewall_disable with 0x4684B759 edisplayanimagecodestreethem</span>
+- <span style="color:yellow">guest</span> shell with 0x4684B759 treetresu
+- <span style="color:green">??? firewall_disable with 0x4684B759 sresizefir</span>
+- <span style="color:yellow">guest</span> shell with 0x4684B759 pequale
+- <span style="color:yellow">guest</span> shell with 0x4684B759 espriterrentda
+- <span style="color:green">null null with 0x3E0D196E lancessertypeop</span>
+- <span style="color:green">null null with 0x6A4BC67F showindexergroundthisins</span>
+
 #### v 6.3.4 — shell 1/2
 <a id="6.3.4"></a>
 - <span style="color:green">??? firewall_disable with 0x4C86810E treetreetreendins</span>
@@ -9724,6 +12343,16 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">Nhynes computer with 0x2F06089E elend_bitsbl_t</span>
 - Nhynes shell with 0x4DBD65C9 loselengt
 
+#### v 6.4.3 — shell 3/7
+<a id="6.4.3"></a>
+- <span style="color:yellow">guest</span> shell with 0x13D7E4D sele
+- <span style="color:yellow">guest</span> shell with 0x13D7E4D onsbarupdateopb
+- <span style="color:green">guest computer with 0xAC58E1 ationx</span>
+- <span style="color:green">guest computer with 0xAC58E1 tionstancessof</span>
+- <span style="color:green">guest computer with 0x51A233F9 portlinemovecttransfore</span>
+- <span style="color:yellow">guest</span> shell with 0x3FBDDFB4 using
+- <span style="color:green">guest computer with 0x2614BFF2 parenableteff</span>
+
 #### v 6.4.5 — shell 2/5, priv 1/5
 <a id="6.4.5"></a>
 - <span style="color:green">??? firewall_disable with 0xF301CF0 bool</span>
@@ -9740,19 +12369,40 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:red">root</span> shell with 0xF301CF0 or_viewport
 - <span style="color:yellow">guest</span> shell with 0xF301CF0 insica
 
+#### v 6.4.8 — shell 4/11, priv 1/11
+<a id="6.4.8"></a>
+- <span style="color:yellow">guest</span> shell with 0x27B14F75 eferrorifn
+- <span style="color:green">??? password_change with 0x638C5605 nitionx</span>
+- <span style="color:green">Farhie computer with 0x638C5605 undostart</span>
+- <span style="color:yellow">guest</span> shell with 0x21445D8A hisop
+- <span style="color:green">??? password_change with 0x54F67F02 signa</span>
+- <span style="color:green">guest computer with 0x54F67F02 rev_l</span>
+- <span style="color:red">root</span> shell with 0x54F67F02 maxchanb
+- <span style="color:green">Duffa computer with 0x6EB28804 eadividen</span>
+- <span style="color:green">Duffa computer with 0x6EB28804 spush_h</span>
+- <span style="color:yellow">guest</span> shell with 0x21445D8A hisop
+- <span style="color:green">Fieleene computer with 0x6BA677C0 tedist</span>
+
 #### v 6.5.0 — shell 1/3
 <a id="6.5.0"></a>
 - <span style="color:green">null null with 0x27B14F75 slow</span>
 - <span style="color:yellow">guest</span> shell with 0x27B14F75 luesad
 - <span style="color:green">null null with 0x27B14F75 d_codec_adler3</span>
 
-#### v 6.5.1 — shell 3/5
+#### v 6.5.1 — shell 7/12
 <a id="6.5.1"></a>
 - <span style="color:green">??? firewall_disable with 0x10588D39 #endpo</span>
 - <span style="color:yellow">guest</span> shell with 0x10588D39 memax_c
 - <span style="color:yellow">guest</span> shell with 0x10588D39 taskbarforentposition
 - <span style="color:yellow">guest</span> shell with 0x10588D39 ceoffsetsettext
 - <span style="color:green">??? firewall_disable with 0x5114AD6C resultnum+</span>
+- <span style="color:green">??? firewall_disable with 0x10588D39 #endpo</span>
+- <span style="color:yellow">guest</span> shell with 0x10588D39 memax_c
+- <span style="color:yellow">guest</span> shell with 0x10588D39 taskbarforentposition
+- <span style="color:yellow">guest</span> shell with 0x10588D39 ceoffsetsettext
+- <span style="color:green">??? firewall_disable with 0x5114AD6C resultnum+</span>
+- <span style="color:green">??? password_change with 0x7DD8F3DE onteresultty</span>
+- Orce shell with 0x4B83F098 constartedoutovec
 
 #### v 6.5.2 — shell 6/10
 <a id="6.5.2"></a>
@@ -9767,7 +12417,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x10588D39 ceoffsetsettext
 - <span style="color:green">??? firewall_disable with 0x5114AD6C resultnum+</span>
 
-#### v 6.5.3 — shell 4/12
+#### v 6.5.3 — shell 7/22
 <a id="6.5.3"></a>
 - <span style="color:green">guest computer:bounce with 0x10588D39 data</span>
 - <span style="color:green">guest file with 0x10588D39 donbackg</span>
@@ -9781,8 +12431,18 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x2068E6F8 fast</span>
 - <span style="color:yellow">guest</span> shell with 0x2068E6F8 nusb
 - <span style="color:green">guest file with 0x44609D68 color_buffectsetactabledt</span>
+- <span style="color:green">guest computer:bounce with 0x10588D39 data</span>
+- <span style="color:green">guest file with 0x10588D39 donbackg</span>
+- <span style="color:yellow">guest</span> shell with 0x10588D39 taskbarforentposition
+- <span style="color:yellow">guest</span> shell with 0x10588D39 ceoffsetsettext
+- <span style="color:green">??? firewall_disable with 0x5114AD6C resultnum+</span>
+- <span style="color:yellow">guest</span> shell with 0x14C160BB sizelitex
+- <span style="color:green">??? password_change with 0x73725DFD tcolor_bu</span>
+- <span style="color:green">??? password_change with 0x2223E152 cast</span>
+- <span style="color:green">null null with 0x2223E152 rotecolor</span>
+- <span style="color:green">guest computer with 0x3A766458 anceoffsetactabut</span>
 
-#### v 6.5.4 — shell 4/11
+#### v 6.5.4 — shell 6/15
 <a id="6.5.4"></a>
 - <span style="color:green">guest computer:bounce with 0x10588D39 data</span>
 - <span style="color:green">guest file with 0x10588D39 donbackg</span>
@@ -9795,6 +12455,10 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x10588D39 ceoffsetsettext
 - <span style="color:green">Uccaf file with 0x71D8FA88 chormsizedelc</span>
 - <span style="color:green">Blomb computer with 0x2627A9D itextpendingpend_color_butto</span>
+- <span style="color:green">guest computer:bounce with 0x10588D39 data</span>
+- <span style="color:green">guest file with 0x10588D39 donbackg</span>
+- <span style="color:yellow">guest</span> shell with 0x10588D39 taskbarforentposition
+- <span style="color:yellow">guest</span> shell with 0x10588D39 ceoffsetsettext
 
 #### v 6.5.5 — shell 1/9
 <a id="6.5.5"></a>
@@ -9821,6 +12485,13 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? firewall_disable with 0x7C63EFB4 tic_tr_scrollinenumentimel</span>
 - <span style="color:green">guest computer:bounce with 0x7C63EFB4 treend_codecinputshortm</span>
 
+#### v 6.6.1 — shell 1/4
+<a id="6.6.1"></a>
+- <span style="color:green">guest file with 0x7C63EFB4 updatauseu</span>
+- <span style="color:green">guest file with 0x7C63EFB4 lookahead</span>
+- <span style="color:yellow">guest</span> shell with 0x7C63EFB4 tflushp
+- <span style="color:green">null null with 0x46C1C25B extsr</span>
+
 #### v 6.6.2 — shell 2/5
 <a id="6.6.2"></a>
 - <span style="color:yellow">guest</span> shell with 0x53C4C5ED ttextreec
@@ -9829,6 +12500,18 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x1889BA34 bestance</span>
 - <span style="color:green">??? firewall_disable with 0x1889BA34 initializedel</span>
 
+#### v 6.6.3 — shell 2/9
+<a id="6.6.3"></a>
+- <span style="color:green">null null with 0x48C9C912 cevalizedeltaddun</span>
+- <span style="color:green">null null with 0x48C9C912 sprivateb</span>
+- <span style="color:green">null null with 0x67175553 pres</span>
+- <span style="color:green">??? password_change with 0x67175553 comme</span>
+- Ahans shell with 0x357B61E2 hile
+- <span style="color:green">Egelson computer with 0x357B61E2 ged</span>
+- <span style="color:green">Egelson computer with 0x357B61E2 horttextimeanimato</span>
+- <span style="color:yellow">guest</span> shell with 0x1126D644 nitialrectt
+- <span style="color:green">Singe file with 0x2FA759C5 nalconsolewriteresultparsetactionst</span>
+
 #### v 6.6.5 — shell 1/5
 <a id="6.6.5"></a>
 - <span style="color:green">??? firewall_disable with 0x53C4C5ED tialresulta</span>
@@ -9836,6 +12519,10 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x53C4C5ED send_block_
 - <span style="color:green">guest file with 0x1889BA34 aheadividen</span>
 - <span style="color:green">guest file with 0x1889BA34 zelanchortspriteline</span>
+
+#### v 6.7.0 — shell 1/1
+<a id="6.7.0"></a>
+- <span style="color:yellow">guest</span> shell with 0x77EBA594 undoposlicksraycodesetac
 
 #### v 6.7.1 — priv 1/4
 <a id="6.7.1"></a>
@@ -9850,12 +12537,25 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? firewall_disable with 0x58E9D541 byb</span>
 - <span style="color:yellow">guest</span> shell with 0x58E9D541 sh_sizedel
 
+#### v 6.7.5 — shell 2/5
+<a id="6.7.5"></a>
+- <span style="color:green">Arshin computer with 0x6EB28804 spush_h</span>
+- <span style="color:green">Arshin computer with 0x5FB45F8A odeltextsstackundostationarykeyco</span>
+- <span style="color:green">Arshin file with 0x542AD32D matic_leng</span>
+- Shiroldst shell with 0x68B66B6 ecttratecalladdpartedisted
+- Shiroldst shell with 0x68B66B6 text
+
 #### v 6.7.7 — shell 2/4
 <a id="6.7.7"></a>
 - <span style="color:yellow">guest</span> shell with 0x58E9D541 linertedi
 - <span style="color:green">??? firewall_disable with 0x58E9D541 toragu</span>
 - <span style="color:yellow">guest</span> shell with 0x58E9D541 gth
 - <span style="color:green">??? firewall_disable with 0x58E9D541 numsionaryvali</span>
+
+#### v 6.7.8 — shell 1/2
+<a id="6.7.8"></a>
+- <span style="color:yellow">guest</span> shell with 0x3A121401 apaddu
+- <span style="color:green">??? firewall_disable with 0x3A121401 charamessthan</span>
 
 #### v 6.7.9 — shell 2/11
 <a id="6.7.9"></a>
@@ -9885,6 +12585,12 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? firewall_disable with 0x15A966A2 keyedva</span>
 - <span style="color:yellow">guest</span> shell with 0x15A966A2 isplayedcolor_titlebackconf
 
+#### v 6.8.4 — shell 2/3, priv 1/3
+<a id="6.8.4"></a>
+- <span style="color:yellow">guest</span> shell with 0x15A966A2 astenerb
+- <span style="color:green">guest file with 0x15A966A2 aycodec_adler32</span>
+- <span style="color:red">root</span> shell with 0x15A966A2 esaddundo
+
 #### v 6.8.5 — shell 3/5
 <a id="6.8.5"></a>
 - <span style="color:yellow">guest</span> shell with 0x1848CC70 esultvmyie
@@ -9905,9 +12611,9 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 ## `libftp.so`
 <a id="libftp-so"></a>
 
-- Total Hooked lines: 615
-- Can provide shell: 91
-- Has privileged object: 37
+- Total Hooked lines: 776
+- Can provide shell: 116
+- Has privileged object: 47
 - Safe versions: 3
 Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#1.0.1"><span style="color:green">v 1.0.1</span></a> <a href="#1.0.2"><span style="color:red">v 1.0.2</span></a> <a href="#1.0.3"><span style="color:red">v 1.0.3</span></a> <a href="#1.0.4"><span style="color:red">v 1.0.4</span></a> <a href="#1.0.5"><span style="color:red">v 1.0.5</span></a> <a href="#1.0.6"><span style="color:red">v 1.0.6</span></a> <a href="#1.0.7"><span style="color:red">v 1.0.7</span></a> <a href="#1.0.8"><span style="color:red">v 1.0.8</span></a> <a href="#1.0.9"><span style="color:red">v 1.0.9</span></a> <a href="#1.1.0"><span style="color:red">v 1.1.0</span></a> <a href="#1.1.1"><span style="color:red">v 1.1.1</span></a> <a href="#1.1.2"><span style="color:red">v 1.1.2</span></a> <a href="#1.1.3"><span style="color:red">v 1.1.3</span></a> <a href="#1.1.4"><span style="color:red">v 1.1.4</span></a> <a href="#1.1.5"><span style="color:red">v 1.1.5</span></a> <a href="#1.1.6"><span style="color:red">v 1.1.6</span></a> <a href="#1.1.7"><span style="color:red">v 1.1.7</span></a> <a href="#1.1.8"><span style="color:red">v 1.1.8</span></a> <a href="#1.1.9"><span style="color:red">v 1.1.9</span></a> <a href="#1.2.0"><span style="color:red">v 1.2.0</span></a> <a href="#1.2.1"><span style="color:red">v 1.2.1</span></a> <a href="#1.2.2"><span style="color:red">v 1.2.2</span></a> <a href="#1.2.3"><span style="color:red">v 1.2.3</span></a> <a href="#1.2.4"><span style="color:red">v 1.2.4</span></a> <a href="#1.2.5"><span style="color:red">v 1.2.5</span></a> <a href="#1.2.6"><span style="color:red">v 1.2.6</span></a> <a href="#1.2.7"><span style="color:red">v 1.2.7</span></a> <a href="#1.2.8"><span style="color:red">v 1.2.8</span></a> <a href="#1.2.9"><span style="color:red">v 1.2.9</span></a> <a href="#1.3.0"><span style="color:green">v 1.3.0</span></a> <a href="#1.3.1"><span style="color:red">v 1.3.1</span></a> <a href="#1.3.2"><span style="color:green">v 1.3.2</span></a>
 
@@ -9975,7 +12681,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x35E0E4A9 traternalconterdateiconcompo</span>
 - <span style="color:red">root</span> <span style="color:red">file</span> with 0x35E0E4A9 stackgrou
 
-#### v 1.0.2 — shell 6/28
+#### v 1.0.2 — shell 9/42
 <a id="1.0.2"></a>
 - <span style="color:yellow">guest</span> shell with 0x7541CB63 true
 - <span style="color:yellow">guest</span> shell with 0x5EBB7D92 signa
@@ -10005,6 +12711,20 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? password_change with 0x72802A4C extput_shadow++scanvasg</span>
 - <span style="color:yellow">guest</span> shell with 0x72802A4C sformsizelanceclicked
 - <span style="color:green">Audt computer with 0x72802A4C push_hea</span>
+- <span style="color:yellow">guest</span> shell with 0x7541CB63 true
+- <span style="color:yellow">guest</span> shell with 0x5EBB7D92 signa
+- <span style="color:green">guest computer with 0x5EBB7D92 trmdaternalco</span>
+- <span style="color:green">Tioneckeoham file with 0x5EBB7D92 ash_block</span>
+- <span style="color:green">guest file with 0x5EBB7D92 aramargsp</span>
+- <span style="color:green">null null with 0x5EBB7D92 atch_lend_c</span>
+- <span style="color:green">guest computer with 0x2762F3BF codeadeinover</span>
+- <span style="color:green">Mayo file with 0x2762F3BF sendingbuttontexte</span>
+- <span style="color:green">null null with 0x2762F3BF enumber</span>
+- <span style="color:green">guest file with 0x72802A4C strstatetefunctiona</span>
+- <span style="color:green">guest file with 0x72802A4C esstackundostinformanch</span>
+- <span style="color:green">??? password_change with 0x72802A4C extput_shadow++scanvasg</span>
+- <span style="color:yellow">guest</span> shell with 0x72802A4C sformsizelanceclicked
+- <span style="color:green">Mayo computer with 0x72802A4C push_hea</span>
 
 #### v 1.0.3 — shell 6/23, priv 1/23
 <a id="1.0.3"></a>
@@ -10105,7 +12825,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x22AF7DF7 eturnal</span>
 - <span style="color:green">null null with 0x22AF7DF7 tor2</span>
 
-#### v 1.0.9 — shell 6/24, priv 2/24
+#### v 1.0.9 — shell 9/36, priv 3/36
 <a id="1.0.9"></a>
 - <span style="color:green">guest file with 0xA6B55CD treeint</span>
 - Oincher shell with 0x450B0EB6 olor_bufsizeblock
@@ -10123,6 +12843,18 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x450B0EB6 olor_bufsizeblock</span>
 - <span style="color:green">Laoshinasi computer with 0x450B0EB6 138</span>
 - <span style="color:green">Laoshinasi computer with 0x3BBF56C4 thiscanvasgroupintextsline</span>
+- <span style="color:red">root</span> shell with 0x3BBF56C4 treecurl
+- <span style="color:green">guest file with 0x3BBF56C4 sbheadividentimessedthiscan</span>
+- <span style="color:green">null null with 0x3BBF56C4 formsir</span>
+- <span style="color:green">null null with 0x3BBF56C4 notesized</span>
+- <span style="color:green">null null with 0x5DFE2411 colorsetsetackpus</span>
+- <span style="color:green">null null with 0x5DFE2411 letelistgraphic</span>
+- <span style="color:green">guest file with 0x5DFE2411 ourcevaluesaddpartedcodele</span>
+- <span style="color:yellow">guest</span> shell with 0x5DFE2411 alse
+- <span style="color:green">guest file with 0xA6B55CD treeint</span>
+- Raimot shell with 0x450B0EB6 olor_bufsizeblock
+- <span style="color:green">Nhoehler computer with 0x450B0EB6 138</span>
+- <span style="color:green">Raimot computer with 0x3BBF56C4 thiscanvasgroupintextsline</span>
 - <span style="color:red">root</span> shell with 0x3BBF56C4 treecurl
 - <span style="color:green">guest file with 0x3BBF56C4 sbheadividentimessedthiscan</span>
 - <span style="color:green">null null with 0x3BBF56C4 formsir</span>
@@ -10167,7 +12899,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x4902CA2E ghlighlighlight2transf</span>
 - <span style="color:green">guest file with 0x4902CA2E testorplayanima</span>
 
-#### v 1.1.2 — shell 8/59, priv 4/59
+#### v 1.1.2 — shell 12/89, priv 7/89
 <a id="1.1.2"></a>
 - <span style="color:green">??? password_change with 0x130C803B ublick</span>
 - <span style="color:green">null null with 0x130C803B squalb</span>
@@ -10228,8 +12960,38 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x4E11DBF8 aifnull</span>
 - <span style="color:green">guest computer with 0x65239885 focuseuptimeanimages</span>
 - <span style="color:green">??? password_change with 0x65239885 actionaryvalfunctive</span>
+- <span style="color:green">??? password_change with 0x130C803B ublick</span>
+- <span style="color:green">guest file with 0x130C803B conterightedcallbackgroundthisinser</span>
+- <span style="color:yellow">guest</span> shell with 0x130C803B squalb
+- <span style="color:green">??? password_change with 0x6615C288 protequalby</span>
+- <span style="color:green">guest file with 0x6615C288 station++</span>
+- <span style="color:green">null null with 0x6615C288 startionle</span>
+- <span style="color:green">guest file with 0x6615C288 sized</span>
+- <span style="color:green">null null with 0x3A5B2418 endingetconfonter</span>
+- <span style="color:green">null null with 0x3A5B2418 tposlinelinenum</span>
+- <span style="color:red">root</span> shell with 0x4E11DBF8 portcompathbaseonclickin
+- <span style="color:green">null null with 0x4E11DBF8 tonst</span>
+- <span style="color:green">Arky computer with 0x4E11DBF8 clicked</span>
+- <span style="color:green">null null with 0x4E11DBF8 aifnull</span>
+- <span style="color:green">guest computer with 0x65239885 focuseuptimeanimages</span>
+- <span style="color:green">??? password_change with 0x65239885 actionaryvalfunctive</span>
+- <span style="color:green">??? password_change with 0x130C803B ublick</span>
+- <span style="color:green">null null with 0x130C803B squalb</span>
+- <span style="color:green">??? password_change with 0x6615C288 protequalby</span>
+- <span style="color:green">guest file with 0x6615C288 station++</span>
+- <span style="color:green">guest file with 0x6615C288 startionle</span>
+- <span style="color:green">guest file with 0x6615C288 sized</span>
+- <span style="color:green">guest computer with 0x3A5B2418 endingetconfonter</span>
+- <span style="color:yellow">guest</span> shell with 0x3A5B2418 tposlinelinenum
+- <span style="color:red">root</span> shell with 0x4E11DBF8 portcompathbaseonclickin
+- <span style="color:green">null null with 0x4E11DBF8 tonst</span>
+- <span style="color:green">Lankfo computer with 0x4E11DBF8 clicked</span>
+- <span style="color:green">null null with 0x4E11DBF8 aifnull</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x210F2D3E destemplicitreach
+- <span style="color:green">guest computer with 0x65239885 focuseuptimeanimages</span>
+- <span style="color:green">??? password_change with 0x65239885 actionaryvalfunctive</span>
 
-#### v 1.1.3 — shell 8/30, priv 3/30
+#### v 1.1.3 — shell 9/40, priv 5/40
 <a id="1.1.3"></a>
 - <span style="color:green">guest file with 0x130C803B wardowmation</span>
 - <span style="color:green">null null with 0x130C803B squalb</span>
@@ -10261,6 +13023,16 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? password_change with 0x54F67F02 signa</span>
 - <span style="color:green">guest computer with 0x54F67F02 rev_l</span>
 - <span style="color:red">root</span> shell with 0x54F67F02 maxchanb
+- <span style="color:green">Avidah file with 0x130C803B wardowmation</span>
+- <span style="color:green">null null with 0x130C803B squalb</span>
+- <span style="color:green">null null with 0x1B03CB1 unknown</span>
+- <span style="color:red">root</span> shell with 0x1B03CB1 splayanimationarykeys
+- <span style="color:green">guest file with 0x1B03CB1 etonfig</span>
+- <span style="color:green">null null with 0x1B03CB1 arentp</span>
+- <span style="color:green">null null with 0x1B03CB1 ata_typelendi</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x210F2D3E destemplicitreach
+- <span style="color:green">null null with 0x36C0C72 wordele</span>
+- <span style="color:green">null null with 0x36C0C72 updatapositioncli</span>
 
 #### v 1.1.4 — shell 1/14
 <a id="1.1.4"></a>
@@ -10333,7 +13105,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? password_change with 0x44814EFA arameter</span>
 - <span style="color:green">Illman file with 0x1EF5678E iosoundthismaxim</span>
 
-#### v 1.1.8 — shell 8/45, priv 2/45
+#### v 1.1.8 — shell 16/83, priv 4/83
 <a id="1.1.8"></a>
 - <span style="color:yellow">guest</span> shell with 0x621D1357 valid
 - <span style="color:red">root</span> <span style="color:red">computer</span> with 0x621D1357 sizeline
@@ -10380,6 +13152,44 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x3FEE22AB tonobjectset</span>
 - <span style="color:green">null null with 0xF483D4F uttonshoregroundostantsrep_3_10</span>
 - <span style="color:green">null null with 0xF483D4F sequarent_</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x621D1357 sizeline
+- <span style="color:green">guest file with 0x8FFF26A orsetackpush_bits</span>
+- <span style="color:green">guest file with 0x8FFF26A text</span>
+- <span style="color:green">guest computer with 0x8FFF26A contsrc</span>
+- <span style="color:green">null null with 0x3334363E umptoend_</span>
+- <span style="color:green">null null with 0x3334363E length</span>
+- <span style="color:yellow">guest</span> shell with 0x3334363E updataused
+- <span style="color:green">null null with 0x3334363E seltextbuttonserigsizefi</span>
+- <span style="color:green">null null with 0x3334363E miniscanv</span>
+- <span style="color:green">??? password_change with 0x3FEE22AB tlinesingetco</span>
+- Bazzi shell with 0x3FEE22AB tartpositio
+- Ielders shell with 0x3FEE22AB undoposit
+- <span style="color:green">Bazzi file with 0x3FEE22AB tonobjectset</span>
+- <span style="color:green">null null with 0xF483D4F uttonshoregroundostantsrep_3_10</span>
+- <span style="color:green">null null with 0xF483D4F sequarent_</span>
+- <span style="color:green">guest computer with 0x51FF2794 button</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x644F309B _oncolor_buttonged
+- <span style="color:yellow">guest</span> shell with 0x50999A0C blocall_tr_aller32
+- <span style="color:green">Ielders file with 0x1E33A847 bi_buf</span>
+- <span style="color:green">guest file with 0x1E33A847 bitlebac</span>
+- <span style="color:green">guest file with 0x63585798 esaddundow</span>
+- Ielders shell with 0x63585798 ghtminitiontancheckrem
+- <span style="color:green">guest file with 0x8FFF26A orsetackpush_bits</span>
+- <span style="color:green">guest file with 0x8FFF26A text</span>
+- <span style="color:green">null null with 0x8FFF26A contsrc</span>
+- <span style="color:green">null null with 0x3334363E umptoend_</span>
+- <span style="color:green">null null with 0x3334363E length</span>
+- <span style="color:yellow">guest</span> shell with 0x3334363E updataused
+- <span style="color:green">null null with 0x3334363E seltextbuttonserigsizefi</span>
+- <span style="color:green">null null with 0x3334363E miniscanv</span>
+- <span style="color:green">null null with 0x3FEE22AB tlinesingetco</span>
+- Elby shell with 0x3FEE22AB tartpositio
+- Utsonersons shell with 0x3FEE22AB undoposit
+- <span style="color:green">null null with 0x3FEE22AB tonobjectset</span>
+- <span style="color:green">null null with 0xF483D4F uttonshoregroundostantsrep_3_10</span>
+- <span style="color:green">null null with 0xF483D4F sequarent_</span>
+- <span style="color:green">null null with 0x57DFB27 avor</span>
+- <span style="color:green">null null with 0x647DA116 ourcep</span>
 
 #### v 1.1.9 — shell 5/20, priv 2/20
 <a id="1.1.9"></a>
@@ -10404,7 +13214,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x39D664F7 equalby</span>
 - <span style="color:red">root</span> shell with 0x39D664F7 positionfontsr
 
-#### v 1.2.0 — shell 5/24, priv 1/24
+#### v 1.2.0 — shell 10/46, priv 1/46
 <a id="1.2.0"></a>
 - <span style="color:yellow">guest</span> shell with 0x621D1357 shstanceclick
 - <span style="color:green">Grunelsa file with 0x17BCCC91 lazymatch_l</span>
@@ -10430,6 +13240,28 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x4E7F748F tfunctivetree</span>
 - <span style="color:green">??? password_change with 0x4E7F748F ewindoubledquote</span>
 - <span style="color:green">null null with 0x4E7F748F dategy</span>
+- <span style="color:yellow">guest</span> shell with 0x621D1357 shstanceclick
+- <span style="color:green">guest file with 0x17BCCC91 lazymatch_l</span>
+- <span style="color:green">guest file with 0x17BCCC91 antseticonstrmdategy</span>
+- <span style="color:green">??? password_change with 0x17BCCC91 almapr</span>
+- <span style="color:yellow">guest</span> shell with 0x17BCCC91 almapa
+- <span style="color:green">null null with 0x17BCCC91 izey</span>
+- <span style="color:green">??? password_change with 0x4E7F748F ibletextupda</span>
+- <span style="color:green">null null with 0x4E7F748F line</span>
+- <span style="color:green">null null with 0x4E7F748F tfunctivetree</span>
+- <span style="color:green">??? password_change with 0x4E7F748F ewindoubledquote</span>
+- <span style="color:yellow">guest</span> shell with 0x4E7F748F dategy
+- <span style="color:yellow">guest</span> shell with 0x621D1357 shstanceclick
+- <span style="color:green">Thmanse file with 0x17BCCC91 lazymatch_l</span>
+- <span style="color:green">null null with 0x17BCCC91 antseticonstrmdategy</span>
+- <span style="color:green">??? password_change with 0x17BCCC91 almapr</span>
+- <span style="color:green">null null with 0x17BCCC91 almapa</span>
+- <span style="color:green">null null with 0x17BCCC91 izey</span>
+- <span style="color:green">??? password_change with 0x4E7F748F ibletextupda</span>
+- <span style="color:green">null null with 0x4E7F748F line</span>
+- <span style="color:green">null null with 0x4E7F748F tfunctivetree</span>
+- <span style="color:green">??? password_change with 0x4E7F748F ewindoubledquote</span>
+- <span style="color:yellow">guest</span> shell with 0x4E7F748F dategy
 
 #### v 1.2.1 — shell 2/22, priv 1/22
 <a id="1.2.1"></a>
@@ -10465,7 +13297,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:red">root</span> <span style="color:red">file</span> with 0x2895482F nalconf
 - <span style="color:green">??? password_change with 0x2895482F _datebuttonc</span>
 
-#### v 1.2.3 — shell 2/14
+#### v 1.2.3 — shell 3/21
 <a id="1.2.3"></a>
 - <span style="color:green">guest computer with 0x4A0E7D18 ourceline</span>
 - <span style="color:green">null null with 0x4A0E7D18 oundopos++</span>
@@ -10481,8 +13313,15 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:yellow">guest</span> shell with 0x210F2D3E lush_
 - <span style="color:green">null null with 0x4518F3EA headd</span>
 - <span style="color:green">guest computer with 0x4518F3EA alledi</span>
+- <span style="color:green">guest computer with 0x4A0E7D18 ourceline</span>
+- <span style="color:green">null null with 0x4A0E7D18 oundopos++</span>
+- <span style="color:green">null null with 0x4A0E7D18 ifier</span>
+- <span style="color:green">guest computer with 0x4A0E7D18 hisclosi</span>
+- <span style="color:yellow">guest</span> shell with 0x210F2D3E lush_
+- <span style="color:green">Baumy file with 0x4518F3EA headd</span>
+- <span style="color:green">guest computer with 0x4518F3EA alledi</span>
 
-#### v 1.2.4 — priv 3/29
+#### v 1.2.4 — priv 5/47
 <a id="1.2.4"></a>
 - <span style="color:green">null null with 0x5DEA60F9 flush_b</span>
 - <span style="color:green">null null with 0x5DEA60F9 itelinenumeracta</span>
@@ -10513,8 +13352,26 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x79A74BBB pos</span>
 - <span style="color:red">root</span> <span style="color:red">computer</span> with 0x79A74BBB ignimma
 - <span style="color:green">Outhilde computer with 0x25EC13ED inesin</span>
+- <span style="color:green">null null with 0x5DEA60F9 flush_b</span>
+- <span style="color:green">null null with 0x5DEA60F9 itelinenumeracta</span>
+- <span style="color:green">guest file with 0x5DEA60F9 ebuttonfig</span>
+- <span style="color:green">null null with 0x5DEA60F9 tializewico</span>
+- <span style="color:green">null null with 0x5DEA60F9 amemaximi</span>
+- <span style="color:green">guest file with 0x6BA4583 ifrequalbytebut</span>
+- <span style="color:green">guest file with 0x79A74BBB pos</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x79A74BBB ignimma
+- <span style="color:green">Wales computer with 0x25EC13ED inesin</span>
+- <span style="color:green">null null with 0x5DEA60F9 flush_b</span>
+- <span style="color:green">null null with 0x5DEA60F9 itelinenumeracta</span>
+- <span style="color:green">guest file with 0x5DEA60F9 ebuttonfig</span>
+- <span style="color:green">null null with 0x5DEA60F9 tializewico</span>
+- <span style="color:green">null null with 0x5DEA60F9 amemaximi</span>
+- <span style="color:green">guest file with 0x6BA4583 ifrequalbytebut</span>
+- <span style="color:green">guest file with 0x79A74BBB pos</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x79A74BBB ignimma
+- <span style="color:green">Lichen computer with 0x25EC13ED inesin</span>
 
-#### v 1.2.5 — shell 5/30
+#### v 1.2.5 — shell 5/40
 <a id="1.2.5"></a>
 - <span style="color:green">guest file with 0x526625F1 inenumericitreedy</span>
 - <span style="color:yellow">guest</span> shell with 0x526625F1 conteralsdyn_ltreet
@@ -10546,6 +13403,16 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0xE78DFEC setpositionarykeyco</span>
 - <span style="color:green">null null with 0xE78DFEC elengthofa</span>
 - <span style="color:green">Adhya computer with 0x25EC13ED inesin</span>
+- <span style="color:green">guest file with 0x526625F1 inenumericitreedy</span>
+- <span style="color:green">null null with 0x526625F1 conteralsdyn_ltreet</span>
+- <span style="color:green">Ehult file with 0x526625F1 fill</span>
+- <span style="color:green">null null with 0x526625F1 extobje</span>
+- <span style="color:green">null null with 0xE78DFEC copyd</span>
+- <span style="color:green">??? password_change with 0xE78DFEC depth</span>
+- <span style="color:green">null null with 0xE78DFEC processor-1</span>
+- <span style="color:green">null null with 0xE78DFEC setpositionarykeyco</span>
+- <span style="color:green">null null with 0xE78DFEC elengthofa</span>
+- <span style="color:green">Ehult computer with 0x25EC13ED inesin</span>
 
 #### v 1.2.6 — shell 1/15
 <a id="1.2.6"></a>
@@ -10629,472 +13496,52 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 
 ---
 
-## `libsmtp.so`
-<a id="libsmtp-so"></a>
-
-- Total Hooked lines: 389
-- Can provide shell: 49
-- Has privileged object: 20
-- Safe versions: 3
-Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#1.0.1"><span style="color:red">v 1.0.1</span></a> <a href="#1.0.2"><span style="color:red">v 1.0.2</span></a> <a href="#1.0.3"><span style="color:red">v 1.0.3</span></a> <a href="#1.0.4"><span style="color:red">v 1.0.4</span></a> <a href="#1.0.5"><span style="color:red">v 1.0.5</span></a> <a href="#1.0.6"><span style="color:red">v 1.0.6</span></a> <a href="#1.0.7"><span style="color:red">v 1.0.7</span></a> <a href="#1.0.8"><span style="color:green">v 1.0.8</span></a> <a href="#1.1.0"><span style="color:red">v 1.1.0</span></a> <a href="#1.1.1"><span style="color:red">v 1.1.1</span></a> <a href="#1.1.2"><span style="color:red">v 1.1.2</span></a> <a href="#1.1.3"><span style="color:red">v 1.1.3</span></a> <a href="#1.1.4"><span style="color:green">v 1.1.4</span></a> <a href="#1.1.5"><span style="color:red">v 1.1.5</span></a> <a href="#1.1.6"><span style="color:red">v 1.1.6</span></a> <a href="#1.1.7"><span style="color:red">v 1.1.7</span></a> <a href="#1.1.8"><span style="color:green">v 1.1.8</span></a>
-
-### Safe versions
-#### v 1.0.8 — no shell/priv hooks
-<a id="1.0.8"></a>
-- <span style="color:green">Oenfeis file with 0x1DED65A7 copya</span>
-- <span style="color:green">guest computer with 0x1DED65A7 maskb</span>
-- <span style="color:green">null null with 0x36A9B5E8 shor</span>
-- <span style="color:green">null null with 0x36A9B5E8 ackpeek</span>
-- <span style="color:green">guest computer with 0x36A9B5E8 morequal</span>
-- <span style="color:green">null null with 0x36A9B5E8 void</span>
-- <span style="color:green">null null with 0x3A4D563C nametexte</span>
-- <span style="color:green">null null with 0x3A4D563C existstrstartposlinec</span>
-- <span style="color:green">null null with 0x3A4D563C skipwhitextefo</span>
-- <span style="color:green">??? password_change with 0x30DE0AFF odecolor_viewportt</span>
-- <span style="color:green">null null with 0x30DE0AFF quotenerty</span>
-
-#### v 1.1.4 — no shell/priv hooks
-<a id="1.1.4"></a>
-- <span style="color:green">guest computer with 0x14CB3403 dundthiscan_tre</span>
-- <span style="color:green">null null with 0x14CB3403 eyrepz_3_6</span>
-- <span style="color:green">??? password_change with 0x31D5BE37 textvmyie</span>
-- <span style="color:green">guest computer with 0x31D5BE37 reedyn_ltre</span>
-- <span style="color:green">null null with 0x31D5BE37 windonbac</span>
-- <span style="color:green">null null with 0x31D5BE37 head</span>
-- <span style="color:green">null null with 0x6EF7CE5C scloseonsbarfo</span>
-- <span style="color:green">null null with 0x6EF7CE5C audiosourcelistene</span>
-- <span style="color:green">??? password_change with 0x6EF7CE5C saddundostanch</span>
-- <span style="color:green">guest computer with 0x6EF7CE5C t_color_storedpointext</span>
-- <span style="color:green">null null with 0x6EF7CE5C teoutline</span>
-- <span style="color:green">guest file with 0x11735EB6 ighlightmidtreethisop</span>
-- <span style="color:green">??? password_change with 0x11735EB6 gsupdateleteractivefals</span>
-- <span style="color:green">null null with 0x11735EB6 tconteralse</span>
-
-#### v 1.1.8 — no shell/priv hooks
-<a id="1.1.8"></a>
-- <span style="color:green">??? password_change with 0x43E75632 startio</span>
-- <span style="color:green">null null with 0x43E75632 gotoa</span>
-
-### Unsafe versions (per-version details)
-#### v 1.0.0 — shell 2/13
-<a id="1.0.0"></a>
-- <span style="color:green">null null with 0x1006C087 pritext</span>
-- <span style="color:yellow">guest</span> shell with 0x1006C087 distintericid
-- Umpagno shell with 0x190AC9D0 yielding_displaye
-- <span style="color:green">null null with 0x190AC9D0 lanchortcodecmesstateli</span>
-- <span style="color:green">guest file with 0x190AC9D0 color_titletextst</span>
-- <span style="color:green">null null with 0x190AC9D0 isrepeat</span>
-- <span style="color:green">null null with 0x190AC9D0 tivetrue</span>
-- <span style="color:green">null null with 0x1C3C6F3C audiosoundow_siz</span>
-- <span style="color:green">null null with 0x1C3C6F3C tsetpositionx</span>
-- <span style="color:green">guest computer with 0x3B7808FC newuitextupd</span>
-- <span style="color:green">null null with 0x3B7808FC odeinteralse</span>
-- <span style="color:green">null null with 0x3B7808FC listartedistemplaydeltaddgetundost</span>
-- <span style="color:green">??? password_change with 0x3B7808FC paddli</span>
-
-#### v 1.0.1 — shell 2/17, priv 1/17
-<a id="1.0.1"></a>
-- <span style="color:green">Eonata computer with 0x1006C087 urly</span>
-- <span style="color:green">null null with 0x190AC9D0 yielding_displaye</span>
-- <span style="color:green">null null with 0x190AC9D0 color_titletextst</span>
-- <span style="color:green">null null with 0x61E99467 coded</span>
-- <span style="color:yellow">guest</span> shell with 0x61E99467 edthistemoverlaytr
-- <span style="color:red">root</span> shell with 0x61E99467 compathbaseonnewuite
-- <span style="color:green">??? password_change with 0x61E99467 textpend</span>
-- <span style="color:green">null null with 0xD1593E9 ailabledq</span>
-- <span style="color:green">null null with 0xD1593E9 os++</span>
-- <span style="color:green">null null with 0xD1593E9 uarentd</span>
-- <span style="color:green">null null with 0xD1593E9 elancessiobjectsetactostanc</span>
-- <span style="color:green">null null with 0x1A81B723 eventpositionnex</span>
-- <span style="color:green">null null with 0x1A81B723 dentpo</span>
-- <span style="color:green">null null with 0x1A81B723 or_buttonclosebackgro</span>
-- <span style="color:green">null null with 0x1A81B723 _3_10</span>
-- <span style="color:green">null null with 0x4AD9078A onsertypebottontifneedyn_ltreebit</span>
-- <span style="color:green">null null with 0x4AD9078A ce</span>
-
-#### v 1.0.2 — shell 5/36, priv 2/36
-<a id="1.0.2"></a>
-- <span style="color:green">Kromalangl computer with 0x1006C087 urly</span>
-- <span style="color:green">Rudi file with 0x190AC9D0 ectotal</span>
-- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x48768B59 dopositializede
-- <span style="color:green">null null with 0x48768B59 ypebottonhig</span>
-- <span style="color:green">null null with 0x5CB8F61B resinputbufficitree</span>
-- <span style="color:green">null null with 0x5CB8F61B timerderren</span>
-- <span style="color:green">null null with 0x3825AB8C hainesetackaddgete</span>
-- <span style="color:green">Rudi file with 0x3825AB8C curly</span>
-- <span style="color:green">null null with 0x3825AB8C sitionstac</span>
-- <span style="color:green">null null with 0x3825AB8C uttonbackgro</span>
-- <span style="color:green">null null with 0x3825AB8C tleteleng</span>
-- <span style="color:green">??? password_change with 0x3D88C3C7 bitsb</span>
-- <span style="color:yellow">guest</span> shell with 0x3D88C3C7 clip
-- <span style="color:green">null null with 0x3D88C3C7 valuesadd</span>
-- <span style="color:yellow">guest</span> shell with 0x3D88C3C7 tepointxselaytrue
-- <span style="color:green">Paotomit computer with 0x1006C087 urly</span>
-- <span style="color:green">Dallisalva file with 0x190AC9D0 ectotal</span>
-- <span style="color:green">??? password_change with 0x190AC9D0 isrepeat</span>
-- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x48768B59 dopositializede
-- <span style="color:green">null null with 0x48768B59 ypebottonhig</span>
-- <span style="color:green">null null with 0x5CB8F61B resinputbufficitree</span>
-- <span style="color:green">??? password_change with 0x5CB8F61B timerderren</span>
-- <span style="color:green">null null with 0x3825AB8C hainesetackaddgete</span>
-- <span style="color:green">Paotomit file with 0x3825AB8C curly</span>
-- <span style="color:green">null null with 0x3825AB8C sitionstac</span>
-- <span style="color:green">??? password_change with 0x3825AB8C uttonbackgro</span>
-- <span style="color:green">null null with 0x3825AB8C tleteleng</span>
-- <span style="color:green">??? password_change with 0x3D88C3C7 bitsb</span>
-- <span style="color:yellow">guest</span> shell with 0x3D88C3C7 clip
-- <span style="color:green">??? password_change with 0x3D88C3C7 valuesadd</span>
-- <span style="color:yellow">guest</span> shell with 0x3D88C3C7 tepointxselaytrue
-- <span style="color:green">Paotomit computer with 0x2D099596 tedorr</span>
-- <span style="color:green">Paotomit file with 0x6ABD051C chortlinetreestacterdow++scaller32</span>
-- <span style="color:green">guest computer with 0x6ABD051C meshupdatebi</span>
-- <span style="color:green">Dallisalva computer with 0x6ABD051C tanchorequalbytebuttoncolorscript</span>
-- Dallisalva shell with 0x50348A94 isobje
-
-#### v 1.0.3 — shell 2/34
-<a id="1.0.3"></a>
-- <span style="color:green">guest file with 0x1006C087 pritext</span>
-- <span style="color:green">guest computer with 0x1006C087 urly</span>
-- <span style="color:green">guest file with 0x190AC9D0 ectotal</span>
-- <span style="color:green">null null with 0x190AC9D0 andb</span>
-- <span style="color:green">??? password_change with 0x190AC9D0 isrepeat</span>
-- <span style="color:green">guest file with 0x190AC9D0 tivetrue</span>
-- <span style="color:green">guest computer with 0x46408611 textvmyiel</span>
-- <span style="color:green">guest computer with 0x46408611 aheadinged</span>
-- <span style="color:green">guest computer with 0x46408611 sizel</span>
-- <span style="color:yellow">guest</span> shell with 0x79460C65 sized
-- <span style="color:green">null null with 0x79460C65 context</span>
-- <span style="color:green">guest file with 0x79460C65 scalpha</span>
-- <span style="color:green">guest file with 0x79460C65 olor_view</span>
-- <span style="color:green">??? password_change with 0x7FCE07B0 iftitleobjecttransforeach</span>
-- <span style="color:yellow">guest</span> shell with 0x7FCE07B0 miniti
-- <span style="color:green">guest computer with 0x7FCE07B0 textvm</span>
-- <span style="color:green">guest file with 0x7FCE07B0 leventdata_</span>
-- <span style="color:green">guest computer with 0x7FCE07B0 eiconteral</span>
-- <span style="color:green">Osiotto computer with 0x1006C087 urly</span>
-- <span style="color:green">Osiotto file with 0x190AC9D0 ectotal</span>
-- <span style="color:green">null null with 0x190AC9D0 andb</span>
-- <span style="color:green">guest computer with 0x46408611 textvmyiel</span>
-- <span style="color:green">guest computer with 0x46408611 aheadinged</span>
-- <span style="color:green">guest computer with 0x46408611 sizel</span>
-- <span style="color:green">null null with 0x79460C65 sized</span>
-- <span style="color:green">null null with 0x79460C65 context</span>
-- <span style="color:green">guest file with 0x79460C65 scalpha</span>
-- <span style="color:green">null null with 0x79460C65 olor_view</span>
-- <span style="color:green">??? password_change with 0x7FCE07B0 iftitleobjecttransforeach</span>
-- <span style="color:green">null null with 0x7FCE07B0 miniti</span>
-- <span style="color:green">guest computer with 0x7FCE07B0 textvm</span>
-- <span style="color:green">null null with 0x7FCE07B0 leventdata_</span>
-- <span style="color:green">guest computer with 0x7FCE07B0 eiconteral</span>
-- <span style="color:green">??? firewall_disable with 0x167D6BC8 ternalconstrinf</span>
-
-#### v 1.0.4 — shell 1/16, priv 1/16
-<a id="1.0.4"></a>
-- <span style="color:green">Chuq file with 0x1006C087 pritext</span>
-- <span style="color:green">Chuq file with 0x190AC9D0 ectotal</span>
-- <span style="color:green">null null with 0x190AC9D0 andb</span>
-- <span style="color:green">??? password_change with 0x190AC9D0 isrepeat</span>
-- <span style="color:red">root</span> <span style="color:red">file</span> with 0x190AC9D0 tivetrue
-- <span style="color:green">null null with 0x7884957B elaysourceplayt</span>
-- <span style="color:yellow">guest</span> shell with 0x7884957B d_blocatibledquotenerspritextinfor
-- <span style="color:green">guest computer with 0x7884957B ontexte</span>
-- <span style="color:green">Chuq computer with 0x7884957B vailabledquoten</span>
-- <span style="color:green">??? password_change with 0x217570A olors</span>
-- <span style="color:green">Olewick computer with 0x217570A ort~lengthoffsettim</span>
-- <span style="color:green">Olewick computer with 0x217570A origsiniscan_en</span>
-- <span style="color:green">??? password_change with 0x7649FB15 jumptoend</span>
-- <span style="color:green">null null with 0x7649FB15 extenabledthisop</span>
-- <span style="color:green">Olewick file with 0x7649FB15 inei</span>
-- <span style="color:green">??? password_change with 0x7649FB15 typebottonb</span>
-
-#### v 1.0.5 — shell 3/33, priv 1/33
-<a id="1.0.5"></a>
-- <span style="color:green">Einiea file with 0x190AC9D0 ectotal</span>
-- <span style="color:green">null null with 0x190AC9D0 andb</span>
-- <span style="color:green">??? password_change with 0x190AC9D0 isrepeat</span>
-- <span style="color:green">null null with 0x190AC9D0 max_blocalp</span>
-- <span style="color:green">null null with 0x5EC5E056 color_viewporttexttextimessor-1</span>
-- <span style="color:green">guest file with 0x5EC5E056 updata_typebottont</span>
-- <span style="color:green">null null with 0x5EC5E056 iobjectsetpivotnewuitexttextr</span>
-- <span style="color:green">guest file with 0x5EC5E056 bofa</span>
-- <span style="color:green">null null with 0x5EC5E056 extobje</span>
-- <span style="color:green">null null with 0x773E6E8A opwatch_availabledquotespa</span>
-- <span style="color:green">??? password_change with 0x773E6E8A lendline</span>
-- <span style="color:green">??? password_change with 0x773E6E8A amemax_</span>
-- <span style="color:green">null null with 0x773E6E8A texting_l</span>
-- <span style="color:green">null null with 0x773E6E8A aequale</span>
-- <span style="color:yellow">guest</span> shell with 0x63A3C22 phic
-- <span style="color:red">root</span> shell with 0x63A3C22 temov
-- <span style="color:green">guest file with 0x1006C087 pritext</span>
-- <span style="color:green">guest file with 0x190AC9D0 ectotal</span>
-- <span style="color:green">null null with 0x190AC9D0 andb</span>
-- <span style="color:green">??? password_change with 0x190AC9D0 isrepeat</span>
-- <span style="color:green">null null with 0x190AC9D0 max_blocalp</span>
-- <span style="color:green">null null with 0x5EC5E056 color_viewporttexttextimessor-1</span>
-- <span style="color:green">guest file with 0x5EC5E056 updata_typebottont</span>
-- <span style="color:green">null null with 0x5EC5E056 iobjectsetpivotnewuitexttextr</span>
-- <span style="color:green">guest file with 0x5EC5E056 bofa</span>
-- <span style="color:green">null null with 0x5EC5E056 extobje</span>
-- <span style="color:green">guest computer with 0x773E6E8A opwatch_availabledquotespa</span>
-- <span style="color:green">null null with 0x773E6E8A lendline</span>
-- <span style="color:green">??? password_change with 0x773E6E8A amemax_</span>
-- <span style="color:green">null null with 0x773E6E8A texting_l</span>
-- <span style="color:green">??? password_change with 0x773E6E8A aequale</span>
-- <span style="color:green">null null with 0x63A3C22 phic</span>
-- <span style="color:yellow">guest</span> shell with 0x63A3C22 temov
-
-#### v 1.0.6 — shell 2/18
-<a id="1.0.6"></a>
-- <span style="color:green">null null with 0x1006C087 pritext</span>
-- <span style="color:yellow">guest</span> shell with 0x1006C087 eundostac
-- <span style="color:green">guest file with 0x36A9B5E8 shor</span>
-- <span style="color:green">null null with 0x36A9B5E8 ackpeek</span>
-- <span style="color:green">guest computer with 0x36A9B5E8 morequal</span>
-- <span style="color:green">null null with 0x36A9B5E8 void</span>
-- <span style="color:green">null null with 0xD9F5747 point_onlen</span>
-- <span style="color:green">null null with 0xD9F5747 opy_b</span>
-- <span style="color:green">null null with 0xD9F5747 calpositiontil</span>
-- <span style="color:green">null null with 0xD9F5747 treeinte</span>
-- <span style="color:green">null null with 0x7384DC56 ta_typerighli</span>
-- <span style="color:green">??? password_change with 0x7384DC56 barformanchorttextef</span>
-- <span style="color:green">??? password_change with 0x7384DC56 functivetact</span>
-- <span style="color:green">??? password_change with 0x7384DC56 ostactabl</span>
-- <span style="color:yellow">guest</span> shell with 0x75E16450 headp
-- <span style="color:green">guest computer with 0x75E16450 char</span>
-- <span style="color:green">null null with 0x75E16450 codecdstancessertyp</span>
-- <span style="color:green">guest computer with 0x75E16450 stackpeek</span>
-
-#### v 1.0.7 — shell 6/25, priv 4/25
-<a id="1.0.7"></a>
-- <span style="color:yellow">guest</span> shell with 0x1006C087 recttransf
-- <span style="color:green">guest file with 0x36A9B5E8 void</span>
-- <span style="color:green">guest file with 0x58FFB37A agetefferremove</span>
-- <span style="color:green">??? password_change with 0x58FFB37A textslconteral</span>
-- <span style="color:green">??? password_change with 0x58FFB37A tialid</span>
-- <span style="color:green">guest computer with 0x58FFB37A queuetokethis</span>
-- <span style="color:green">??? password_change with 0x58FFB37A _bitsdisplateg</span>
-- <span style="color:green">Mattono file with 0x24F795D6 eslinenumsion++</span>
-- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x24F795D6 resultaddparentai
-- Mattono shell with 0x24F795D6 scan
-- <span style="color:yellow">guest</span> shell with 0x3431FF6C textreatel
-- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x3431FF6C mentdat
-- <span style="color:red">root</span> shell with 0xA780AFF mponenumerialid
-- Mattono shell with 0xA780AFF ethisonclicksraycodecflu
-- <span style="color:green">??? password_change with 0x2AD8220D yte</span>
-- <span style="color:green">null null with 0x7A582DFA lags</span>
-- <span style="color:green">null null with 0x1006C087 recttransf</span>
-- <span style="color:green">null null with 0x58FFB37A agetefferremove</span>
-- <span style="color:green">??? password_change with 0x58FFB37A textslconteral</span>
-- <span style="color:green">??? password_change with 0x58FFB37A tialid</span>
-- <span style="color:green">guest computer with 0x58FFB37A queuetokethis</span>
-- <span style="color:green">??? password_change with 0x58FFB37A _bitsdisplateg</span>
-- <span style="color:green">Antleh file with 0x24F795D6 eslinenumsion++</span>
-- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x24F795D6 resultaddparentai
-- Antleh shell with 0x24F795D6 scan
-
-#### v 1.1.0 — shell 4/17, priv 4/17
-<a id="1.1.0"></a>
-- <span style="color:yellow">guest</span> shell with 0x36A9B5E8 note
-- <span style="color:green">null null with 0x36A9B5E8 ackpeek</span>
-- <span style="color:green">??? password_change with 0x36A9B5E8 _sharamete</span>
-- <span style="color:green">null null with 0x36A9B5E8 void</span>
-- <span style="color:green">??? password_change with 0xAC58E1 timerderrori</span>
-- <span style="color:red">root</span> <span style="color:red">computer</span> with 0xAC58E1 ationx
-- <span style="color:red">root</span> <span style="color:red">computer</span> with 0xAC58E1 tionstancessof
-- <span style="color:green">Astev computer with 0x51A233F9 portlinemovecttransfore</span>
-- <span style="color:yellow">guest</span> shell with 0x51A233F9 ush_blockstantsremo
-- <span style="color:red">root</span> shell with 0x3FBDDFB4 using
-- <span style="color:green">guest file with 0x3FBDDFB4 atch_</span>
-- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x2614BFF2 parenableteff
-- <span style="color:green">guest computer with 0x2614BFF2 cursc</span>
-- <span style="color:green">null null with 0x2614BFF2 valuesr</span>
-- <span style="color:green">guest computer with 0x6BA4583 enumobjectt</span>
-- <span style="color:green">null null with 0x4FA87F95 setpivotnewi</span>
-- <span style="color:yellow">guest</span> shell with 0x3D221C3D tabledthisflavor
-
-#### v 1.1.1 — shell 1/8
-<a id="1.1.1"></a>
-- <span style="color:green">null null with 0x36A9B5E8 ponenumber</span>
-- <span style="color:green">null null with 0xD735EFA textvmyiel</span>
-- <span style="color:green">guest file with 0xD735EFA worder</span>
-- <span style="color:yellow">guest</span> shell with 0xD735EFA note
-- <span style="color:green">null null with 0xD735EFA sizedela</span>
-- <span style="color:green">null null with 0x522F139E spresultnum</span>
-- <span style="color:green">null null with 0x522F139E fig</span>
-- <span style="color:green">null null with 0x522F139E irectotalwidthiscript</span>
-
-#### v 1.1.2 — shell 8/54
-<a id="1.1.2"></a>
-- <span style="color:green">guest file with 0x14CB3403 ializeline</span>
-- <span style="color:green">null null with 0x14CB3403 storsche</span>
-- <span style="color:green">null null with 0x524F4A8F oteoutoveatlinent</span>
-- <span style="color:yellow">guest</span> shell with 0x524F4A8F sizedeltaddline+
-- <span style="color:green">null null with 0x524F4A8F namemax</span>
-- <span style="color:green">null null with 0x524F4A8F ultvmyie</span>
-- <span style="color:green">null null with 0x524F4A8F alse</span>
-- <span style="color:yellow">guest</span> shell with 0x3F86B099 quoteoutl
-- <span style="color:green">??? password_change with 0x3F86B099 itssertypeopequ</span>
-- <span style="color:green">null null with 0x3F86B099 blocall001f</span>
-- <span style="color:green">null null with 0x3F86B099 copya</span>
-- <span style="color:green">Snidelmich file with 0x40341465 tinforman</span>
-- <span style="color:green">null null with 0x40341465 vecurle</span>
-- <span style="color:green">Snidelmich computer with 0x40341465 stroyb</span>
-- <span style="color:green">null null with 0x40341465 notb</span>
-- <span style="color:green">guest file with 0x14CB3403 ializeline</span>
-- <span style="color:green">guest file with 0x14CB3403 storsche</span>
-- <span style="color:green">??? password_change with 0x524F4A8F oteoutoveatlinent</span>
-- <span style="color:yellow">guest</span> shell with 0x524F4A8F sizedeltaddline+
-- <span style="color:green">??? password_change with 0x524F4A8F namemax</span>
-- <span style="color:green">null null with 0x524F4A8F ultvmyie</span>
-- <span style="color:green">null null with 0x524F4A8F alse</span>
-- <span style="color:yellow">guest</span> shell with 0x3F86B099 quoteoutl
-- <span style="color:green">??? password_change with 0x3F86B099 itssertypeopequ</span>
-- <span style="color:green">null null with 0x3F86B099 blocall001f</span>
-- <span style="color:green">null null with 0x3F86B099 copya</span>
-- <span style="color:green">Vietri file with 0x40341465 tinforman</span>
-- <span style="color:green">null null with 0x40341465 vecurle</span>
-- <span style="color:green">Vietri computer with 0x40341465 stroyb</span>
-- <span style="color:green">null null with 0x40341465 notb</span>
-- <span style="color:green">null null with 0x5BFF0F65 tatictres</span>
-- Lehudelve shell with 0x61906398 izedelanche
-- <span style="color:green">guest computer with 0x61906398 elhight2transformances</span>
-- Idenzie shell with 0xCAE2A53 _audiomixergroun
-- <span style="color:green">Idenzie file with 0x5EFC72BE xlazymatch_</span>
-- <span style="color:yellow">guest</span> shell with 0x21649DCD tored
-- Lehudelve shell with 0x1DB50A8C oublic
-- <span style="color:green">null null with 0x56F02C06 sourcelend_codec</span>
-- <span style="color:green">null null with 0x3073421F strstackgroundosoundost</span>
-- <span style="color:green">guest file with 0x14CB3403 ializeline</span>
-- <span style="color:green">null null with 0x14CB3403 storsche</span>
-- <span style="color:green">null null with 0x524F4A8F oteoutoveatlinent</span>
-- <span style="color:green">null null with 0x524F4A8F sizedeltaddline+</span>
-- <span style="color:green">null null with 0x524F4A8F namemax</span>
-- <span style="color:green">null null with 0x524F4A8F ultvmyie</span>
-- <span style="color:green">null null with 0x524F4A8F alse</span>
-- <span style="color:green">null null with 0x3F86B099 quoteoutl</span>
-- <span style="color:green">??? password_change with 0x3F86B099 itssertypeopequ</span>
-- <span style="color:green">null null with 0x3F86B099 blocall001f</span>
-- <span style="color:green">null null with 0x3F86B099 copya</span>
-- <span style="color:green">null null with 0x40341465 tinforman</span>
-- <span style="color:green">null null with 0x40341465 vecurle</span>
-- <span style="color:green">guest computer with 0x40341465 stroyb</span>
-- <span style="color:green">null null with 0x40341465 notb</span>
-
-#### v 1.1.3 — shell 7/24, priv 3/24
-<a id="1.1.3"></a>
-- <span style="color:green">guest file with 0x14CB3403 storsche</span>
-- <span style="color:green">null null with 0x2B86B7C7 oredutilsurscrollr</span>
-- <span style="color:yellow">guest</span> shell with 0x2B86B7C7 ayclearhea
-- <span style="color:yellow">guest</span> shell with 0x2B86B7C7 buttontexttexts
-- <span style="color:red">root</span> shell with 0x2B86B7C7 lit++
-- <span style="color:green">null null with 0x6B4ADFA4 portbackaddpa</span>
-- Iverlissel shell with 0x6B4ADFA4 showcalpositionis
-- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x6B4ADFA4 onbackundostictreeendp
-- <span style="color:green">guest file with 0x14CB3403 storsche</span>
-- <span style="color:green">guest file with 0x2B86B7C7 oredutilsurscrollr</span>
-- <span style="color:yellow">guest</span> shell with 0x2B86B7C7 ayclearhea
-- <span style="color:yellow">guest</span> shell with 0x2B86B7C7 buttontexttexts
-- <span style="color:green">null null with 0x2B86B7C7 lit++</span>
-- <span style="color:green">Cannet file with 0x6B4ADFA4 portbackaddpa</span>
-- Onnetti shell with 0x6B4ADFA4 showcalpositionis
-- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x6B4ADFA4 onbackundostictreeendp
-- <span style="color:green">null null with 0x14CB3403 storsche</span>
-- <span style="color:green">null null with 0x2B86B7C7 oredutilsurscrollr</span>
-- <span style="color:green">null null with 0x2B86B7C7 ayclearhea</span>
-- <span style="color:green">null null with 0x2B86B7C7 buttontexttexts</span>
-- <span style="color:green">null null with 0x2B86B7C7 lit++</span>
-- <span style="color:green">null null with 0x6B4ADFA4 portbackaddpa</span>
-- <span style="color:green">null null with 0x6B4ADFA4 showcalpositionis</span>
-- <span style="color:green">null null with 0x6B4ADFA4 onbackundostictreeendp</span>
-
-#### v 1.1.5 — shell 1/16, priv 1/16
-<a id="1.1.5"></a>
-- <span style="color:green">null null with 0x14CB3403 aramargu</span>
-- <span style="color:green">Parnas file with 0x14CB3403 eyrepz_3_6</span>
-- <span style="color:green">??? password_change with 0x14CB3403 moredpoi</span>
-- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x24413D79 statei
-- <span style="color:green">guest file with 0x24413D79 insuffect</span>
-- <span style="color:green">Parnas file with 0x24413D79 ranged</span>
-- <span style="color:green">??? password_change with 0x24413D79 pivotreeth</span>
-- <span style="color:green">null null with 0x1AA99497 gotenterals</span>
-- <span style="color:green">??? password_change with 0x1AA99497 ieldinsicontof</span>
-- <span style="color:green">null null with 0x1AA99497 porttextstreelit_bytespa</span>
-- <span style="color:yellow">guest</span> shell with 0x1112CE01 vetackgrountintlinenumerdoub
-- <span style="color:green">null null with 0x1112CE01 olor_viewporttedist</span>
-- <span style="color:green">guest computer with 0x1112CE01 indostances</span>
-- <span style="color:green">guest computer with 0x39F903D0 tlineslindostartc</span>
-- <span style="color:green">null null with 0x39F903D0 lend_bitle</span>
-- <span style="color:green">??? password_change with 0x39F903D0 tatemover</span>
-
-#### v 1.1.6 — priv 1/10
-<a id="1.1.6"></a>
-- <span style="color:green">Nox file with 0x43E75632 istenertypebotton</span>
-- <span style="color:green">guest file with 0x14131AF bitsdc</span>
-- <span style="color:green">null null with 0x14131AF textingp</span>
-- <span style="color:green">null null with 0x14131AF _buffectsetactableteli</span>
-- <span style="color:green">null null with 0x14131AF kaheady_def</span>
-- <span style="color:green">??? password_change with 0x7552F287 ressof</span>
-- <span style="color:green">null null with 0x7552F287 updata_typ</span>
-- <span style="color:green">null null with 0x7552F287 olledtaskb</span>
-- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x7552F287 resizeline++
-- <span style="color:green">guest computer with 0x7552F287 ialrectsettimaticsin</span>
-
-#### v 1.1.7 — shell 5/41, priv 2/41
-<a id="1.1.7"></a>
-- <span style="color:green">guest computer with 0x43E75632 oundostransformoffsettim</span>
-- <span style="color:green">null null with 0x15A9A918 positialigni</span>
-- <span style="color:green">null null with 0x15A9A918 paract</span>
-- <span style="color:green">null null with 0x15A9A918 title</span>
-- <span style="color:green">null null with 0x16BE0C7 izeli</span>
-- <span style="color:green">guest file with 0x16BE0C7 istinesou</span>
-- <span style="color:green">null null with 0x16BE0C7 modedistene</span>
-- Georgia shell with 0x16BE0C7 alizelaya
-- <span style="color:red">root</span> shell with 0x16BE0C7 scii_fresu
-- <span style="color:green">guest file with 0x3F66F18A _endpoi</span>
-- <span style="color:green">null null with 0x3F66F18A sertlinetrectsettimele</span>
-- <span style="color:green">??? password_change with 0x3F66F18A treelinerthangenq</span>
-- <span style="color:green">guest computer with 0x3F66F18A startco</span>
-- <span style="color:green">null null with 0x43E75632 oundostransformoffsettim</span>
-- <span style="color:green">null null with 0x15A9A918 positialigni</span>
-- <span style="color:green">null null with 0x15A9A918 paract</span>
-- <span style="color:green">null null with 0x15A9A918 title</span>
-- <span style="color:green">null null with 0x16BE0C7 izeli</span>
-- <span style="color:green">guest file with 0x16BE0C7 istinesou</span>
-- <span style="color:green">null null with 0x16BE0C7 modedistene</span>
-- Andershoem shell with 0x16BE0C7 alizelaya
-- <span style="color:green">null null with 0x16BE0C7 scii_fresu</span>
-- <span style="color:green">guest file with 0x3F66F18A _endpoi</span>
-- <span style="color:green">null null with 0x3F66F18A sertlinetrectsettimele</span>
-- <span style="color:green">??? password_change with 0x3F66F18A treelinerthangenq</span>
-- <span style="color:green">guest computer with 0x3F66F18A startco</span>
-- <span style="color:green">guest computer with 0x43E75632 oundostransformoffsettim</span>
-- <span style="color:green">null null with 0x15A9A918 positialigni</span>
-- <span style="color:green">null null with 0x15A9A918 paract</span>
-- <span style="color:green">null null with 0x15A9A918 title</span>
-- <span style="color:green">null null with 0x16BE0C7 izeli</span>
-- <span style="color:green">guest file with 0x16BE0C7 istinesou</span>
-- <span style="color:green">null null with 0x16BE0C7 modedistene</span>
-- Singtse shell with 0x16BE0C7 alizelaya
-- <span style="color:red">root</span> shell with 0x16BE0C7 scii_fresu
-- <span style="color:green">guest file with 0x3F66F18A _endpoi</span>
-- <span style="color:green">null null with 0x3F66F18A sertlinetrectsettimele</span>
-- <span style="color:green">??? password_change with 0x3F66F18A treelinerthangenq</span>
-- <span style="color:green">guest computer with 0x3F66F18A startco</span>
-- <span style="color:green">??? password_change with 0x3A8A10B7 unctionx</span>
-- <span style="color:green">null null with 0x4E0AE315 text</span>
-
----
-
 ## `libsql.so`
 <a id="libsql-so"></a>
 
-- Total Hooked lines: 462
-- Can provide shell: 45
-- Has privileged object: 19
-- Safe versions: 1
-Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#1.0.3"><span style="color:red">v 1.0.3</span></a> <a href="#1.0.4"><span style="color:red">v 1.0.4</span></a> <a href="#1.1.0"><span style="color:red">v 1.1.0</span></a> <a href="#1.2.4"><span style="color:red">v 1.2.4</span></a> <a href="#1.2.7"><span style="color:red">v 1.2.7</span></a> <a href="#1.3.1"><span style="color:red">v 1.3.1</span></a> <a href="#1.4.1"><span style="color:red">v 1.4.1</span></a> <a href="#1.5.1"><span style="color:red">v 1.5.1</span></a> <a href="#1.5.4"><span style="color:red">v 1.5.4</span></a> <a href="#1.5.6"><span style="color:green">v 1.5.6</span></a> <a href="#1.5.8"><span style="color:red">v 1.5.8</span></a> <a href="#1.6.0"><span style="color:red">v 1.6.0</span></a> <a href="#1.6.2"><span style="color:red">v 1.6.2</span></a> <a href="#1.7.2"><span style="color:red">v 1.7.2</span></a> <a href="#1.7.7"><span style="color:red">v 1.7.7</span></a> <a href="#1.7.9"><span style="color:red">v 1.7.9</span></a> <a href="#1.8.0"><span style="color:red">v 1.8.0</span></a>
+- Total Hooked lines: 918
+- Can provide shell: 97
+- Has privileged object: 36
+- Safe versions: 3
+Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#1.0.1"><span style="color:red">v 1.0.1</span></a> <a href="#1.0.3"><span style="color:red">v 1.0.3</span></a> <a href="#1.0.4"><span style="color:red">v 1.0.4</span></a> <a href="#1.1.0"><span style="color:red">v 1.1.0</span></a> <a href="#1.1.5"><span style="color:red">v 1.1.5</span></a> <a href="#1.1.8"><span style="color:red">v 1.1.8</span></a> <a href="#1.2.4"><span style="color:red">v 1.2.4</span></a> <a href="#1.2.7"><span style="color:red">v 1.2.7</span></a> <a href="#1.2.8"><span style="color:red">v 1.2.8</span></a> <a href="#1.2.9"><span style="color:red">v 1.2.9</span></a> <a href="#1.3.1"><span style="color:red">v 1.3.1</span></a> <a href="#1.3.4"><span style="color:red">v 1.3.4</span></a> <a href="#1.3.6"><span style="color:red">v 1.3.6</span></a> <a href="#1.4.0"><span style="color:red">v 1.4.0</span></a> <a href="#1.4.1"><span style="color:red">v 1.4.1</span></a> <a href="#1.4.2"><span style="color:green">v 1.4.2</span></a> <a href="#1.5.1"><span style="color:red">v 1.5.1</span></a> <a href="#1.5.4"><span style="color:red">v 1.5.4</span></a> <a href="#1.5.5"><span style="color:green">v 1.5.5</span></a> <a href="#1.5.6"><span style="color:green">v 1.5.6</span></a> <a href="#1.5.7"><span style="color:red">v 1.5.7</span></a> <a href="#1.5.8"><span style="color:red">v 1.5.8</span></a> <a href="#1.6.0"><span style="color:red">v 1.6.0</span></a> <a href="#1.6.1"><span style="color:red">v 1.6.1</span></a> <a href="#1.6.2"><span style="color:red">v 1.6.2</span></a> <a href="#1.6.6"><span style="color:red">v 1.6.6</span></a> <a href="#1.6.7"><span style="color:red">v 1.6.7</span></a> <a href="#1.6.9"><span style="color:red">v 1.6.9</span></a> <a href="#1.7.2"><span style="color:red">v 1.7.2</span></a> <a href="#1.7.7"><span style="color:red">v 1.7.7</span></a> <a href="#1.7.9"><span style="color:red">v 1.7.9</span></a> <a href="#1.8.0"><span style="color:red">v 1.8.0</span></a> <a href="#1.8.1"><span style="color:red">v 1.8.1</span></a>
 
 ### Safe versions
+#### v 1.4.2 — no shell/priv hooks
+<a id="1.4.2"></a>
+- <span style="color:green">null null with 0x1809B61F urleng</span>
+- <span style="color:green">null null with 0x5094E8F7 blocalpositionstanch</span>
+- <span style="color:green">??? password_change with 0x3CCF23E9 slow</span>
+- <span style="color:green">null null with 0x3CCF23E9 shighlight2transformi</span>
+- <span style="color:green">null null with 0x3CCF23E9 startedorredpositionim</span>
+- <span style="color:green">??? password_change with 0x3CCF23E9 tctorentpositionso</span>
+- <span style="color:green">null null with 0x591B099B or_buttonbuttoncomment</span>
+- <span style="color:green">??? password_change with 0x591B099B procesbuild</span>
+- <span style="color:green">null null with 0x591B099B functiondat</span>
+- <span style="color:green">null null with 0x591B099B ypebott</span>
+- <span style="color:green">null null with 0x591B099B _buttontextbutto</span>
+- <span style="color:green">null null with 0x3322E402 color_butto</span>
+- <span style="color:green">null null with 0x3322E402 ostanchem</span>
+- <span style="color:green">null null with 0x3322E402 groundopositionfig</span>
+- <span style="color:green">null null with 0x9F6D7B2 scount++</span>
+- <span style="color:green">null null with 0x9F6D7B2 otreedyn_ltreend_color_buttonhighl</span>
+- <span style="color:green">??? password_change with 0x6F3C75B5 spushpa</span>
+- <span style="color:green">null null with 0x6F3C75B5 closeleftundoposition+</span>
+- <span style="color:green">null null with 0xFE0294C timelembofiternalco</span>
+- <span style="color:green">null null with 0xFE0294C else</span>
+
+#### v 1.5.5 — no shell/priv hooks
+<a id="1.5.5"></a>
+- <span style="color:green">??? password_change with 0x1809B61F tringsupd</span>
+- <span style="color:green">null null with 0x5094E8F7 onterna</span>
+- <span style="color:green">null null with 0x33C14084 essionimatoredpositi</span>
+- <span style="color:green">null null with 0x33C14084 yte</span>
+- <span style="color:green">guest file with 0x17E64A90 lancessigna</span>
+- <span style="color:green">null null with 0x17E64A90 tring_dis</span>
+- <span style="color:green">null null with 0x17E64A90 edyn_lt</span>
+- <span style="color:green">null null with 0x17E64A90 dstantsrepe</span>
+- <span style="color:green">guest computer with 0x4DC75519 tset</span>
+- <span style="color:green">??? password_change with 0x4DC75519 shortmsbin_frequalbyteswindo</span>
+
 #### v 1.5.6 — no shell/priv hooks
 <a id="1.5.6"></a>
 - <span style="color:green">null null with 0x1AC03C64 entsirectn</span>
@@ -11136,6 +13583,28 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x4F0A0CD5 nenumber</span>
 - <span style="color:green">null null with 0x4F0A0CD5 ratorplatetitleftundost</span>
 - <span style="color:red">root</span> <span style="color:red">computer</span> with 0x4F0A0CD5 privategy
+
+#### v 1.0.1 — shell 1/19
+<a id="1.0.1"></a>
+- <span style="color:green">guest computer with 0x234B80A6 eady_</span>
+- <span style="color:green">guest file with 0x234B80A6 raycast_litexteffectnametelistg</span>
+- <span style="color:yellow">guest</span> shell with 0x7866B58E setsetfoc
+- <span style="color:green">guest file with 0x7866B58E intostanceoffse</span>
+- <span style="color:green">??? password_change with 0x7866B58E sgroupblock0</span>
+- <span style="color:green">guest computer with 0x7866B58E attimespace</span>
+- <span style="color:green">null null with 0x7866B58E oragupdateoutilsurs</span>
+- <span style="color:green">??? password_change with 0xAA47DE3 heade</span>
+- <span style="color:green">guest computer with 0xAA47DE3 icked</span>
+- <span style="color:green">guest computer with 0xAA47DE3 resultparetokethism</span>
+- <span style="color:green">null null with 0xAA47DE3 flags</span>
+- <span style="color:green">guest file with 0x181715EA tivefalse</span>
+- <span style="color:green">??? password_change with 0x181715EA notb</span>
+- <span style="color:green">guest file with 0x181715EA runtimelengthcodeady_defalse</span>
+- <span style="color:green">guest computer with 0xA09F086 medistreenovecurlengthsbuild</span>
+- <span style="color:green">null null with 0xA09F086 maskbarrva</span>
+- <span style="color:green">guest computer with 0xA09F086 objectseticonstackgroupinter</span>
+- <span style="color:green">guest file with 0x41945001 onshortsho</span>
+- <span style="color:green">guest file with 0x41945001 forwardownevel_flatethisa</span>
 
 #### v 1.0.3 — shell 6/60, priv 3/60
 <a id="1.0.3"></a>
@@ -11286,6 +13755,59 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x52348368 yn_dtreel</span>
 - <span style="color:green">Noori computer with 0x797F5D2D oken</span>
 
+#### v 1.1.5 — shell 6/25, priv 2/25
+<a id="1.1.5"></a>
+- <span style="color:green">guest computer with 0x58978E71 textpositialpositiona</span>
+- <span style="color:green">Singe computer with 0x58978E71 extparsetting_</span>
+- <span style="color:green">Singe file with 0x58978E71 isternal</span>
+- <span style="color:green">guest computer with 0x58978E71 uttonteralse</span>
+- <span style="color:green">guest file with 0x58978E71 send_codead</span>
+- <span style="color:green">null null with 0x1018107F hash_size</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x1018107F toaiftitlen
+- <span style="color:yellow">guest</span> shell with 0x1018107F alizey
+- <span style="color:green">Boriab file with 0x1018107F treeintlinespace</span>
+- <span style="color:green">guest file with 0x1018107F selazymatch_lengtho</span>
+- <span style="color:yellow">guest</span> shell with 0xAA47DE3 _lend_bitsd
+- <span style="color:green">guest computer with 0xAA47DE3 mask</span>
+- Boriab shell with 0xAA47DE3 foreanimageturnalcontsiint
+- <span style="color:green">null null with 0xAA47DE3 flags</span>
+- <span style="color:green">guest computer with 0x181715EA dresultpa</span>
+- Singe shell with 0x181715EA viewportsprint
+- <span style="color:green">Boriab file with 0x181715EA runtimelengthcodeady_defalse</span>
+- <span style="color:green">guest computer with 0x5813AD51 inescod</span>
+- <span style="color:green">null null with 0x5813AD51 s_h</span>
+- <span style="color:yellow">guest</span> shell with 0x5813AD51 avor
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x2AD437C8 append_c
+- <span style="color:green">Singe file with 0x2AD437C8 ionawake</span>
+- <span style="color:yellow">guest</span> shell with 0x2AD437C8 checkransfor
+- <span style="color:green">null null with 0x2AD437C8 tationtain</span>
+- <span style="color:green">??? password_change with 0x2AD437C8 hash_stact</span>
+
+#### v 1.1.8 — shell 6/22, priv 1/22
+<a id="1.1.8"></a>
+- <span style="color:green">guest computer with 0x47E04411 otenertyp</span>
+- <span style="color:green">??? password_change with 0x47E04411 lor_buttoncommentpositionto</span>
+- <span style="color:green">null null with 0x1018107F hash_size</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x1018107F toaiftitlen
+- <span style="color:yellow">guest</span> shell with 0x1018107F alizey
+- <span style="color:green">Oric file with 0x1018107F treeintlinespace</span>
+- <span style="color:green">guest file with 0x1018107F selazymatch_lengtho</span>
+- Oric shell with 0x6E641AB0 tacta
+- <span style="color:green">??? password_change with 0x6E641AB0 updatecomment_onl</span>
+- <span style="color:green">??? password_change with 0x6A394701 asgroupinternalconfo</span>
+- <span style="color:green">??? password_change with 0x6A394701 textlinenum</span>
+- <span style="color:yellow">guest</span> shell with 0x6AF1B9B8 bitstreedistgrap
+- <span style="color:green">??? password_change with 0x6AF1B9B8 artposit</span>
+- <span style="color:green">??? password_change with 0x6AF1B9B8 artialis</span>
+- <span style="color:green">guest computer with 0x6AF1B9B8 edistenercolor_buttom</span>
+- <span style="color:yellow">guest</span> shell with 0x6AF1B9B8 ourceplayani
+- <span style="color:green">??? password_change with 0x577634AF flushp</span>
+- <span style="color:green">guest file with 0x577634AF extuitextsstartedistv</span>
+- <span style="color:yellow">guest</span> shell with 0x577634AF tionarykeys
+- <span style="color:green">null null with 0x577634AF _viewportmsbheadd</span>
+- <span style="color:yellow">guest</span> shell with 0x7DF71D2C or-1
+- <span style="color:green">??? password_change with 0x7DF71D2C paramesstance</span>
+
 #### v 1.2.4 — shell 2/38, priv 1/38
 <a id="1.2.4"></a>
 - <span style="color:green">null null with 0x47E04411 emeimagetcoroformloc</span>
@@ -11327,7 +13849,7 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">??? password_change with 0x2BB9A6C functivetrypa</span>
 - <span style="color:green">null null with 0x2BB9A6C kpush_sh</span>
 
-#### v 1.2.7 — shell 3/26, priv 3/26
+#### v 1.2.7 — shell 7/57, priv 6/57
 <a id="1.2.7"></a>
 - <span style="color:green">??? password_change with 0x47E04411 lor_buttoncommentpositionto</span>
 - <span style="color:green">??? password_change with 0x2C19995F tifneedyn_</span>
@@ -11354,6 +13876,138 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x21564563 copyp</span>
 - <span style="color:green">null null with 0x21564563 istedcol</span>
 - <span style="color:green">Ayres computer with 0x21564563 fast</span>
+- <span style="color:green">null null with 0x21564563 lengthsstoru</span>
+- <span style="color:green">Itchel file with 0x47E04411 emeimagetcoroformloc</span>
+- <span style="color:green">??? password_change with 0x47E04411 lor_buttoncommentpositionto</span>
+- <span style="color:yellow">guest</span> shell with 0x47E04411 rinsicssto
+- <span style="color:green">??? password_change with 0x2C19995F tifneedyn_</span>
+- <span style="color:green">guest file with 0x2C19995F facted</span>
+- <span style="color:green">??? password_change with 0x2C19995F tundoublinesi</span>
+- <span style="color:green">guest computer with 0x6E641AB0 eractabledcall001f</span>
+- <span style="color:green">guest file with 0x6E641AB0 inenum</span>
+- <span style="color:green">??? password_change with 0x6E641AB0 updatecomment_onl</span>
+- <span style="color:green">??? password_change with 0x6A394701 asgroupinternalconfo</span>
+- <span style="color:green">guest file with 0x6A394701 nitteselance</span>
+- <span style="color:green">??? password_change with 0x6A394701 textlinenum</span>
+- <span style="color:green">null null with 0x591B099B or_buttonbuttoncomment</span>
+- <span style="color:green">guest computer with 0x591B099B ethiscan_treelistenercon</span>
+- <span style="color:green">??? password_change with 0x591B099B functiondat</span>
+- <span style="color:green">??? password_change with 0x591B099B ypebott</span>
+- <span style="color:green">guest computer with 0x591B099B apositionsbappend</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x6A5F9601 nownev
+- <span style="color:green">??? password_change with 0x6A5F9601 show</span>
+- <span style="color:green">guest file with 0x6A5F9601 datebuttonsolewritextin</span>
+- <span style="color:yellow">guest</span> shell with 0x6A5F9601 eshupdaternalcolor_s
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x6A5F9601 olor_buttonim
+- <span style="color:yellow">guest</span> shell with 0xC74C066 end_blockdonbackpeek
+- <span style="color:green">null null with 0xC74C066 resin</span>
+- <span style="color:green">null null with 0xC74C066 need</span>
+- <span style="color:green">null null with 0xC74C066 ateopb</span>
+- <span style="color:red">root</span> shell with 0x21564563 eapk
+- <span style="color:green">??? password_change with 0x21564563 copyp</span>
+- <span style="color:green">null null with 0x21564563 istedcol</span>
+- <span style="color:green">Itchel computer with 0x21564563 fast</span>
+- <span style="color:green">guest computer with 0x21564563 lengthsstoru</span>
+
+#### v 1.2.8 — shell 5/36, priv 2/36
+<a id="1.2.8"></a>
+- <span style="color:green">Serford file with 0x47E04411 emeimagetcoroformloc</span>
+- <span style="color:green">??? password_change with 0x47E04411 tivefalsbuild_treebitsli</span>
+- <span style="color:green">??? password_change with 0x47E04411 lor_buttoncommentpositionto</span>
+- <span style="color:yellow">guest</span> shell with 0x47E04411 rinsicssto
+- <span style="color:green">??? password_change with 0x2C19995F tifneedyn_</span>
+- <span style="color:green">guest file with 0x2C19995F facted</span>
+- <span style="color:green">??? password_change with 0x2C19995F tundoublinesi</span>
+- <span style="color:green">guest computer with 0x6E641AB0 eractabledcall001f</span>
+- <span style="color:green">guest file with 0x6E641AB0 inenum</span>
+- <span style="color:green">??? password_change with 0x6E641AB0 updatecomment_onl</span>
+- <span style="color:green">??? password_change with 0x6A394701 asgroupinternalconfo</span>
+- <span style="color:green">guest file with 0x6A394701 nitteselance</span>
+- <span style="color:green">null null with 0x6A394701 zedeltext</span>
+- <span style="color:green">??? password_change with 0x6A394701 textlinenum</span>
+- <span style="color:green">null null with 0x591B099B or_buttonbuttoncomment</span>
+- <span style="color:green">guest computer with 0x591B099B ethiscan_treelistenercon</span>
+- <span style="color:green">??? password_change with 0x591B099B functiondat</span>
+- <span style="color:green">??? password_change with 0x591B099B ypebott</span>
+- <span style="color:green">guest computer with 0x591B099B apositionsbappend</span>
+- Serford shell with 0x3FE458D0 ivatern
+- <span style="color:green">null null with 0x3FE458D0 odeinv</span>
+- <span style="color:green">Serford file with 0x44DED658 posit</span>
+- <span style="color:green">??? password_change with 0x44DED658 teditore</span>
+- <span style="color:red">root</span> shell with 0x21564563 eapk
+- <span style="color:green">??? password_change with 0x21564563 copyp</span>
+- <span style="color:green">null null with 0x21564563 istedcol</span>
+- <span style="color:green">Serford computer with 0x21564563 fast</span>
+- <span style="color:green">guest computer with 0x21564563 lengthsstoru</span>
+- <span style="color:green">Serford file with 0x494387FF stanchor</span>
+- Serford shell with 0x38DBF90C ositiontexting
+- <span style="color:red">root</span> shell with 0x38DBF90C itlef
+- <span style="color:green">guest file with 0x92ADD90 lush_</span>
+- <span style="color:green">Serford file with 0x92ADD90 tivetreeenovetrue</span>
+- <span style="color:green">Serford file with 0x1867035B ovelistgraphic</span>
+- <span style="color:green">guest file with 0x1867035B pivotreeendpositi</span>
+- <span style="color:green">??? password_change with 0x1867035B ax_codecd</span>
+
+#### v 1.2.9 — shell 4/59, priv 2/59
+<a id="1.2.9"></a>
+- <span style="color:green">Sondou file with 0x47E04411 emeimagetcoroformloc</span>
+- <span style="color:green">??? password_change with 0x47E04411 lor_buttoncommentpositionto</span>
+- <span style="color:green">null null with 0x2C19995F croller32</span>
+- <span style="color:green">??? password_change with 0x2C19995F tifneedyn_</span>
+- <span style="color:green">??? password_change with 0x2C19995F tundoublinesi</span>
+- <span style="color:green">null null with 0x6E641AB0 inenum</span>
+- <span style="color:green">??? password_change with 0x6E641AB0 updatecomment_onl</span>
+- <span style="color:green">??? password_change with 0x6A394701 asgroupinternalconfo</span>
+- <span style="color:green">null null with 0x6A394701 zedeltext</span>
+- <span style="color:green">??? password_change with 0x6A394701 textlinenum</span>
+- <span style="color:green">null null with 0x591B099B or_buttonbuttoncomment</span>
+- <span style="color:green">guest computer with 0x591B099B ethiscan_treelistenercon</span>
+- <span style="color:green">??? password_change with 0x591B099B functiondat</span>
+- <span style="color:green">??? password_change with 0x591B099B ypebott</span>
+- <span style="color:green">guest computer with 0x591B099B apositionsbappend</span>
+- <span style="color:green">Sondou file with 0x443FA0B9 linenum++</span>
+- <span style="color:green">null null with 0x443FA0B9 nicelisten</span>
+- <span style="color:green">null null with 0x443FA0B9 sitialreak</span>
+- <span style="color:green">guest file with 0x443FA0B9 data_typeri</span>
+- <span style="color:green">guest computer with 0x443FA0B9 rewiconstackgro</span>
+- <span style="color:green">Sondou file with 0x68B1E395 treedatedcalpositi</span>
+- <span style="color:green">guest file with 0x68B1E395 tored</span>
+- <span style="color:green">Sondou computer with 0x68B1E395 angenqueue</span>
+- <span style="color:red">root</span> shell with 0x68B1E395 head
+- <span style="color:green">??? password_change with 0x68B1E395 otoai</span>
+- <span style="color:red">root</span> shell with 0x21564563 eapk
+- <span style="color:green">??? password_change with 0x21564563 copyp</span>
+- <span style="color:green">null null with 0x21564563 istedcol</span>
+- <span style="color:green">null null with 0x21564563 fast</span>
+- <span style="color:green">guest computer with 0x21564563 lengthsstoru</span>
+- <span style="color:green">??? password_change with 0x47E04411 lor_buttoncommentpositionto</span>
+- <span style="color:green">null null with 0x2C19995F croller32</span>
+- <span style="color:green">??? password_change with 0x2C19995F tifneedyn_</span>
+- <span style="color:green">??? password_change with 0x2C19995F tundoublinesi</span>
+- <span style="color:green">null null with 0x6E641AB0 inenum</span>
+- <span style="color:green">??? password_change with 0x6E641AB0 updatecomment_onl</span>
+- <span style="color:green">??? password_change with 0x6A394701 asgroupinternalconfo</span>
+- <span style="color:green">null null with 0x6A394701 zedeltext</span>
+- <span style="color:green">??? password_change with 0x6A394701 textlinenum</span>
+- <span style="color:green">null null with 0x591B099B or_buttonbuttoncomment</span>
+- <span style="color:green">guest computer with 0x591B099B ethiscan_treelistenercon</span>
+- <span style="color:green">??? password_change with 0x591B099B functiondat</span>
+- <span style="color:green">null null with 0x591B099B ypebott</span>
+- <span style="color:green">null null with 0x591B099B apositionsbappend</span>
+- <span style="color:green">guest file with 0x443FA0B9 linenum++</span>
+- <span style="color:green">null null with 0x443FA0B9 nicelisten</span>
+- <span style="color:green">null null with 0x443FA0B9 sitialreak</span>
+- <span style="color:green">null null with 0x443FA0B9 data_typeri</span>
+- <span style="color:green">guest computer with 0x443FA0B9 rewiconstackgro</span>
+- <span style="color:green">guest file with 0x68B1E395 treedatedcalpositi</span>
+- <span style="color:green">guest file with 0x68B1E395 tored</span>
+- <span style="color:green">guest computer with 0x68B1E395 angenqueue</span>
+- <span style="color:yellow">guest</span> shell with 0x68B1E395 head
+- <span style="color:green">??? password_change with 0x68B1E395 otoai</span>
+- <span style="color:yellow">guest</span> shell with 0x21564563 eapk
+- <span style="color:green">null null with 0x21564563 copyp</span>
+- <span style="color:green">null null with 0x21564563 istedcol</span>
+- <span style="color:green">null null with 0x21564563 fast</span>
 - <span style="color:green">null null with 0x21564563 lengthsstoru</span>
 
 #### v 1.3.1 — shell 2/26
@@ -11384,6 +14038,96 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x280C93DE keyrepeattingsupd</span>
 - <span style="color:green">??? password_change with 0x280C93DE lenb</span>
 - <span style="color:green">null null with 0x280C93DE can_treetrue</span>
+
+#### v 1.3.4 — shell 1/9
+<a id="1.3.4"></a>
+- <span style="color:green">null null with 0x6E641AB0 tabledittemps</span>
+- <span style="color:green">null null with 0x22F26F39 oaifb</span>
+- <span style="color:green">guest file with 0x22F26F39 dif</span>
+- <span style="color:yellow">guest</span> shell with 0x22F26F39 epeatorplayon
+- <span style="color:green">null null with 0x22F26F39 ackpeek</span>
+- <span style="color:green">null null with 0x4E71A944 os</span>
+- <span style="color:green">null null with 0x4E71A944 blint_onlyflu</span>
+- <span style="color:green">null null with 0x4E71A944 lor_viewpor</span>
+- <span style="color:green">null null with 0x4E71A944 bool</span>
+
+#### v 1.3.6 — shell 2/34, priv 1/34
+<a id="1.3.6"></a>
+- <span style="color:green">null null with 0x444AF0A0 sibleditor</span>
+- <span style="color:green">null null with 0x444AF0A0 charamargspus</span>
+- <span style="color:green">null null with 0x444AF0A0 distenerthanb</span>
+- <span style="color:green">null null with 0x444AF0A0 tsstor</span>
+- <span style="color:green">null null with 0x2C19995F croller32</span>
+- <span style="color:green">??? password_change with 0x2C19995F tifneedyn_</span>
+- <span style="color:green">??? password_change with 0x2C19995F tundoublinesi</span>
+- <span style="color:green">guest file with 0x6E641AB0 tabledittemps</span>
+- <span style="color:green">guest file with 0x6E641AB0 inenum</span>
+- <span style="color:green">??? password_change with 0x6A394701 asgroupinternalconfo</span>
+- <span style="color:green">??? password_change with 0x6A394701 windex</span>
+- <span style="color:green">null null with 0x6A394701 zedeltext</span>
+- <span style="color:green">??? password_change with 0x6A394701 textlinenum</span>
+- <span style="color:green">null null with 0x591B099B or_buttonbuttoncomment</span>
+- <span style="color:green">guest computer with 0x591B099B ethiscan_treelistenercon</span>
+- <span style="color:green">null null with 0x591B099B functiondat</span>
+- <span style="color:green">null null with 0x591B099B ypebott</span>
+- <span style="color:green">null null with 0x591B099B apositionsbappend</span>
+- <span style="color:green">null null with 0xB900BA7 text</span>
+- <span style="color:green">null null with 0xB900BA7 neslinteralse</span>
+- <span style="color:green">null null with 0xB900BA7 _3_10</span>
+- <span style="color:green">??? password_change with 0x21564563 else</span>
+- <span style="color:green">null null with 0x21564563 copyp</span>
+- <span style="color:green">null null with 0x21564563 istedcol</span>
+- <span style="color:green">null null with 0x21564563 ast_flus</span>
+- <span style="color:green">null null with 0x21564563 lengthsstoru</span>
+- <span style="color:yellow">guest</span> shell with 0x30C4A4A espriternalcon
+- <span style="color:red">root</span> shell with 0x30C4A4A objecttransformanches++
+- <span style="color:green">Teinkeser computer with 0x30C4A4A ransforminusb</span>
+- <span style="color:green">null null with 0x30C4A4A ansformlocksrayclearheadivident</span>
+- <span style="color:green">null null with 0x682E64D2 positioncomp</span>
+- <span style="color:green">null null with 0x682E64D2 bi_buffi</span>
+- <span style="color:green">null null with 0x682E64D2 gthcodeci</span>
+- <span style="color:green">??? password_change with 0x682E64D2 ockdonentpositialighlighlight2</span>
+
+#### v 1.4.0 — shell 7/38, priv 2/38
+<a id="1.4.0"></a>
+- <span style="color:green">null null with 0x1809B61F chan</span>
+- <span style="color:green">null null with 0x1809B61F urleng</span>
+- <span style="color:green">null null with 0x5094E8F7 lushpa</span>
+- <span style="color:green">null null with 0x5094E8F7 blocalpositionstanch</span>
+- <span style="color:green">??? password_change with 0x697CF351 ortshorlinerbu</span>
+- <span style="color:green">??? password_change with 0x697CF351 ontextupdateicono</span>
+- Toto shell with 0x697CF351 seltad
+- <span style="color:green">null null with 0x591B099B or_buttonbuttoncomment</span>
+- <span style="color:green">??? password_change with 0x591B099B procesbuild</span>
+- <span style="color:green">null null with 0x591B099B functiondat</span>
+- <span style="color:green">null null with 0x591B099B ypebott</span>
+- <span style="color:green">null null with 0x591B099B _buttontextbutto</span>
+- <span style="color:green">null null with 0x2348FFA7 utlinei</span>
+- <span style="color:green">null null with 0x2348FFA7 setackundostactionlyflush</span>
+- <span style="color:green">null null with 0x9F6D7B2 arykeycopya</span>
+- <span style="color:green">null null with 0x9F6D7B2 otreedyn_ltreend_color_buttonhighl</span>
+- <span style="color:green">null null with 0x1A7EC83A value</span>
+- <span style="color:green">null null with 0x1A7EC83A texteffecttrat</span>
+- <span style="color:yellow">guest</span> shell with 0xFE0294C timelembofiternalco
+- <span style="color:green">null null with 0xFE0294C else</span>
+- <span style="color:green">Aller file with 0x1006C087 pritext</span>
+- <span style="color:green">Aller computer with 0x1006C087 urly</span>
+- Aller shell with 0x190AC9D0 yielding_displaye
+- <span style="color:green">??? password_change with 0x190AC9D0 isrepeat</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x190AC9D0 tivetrue
+- <span style="color:green">guest computer with 0xD1593E9 ailabledq</span>
+- <span style="color:green">guest computer with 0xD1593E9 uarentd</span>
+- <span style="color:yellow">guest</span> shell with 0xD1593E9 elancessiobjectsetactostanc
+- <span style="color:green">guest computer with 0x1A81B723 _3_10</span>
+- <span style="color:yellow">guest</span> shell with 0x4AD9078A onsertypebottontifneedyn_ltreebit
+- <span style="color:green">guest file with 0x4AD9078A ce</span>
+- <span style="color:green">guest computer with 0x450AA21F tletextsiin</span>
+- <span style="color:green">??? password_change with 0x450AA21F tefunctionter</span>
+- <span style="color:green">guest computer with 0x17017F5C olor_buttoncolors</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x17017F5C laysourceplaytrul
+- <span style="color:green">??? password_change with 0x33A420E5 rameshupdategy</span>
+- <span style="color:yellow">guest</span> shell with 0x33A420E5 equalbyteb
+- Aller shell with 0x7DC23A6B rializedeltext
 
 #### v 1.4.1 — shell 3/24, priv 1/24
 <a id="1.4.1"></a>
@@ -11466,6 +14210,24 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest computer with 0x67C54196 dutinecolor_scrollx</span>
 - <span style="color:yellow">guest</span> shell with 0x67C54196 thisdonenumber
 
+#### v 1.5.7 — shell 1/15
+<a id="1.5.7"></a>
+- <span style="color:green">null null with 0x25F1FF51 extsstoregrou</span>
+- <span style="color:green">guest file with 0x25F1FF51 itlet</span>
+- <span style="color:green">guest file with 0x25F1FF51 dliststrmdat</span>
+- <span style="color:green">null null with 0x25F1FF51 uaretur</span>
+- <span style="color:green">null null with 0x25F1FF51 can_tree</span>
+- <span style="color:green">??? password_change with 0x77BC20EE x++</span>
+- <span style="color:green">Udneyr computer with 0x77BC20EE slinenumber</span>
+- <span style="color:green">null null with 0x77BC20EE enumsiobjectsetel</span>
+- <span style="color:yellow">guest</span> shell with 0x381AB596 edyn_dtreendselays
+- <span style="color:green">null null with 0x381AB596 line</span>
+- <span style="color:green">null null with 0x3CA7E0A1 sh_headp</span>
+- <span style="color:green">??? password_change with 0x3CA7E0A1 resulttype</span>
+- <span style="color:green">guest computer with 0x3CA7E0A1 fill</span>
+- <span style="color:green">guest file with 0x3CA7E0A1 almapr</span>
+- <span style="color:green">null null with 0x67C54196 tuitextvmyie</span>
+
 #### v 1.5.8 — priv 2/17
 <a id="1.5.8"></a>
 - <span style="color:green">??? password_change with 0x1809B61F yedcolor_v</span>
@@ -11506,7 +14268,37 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">null null with 0x67C54196 sionpointextend_treedyn_ltrec</span>
 - <span style="color:green">??? password_change with 0x67C54196 tuitextvmyie</span>
 
-#### v 1.6.2 — shell 2/22
+#### v 1.6.1 — shell 3/27
+<a id="1.6.1"></a>
+- <span style="color:green">guest computer with 0x7F1998FF olor_buttonsolewrit</span>
+- <span style="color:green">null null with 0x7F1998FF edyn_lt</span>
+- <span style="color:green">??? password_change with 0x7F1998FF essignim</span>
+- <span style="color:green">Enbottely file with 0x7F1998FF displa</span>
+- <span style="color:green">null null with 0x3F49A148 chemeshup</span>
+- <span style="color:green">null null with 0x3F49A148 toending</span>
+- <span style="color:green">guest computer with 0x3F49A148 yn_ltreec2</span>
+- <span style="color:green">null null with 0x3F49A148 esemittextpendpositia</span>
+- <span style="color:yellow">guest</span> shell with 0x3F49A148 sitionsh
+- <span style="color:green">null null with 0x5BB0ECEA ivatelineanimatorplaytra</span>
+- <span style="color:yellow">guest</span> shell with 0x5BB0ECEA moverlayanimageterdata_typ
+- <span style="color:green">null null with 0x5BB0ECEA extuitextpush_</span>
+- <span style="color:green">guest file with 0x5BB0ECEA esultnum</span>
+- <span style="color:green">??? password_change with 0x5BB0ECEA ateline++</span>
+- <span style="color:green">guest file with 0x352847FC eventextefunctivetru</span>
+- <span style="color:green">guest computer with 0x35B7D5F1 switch</span>
+- <span style="color:green">Enbottely computer with 0x35B7D5F1 reedyn_ltreethisop</span>
+- <span style="color:green">null null with 0x5964D1F6 _sizededi</span>
+- Enbottely shell with 0x5964D1F6 press
+- <span style="color:green">??? password_change with 0x5964D1F6 windowmatchstat</span>
+- <span style="color:green">null null with 0x5964D1F6 lock_stanchortbac</span>
+- <span style="color:green">null null with 0x5964D1F6 deflate</span>
+- <span style="color:green">null null with 0x67C54196 sionpointextend_treedyn_ltrec</span>
+- <span style="color:green">??? password_change with 0x67C54196 tuitextvmyie</span>
+- <span style="color:green">Alingreedenhi file with 0x6ABD051C chortlinetreestacterdow++scaller32</span>
+- <span style="color:green">Alingreedenhi computer with 0x6ABD051C tanchorequalbytebuttoncolorscript</span>
+- <span style="color:green">guest computer with 0x4B07669 entdatecalline++</span>
+
+#### v 1.6.2 — shell 9/73, priv 2/73
 <a id="1.6.2"></a>
 - <span style="color:green">null null with 0x7F1998FF olor_buttonsolewrit</span>
 - <span style="color:green">null null with 0x7F1998FF edyn_lt</span>
@@ -11530,6 +14322,124 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">guest file with 0x40F6C77A teffecttransfor</span>
 - <span style="color:green">null null with 0x67C54196 sionpointextend_treedyn_ltrec</span>
 - <span style="color:green">null null with 0x67C54196 tuitextvmyie</span>
+- <span style="color:green">guest computer with 0x7F1998FF olor_buttonsolewrit</span>
+- <span style="color:green">null null with 0x7F1998FF edyn_lt</span>
+- <span style="color:green">??? password_change with 0x7F1998FF essignim</span>
+- <span style="color:green">Ruecke file with 0x7F1998FF displa</span>
+- <span style="color:green">null null with 0xAD092DA kgroundostinue</span>
+- <span style="color:green">null null with 0xAD092DA _lend_c</span>
+- <span style="color:yellow">guest</span> shell with 0x3E60CF3D headdgetelites
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x3E60CF3D tackgroupblockbuffectsetda
+- <span style="color:green">??? password_change with 0x3E60CF3D settimerder</span>
+- <span style="color:green">guest computer with 0x3E60CF3D qualbyt</span>
+- <span style="color:green">guest file with 0x352847FC eventextefunctivetru</span>
+- <span style="color:green">guest computer with 0x78F83C2F urcepl</span>
+- Ruecke shell with 0x78F83C2F ortmsbint_only
+- <span style="color:green">null null with 0x78F83C2F vententsrep_3_10</span>
+- <span style="color:green">??? password_change with 0x2915C6F5 positifieldinge</span>
+- <span style="color:green">guest file with 0x2915C6F5 foredpos++</span>
+- <span style="color:yellow">guest</span> shell with 0x2915C6F5 utlined
+- <span style="color:green">??? password_change with 0x2915C6F5 ansfored_blockstandb</span>
+- <span style="color:green">null null with 0x2915C6F5 ebuttonimagecompre</span>
+- <span style="color:green">guest file with 0x40F6C77A teffecttransfor</span>
+- <span style="color:green">null null with 0x67C54196 sionpointextend_treedyn_ltrec</span>
+- <span style="color:green">??? password_change with 0x67C54196 tuitextvmyie</span>
+- <span style="color:green">Eingfor file with 0x130C803B wardowmation</span>
+- <span style="color:green">guest file with 0x267845BA repeatored_bitslcode</span>
+- <span style="color:green">null null with 0x58E1D388 iosourcelit_butt</span>
+- Eingfor shell with 0x58E1D388 onfig
+- <span style="color:green">Eingfor file with 0x58E1D388 itionparsettext</span>
+- <span style="color:green">Eingfor file with 0x1644290 eategy</span>
+- <span style="color:green">null null with 0xB726D1F taddparac</span>
+- <span style="color:green">guest computer with 0x7F1998FF olor_buttonsolewrit</span>
+- <span style="color:green">null null with 0x7F1998FF edyn_lt</span>
+- <span style="color:green">??? password_change with 0x7F1998FF essignim</span>
+- <span style="color:green">Nholmbenassu file with 0x7F1998FF displa</span>
+- <span style="color:green">null null with 0xAD092DA kgroundostinue</span>
+- <span style="color:green">??? password_change with 0xAD092DA _lend_c</span>
+- <span style="color:yellow">guest</span> shell with 0x3E60CF3D headdgetelites
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x3E60CF3D tackgroupblockbuffectsetda
+- <span style="color:green">??? password_change with 0x3E60CF3D settimerder</span>
+- <span style="color:green">guest computer with 0x3E60CF3D qualbyt</span>
+- <span style="color:green">guest file with 0x352847FC eventextefunctivetru</span>
+- <span style="color:green">null null with 0x78F83C2F urcepl</span>
+- Nholmbenassu shell with 0x78F83C2F ortmsbint_only
+- <span style="color:green">null null with 0x78F83C2F vententsrep_3_10</span>
+- <span style="color:green">??? password_change with 0x2915C6F5 positifieldinge</span>
+- <span style="color:green">null null with 0x2915C6F5 foredpos++</span>
+- <span style="color:yellow">guest</span> shell with 0x2915C6F5 utlined
+- <span style="color:green">??? password_change with 0x2915C6F5 ansfored_blockstandb</span>
+- <span style="color:green">null null with 0x2915C6F5 ebuttonimagecompre</span>
+- <span style="color:green">guest file with 0x40F6C77A teffecttransfor</span>
+- <span style="color:green">null null with 0x67C54196 sionpointextend_treedyn_ltrec</span>
+- <span style="color:green">null null with 0x67C54196 tuitextvmyie</span>
+
+#### v 1.6.6 — shell 1/19
+<a id="1.6.6"></a>
+- <span style="color:green">null null with 0x7F1998FF pequalb</span>
+- <span style="color:green">null null with 0x7F1998FF edyn_lt</span>
+- <span style="color:green">null null with 0x7F1998FF essignim</span>
+- <span style="color:green">null null with 0x7F1998FF space</span>
+- <span style="color:green">guest computer with 0x352847FC doposition</span>
+- <span style="color:green">null null with 0x341B9F79 hisop</span>
+- <span style="color:green">null null with 0x341B9F79 nownev</span>
+- <span style="color:green">null null with 0x341B9F79 ition</span>
+- <span style="color:green">??? password_change with 0x341B9F79 tremovedoubledc</span>
+- <span style="color:green">null null with 0x341B9F79 slow</span>
+- <span style="color:green">null null with 0x3C18B5E sultfunchored_blo</span>
+- <span style="color:green">null null with 0x3C18B5E _lengthsbuild</span>
+- <span style="color:green">??? password_change with 0x3C18B5E ectsetmax_stanchortte</span>
+- <span style="color:green">null null with 0x3C18B5E ttransformpiv</span>
+- <span style="color:green">null null with 0x67F91C74 reanimaticsin</span>
+- <span style="color:green">guest computer with 0x67F91C74 001f</span>
+- <span style="color:green">null null with 0x67C54196 sionpointextend_treedyn_ltrec</span>
+- <span style="color:green">null null with 0x67C54196 tuitextvmyie</span>
+- <span style="color:yellow">guest</span> shell with 0x11A32D02 eadei
+
+#### v 1.6.7 — shell 1/18, priv 1/18
+<a id="1.6.7"></a>
+- <span style="color:green">null null with 0x7F1998FF pequalb</span>
+- <span style="color:green">null null with 0x7F1998FF edyn_lt</span>
+- <span style="color:green">??? password_change with 0x7F1998FF essignim</span>
+- <span style="color:green">null null with 0x7F1998FF space</span>
+- <span style="color:green">guest computer with 0x352847FC doposition</span>
+- <span style="color:green">null null with 0x352847FC nerspritextransforedpoin</span>
+- <span style="color:green">guest computer with 0x7B085303 urlend</span>
+- <span style="color:green">??? password_change with 0x7B085303 backgrountifneedisaudiomixergrou</span>
+- <span style="color:green">null null with 0x7B085303 delembofite</span>
+- <span style="color:green">null null with 0x7B085303 blocatibletelineani</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x65C86DDC labledquo
+- <span style="color:green">null null with 0x65C86DDC olor_buttoncolor_</span>
+- <span style="color:yellow">guest</span> shell with 0x65C86DDC mask
+- <span style="color:green">null null with 0x65C86DDC urceth</span>
+- <span style="color:green">null null with 0x67C54196 sionpointextend_treedyn_ltrec</span>
+- <span style="color:green">null null with 0x67C54196 tuitextvmyie</span>
+- <span style="color:green">Lennelli file with 0x67175553 pres</span>
+- <span style="color:green">guest computer with 0x67175553 odeint</span>
+
+#### v 1.6.9 — shell 2/21
+<a id="1.6.9"></a>
+- <span style="color:green">guest computer with 0x1B72E213 andb</span>
+- <span style="color:green">null null with 0x3112ED94 nersaddparamargspush_</span>
+- <span style="color:green">guest computer with 0x3112ED94 dpointextuiterat</span>
+- <span style="color:yellow">guest</span> shell with 0x3112ED94 etrue
+- <span style="color:green">null null with 0x3112ED94 linenumsirecttransformpone</span>
+- <span style="color:green">null null with 0x1F4C469B tentinged</span>
+- <span style="color:green">null null with 0x1F4C469B mask</span>
+- <span style="color:green">null null with 0x1F4C469B sflavor</span>
+- <span style="color:green">null null with 0x1F4C469B morewi</span>
+- <span style="color:green">null null with 0x25710D83 yte</span>
+- <span style="color:green">null null with 0x2369EC4A sstatus</span>
+- <span style="color:green">null null with 0x2369EC4A tleftundostancec</span>
+- <span style="color:green">null null with 0x2369EC4A esele</span>
+- <span style="color:green">Thadd computer with 0x395B2319 aorb</span>
+- <span style="color:green">Tistili computer with 0x5135AB69 regrountifneedyn_dtreelinel</span>
+- <span style="color:green">Nhanss computer with 0x48D6C2F3 signa</span>
+- <span style="color:green">null null with 0x352847FC doposition</span>
+- <span style="color:green">null null with 0x341B9F79 tremovedoubledc</span>
+- <span style="color:yellow">guest</span> shell with 0x341B9F79 slow
+- <span style="color:green">null null with 0x3C18B5E ectsetmax_stanchortte</span>
+- <span style="color:green">Pinenasi computer with 0x34BC48AA activetryparetonformpos++</span>
 
 #### v 1.7.2 — shell 3/17, priv 1/17
 <a id="1.7.2"></a>
@@ -11612,18 +14522,643 @@ Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#
 - <span style="color:green">Ajanovsky computer with 0x2F06089E elend_bitsbl_t</span>
 - Ajanovsky shell with 0x4DBD65C9 loselengt
 
+#### v 1.8.1 — shell 1/2, priv 1/2
+<a id="1.8.1"></a>
+- <span style="color:red">root</span> shell with 0x5A1747CA tonstartpositionar
+- <span style="color:green">??? password_change with 0x5A1747CA contextingbutton</span>
+
+---
+
+## `libsmtp.so`
+<a id="libsmtp-so"></a>
+
+- Total Hooked lines: 536
+- Can provide shell: 74
+- Has privileged object: 27
+- Safe versions: 3
+Versions: <a href="#1.0.0"><span style="color:red">v 1.0.0</span></a> <a href="#1.0.1"><span style="color:red">v 1.0.1</span></a> <a href="#1.0.2"><span style="color:red">v 1.0.2</span></a> <a href="#1.0.3"><span style="color:red">v 1.0.3</span></a> <a href="#1.0.4"><span style="color:red">v 1.0.4</span></a> <a href="#1.0.5"><span style="color:red">v 1.0.5</span></a> <a href="#1.0.6"><span style="color:red">v 1.0.6</span></a> <a href="#1.0.7"><span style="color:red">v 1.0.7</span></a> <a href="#1.0.8"><span style="color:green">v 1.0.8</span></a> <a href="#1.0.9"><span style="color:red">v 1.0.9</span></a> <a href="#1.1.0"><span style="color:red">v 1.1.0</span></a> <a href="#1.1.1"><span style="color:red">v 1.1.1</span></a> <a href="#1.1.2"><span style="color:red">v 1.1.2</span></a> <a href="#1.1.3"><span style="color:red">v 1.1.3</span></a> <a href="#1.1.4"><span style="color:green">v 1.1.4</span></a> <a href="#1.1.5"><span style="color:red">v 1.1.5</span></a> <a href="#1.1.6"><span style="color:red">v 1.1.6</span></a> <a href="#1.1.7"><span style="color:red">v 1.1.7</span></a> <a href="#1.1.8"><span style="color:green">v 1.1.8</span></a>
+
+### Safe versions
+#### v 1.0.8 — no shell/priv hooks
+<a id="1.0.8"></a>
+- <span style="color:green">Oenfeis file with 0x1DED65A7 copya</span>
+- <span style="color:green">guest computer with 0x1DED65A7 maskb</span>
+- <span style="color:green">null null with 0x36A9B5E8 shor</span>
+- <span style="color:green">null null with 0x36A9B5E8 ackpeek</span>
+- <span style="color:green">guest computer with 0x36A9B5E8 morequal</span>
+- <span style="color:green">null null with 0x36A9B5E8 void</span>
+- <span style="color:green">null null with 0x3A4D563C nametexte</span>
+- <span style="color:green">null null with 0x3A4D563C existstrstartposlinec</span>
+- <span style="color:green">null null with 0x3A4D563C skipwhitextefo</span>
+- <span style="color:green">??? password_change with 0x30DE0AFF odecolor_viewportt</span>
+- <span style="color:green">null null with 0x30DE0AFF quotenerty</span>
+
+#### v 1.1.4 — no shell/priv hooks
+<a id="1.1.4"></a>
+- <span style="color:green">guest computer with 0x14CB3403 dundthiscan_tre</span>
+- <span style="color:green">null null with 0x14CB3403 eyrepz_3_6</span>
+- <span style="color:green">??? password_change with 0x31D5BE37 textvmyie</span>
+- <span style="color:green">guest computer with 0x31D5BE37 reedyn_ltre</span>
+- <span style="color:green">null null with 0x31D5BE37 windonbac</span>
+- <span style="color:green">null null with 0x31D5BE37 head</span>
+- <span style="color:green">null null with 0x6EF7CE5C scloseonsbarfo</span>
+- <span style="color:green">null null with 0x6EF7CE5C audiosourcelistene</span>
+- <span style="color:green">??? password_change with 0x6EF7CE5C saddundostanch</span>
+- <span style="color:green">guest computer with 0x6EF7CE5C t_color_storedpointext</span>
+- <span style="color:green">null null with 0x6EF7CE5C teoutline</span>
+- <span style="color:green">guest file with 0x11735EB6 ighlightmidtreethisop</span>
+- <span style="color:green">??? password_change with 0x11735EB6 gsupdateleteractivefals</span>
+- <span style="color:green">null null with 0x11735EB6 tconteralse</span>
+
+#### v 1.1.8 — no shell/priv hooks
+<a id="1.1.8"></a>
+- <span style="color:green">??? password_change with 0x43E75632 startio</span>
+- <span style="color:green">null null with 0x43E75632 gotoa</span>
+
+### Unsafe versions (per-version details)
+#### v 1.0.0 — shell 2/13
+<a id="1.0.0"></a>
+- <span style="color:green">null null with 0x1006C087 pritext</span>
+- <span style="color:yellow">guest</span> shell with 0x1006C087 distintericid
+- Umpagno shell with 0x190AC9D0 yielding_displaye
+- <span style="color:green">null null with 0x190AC9D0 lanchortcodecmesstateli</span>
+- <span style="color:green">guest file with 0x190AC9D0 color_titletextst</span>
+- <span style="color:green">null null with 0x190AC9D0 isrepeat</span>
+- <span style="color:green">null null with 0x190AC9D0 tivetrue</span>
+- <span style="color:green">null null with 0x1C3C6F3C audiosoundow_siz</span>
+- <span style="color:green">null null with 0x1C3C6F3C tsetpositionx</span>
+- <span style="color:green">guest computer with 0x3B7808FC newuitextupd</span>
+- <span style="color:green">null null with 0x3B7808FC odeinteralse</span>
+- <span style="color:green">null null with 0x3B7808FC listartedistemplaydeltaddgetundost</span>
+- <span style="color:green">??? password_change with 0x3B7808FC paddli</span>
+
+#### v 1.0.1 — shell 2/17, priv 1/17
+<a id="1.0.1"></a>
+- <span style="color:green">Eonata computer with 0x1006C087 urly</span>
+- <span style="color:green">null null with 0x190AC9D0 yielding_displaye</span>
+- <span style="color:green">null null with 0x190AC9D0 color_titletextst</span>
+- <span style="color:green">null null with 0x61E99467 coded</span>
+- <span style="color:yellow">guest</span> shell with 0x61E99467 edthistemoverlaytr
+- <span style="color:red">root</span> shell with 0x61E99467 compathbaseonnewuite
+- <span style="color:green">??? password_change with 0x61E99467 textpend</span>
+- <span style="color:green">null null with 0xD1593E9 ailabledq</span>
+- <span style="color:green">null null with 0xD1593E9 os++</span>
+- <span style="color:green">null null with 0xD1593E9 uarentd</span>
+- <span style="color:green">null null with 0xD1593E9 elancessiobjectsetactostanc</span>
+- <span style="color:green">null null with 0x1A81B723 eventpositionnex</span>
+- <span style="color:green">null null with 0x1A81B723 dentpo</span>
+- <span style="color:green">null null with 0x1A81B723 or_buttonclosebackgro</span>
+- <span style="color:green">null null with 0x1A81B723 _3_10</span>
+- <span style="color:green">null null with 0x4AD9078A onsertypebottontifneedyn_ltreebit</span>
+- <span style="color:green">null null with 0x4AD9078A ce</span>
+
+#### v 1.0.2 — shell 7/51, priv 3/51
+<a id="1.0.2"></a>
+- <span style="color:green">Kromalangl computer with 0x1006C087 urly</span>
+- <span style="color:green">Rudi file with 0x190AC9D0 ectotal</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x48768B59 dopositializede
+- <span style="color:green">null null with 0x48768B59 ypebottonhig</span>
+- <span style="color:green">null null with 0x5CB8F61B resinputbufficitree</span>
+- <span style="color:green">null null with 0x5CB8F61B timerderren</span>
+- <span style="color:green">null null with 0x3825AB8C hainesetackaddgete</span>
+- <span style="color:green">Rudi file with 0x3825AB8C curly</span>
+- <span style="color:green">null null with 0x3825AB8C sitionstac</span>
+- <span style="color:green">null null with 0x3825AB8C uttonbackgro</span>
+- <span style="color:green">null null with 0x3825AB8C tleteleng</span>
+- <span style="color:green">??? password_change with 0x3D88C3C7 bitsb</span>
+- <span style="color:yellow">guest</span> shell with 0x3D88C3C7 clip
+- <span style="color:green">null null with 0x3D88C3C7 valuesadd</span>
+- <span style="color:yellow">guest</span> shell with 0x3D88C3C7 tepointxselaytrue
+- <span style="color:green">Paotomit computer with 0x1006C087 urly</span>
+- <span style="color:green">Dallisalva file with 0x190AC9D0 ectotal</span>
+- <span style="color:green">??? password_change with 0x190AC9D0 isrepeat</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x48768B59 dopositializede
+- <span style="color:green">null null with 0x48768B59 ypebottonhig</span>
+- <span style="color:green">null null with 0x5CB8F61B resinputbufficitree</span>
+- <span style="color:green">??? password_change with 0x5CB8F61B timerderren</span>
+- <span style="color:green">null null with 0x3825AB8C hainesetackaddgete</span>
+- <span style="color:green">Paotomit file with 0x3825AB8C curly</span>
+- <span style="color:green">null null with 0x3825AB8C sitionstac</span>
+- <span style="color:green">??? password_change with 0x3825AB8C uttonbackgro</span>
+- <span style="color:green">null null with 0x3825AB8C tleteleng</span>
+- <span style="color:green">??? password_change with 0x3D88C3C7 bitsb</span>
+- <span style="color:yellow">guest</span> shell with 0x3D88C3C7 clip
+- <span style="color:green">??? password_change with 0x3D88C3C7 valuesadd</span>
+- <span style="color:yellow">guest</span> shell with 0x3D88C3C7 tepointxselaytrue
+- <span style="color:green">Paotomit computer with 0x2D099596 tedorr</span>
+- <span style="color:green">Paotomit file with 0x6ABD051C chortlinetreestacterdow++scaller32</span>
+- <span style="color:green">guest computer with 0x6ABD051C meshupdatebi</span>
+- <span style="color:green">Dallisalva computer with 0x6ABD051C tanchorequalbytebuttoncolorscript</span>
+- Dallisalva shell with 0x50348A94 isobje
+- <span style="color:green">Donag computer with 0x1006C087 urly</span>
+- <span style="color:green">Shunagh file with 0x190AC9D0 ectotal</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x48768B59 dopositializede
+- <span style="color:green">null null with 0x48768B59 ypebottonhig</span>
+- <span style="color:green">null null with 0x5CB8F61B resinputbufficitree</span>
+- <span style="color:green">null null with 0x5CB8F61B timerderren</span>
+- <span style="color:green">null null with 0x3825AB8C hainesetackaddgete</span>
+- <span style="color:green">Shunagh file with 0x3825AB8C curly</span>
+- <span style="color:green">null null with 0x3825AB8C sitionstac</span>
+- <span style="color:green">null null with 0x3825AB8C uttonbackgro</span>
+- <span style="color:green">null null with 0x3825AB8C tleteleng</span>
+- <span style="color:green">??? password_change with 0x3D88C3C7 bitsb</span>
+- <span style="color:yellow">guest</span> shell with 0x3D88C3C7 clip
+- <span style="color:green">null null with 0x3D88C3C7 valuesadd</span>
+- <span style="color:yellow">guest</span> shell with 0x3D88C3C7 tepointxselaytrue
+
+#### v 1.0.3 — shell 3/50, priv 1/50
+<a id="1.0.3"></a>
+- <span style="color:green">guest file with 0x1006C087 pritext</span>
+- <span style="color:green">guest computer with 0x1006C087 urly</span>
+- <span style="color:green">guest file with 0x190AC9D0 ectotal</span>
+- <span style="color:green">null null with 0x190AC9D0 andb</span>
+- <span style="color:green">??? password_change with 0x190AC9D0 isrepeat</span>
+- <span style="color:green">guest file with 0x190AC9D0 tivetrue</span>
+- <span style="color:green">guest computer with 0x46408611 textvmyiel</span>
+- <span style="color:green">guest computer with 0x46408611 aheadinged</span>
+- <span style="color:green">guest computer with 0x46408611 sizel</span>
+- <span style="color:yellow">guest</span> shell with 0x79460C65 sized
+- <span style="color:green">null null with 0x79460C65 context</span>
+- <span style="color:green">guest file with 0x79460C65 scalpha</span>
+- <span style="color:green">guest file with 0x79460C65 olor_view</span>
+- <span style="color:green">??? password_change with 0x7FCE07B0 iftitleobjecttransforeach</span>
+- <span style="color:yellow">guest</span> shell with 0x7FCE07B0 miniti
+- <span style="color:green">guest computer with 0x7FCE07B0 textvm</span>
+- <span style="color:green">guest file with 0x7FCE07B0 leventdata_</span>
+- <span style="color:green">guest computer with 0x7FCE07B0 eiconteral</span>
+- <span style="color:green">Osiotto computer with 0x1006C087 urly</span>
+- <span style="color:green">Osiotto file with 0x190AC9D0 ectotal</span>
+- <span style="color:green">null null with 0x190AC9D0 andb</span>
+- <span style="color:green">guest computer with 0x46408611 textvmyiel</span>
+- <span style="color:green">guest computer with 0x46408611 aheadinged</span>
+- <span style="color:green">guest computer with 0x46408611 sizel</span>
+- <span style="color:green">null null with 0x79460C65 sized</span>
+- <span style="color:green">null null with 0x79460C65 context</span>
+- <span style="color:green">guest file with 0x79460C65 scalpha</span>
+- <span style="color:green">null null with 0x79460C65 olor_view</span>
+- <span style="color:green">??? password_change with 0x7FCE07B0 iftitleobjecttransforeach</span>
+- <span style="color:green">null null with 0x7FCE07B0 miniti</span>
+- <span style="color:green">guest computer with 0x7FCE07B0 textvm</span>
+- <span style="color:green">null null with 0x7FCE07B0 leventdata_</span>
+- <span style="color:green">guest computer with 0x7FCE07B0 eiconteral</span>
+- <span style="color:green">??? firewall_disable with 0x167D6BC8 ternalconstrinf</span>
+- <span style="color:green">Echbauguste computer with 0x1006C087 urly</span>
+- <span style="color:green">Raustim file with 0x190AC9D0 ectotal</span>
+- <span style="color:green">null null with 0x190AC9D0 andb</span>
+- <span style="color:green">??? password_change with 0x190AC9D0 isrepeat</span>
+- <span style="color:green">guest computer with 0x46408611 textvmyiel</span>
+- <span style="color:green">guest computer with 0x46408611 aheadinged</span>
+- <span style="color:green">guest computer with 0x46408611 sizel</span>
+- <span style="color:red">root</span> shell with 0x79460C65 sized
+- <span style="color:green">null null with 0x79460C65 context</span>
+- <span style="color:green">guest file with 0x79460C65 scalpha</span>
+- <span style="color:green">guest file with 0x79460C65 olor_view</span>
+- <span style="color:green">??? password_change with 0x7FCE07B0 iftitleobjecttransforeach</span>
+- <span style="color:green">null null with 0x7FCE07B0 miniti</span>
+- <span style="color:green">guest computer with 0x7FCE07B0 textvm</span>
+- <span style="color:green">guest file with 0x7FCE07B0 leventdata_</span>
+- <span style="color:green">null null with 0x7FCE07B0 eiconteral</span>
+
+#### v 1.0.4 — shell 1/16, priv 1/16
+<a id="1.0.4"></a>
+- <span style="color:green">Chuq file with 0x1006C087 pritext</span>
+- <span style="color:green">Chuq file with 0x190AC9D0 ectotal</span>
+- <span style="color:green">null null with 0x190AC9D0 andb</span>
+- <span style="color:green">??? password_change with 0x190AC9D0 isrepeat</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x190AC9D0 tivetrue
+- <span style="color:green">null null with 0x7884957B elaysourceplayt</span>
+- <span style="color:yellow">guest</span> shell with 0x7884957B d_blocatibledquotenerspritextinfor
+- <span style="color:green">guest computer with 0x7884957B ontexte</span>
+- <span style="color:green">Chuq computer with 0x7884957B vailabledquoten</span>
+- <span style="color:green">??? password_change with 0x217570A olors</span>
+- <span style="color:green">Olewick computer with 0x217570A ort~lengthoffsettim</span>
+- <span style="color:green">Olewick computer with 0x217570A origsiniscan_en</span>
+- <span style="color:green">??? password_change with 0x7649FB15 jumptoend</span>
+- <span style="color:green">null null with 0x7649FB15 extenabledthisop</span>
+- <span style="color:green">Olewick file with 0x7649FB15 inei</span>
+- <span style="color:green">??? password_change with 0x7649FB15 typebottonb</span>
+
+#### v 1.0.5 — shell 8/59, priv 1/59
+<a id="1.0.5"></a>
+- <span style="color:green">Einiea file with 0x190AC9D0 ectotal</span>
+- <span style="color:green">null null with 0x190AC9D0 andb</span>
+- <span style="color:green">??? password_change with 0x190AC9D0 isrepeat</span>
+- <span style="color:green">null null with 0x190AC9D0 max_blocalp</span>
+- <span style="color:green">null null with 0x5EC5E056 color_viewporttexttextimessor-1</span>
+- <span style="color:green">guest file with 0x5EC5E056 updata_typebottont</span>
+- <span style="color:green">null null with 0x5EC5E056 iobjectsetpivotnewuitexttextr</span>
+- <span style="color:green">guest file with 0x5EC5E056 bofa</span>
+- <span style="color:green">null null with 0x5EC5E056 extobje</span>
+- <span style="color:green">null null with 0x773E6E8A opwatch_availabledquotespa</span>
+- <span style="color:green">??? password_change with 0x773E6E8A lendline</span>
+- <span style="color:green">??? password_change with 0x773E6E8A amemax_</span>
+- <span style="color:green">null null with 0x773E6E8A texting_l</span>
+- <span style="color:green">null null with 0x773E6E8A aequale</span>
+- <span style="color:yellow">guest</span> shell with 0x63A3C22 phic
+- <span style="color:red">root</span> shell with 0x63A3C22 temov
+- <span style="color:green">guest file with 0x1006C087 pritext</span>
+- <span style="color:green">guest file with 0x190AC9D0 ectotal</span>
+- <span style="color:green">null null with 0x190AC9D0 andb</span>
+- <span style="color:green">??? password_change with 0x190AC9D0 isrepeat</span>
+- <span style="color:green">null null with 0x190AC9D0 max_blocalp</span>
+- <span style="color:green">null null with 0x5EC5E056 color_viewporttexttextimessor-1</span>
+- <span style="color:green">guest file with 0x5EC5E056 updata_typebottont</span>
+- <span style="color:green">null null with 0x5EC5E056 iobjectsetpivotnewuitexttextr</span>
+- <span style="color:green">guest file with 0x5EC5E056 bofa</span>
+- <span style="color:green">null null with 0x5EC5E056 extobje</span>
+- <span style="color:green">guest computer with 0x773E6E8A opwatch_availabledquotespa</span>
+- <span style="color:green">null null with 0x773E6E8A lendline</span>
+- <span style="color:green">??? password_change with 0x773E6E8A amemax_</span>
+- <span style="color:green">null null with 0x773E6E8A texting_l</span>
+- <span style="color:green">??? password_change with 0x773E6E8A aequale</span>
+- <span style="color:green">null null with 0x63A3C22 phic</span>
+- <span style="color:yellow">guest</span> shell with 0x63A3C22 temov
+- <span style="color:green">guest file with 0x1006C087 pritext</span>
+- <span style="color:green">guest file with 0x190AC9D0 ectotal</span>
+- <span style="color:green">null null with 0x190AC9D0 andb</span>
+- <span style="color:green">??? password_change with 0x190AC9D0 isrepeat</span>
+- <span style="color:yellow">guest</span> shell with 0x190AC9D0 max_blocalp
+- <span style="color:green">null null with 0x5EC5E056 color_viewporttexttextimessor-1</span>
+- <span style="color:green">guest file with 0x5EC5E056 updata_typebottont</span>
+- <span style="color:green">guest computer with 0x5EC5E056 iobjectsetpivotnewuitexttextr</span>
+- <span style="color:green">guest file with 0x5EC5E056 bofa</span>
+- <span style="color:green">null null with 0x5EC5E056 extobje</span>
+- <span style="color:green">guest computer with 0x773E6E8A opwatch_availabledquotespa</span>
+- <span style="color:green">??? password_change with 0x773E6E8A lendline</span>
+- <span style="color:green">??? password_change with 0x773E6E8A amemax_</span>
+- <span style="color:green">null null with 0x773E6E8A texting_l</span>
+- <span style="color:green">??? password_change with 0x773E6E8A aequale</span>
+- <span style="color:yellow">guest</span> shell with 0x63A3C22 phic
+- <span style="color:yellow">guest</span> shell with 0x63A3C22 temov
+- <span style="color:green">guest file with 0x3AF7EEA1 case</span>
+- <span style="color:yellow">guest</span> shell with 0x21445D8A hisop
+- <span style="color:green">??? password_change with 0x624FBF5A lor_glow</span>
+- <span style="color:green">??? password_change with 0x6C19441D dentda</span>
+- <span style="color:green">??? password_change with 0x2068E6F8 extsrep_3_6</span>
+- <span style="color:yellow">guest</span> shell with 0x2068E6F8 nusb
+- <span style="color:green">guest file with 0x44609D68 color_buffectsetactabledt</span>
+- <span style="color:green">guest file with 0x130C803B wardowmation</span>
+- <span style="color:green">guest file with 0x210F2D3E destemplicitreach</span>
+
+#### v 1.0.6 — shell 2/18
+<a id="1.0.6"></a>
+- <span style="color:green">null null with 0x1006C087 pritext</span>
+- <span style="color:yellow">guest</span> shell with 0x1006C087 eundostac
+- <span style="color:green">guest file with 0x36A9B5E8 shor</span>
+- <span style="color:green">null null with 0x36A9B5E8 ackpeek</span>
+- <span style="color:green">guest computer with 0x36A9B5E8 morequal</span>
+- <span style="color:green">null null with 0x36A9B5E8 void</span>
+- <span style="color:green">null null with 0xD9F5747 point_onlen</span>
+- <span style="color:green">null null with 0xD9F5747 opy_b</span>
+- <span style="color:green">null null with 0xD9F5747 calpositiontil</span>
+- <span style="color:green">null null with 0xD9F5747 treeinte</span>
+- <span style="color:green">null null with 0x7384DC56 ta_typerighli</span>
+- <span style="color:green">??? password_change with 0x7384DC56 barformanchorttextef</span>
+- <span style="color:green">??? password_change with 0x7384DC56 functivetact</span>
+- <span style="color:green">??? password_change with 0x7384DC56 ostactabl</span>
+- <span style="color:yellow">guest</span> shell with 0x75E16450 headp
+- <span style="color:green">guest computer with 0x75E16450 char</span>
+- <span style="color:green">null null with 0x75E16450 codecdstancessertyp</span>
+- <span style="color:green">guest computer with 0x75E16450 stackpeek</span>
+
+#### v 1.0.7 — shell 8/35, priv 5/35
+<a id="1.0.7"></a>
+- <span style="color:yellow">guest</span> shell with 0x1006C087 recttransf
+- <span style="color:green">guest file with 0x36A9B5E8 void</span>
+- <span style="color:green">guest file with 0x58FFB37A agetefferremove</span>
+- <span style="color:green">??? password_change with 0x58FFB37A textslconteral</span>
+- <span style="color:green">??? password_change with 0x58FFB37A tialid</span>
+- <span style="color:green">guest computer with 0x58FFB37A queuetokethis</span>
+- <span style="color:green">??? password_change with 0x58FFB37A _bitsdisplateg</span>
+- <span style="color:green">Mattono file with 0x24F795D6 eslinenumsion++</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x24F795D6 resultaddparentai
+- Mattono shell with 0x24F795D6 scan
+- <span style="color:yellow">guest</span> shell with 0x3431FF6C textreatel
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x3431FF6C mentdat
+- <span style="color:red">root</span> shell with 0xA780AFF mponenumerialid
+- Mattono shell with 0xA780AFF ethisonclicksraycodecflu
+- <span style="color:green">??? password_change with 0x2AD8220D yte</span>
+- <span style="color:green">null null with 0x7A582DFA lags</span>
+- <span style="color:green">null null with 0x1006C087 recttransf</span>
+- <span style="color:green">null null with 0x58FFB37A agetefferremove</span>
+- <span style="color:green">??? password_change with 0x58FFB37A textslconteral</span>
+- <span style="color:green">??? password_change with 0x58FFB37A tialid</span>
+- <span style="color:green">guest computer with 0x58FFB37A queuetokethis</span>
+- <span style="color:green">??? password_change with 0x58FFB37A _bitsdisplateg</span>
+- <span style="color:green">Antleh file with 0x24F795D6 eslinenumsion++</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x24F795D6 resultaddparentai
+- Antleh shell with 0x24F795D6 scan
+- <span style="color:yellow">guest</span> shell with 0x1006C087 recttransf
+- <span style="color:green">guest file with 0x36A9B5E8 void</span>
+- <span style="color:green">guest file with 0x58FFB37A agetefferremove</span>
+- <span style="color:green">??? password_change with 0x58FFB37A textslconteral</span>
+- <span style="color:green">??? password_change with 0x58FFB37A tialid</span>
+- <span style="color:green">guest computer with 0x58FFB37A queuetokethis</span>
+- <span style="color:green">??? password_change with 0x58FFB37A _bitsdisplateg</span>
+- <span style="color:green">Bazzi file with 0x24F795D6 eslinenumsion++</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x24F795D6 resultaddparentai
+- Bazzi shell with 0x24F795D6 scan
+
+#### v 1.0.9 — shell 2/10
+<a id="1.0.9"></a>
+- <span style="color:green">guest file with 0x36A9B5E8 void</span>
+- <span style="color:green">null null with 0x175237BC mapres</span>
+- <span style="color:green">??? password_change with 0x175237BC pequare</span>
+- <span style="color:green">null null with 0x793DC936 dtreeblocalessed_bitscolorsn</span>
+- <span style="color:green">null null with 0x793DC936 _138</span>
+- Yle shell with 0x61906398 izedelanche
+- <span style="color:green">guest computer with 0x61906398 elhight2transformances</span>
+- Yle shell with 0xCAE2A53 _audiomixergroun
+- <span style="color:green">??? password_change with 0x63FE6541 stroll</span>
+- <span style="color:green">guest computer with 0x68E39432 _stactiontrin</span>
+
+#### v 1.1.0 — shell 4/17, priv 4/17
+<a id="1.1.0"></a>
+- <span style="color:yellow">guest</span> shell with 0x36A9B5E8 note
+- <span style="color:green">null null with 0x36A9B5E8 ackpeek</span>
+- <span style="color:green">??? password_change with 0x36A9B5E8 _sharamete</span>
+- <span style="color:green">null null with 0x36A9B5E8 void</span>
+- <span style="color:green">??? password_change with 0xAC58E1 timerderrori</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0xAC58E1 ationx
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0xAC58E1 tionstancessof
+- <span style="color:green">Astev computer with 0x51A233F9 portlinemovecttransfore</span>
+- <span style="color:yellow">guest</span> shell with 0x51A233F9 ush_blockstantsremo
+- <span style="color:red">root</span> shell with 0x3FBDDFB4 using
+- <span style="color:green">guest file with 0x3FBDDFB4 atch_</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x2614BFF2 parenableteff
+- <span style="color:green">guest computer with 0x2614BFF2 cursc</span>
+- <span style="color:green">null null with 0x2614BFF2 valuesr</span>
+- <span style="color:green">guest computer with 0x6BA4583 enumobjectt</span>
+- <span style="color:green">null null with 0x4FA87F95 setpivotnewi</span>
+- <span style="color:yellow">guest</span> shell with 0x3D221C3D tabledthisflavor
+
+#### v 1.1.1 — shell 1/8
+<a id="1.1.1"></a>
+- <span style="color:green">null null with 0x36A9B5E8 ponenumber</span>
+- <span style="color:green">null null with 0xD735EFA textvmyiel</span>
+- <span style="color:green">guest file with 0xD735EFA worder</span>
+- <span style="color:yellow">guest</span> shell with 0xD735EFA note
+- <span style="color:green">null null with 0xD735EFA sizedela</span>
+- <span style="color:green">null null with 0x522F139E spresultnum</span>
+- <span style="color:green">null null with 0x522F139E fig</span>
+- <span style="color:green">null null with 0x522F139E irectotalwidthiscript</span>
+
+#### v 1.1.2 — shell 11/77
+<a id="1.1.2"></a>
+- <span style="color:green">guest file with 0x14CB3403 ializeline</span>
+- <span style="color:green">null null with 0x14CB3403 storsche</span>
+- <span style="color:green">null null with 0x524F4A8F oteoutoveatlinent</span>
+- <span style="color:yellow">guest</span> shell with 0x524F4A8F sizedeltaddline+
+- <span style="color:green">null null with 0x524F4A8F namemax</span>
+- <span style="color:green">null null with 0x524F4A8F ultvmyie</span>
+- <span style="color:green">null null with 0x524F4A8F alse</span>
+- <span style="color:yellow">guest</span> shell with 0x3F86B099 quoteoutl
+- <span style="color:green">??? password_change with 0x3F86B099 itssertypeopequ</span>
+- <span style="color:green">null null with 0x3F86B099 blocall001f</span>
+- <span style="color:green">null null with 0x3F86B099 copya</span>
+- <span style="color:green">Snidelmich file with 0x40341465 tinforman</span>
+- <span style="color:green">null null with 0x40341465 vecurle</span>
+- <span style="color:green">Snidelmich computer with 0x40341465 stroyb</span>
+- <span style="color:green">null null with 0x40341465 notb</span>
+- <span style="color:green">guest file with 0x14CB3403 ializeline</span>
+- <span style="color:green">guest file with 0x14CB3403 storsche</span>
+- <span style="color:green">??? password_change with 0x524F4A8F oteoutoveatlinent</span>
+- <span style="color:yellow">guest</span> shell with 0x524F4A8F sizedeltaddline+
+- <span style="color:green">??? password_change with 0x524F4A8F namemax</span>
+- <span style="color:green">null null with 0x524F4A8F ultvmyie</span>
+- <span style="color:green">null null with 0x524F4A8F alse</span>
+- <span style="color:yellow">guest</span> shell with 0x3F86B099 quoteoutl
+- <span style="color:green">??? password_change with 0x3F86B099 itssertypeopequ</span>
+- <span style="color:green">null null with 0x3F86B099 blocall001f</span>
+- <span style="color:green">null null with 0x3F86B099 copya</span>
+- <span style="color:green">Vietri file with 0x40341465 tinforman</span>
+- <span style="color:green">null null with 0x40341465 vecurle</span>
+- <span style="color:green">Vietri computer with 0x40341465 stroyb</span>
+- <span style="color:green">null null with 0x40341465 notb</span>
+- <span style="color:green">null null with 0x5BFF0F65 tatictres</span>
+- Lehudelve shell with 0x61906398 izedelanche
+- <span style="color:green">guest computer with 0x61906398 elhight2transformances</span>
+- Idenzie shell with 0xCAE2A53 _audiomixergroun
+- <span style="color:green">Idenzie file with 0x5EFC72BE xlazymatch_</span>
+- <span style="color:yellow">guest</span> shell with 0x21649DCD tored
+- Lehudelve shell with 0x1DB50A8C oublic
+- <span style="color:green">null null with 0x56F02C06 sourcelend_codec</span>
+- <span style="color:green">null null with 0x3073421F strstackgroundosoundost</span>
+- <span style="color:green">guest file with 0x14CB3403 ializeline</span>
+- <span style="color:green">null null with 0x14CB3403 storsche</span>
+- <span style="color:green">null null with 0x524F4A8F oteoutoveatlinent</span>
+- <span style="color:green">null null with 0x524F4A8F sizedeltaddline+</span>
+- <span style="color:green">null null with 0x524F4A8F namemax</span>
+- <span style="color:green">null null with 0x524F4A8F ultvmyie</span>
+- <span style="color:green">null null with 0x524F4A8F alse</span>
+- <span style="color:green">null null with 0x3F86B099 quoteoutl</span>
+- <span style="color:green">??? password_change with 0x3F86B099 itssertypeopequ</span>
+- <span style="color:green">null null with 0x3F86B099 blocall001f</span>
+- <span style="color:green">null null with 0x3F86B099 copya</span>
+- <span style="color:green">null null with 0x40341465 tinforman</span>
+- <span style="color:green">null null with 0x40341465 vecurle</span>
+- <span style="color:green">guest computer with 0x40341465 stroyb</span>
+- <span style="color:green">null null with 0x40341465 notb</span>
+- <span style="color:green">guest file with 0x14CB3403 ializeline</span>
+- <span style="color:green">guest file with 0x14CB3403 storsche</span>
+- <span style="color:green">null null with 0x524F4A8F oteoutoveatlinent</span>
+- <span style="color:yellow">guest</span> shell with 0x524F4A8F sizedeltaddline+
+- <span style="color:green">null null with 0x524F4A8F namemax</span>
+- <span style="color:green">null null with 0x524F4A8F ultvmyie</span>
+- <span style="color:green">null null with 0x524F4A8F alse</span>
+- <span style="color:yellow">guest</span> shell with 0x3F86B099 quoteoutl
+- <span style="color:green">??? password_change with 0x3F86B099 itssertypeopequ</span>
+- <span style="color:green">null null with 0x3F86B099 blocall001f</span>
+- <span style="color:green">null null with 0x3F86B099 copya</span>
+- <span style="color:green">Frenj file with 0x40341465 tinforman</span>
+- <span style="color:green">null null with 0x40341465 vecurle</span>
+- <span style="color:green">Dnerje computer with 0x40341465 stroyb</span>
+- <span style="color:green">null null with 0x40341465 notb</span>
+- <span style="color:green">guest file with 0x7C0DB291 intostar</span>
+- Chuange shell with 0x7C0DB291 t++
+- <span style="color:green">null null with 0x7472C07 codecmessof</span>
+- <span style="color:green">guest computer with 0x761E664F tantsrepz_1</span>
+- <span style="color:green">null null with 0x761E664F ydictreebitlebacka</span>
+- <span style="color:green">null null with 0x7A23ED70 dow++scanvasgr</span>
+- <span style="color:green">??? password_change with 0x7A23ED70 yield</span>
+- <span style="color:green">null null with 0x6E4E8457 ineslinenum++</span>
+
+#### v 1.1.3 — shell 9/32, priv 5/32
+<a id="1.1.3"></a>
+- <span style="color:green">guest file with 0x14CB3403 storsche</span>
+- <span style="color:green">null null with 0x2B86B7C7 oredutilsurscrollr</span>
+- <span style="color:yellow">guest</span> shell with 0x2B86B7C7 ayclearhea
+- <span style="color:yellow">guest</span> shell with 0x2B86B7C7 buttontexttexts
+- <span style="color:red">root</span> shell with 0x2B86B7C7 lit++
+- <span style="color:green">null null with 0x6B4ADFA4 portbackaddpa</span>
+- Iverlissel shell with 0x6B4ADFA4 showcalpositionis
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x6B4ADFA4 onbackundostictreeendp
+- <span style="color:green">guest file with 0x14CB3403 storsche</span>
+- <span style="color:green">guest file with 0x2B86B7C7 oredutilsurscrollr</span>
+- <span style="color:yellow">guest</span> shell with 0x2B86B7C7 ayclearhea
+- <span style="color:yellow">guest</span> shell with 0x2B86B7C7 buttontexttexts
+- <span style="color:green">null null with 0x2B86B7C7 lit++</span>
+- <span style="color:green">Cannet file with 0x6B4ADFA4 portbackaddpa</span>
+- Onnetti shell with 0x6B4ADFA4 showcalpositionis
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x6B4ADFA4 onbackundostictreeendp
+- <span style="color:green">null null with 0x14CB3403 storsche</span>
+- <span style="color:green">null null with 0x2B86B7C7 oredutilsurscrollr</span>
+- <span style="color:green">null null with 0x2B86B7C7 ayclearhea</span>
+- <span style="color:green">null null with 0x2B86B7C7 buttontexttexts</span>
+- <span style="color:green">null null with 0x2B86B7C7 lit++</span>
+- <span style="color:green">null null with 0x6B4ADFA4 portbackaddpa</span>
+- <span style="color:green">null null with 0x6B4ADFA4 showcalpositionis</span>
+- <span style="color:green">null null with 0x6B4ADFA4 onbackundostictreeendp</span>
+- <span style="color:green">guest file with 0x14CB3403 storsche</span>
+- <span style="color:green">guest file with 0x2B86B7C7 oredutilsurscrollr</span>
+- <span style="color:green">null null with 0x2B86B7C7 ayclearhea</span>
+- <span style="color:green">null null with 0x2B86B7C7 buttontexttexts</span>
+- <span style="color:red">root</span> shell with 0x2B86B7C7 lit++
+- <span style="color:green">Kornight file with 0x6B4ADFA4 portbackaddpa</span>
+- Kornight shell with 0x6B4ADFA4 showcalpositionis
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x6B4ADFA4 onbackundostictreeendp
+
+#### v 1.1.5 — shell 1/16, priv 1/16
+<a id="1.1.5"></a>
+- <span style="color:green">null null with 0x14CB3403 aramargu</span>
+- <span style="color:green">Parnas file with 0x14CB3403 eyrepz_3_6</span>
+- <span style="color:green">??? password_change with 0x14CB3403 moredpoi</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x24413D79 statei
+- <span style="color:green">guest file with 0x24413D79 insuffect</span>
+- <span style="color:green">Parnas file with 0x24413D79 ranged</span>
+- <span style="color:green">??? password_change with 0x24413D79 pivotreeth</span>
+- <span style="color:green">null null with 0x1AA99497 gotenterals</span>
+- <span style="color:green">??? password_change with 0x1AA99497 ieldinsicontof</span>
+- <span style="color:green">null null with 0x1AA99497 porttextstreelit_bytespa</span>
+- <span style="color:yellow">guest</span> shell with 0x1112CE01 vetackgrountintlinenumerdoub
+- <span style="color:green">null null with 0x1112CE01 olor_viewporttedist</span>
+- <span style="color:green">guest computer with 0x1112CE01 indostances</span>
+- <span style="color:green">guest computer with 0x39F903D0 tlineslindostartc</span>
+- <span style="color:green">null null with 0x39F903D0 lend_bitle</span>
+- <span style="color:green">??? password_change with 0x39F903D0 tatemover</span>
+
+#### v 1.1.6 — priv 1/10
+<a id="1.1.6"></a>
+- <span style="color:green">Nox file with 0x43E75632 istenertypebotton</span>
+- <span style="color:green">guest file with 0x14131AF bitsdc</span>
+- <span style="color:green">null null with 0x14131AF textingp</span>
+- <span style="color:green">null null with 0x14131AF _buffectsetactableteli</span>
+- <span style="color:green">null null with 0x14131AF kaheady_def</span>
+- <span style="color:green">??? password_change with 0x7552F287 ressof</span>
+- <span style="color:green">null null with 0x7552F287 updata_typ</span>
+- <span style="color:green">null null with 0x7552F287 olledtaskb</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x7552F287 resizeline++
+- <span style="color:green">guest computer with 0x7552F287 ialrectsettimaticsin</span>
+
+#### v 1.1.7 — shell 13/80, priv 4/80
+<a id="1.1.7"></a>
+- <span style="color:green">guest computer with 0x43E75632 oundostransformoffsettim</span>
+- <span style="color:green">null null with 0x15A9A918 positialigni</span>
+- <span style="color:green">null null with 0x15A9A918 paract</span>
+- <span style="color:green">null null with 0x15A9A918 title</span>
+- <span style="color:green">null null with 0x16BE0C7 izeli</span>
+- <span style="color:green">guest file with 0x16BE0C7 istinesou</span>
+- <span style="color:green">null null with 0x16BE0C7 modedistene</span>
+- Georgia shell with 0x16BE0C7 alizelaya
+- <span style="color:red">root</span> shell with 0x16BE0C7 scii_fresu
+- <span style="color:green">guest file with 0x3F66F18A _endpoi</span>
+- <span style="color:green">null null with 0x3F66F18A sertlinetrectsettimele</span>
+- <span style="color:green">??? password_change with 0x3F66F18A treelinerthangenq</span>
+- <span style="color:green">guest computer with 0x3F66F18A startco</span>
+- <span style="color:green">null null with 0x43E75632 oundostransformoffsettim</span>
+- <span style="color:green">null null with 0x15A9A918 positialigni</span>
+- <span style="color:green">null null with 0x15A9A918 paract</span>
+- <span style="color:green">null null with 0x15A9A918 title</span>
+- <span style="color:green">null null with 0x16BE0C7 izeli</span>
+- <span style="color:green">guest file with 0x16BE0C7 istinesou</span>
+- <span style="color:green">null null with 0x16BE0C7 modedistene</span>
+- Andershoem shell with 0x16BE0C7 alizelaya
+- <span style="color:green">null null with 0x16BE0C7 scii_fresu</span>
+- <span style="color:green">guest file with 0x3F66F18A _endpoi</span>
+- <span style="color:green">null null with 0x3F66F18A sertlinetrectsettimele</span>
+- <span style="color:green">??? password_change with 0x3F66F18A treelinerthangenq</span>
+- <span style="color:green">guest computer with 0x3F66F18A startco</span>
+- <span style="color:green">guest computer with 0x43E75632 oundostransformoffsettim</span>
+- <span style="color:green">null null with 0x15A9A918 positialigni</span>
+- <span style="color:green">null null with 0x15A9A918 paract</span>
+- <span style="color:green">null null with 0x15A9A918 title</span>
+- <span style="color:green">null null with 0x16BE0C7 izeli</span>
+- <span style="color:green">guest file with 0x16BE0C7 istinesou</span>
+- <span style="color:green">null null with 0x16BE0C7 modedistene</span>
+- Singtse shell with 0x16BE0C7 alizelaya
+- <span style="color:red">root</span> shell with 0x16BE0C7 scii_fresu
+- <span style="color:green">guest file with 0x3F66F18A _endpoi</span>
+- <span style="color:green">null null with 0x3F66F18A sertlinetrectsettimele</span>
+- <span style="color:green">??? password_change with 0x3F66F18A treelinerthangenq</span>
+- <span style="color:green">guest computer with 0x3F66F18A startco</span>
+- <span style="color:green">??? password_change with 0x3A8A10B7 unctionx</span>
+- <span style="color:green">null null with 0x4E0AE315 text</span>
+- <span style="color:green">null null with 0x43E75632 oundostransformoffsettim</span>
+- <span style="color:green">null null with 0x15A9A918 positialigni</span>
+- <span style="color:green">null null with 0x15A9A918 paract</span>
+- <span style="color:green">null null with 0x15A9A918 title</span>
+- <span style="color:green">null null with 0x16BE0C7 izeli</span>
+- <span style="color:green">guest file with 0x16BE0C7 istinesou</span>
+- <span style="color:green">null null with 0x16BE0C7 modedistene</span>
+- Ating shell with 0x16BE0C7 alizelaya
+- <span style="color:red">root</span> shell with 0x16BE0C7 scii_fresu
+- <span style="color:green">guest file with 0x3F66F18A _endpoi</span>
+- <span style="color:green">null null with 0x3F66F18A sertlinetrectsettimele</span>
+- <span style="color:green">??? password_change with 0x3F66F18A treelinerthangenq</span>
+- <span style="color:green">guest computer with 0x3F66F18A startco</span>
+- <span style="color:green">null null with 0x43E75632 oundostransformoffsettim</span>
+- <span style="color:green">null null with 0x15A9A918 positialigni</span>
+- <span style="color:green">null null with 0x15A9A918 paract</span>
+- <span style="color:green">null null with 0x15A9A918 title</span>
+- <span style="color:green">null null with 0x16BE0C7 izeli</span>
+- <span style="color:green">guest file with 0x16BE0C7 istinesou</span>
+- <span style="color:green">null null with 0x16BE0C7 modedistene</span>
+- Allason shell with 0x16BE0C7 alizelaya
+- <span style="color:green">null null with 0x16BE0C7 scii_fresu</span>
+- <span style="color:green">guest file with 0x3F66F18A _endpoi</span>
+- <span style="color:green">null null with 0x3F66F18A sertlinetrectsettimele</span>
+- <span style="color:green">??? password_change with 0x3F66F18A treelinerthangenq</span>
+- <span style="color:green">guest computer with 0x3F66F18A startco</span>
+- <span style="color:green">guest file with 0x54E361AB unctionc</span>
+- <span style="color:yellow">guest</span> shell with 0x19E411B2 loseletext
+- <span style="color:green">guest computer with 0x19E411B2 resultfunc</span>
+- <span style="color:yellow">guest</span> shell with 0x31735BEE onpointlinesizedeltaddpart
+- <span style="color:green">??? password_change with 0xC44843B isplayonandb</span>
+- <span style="color:green">??? password_change with 0xC44843B uiteractivetru</span>
+- <span style="color:green">null null with 0xC44843B line</span>
+- <span style="color:green">Vullejoy computer with 0xC44843B rategy</span>
+- <span style="color:red">root</span> shell with 0x7D9DF835 indexe
+- <span style="color:green">guest file with 0x6BA4583 backundthisclosebackpu</span>
+- <span style="color:green">guest computer with 0x6BA4583 pareto</span>
+- <span style="color:yellow">guest</span> shell with 0x7DC25E9B tsettingcountimessof
+- <span style="color:yellow">guest</span> shell with 0xA7126C2 ovelinesetpivotreedyn
+
 ---
 
 ## `librepository.so`
 <a id="librepository-so"></a>
 
-- Total Hooked lines: 90
-- Can provide shell: 16
-- Has privileged object: 2
-- Safe versions: 2
-Versions: <a href="#1.0.4"><span style="color:red">v 1.0.4</span></a> <a href="#1.0.8"><span style="color:red">v 1.0.8</span></a> <a href="#1.1.7"><span style="color:green">v 1.1.7</span></a> <a href="#1.1.8"><span style="color:red">v 1.1.8</span></a> <a href="#1.2.0"><span style="color:green">v 1.2.0</span></a>
+- Total Hooked lines: 336
+- Can provide shell: 57
+- Has privileged object: 8
+- Safe versions: 3
+Versions: <a href="#1.0.2"><span style="color:red">v 1.0.2</span></a> <a href="#1.0.3"><span style="color:red">v 1.0.3</span></a> <a href="#1.0.4"><span style="color:red">v 1.0.4</span></a> <a href="#1.0.5"><span style="color:red">v 1.0.5</span></a> <a href="#1.0.6"><span style="color:red">v 1.0.6</span></a> <a href="#1.0.7"><span style="color:red">v 1.0.7</span></a> <a href="#1.0.8"><span style="color:red">v 1.0.8</span></a> <a href="#1.0.9"><span style="color:red">v 1.0.9</span></a> <a href="#1.1.1"><span style="color:red">v 1.1.1</span></a> <a href="#1.1.2"><span style="color:green">v 1.1.2</span></a> <a href="#1.1.3"><span style="color:red">v 1.1.3</span></a> <a href="#1.1.4"><span style="color:red">v 1.1.4</span></a> <a href="#1.1.5"><span style="color:red">v 1.1.5</span></a> <a href="#1.1.7"><span style="color:green">v 1.1.7</span></a> <a href="#1.1.8"><span style="color:red">v 1.1.8</span></a> <a href="#1.1.9"><span style="color:red">v 1.1.9</span></a> <a href="#1.2.0"><span style="color:green">v 1.2.0</span></a>
 
 ### Safe versions
+#### v 1.1.2 — no shell/priv hooks
+<a id="1.1.2"></a>
+- <span style="color:green">guest file with 0x25B575ED tlend_blocksourcethist</span>
+- <span style="color:green">guest computer with 0x25B575ED x++</span>
+- <span style="color:green">guest file with 0x25B575ED malconfontsetdate</span>
+- <span style="color:green">null null with 0x1C055435 quotenerbuttonsta</span>
+- <span style="color:green">null null with 0x1C055435 sultreeintlinem</span>
+- <span style="color:green">guest file with 0x3597E75D nistgraphi</span>
+- <span style="color:green">guest computer with 0x3597E75D n_ltreedyn_treede</span>
+- <span style="color:green">guest file with 0x37134ECE tlinetrue</span>
+- <span style="color:green">null null with 0x37134ECE distst</span>
+- <span style="color:green">null null with 0x37134ECE rayclearhead</span>
+- <span style="color:green">null null with 0x37134ECE buttonbackgrou</span>
+
 #### v 1.1.7 — no shell/priv hooks
 <a id="1.1.7"></a>
 - <span style="color:green">null null with 0x4E6DE35B bufficientdaterat</span>
@@ -11650,6 +15185,65 @@ Versions: <a href="#1.0.4"><span style="color:red">v 1.0.4</span></a> <a href="#
 - <span style="color:green">null null with 0x38E3339F sformlock</span>
 
 ### Unsafe versions (per-version details)
+#### v 1.0.2 — shell 7/39
+<a id="1.0.2"></a>
+- <span style="color:green">null null with 0x461F2E87 sourcethisclos</span>
+- <span style="color:green">null null with 0x71D8FA88 olor_viewpo</span>
+- <span style="color:green">null null with 0x71D8FA88 line</span>
+- <span style="color:yellow">guest</span> shell with 0x71D8FA88 lengthcode
+- <span style="color:yellow">guest</span> shell with 0x3B17AEBA slow
+- <span style="color:green">??? password_change with 0x3B17AEBA selt</span>
+- <span style="color:green">null null with 0x3B17AEBA diststreeinovecurle</span>
+- <span style="color:green">null null with 0x3B17AEBA etonshortms</span>
+- <span style="color:green">null null with 0x42A3BDC2 sendpositifnote</span>
+- <span style="color:green">null null with 0x42A3BDC2 oredpointline</span>
+- <span style="color:green">null null with 0x42A3BDC2 stack</span>
+- <span style="color:green">null null with 0x42A3BDC2 essigna</span>
+- <span style="color:green">null null with 0x559537BD ulttesetva</span>
+- <span style="color:green">null null with 0x559537BD atch_shortmsbi</span>
+- <span style="color:green">null null with 0x6CFE458C essionts</span>
+- <span style="color:green">null null with 0x6CFE458C code</span>
+- <span style="color:green">null null with 0x6CFE458C false</span>
+- <span style="color:green">guest file with 0x6CFE458C plush</span>
+- <span style="color:green">null null with 0x6CFE458C cemeimatchemech</span>
+- <span style="color:green">null null with 0x4354EF itleftunteracti</span>
+- <span style="color:green">null null with 0x5933698A undostreed</span>
+- <span style="color:green">guest file with 0x461F2E87 sourcethisclos</span>
+- <span style="color:yellow">guest</span> shell with 0x71D8FA88 olor_viewpo
+- <span style="color:yellow">guest</span> shell with 0x71D8FA88 lengthcode
+- <span style="color:yellow">guest</span> shell with 0x3B17AEBA slow
+- <span style="color:green">??? password_change with 0x3B17AEBA selt</span>
+- <span style="color:green">null null with 0x3B17AEBA diststreeinovecurle</span>
+- <span style="color:green">guest computer with 0x3B17AEBA etonshortms</span>
+- <span style="color:yellow">guest</span> shell with 0x42A3BDC2 sendpositifnote
+- <span style="color:green">null null with 0x42A3BDC2 oredpointline</span>
+- <span style="color:yellow">guest</span> shell with 0x42A3BDC2 stack
+- <span style="color:green">guest computer with 0x42A3BDC2 essigna</span>
+- <span style="color:green">guest computer with 0x559537BD ulttesetva</span>
+- <span style="color:green">null null with 0x559537BD atch_shortmsbi</span>
+- <span style="color:green">null null with 0x6CFE458C essionts</span>
+- <span style="color:green">guest file with 0x6CFE458C code</span>
+- <span style="color:green">null null with 0x6CFE458C false</span>
+- <span style="color:green">Itonet file with 0x6CFE458C plush</span>
+- <span style="color:green">guest file with 0x6CFE458C cemeimatchemech</span>
+
+#### v 1.0.3 — shell 3/14
+<a id="1.0.3"></a>
+- <span style="color:green">guest file with 0x461F2E87 sourcethisclos</span>
+- <span style="color:green">Osephellis file with 0x71D8FA88 chormsizedelc</span>
+- <span style="color:green">null null with 0x71D8FA88 line</span>
+- <span style="color:yellow">guest</span> shell with 0x71D8FA88 lengthcode
+- <span style="color:green">??? password_change with 0xC64A0C8 endpositializedelen</span>
+- <span style="color:green">null null with 0xC64A0C8 pendpositionparamesbu</span>
+- <span style="color:green">null null with 0xC64A0C8 entdatemps</span>
+- <span style="color:yellow">guest</span> shell with 0x492985A2 undow++sca
+- <span style="color:green">??? password_change with 0x492985A2 ition++</span>
+- <span style="color:green">??? password_change with 0x492985A2 data</span>
+- <span style="color:yellow">guest</span> shell with 0xC212B00 onfontoffsetactionlyfals
+- <span style="color:green">guest file with 0xC212B00 eviouscoundownevent</span>
+- <span style="color:green">??? password_change with 0xC212B00 finitionparam</span>
+- <span style="color:green">??? password_change with 0xC212B00 nertialrectostransfor</span>
+
 #### v 1.0.4 — shell 1/15, priv 1/15
 <a id="1.0.4"></a>
 - <span style="color:green">null null with 0x461F2E87 codecinputsh</span>
@@ -11668,7 +15262,64 @@ Versions: <a href="#1.0.4"><span style="color:red">v 1.0.4</span></a> <a href="#
 - <span style="color:red">root</span> <span style="color:red">file</span> with 0x2627A9D olledthisf
 - <span style="color:green">Korn computer with 0x2627A9D itextpendingpend_color_butto</span>
 
-#### v 1.0.8 — shell 11/32, priv 1/32
+#### v 1.0.5 — shell 2/16
+<a id="1.0.5"></a>
+- <span style="color:green">null null with 0x35066BD3 onenumber</span>
+- <span style="color:green">null null with 0x35066BD3 intoveat</span>
+- <span style="color:green">null null with 0x35066BD3 activetactioncodecurly</span>
+- <span style="color:green">null null with 0x35066BD3 _treeditorupdateopb</span>
+- <span style="color:green">Pinenasi file with 0x510444C9 sstopwatchemeimagetp</span>
+- <span style="color:yellow">guest</span> shell with 0x510444C9 varventi
+- <span style="color:green">null null with 0x4428FD69 izeblocksra</span>
+- <span style="color:yellow">guest</span> shell with 0x4428FD69 becolo
+- <span style="color:green">null null with 0x4428FD69 tonstroybuttontri</span>
+- <span style="color:green">Illie computer with 0x1006C087 urly</span>
+- <span style="color:green">Illie file with 0x190AC9D0 ectotal</span>
+- <span style="color:green">Kunde file with 0x3825AB8C curly</span>
+- <span style="color:green">Yeguther file with 0x77ED7A31 close</span>
+- <span style="color:green">null null with 0x15C26FFD slow</span>
+- <span style="color:green">Ehntne file with 0x15C26FFD buttonobjectselec</span>
+- <span style="color:green">guest computer with 0x5300DAD4 textefunctivefalscan_end_</span>
+
+#### v 1.0.6 — shell 5/15, priv 1/15
+<a id="1.0.6"></a>
+- <span style="color:green">null null with 0x461F2E87 iterrentdatelitextvmy</span>
+- <span style="color:yellow">guest</span> shell with 0x1CD45C1B moda
+- <span style="color:green">??? password_change with 0x1CD45C1B odeaddparam</span>
+- <span style="color:green">guest computer with 0x1CD45C1B put_shorlinei</span>
+- <span style="color:green">null null with 0x1CD45C1B ivateli</span>
+- <span style="color:yellow">guest</span> shell with 0x1CD45C1B hortbi_valuesaddlistedistactivetra
+- <span style="color:green">Miko computer with 0x4C6895D8 headd</span>
+- <span style="color:green">null null with 0x4C6895D8 opywindost</span>
+- <span style="color:green">??? password_change with 0x13D25C8E manchoroformponenumsirectotalbytesized</span>
+- <span style="color:green">guest computer with 0x13D25C8E etokethisc</span>
+- <span style="color:yellow">guest</span> shell with 0x13D25C8E textnewuitextuitextv
+- <span style="color:green">Rahlman file with 0x22F34F1D ibletextss</span>
+- <span style="color:green">null null with 0x22F34F1D globalcontext</span>
+- <span style="color:yellow">guest</span> shell with 0x22F34F1D arrvaluesaddget
+- <span style="color:red">root</span> shell with 0x22F34F1D ionx
+
+#### v 1.0.7 — shell 3/17
+<a id="1.0.7"></a>
+- <span style="color:green">null null with 0x1975C001 shadow++sca</span>
+- <span style="color:green">guest file with 0x1975C001 oaiftrue</span>
+- <span style="color:green">??? password_change with 0x1975C001 note</span>
+- <span style="color:green">null null with 0x1CD45C1B moda</span>
+- <span style="color:green">??? password_change with 0x1CD45C1B odeaddparam</span>
+- <span style="color:green">null null with 0x1CD45C1B put_shorlinei</span>
+- <span style="color:green">null null with 0x1CD45C1B ivateli</span>
+- <span style="color:yellow">guest</span> shell with 0x1CD45C1B hortbi_valuesaddlistedistactivetra
+- <span style="color:green">null null with 0x40F8797F aphic</span>
+- <span style="color:green">null null with 0x40F8797F textsremov</span>
+- <span style="color:green">??? password_change with 0x62F8AFE7 prev</span>
+- <span style="color:green">null null with 0x62F8AFE7 ked</span>
+- <span style="color:green">null null with 0x62F8AFE7 cast_lit_bytesettextbufficid</span>
+- <span style="color:green">null null with 0x69154168 oposlicked</span>
+- Fluryarmel shell with 0x69154168 stactore
+- Anzor shell with 0x38DBF90C ositiontexting
+- <span style="color:green">Anzor file with 0x1867035B ovelistgraphic</span>
+
+#### v 1.0.8 — shell 15/47, priv 1/47
 <a id="1.0.8"></a>
 - <span style="color:yellow">guest</span> shell with 0x1CD45C1B moda
 - <span style="color:green">??? password_change with 0x1CD45C1B odeaddparam</span>
@@ -11702,8 +15353,121 @@ Versions: <a href="#1.0.4"><span style="color:red">v 1.0.4</span></a> <a href="#
 - <span style="color:green">guest file with 0x49CFADDD odecurlengthcodead</span>
 - <span style="color:red">root</span> <span style="color:red">computer</span> with 0x2D426E98 ifminiscro
 - Burge shell with 0x28F32678 emapmap
+- <span style="color:green">null null with 0x1CD45C1B moda</span>
+- <span style="color:green">??? password_change with 0x1CD45C1B odeaddparam</span>
+- <span style="color:green">null null with 0x1CD45C1B put_shorlinei</span>
+- <span style="color:green">guest computer with 0x1CD45C1B ler32</span>
+- <span style="color:yellow">guest</span> shell with 0x1CD45C1B hortbi_valuesaddlistedistactivetra
+- <span style="color:green">Onningc computer with 0x1C10ED89 elengthsdyn_</span>
+- <span style="color:green">null null with 0x1C10ED89 ydictreedyn_ltrees</span>
+- <span style="color:yellow">guest</span> shell with 0x1C10ED89 rinsertlinesiz
+- <span style="color:green">Onningc computer with 0x1C10ED89 onfig</span>
+- <span style="color:green">null null with 0x1C10ED89 inenumeringbutton</span>
+- <span style="color:yellow">guest</span> shell with 0x1637EC0A text
+- <span style="color:green">guest computer with 0x1637EC0A tializeliteralse</span>
+- <span style="color:green">null null with 0x1637EC0A roformanchortte</span>
+- Onningc shell with 0x49CFADDD codecol
+- <span style="color:green">guest file with 0x49CFADDD odecurlengthcodead</span>
 
-#### v 1.1.8 — shell 4/24
+#### v 1.0.9 — shell 2/11
+<a id="1.0.9"></a>
+- <span style="color:green">null null with 0x1CD45C1B lectse</span>
+- <span style="color:green">null null with 0x1CD45C1B odeaddparam</span>
+- <span style="color:green">null null with 0x1CD45C1B ler32</span>
+- <span style="color:green">null null with 0x1CD45C1B hortbi_valuesaddlistedistactivetra</span>
+- <span style="color:green">null null with 0x5572BBAC dexesaddl</span>
+- <span style="color:green">null null with 0x5572BBAC datepointovecurle</span>
+- <span style="color:green">null null with 0x5572BBAC amodb</span>
+- <span style="color:green">null null with 0x5572BBAC signimaticonn</span>
+- <span style="color:green">null null with 0xE53DA59 texttextsl</span>
+- Illic shell with 0xE53DA59 ternalco
+- <span style="color:yellow">guest</span> shell with 0xE53DA59 izey
+
+#### v 1.1.1 — shell 2/12, priv 2/12
+<a id="1.1.1"></a>
+- <span style="color:green">guest file with 0x25B575ED tlend_blocksourcethist</span>
+- <span style="color:yellow">guest</span> shell with 0x25B575ED queuetobje
+- <span style="color:green">guest file with 0x25B575ED malconfontsetdate</span>
+- <span style="color:green">null null with 0x2E27AB93 max_codest_e</span>
+- <span style="color:green">null null with 0x2E27AB93 aluesaddparentd</span>
+- <span style="color:green">guest computer with 0x2E27AB93 celinersaddund</span>
+- <span style="color:green">null null with 0x1C820CDA offsetdefalse</span>
+- <span style="color:green">null null with 0x1C820CDA this</span>
+- <span style="color:green">null null with 0x1C820CDA adcolor_buttono</span>
+- <span style="color:red">root</span> shell with 0xEB92CDD color
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0xEB92CDD _stackgroundthis
+- <span style="color:green">guest file with 0xEB92CDD fig</span>
+
+#### v 1.1.3 — shell 3/20
+<a id="1.1.3"></a>
+- <span style="color:green">guest file with 0x25B575ED tlend_blocksourcethist</span>
+- <span style="color:green">guest computer with 0x25B575ED x++</span>
+- <span style="color:yellow">guest</span> shell with 0x25B575ED ventpositiontilsurshigh
+- <span style="color:green">null null with 0x7727402A gotoa</span>
+- <span style="color:green">null null with 0x7727402A more</span>
+- <span style="color:green">null null with 0x7727402A procesdyn</span>
+- <span style="color:yellow">guest</span> shell with 0x7CC9C303 numsir
+- <span style="color:green">null null with 0x7CC9C303 d_treeth</span>
+- <span style="color:green">null null with 0x7CC9C303 baseonnamespritextpend_</span>
+- <span style="color:green">null null with 0x7CC9C303 edvalizede</span>
+- <span style="color:green">null null with 0x7CC9C303 event_onlevent_oncli</span>
+- <span style="color:green">guest computer with 0x5B058AE7 yn_lend_bitleteli</span>
+- <span style="color:green">guest file with 0x5B058AE7 magepathbase</span>
+- <span style="color:green">guest file with 0x5B058AE7 color_titleobjectt</span>
+- <span style="color:green">null null with 0x5B058AE7 hiscroll</span>
+- <span style="color:green">null null with 0x5B058AE7 formlockstatic_lend1</span>
+- <span style="color:green">null null with 0x1FA9039B esrepeatorschemecharamemap</span>
+- <span style="color:green">null null with 0x1FA9039B sizelit++</span>
+- <span style="color:green">null null with 0x1FA9039B fresultst</span>
+- <span style="color:yellow">guest</span> shell with 0x1FA9039B ec_adler32
+
+#### v 1.1.4 — shell 2/18, priv 2/18
+<a id="1.1.4"></a>
+- <span style="color:green">guest file with 0x25B575ED treest_eobjectset_date</span>
+- <span style="color:green">guest computer with 0x25B575ED x++</span>
+- <span style="color:yellow">guest</span> shell with 0x25B575ED ventpositiontilsurshigh
+- <span style="color:green">null null with 0x119F8308 ring_lengt</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x119F8308 embofiterals
+- <span style="color:green">??? password_change with 0x119F8308 dostarted</span>
+- <span style="color:green">guest computer with 0x13C900B6 ment_oncolorstaternalcon</span>
+- <span style="color:green">null null with 0x13C900B6 tran</span>
+- <span style="color:green">??? password_change with 0x13C900B6 tsirectsetitlend</span>
+- <span style="color:yellow">guest</span> shell with 0x13C900B6 deflate
+- <span style="color:green">??? password_change with 0x2BD71E16 osition++</span>
+- <span style="color:green">null null with 0x2BD71E16 umeringsupdatep</span>
+- <span style="color:green">guest file with 0x2BD71E16 equalbytes</span>
+- <span style="color:green">null null with 0x2BD71E16 set</span>
+- <span style="color:green">??? password_change with 0x2BD71E16 sor1</span>
+- <span style="color:green">null null with 0x23D3ADE0 databledthisflags</span>
+- <span style="color:red">root</span> <span style="color:red">computer</span> with 0x23D3ADE0 ostartedouble
+- <span style="color:green">Nakimber file with 0x1EF5678E iosoundthismaxim</span>
+
+#### v 1.1.5 — shell 2/22, priv 1/22
+<a id="1.1.5"></a>
+- <span style="color:yellow">guest</span> shell with 0x4E6DE35B all001f
+- <span style="color:green">null null with 0x4E6DE35B efireondalpos+</span>
+- <span style="color:green">null null with 0x4E6DE35B treestend</span>
+- <span style="color:green">??? password_change with 0x4E6DE35B dediaterror</span>
+- <span style="color:green">null null with 0x8908EC7 positionshowindostart</span>
+- <span style="color:red">root</span> <span style="color:red">file</span> with 0x8908EC7 atch_
+- <span style="color:green">Stohlmay file with 0x8908EC7 paddun</span>
+- <span style="color:green">null null with 0x8908EC7 moutoverals</span>
+- <span style="color:green">null null with 0x8908EC7 hlightminue</span>
+- <span style="color:green">null null with 0x651E58A2 timpli</span>
+- <span style="color:green">null null with 0x651E58A2 ackundostrinsertlines</span>
+- <span style="color:green">null null with 0x651E58A2 istackgrounterac</span>
+- <span style="color:green">guest file with 0x651E58A2 datesizelisteralss</span>
+- <span style="color:green">guest computer with 0x5BF2A077 ecttransformanchor</span>
+- <span style="color:green">guest computer with 0x5BF2A077 tackconty</span>
+- <span style="color:green">guest file with 0x5BF2A077 modal</span>
+- <span style="color:green">Offarajahju computer with 0x63C3A316 dostancho</span>
+- <span style="color:green">??? password_change with 0x63C3A316 slow</span>
+- <span style="color:green">null null with 0x34244CA6 ttypebott</span>
+- <span style="color:green">guest computer with 0x46036A17 notextvmyie</span>
+- <span style="color:green">??? password_change with 0x398B8721 standardoutli</span>
+- <span style="color:yellow">guest</span> shell with 0x398B8721 imagetcoroupblocksrayclearhe
+
+#### v 1.1.8 — shell 8/39
 <a id="1.1.8"></a>
 - <span style="color:green">null null with 0x4E6DE35B bufficientdaterat</span>
 - <span style="color:green">null null with 0x4E6DE35B efireondalpos+</span>
@@ -11729,6 +15493,45 @@ Versions: <a href="#1.0.4"><span style="color:red">v 1.0.4</span></a> <a href="#
 - <span style="color:green">null null with 0x2223E152 rotecolor</span>
 - <span style="color:green">??? password_change with 0x2223E152 sequalbyte</span>
 - <span style="color:green">guest computer with 0x3A766458 anceoffsetactabut</span>
+- <span style="color:yellow">guest</span> shell with 0x4E6DE35B bufficientdaterat
+- <span style="color:green">null null with 0x4E6DE35B efireondalpos+</span>
+- <span style="color:green">null null with 0x4E6DE35B treestend</span>
+- <span style="color:green">??? password_change with 0x4E6DE35B dediaterror</span>
+- <span style="color:green">null null with 0x54B3252 double</span>
+- <span style="color:green">??? password_change with 0x54B3252 reebitscolor_viewp</span>
+- <span style="color:green">guest file with 0x7D61EBBA keycopywin</span>
+- <span style="color:green">guest file with 0x7D61EBBA i_flusb</span>
+- <span style="color:yellow">guest</span> shell with 0x75BCCFCD parea
+- <span style="color:yellow">guest</span> shell with 0x75BCCFCD eralsmaximizefirecteventdat
+- <span style="color:green">null null with 0x75BCCFCD ock_stopwatch_ava</span>
+- <span style="color:green">null null with 0x75BCCFCD setvaluesadd</span>
+- <span style="color:yellow">guest</span> shell with 0x75BCCFCD eqsetactiv
+- <span style="color:green">null null with 0x38E3339F outlinei</span>
+- <span style="color:green">null null with 0x38E3339F sformlock</span>
+
+#### v 1.1.9 — shell 2/21
+<a id="1.1.9"></a>
+- <span style="color:green">guest computer with 0x4E6DE35B otoai</span>
+- <span style="color:green">null null with 0x4E6DE35B stopwatch</span>
+- <span style="color:green">null null with 0x4E6DE35B treestend</span>
+- <span style="color:green">??? password_change with 0x4E6DE35B dediaterror</span>
+- <span style="color:yellow">guest</span> shell with 0x54C62AB9 itlebackgroundopositi
+- <span style="color:green">guest computer with 0x54C62AB9 groundow++scan_endinsi</span>
+- <span style="color:green">null null with 0x54C62AB9 rev_maskbarf</span>
+- <span style="color:green">??? password_change with 0x54C62AB9 nertypebottontoffseta</span>
+- <span style="color:green">null null with 0x54C62AB9 uttonishdonenumsizewimation</span>
+- <span style="color:green">guest computer with 0x3FC2B45D deflags</span>
+- <span style="color:green">Manningers file with 0x3FC2B45D mentextsing_lend_bitsser</span>
+- <span style="color:green">guest file with 0x619EEEEA aryvalmapmapadd</span>
+- <span style="color:green">??? password_change with 0x619EEEEA strue</span>
+- <span style="color:green">??? password_change with 0x619EEEEA ta_typebo</span>
+- <span style="color:green">null null with 0x619EEEEA cound</span>
+- <span style="color:green">Neilette computer with 0x619EEEEA extartializelit++</span>
+- <span style="color:green">null null with 0x38E3339F outlinei</span>
+- <span style="color:green">null null with 0x38E3339F sformlock</span>
+- <span style="color:green">null null with 0x517E068C sizelistene</span>
+- Manningers shell with 0x517E068C endingbuttonfig
+- <span style="color:green">guest computer with 0x517E068C olor_buttoncomment</span>
 
 ---
 
